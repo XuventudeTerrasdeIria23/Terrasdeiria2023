@@ -499,12 +499,12 @@
  #map {
  	height: 80vh;
  	width: 80vw;
- 	border: 1px solid blue;
  	margin: 0;
  	padding: 0;
  	box-sizing: border-box;
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
+ 	box-shadow: 0px 2px 5px 2px #3f5862;
 
  }
 

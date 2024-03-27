@@ -53,25 +53,30 @@
 <body class="corporate">
 	<!-- header INICIO -->
 	<div class="header">
+		<h1 class="img-inside_rois img-shadow" href="#" title="Terras de Iria">Terras de Iria
+		</h1>
 		<div class="container">
 			<a class="site-logo-2" href="../index.html" data-title="Inicio">
 				<img class="img-responsive img-shadow" src="../imaxes/Logo_Xuve_Terras_2023.png" alt="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
 			</a>
-			<h1 class="img-inside_rois img-shadow" href="#" title="Terras de Iria">Terras de Iria
-			</h1>
+			<h2 class="medium img-shadow" href="#" title="Dodro">
+				<a href="../dodro.html" data-title="Información de Dodro">Dodro</a> <i class="mini fa fa-leaf"></i>
+				<a href="../padron.html" data-title="Información de Padrón">Padrón</a> <i class="mini fa fa-leaf"></i>
+				<a href="../rois.html" data-title="Información de Rois">Rois</a> <i class="mini fa fa-leaf"></i>
+			</h2>
 			<a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 			<!-- Menú navegación INICIO -->
 			<nav class="header-navigation pull-right font-transform-inherit">
 				<ul>
 					<!-- menu flora inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="Flora/flora_dodro.html">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 							Flora
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="../RedNatura.html">Rede Natura 2000</a></li>
-							<li><a href="#">Mapa</a></li>
-							<li><a href="galeria_flores.html">Flores</a></li>
+							<li><a href="../RedNatura_flora.html">Red Natura 2000</a></li>
+							<li><a href="../Flora/Mapa_Flora_plantilla.html">Mapa</a></li>
+							<li><a href="../Flora/Galeria_Flora_plantilla.html">Flores</a></li>
 							<li><a href="#">Árbores</a></li>
 							<li><a href="#">Arbustos</a></li>
 							<li><a href="#">Liquens</a></li>
@@ -86,9 +91,9 @@
 							Fauna
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Red Natura 2000</a></li>
-							<li><a href="#">Mapa</a></li>
-							<li><a href="#">Aves</a></li>
+							<li><a href="../RedNatura_fauna.html">Red Natura 2000</a></li>
+							<li class="active"><a href="../Fauna/Mapa_Fauna_plantilla.html">Mapa</a></li>
+							<li><a href="../Fauna/Galeria_Fauna_plantilla.html">Aves</a></li>
 							<li><a href="#">Mamíferos</a></li>
 							<li><a href="#">Peixes</a></li>
 							<li><a href="#">Reptís</a></li>
@@ -134,17 +139,31 @@
 						</ul>
 					</li> <!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
-
+					<li class="dropdown">
+						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
+							Lecer
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Dodro</a></li>
+							<li><a href="#">Padrón</a></li>
+							<li><a href="#">Rois</a></li>
+						</ul>
+					</li> <!-- menu cultura fin-->
+					<!-- menu actividades descargables inicio -->
 					<li class="dropdown">
 						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
 							Actividades
 						</a>
-					</li> <!-- menu cultura fin-->
-
+						<ul class="dropdown-menu">
+							<li><a href="#">Descargables</a></li>
+							<li><a href="#">Xogos</a></li>
+						</ul>
+					</li> <!-- menu actividades descargables  fin-->
 				</ul>
 			</nav>
 			<!-- Menú navegación FIN -->
 		</div>
+
 	</div>
 	<!-- header FIN -->
 
@@ -152,7 +171,7 @@
 		<div class="container">
 			<ul class="breadcrumb">
 				<li><a href="../index.html">Home</a></li>
-				<li> Flora </li>
+				<li> Fauna </li>
 				<li class="active">Mapa</li>
 			</ul>
 			<!--  Contido INICIO -->
@@ -229,8 +248,8 @@ Longitud: -8.7024655
 										.addTo(map);
 
 									//variables para iconos flora 
-									var conejoIcon = L.icon({
-										iconUrl: "../imaxes/iconos/fauna/conejo..gif",
+									var conexoIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/conejo.gif",
 										iconSize: [30, 40],
 										iconAnchor: [15, 40],
 										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
@@ -256,9 +275,9 @@ Longitud: -8.7024655
 										shadowAnchor: [0, 55],
 										popupAnchor: [0, -40]
 									});
-									var pajaroIcon = L.icon({
+									var paxaroIcon = L.icon({
 										iconUrl: "../imaxes/iconos/fauna/pajaro.gif",
-										iconSize: [30, 30],
+										iconSize: [25, 25],
 										iconAnchor: [15, 40],
 										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
 										shadowSize: [35, 50],
@@ -267,7 +286,7 @@ Longitud: -8.7024655
 									});
 									var peixeIcon = L.icon({
 										iconUrl: "../imaxes/iconos/fauna/peixecolor.gif",
-										iconSize: [25, 25],
+										iconSize: [30, 40],
 										iconAnchor: [15, 40],
 										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
 										shadowSize: [35, 50],
@@ -283,49 +302,29 @@ Longitud: -8.7024655
 										shadowAnchor: [0, 55],
 										popupAnchor: [0, -40]
 									});
-									//puntos en mapa con iconos de flora
-									var ranaUn = L.marker([42.70259520325463, -8.726755701805269], {
-											title: "Lorem Ipsum",
-											draggable: false,
-											opacity: 1,
-											icon: ranaIcon
-										}).bindPopup("<p> <span>Centaurea corcubionensis </span> <br><img src='imaxes/flora/imaxe1.jpg'> <a href='#Centaurea-corcubionensis'><i class='fa fa-plus'></i> info</a></p>")
-										.addTo(map);
 
-									var lagartoUn = L.marker([42.72766230643538, -8.72159810896856], {
+									//puntos en mapa con iconos de flora
+									var florUn = L.marker([42.70259520325463, -8.726755701805269], {
 											title: "Lorem Ipsum",
 											draggable: false,
 											opacity: 1,
 											icon: lagartoIcon
+										}).bindPopup("<p> <span>Lorem Ipsum </span> <br><img src='imaxes/flora/imaxe1.jpg'> <a href='#Centaurea-corcubionensis'><i class='fa fa-plus'></i> info</a></p>")
+										.addTo(map);
+
+									var florDous = L.marker([42.72766230643538, -8.72159810896856], {
+											title: "Lorem Ipsum",
+											draggable: false,
+											opacity: 1,
+											icon: paxaroIcon
 										}).bindPopup("<p>Lorem Ipsum</p>")
 										.addTo(map);
 
-									var libelulaUn = L.marker([42.74650011013676, -8.726878288537218], {
-											title: "arbusto en Buxan",
+									var arbustoBuxan = L.marker([42.74650011013676, -8.726878288537218], {
+											title: "Lorem Ipsum",
 											draggable: false,
 											opacity: 1,
 											icon: libelulaIcon
-										}).bindPopup("<p>Lorem Ipsum</p>")
-										.addTo(map);
-									var paxaroUn = L.marker([42.76012483190747, -8.667684691448692], {
-											title: "arbusto en Buxan",
-											draggable: false,
-											opacity: 1,
-											icon: pajaroIcon
-										}).bindPopup("<p>Lorem Ipsum</p>")
-										.addTo(map);
-									var peixeUn = L.marker([42.692499002905606, -8.722583208178179], {
-											title: "arbusto en Buxan",
-											draggable: false,
-											opacity: 1,
-											icon: peixeIcon
-										}).bindPopup("<p>Lorem Ipsum</p>")
-										.addTo(map);
-									var conexoUn = L.marker([42.764874377295044, -8.679208371666988], {
-											title: "arbusto en Buxan",
-											draggable: false,
-											opacity: 1,
-											icon: conejoIcon
 										}).bindPopup("<p>Lorem Ipsum</p>")
 										.addTo(map);
 
@@ -337,17 +336,17 @@ Longitud: -8.7024655
 							</div>
 						</div>
 
-						<h2>Listado de Fauna</h2>
+						<h2>Listado de Flora</h2>
 
 						<section class="row margin-bottom-40 acordeon">
 
 							<article class="col-md-6 col-sm-6">
-								<button title="" class="accordion">Flora 1 </button>
+								<button title="" class="accordion">Lorem Ipsum </button>
 								<div class="panel">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
 
-								<button class="accordion">Flora 2 </button>
+								<button class="accordion">Lorem Ipsum </button>
 								<div class="panel">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
@@ -358,17 +357,17 @@ Longitud: -8.7024655
 								</div>
 							</article>
 							<article class="col-md-6 col-sm-6">
-								<button title="" class="accordion">Flora 3 </button>
+								<button title="" class="accordion">Lorem Ipsum</button>
 								<div class="panel">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
 
-								<button class="accordion">Flora 4</button>
+								<button class="accordion">Lorem Ipsum</button>
 								<div class="panel">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
 
-								<button class="accordion">Flora 5</button>
+								<button class="accordion"></button>
 								<div class="panel">
 									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
