@@ -86,8 +86,8 @@
 							Fauna
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="../RedNatura.html">Red Natura 2000</a></li>
-							<li><a href="../Fauna/Mapa_Fauna_plantilla.html">Mapa</a></li>
+							<li><a href="#">Red Natura 2000</a></li>
+							<li><a href="#">Mapa</a></li>
 							<li><a href="#">Aves</a></li>
 							<li><a href="#">Mamíferos</a></li>
 							<li><a href="#">Peixes</a></li>
@@ -159,7 +159,7 @@
 
 			<div class="row margin-bottom-40">
 				<div class="col-md-12">
-					<h1>Flora en Terras de Iria</h1>
+					<h1>Fauna en Terras de Iria</h1>
 					<div class="content-page">
 						<div class="row margin-bottom-40">
 							<div class="col-md-3 col-sm-4 gallery-item">
@@ -229,8 +229,8 @@ Longitud: -8.7024655
 										.addTo(map);
 
 									//variables para iconos flora 
-									var florIcon = L.icon({
-										iconUrl: "../imaxes/iconos/flora/flor.gif",
+									var conejoIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/conejo..gif",
 										iconSize: [30, 40],
 										iconAnchor: [15, 40],
 										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
@@ -238,8 +238,17 @@ Longitud: -8.7024655
 										shadowAnchor: [0, 55],
 										popupAnchor: [0, -40]
 									});
-									var arbustoIcon = L.icon({
-										iconUrl: "../imaxes/iconos/flora/arbusto.gif",
+									var lagartoIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/lagartocolor.gif",
+										iconSize: [50, 20],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var libelulaIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/libelula.png",
 										iconSize: [30, 40],
 										iconAnchor: [15, 40],
 										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
@@ -247,30 +256,77 @@ Longitud: -8.7024655
 										shadowAnchor: [0, 55],
 										popupAnchor: [0, -40]
 									});
-
+									var pajaroIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/pajaro.gif",
+										iconSize: [30, 30],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var peixeIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/peixecolor.gif",
+										iconSize: [25, 25],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var ranaIcon = L.icon({
+										iconUrl: "../imaxes/iconos/fauna/ranacolor.gif",
+										iconSize: [30, 40],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
 									//puntos en mapa con iconos de flora
-									var florUn = L.marker([42.70259520325463, -8.726755701805269], {
-											title: "Centaurea corcubionensis",
+									var ranaUn = L.marker([42.70259520325463, -8.726755701805269], {
+											title: "Lorem Ipsum",
 											draggable: false,
 											opacity: 1,
-											icon: florIcon
+											icon: ranaIcon
 										}).bindPopup("<p> <span>Centaurea corcubionensis </span> <br><img src='imaxes/flora/imaxe1.jpg'> <a href='#Centaurea-corcubionensis'><i class='fa fa-plus'></i> info</a></p>")
 										.addTo(map);
 
-									var florDous = L.marker([42.72766230643538, -8.72159810896856], {
-											title: "proba flor 2",
+									var lagartoUn = L.marker([42.72766230643538, -8.72159810896856], {
+											title: "Lorem Ipsum",
 											draggable: false,
 											opacity: 1,
-											icon: florIcon
-										}).bindPopup("<p>Proba Flor 2</p>")
+											icon: lagartoIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
 										.addTo(map);
 
-									var arbustoBuxan = L.marker([42.74650011013676, -8.726878288537218], {
+									var libelulaUn = L.marker([42.74650011013676, -8.726878288537218], {
 											title: "arbusto en Buxan",
 											draggable: false,
 											opacity: 1,
-											icon: arbustoIcon
-										}).bindPopup("<p>Proba arbusto en Buxán1</p>")
+											icon: libelulaIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
+										.addTo(map);
+									var paxaroUn = L.marker([42.76012483190747, -8.667684691448692], {
+											title: "arbusto en Buxan",
+											draggable: false,
+											opacity: 1,
+											icon: pajaroIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
+										.addTo(map);
+									var peixeUn = L.marker([42.692499002905606, -8.722583208178179], {
+											title: "arbusto en Buxan",
+											draggable: false,
+											opacity: 1,
+											icon: peixeIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
+										.addTo(map);
+									var conexoUn = L.marker([42.764874377295044, -8.679208371666988], {
+											title: "arbusto en Buxan",
+											draggable: false,
+											opacity: 1,
+											icon: conejoIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
 										.addTo(map);
 
 								</script>
@@ -281,7 +337,7 @@ Longitud: -8.7024655
 							</div>
 						</div>
 
-						<h2>Listado de Flora</h2>
+						<h2>Listado de Fauna</h2>
 
 						<section class="row margin-bottom-40 acordeon">
 
