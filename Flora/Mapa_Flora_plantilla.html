@@ -47,6 +47,41 @@
 	<!-- script mapas -->
 	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 	<link rel="stylesheet" href="../assets/corporate/css/leaflet.css">
+
+	<style>
+		/*
+		#map .label {
+		background-color: pink !important;
+		padding: 0em;
+		font-size: 1em;
+		width: auto;
+		display: inline-flex;
+		flex-wrap: wrap;
+		color: black;
+		font-weight: bold;
+		border: none;
+		outline: none;
+		}
+
+		#map .label img {
+		width: 60%;
+
+		}
+
+		#map .label p {
+		background-color: pink;
+		font-size: 1em;
+
+		width: auto;
+		display: flex;
+		flex-wrap: wrap;
+		color: black;
+		font-weight: bold;
+		border: none;
+		outline: none;
+		}*/
+
+	</style>
 </head>
 
 
@@ -222,22 +257,31 @@ Longitud: -8.7024655
 										shadowAnchor: [0, 55],
 										popupAnchor: [0, -40]
 									});
-
+									var ubicacionIcon = L.icon({
+										iconUrl: '../imaxes/iconos/icon_location-2.png',
+										iconSize: [40, 35],
+										iconAnchor: [15, 40],
+										opacity: 1,
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 30],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
 									var Rois = L.marker([42.76082660182614, -8.690330533382241], {
 											title: "Concello de Rois",
 											draggable: false,
 											opacity: 1,
-											icon: Icono
+											icon: ubicacionIcon
 										}).bindPopup("<p>Concello de Rois</p>")
 										.addTo(map);
 
+
 									var Dodro = L.marker([42.71599854612562, -8.704289466973023], {
-											title: "Concello de Dodro",
-											draggable: false,
-											opacity: 1,
-											icon: Icono
-										}).bindPopup("<p>Concello de Dodro</p>")
-										.addTo(map);
+										title: "Concello de Dodro",
+										draggable: false,
+										opacity: 1,
+										icon: Icono
+									}).bindPopup("<p>Concello de Dodro</p>").addTo(map);
 
 									var Padron = L.marker([42.738538161754434, -8.660592666155658], {
 											title: "Concello de Padrón",
@@ -246,6 +290,24 @@ Longitud: -8.7024655
 											icon: Icono
 										}).bindPopup("<p>Concello de Padrón</p>")
 										.addTo(map);
+									//			// proba `para icono + text 							new L.Marker([42.738538161754434, -8.660592666155658], {
+									//											icon: new L.DivIcon({
+									//												iconSize: [0, 0],
+									//												iconAnchor: [5, 40],
+									//												opacity: 1,
+									//												popupAnchor: [0, -40],
+									//												html: '<div class="label"><img src="../imaxes/iconos/icon_location-2.png"><p>Concello<br>DE PADRON</p></div>'
+									//											})
+									//										}).bindPopup("<p>Concello<br>de Padrón</p>")
+									//										.addTo(map);
+
+
+
+
+
+
+
+
 
 									//variables para iconos flora 
 									var florIcon = L.icon({
@@ -410,6 +472,7 @@ Longitud: -8.7024655
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
 	<script src="to_top.js" type="text/javascript"></script>
+
 
 	<script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
 
