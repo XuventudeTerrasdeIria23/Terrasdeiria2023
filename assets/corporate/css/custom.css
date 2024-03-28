@@ -177,27 +177,6 @@ color: rgb(226, 135, 67)
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
 
  .img-inside {
-
- 	width: 80vw;
- 	text-transform: uppercase;
- 	font-size: 3vw;
- 	font-family: 'Open Sans', sans-serif;
- 	font-weight: bolder;
- 	letter-spacing: auto;
- 	text-align: center;
- 	color: transparent;
- 	background: url("../../../imaxes/img_dodro/RUTA_RANCA_VELA_11.jpg");
- 	background-size: contain;
- 	background-clip: text;
- 	-webkit-background-clip: text;
- 	text-fill-color: transparent;
- 	-webkit-text-fill-color: transparent;
- 	margin: 0 auto;
- 	display: inline-flex;
- 	/* 	border: 1px solid blue;*/
- }
-
- .img-inside_rois {
  	position: absolute;
  	top: 0%;
  	left: 5%;
@@ -210,38 +189,57 @@ color: rgb(226, 135, 67)
  	letter-spacing: auto;
  	text-align: center;
  	color: transparent;
- 	background: url("../../../imaxes/img_rois/rio.jpg");
- 	background-size: contain;
- 	background-clip: text;
- 	-webkit-background-clip: text;
-
- 	text-fill-color: transparent;
- 	-webkit-text-fill-color: transparent;
- 	/* 	border: 1px solid blue;*/
-
- }
-
- .img-inside_padron {
- 	position: absolute;
- 	top: 10%;
- 	left: 15%;
- 	width: 25vw;
- 	/* 	transform: translate(-50%, -50%);*/
- 	text-transform: uppercase;
- 	font-size: 5vw;
- 	font-family: 'Open Sans', sans-serif;
- 	font-weight: bolder;
- 	letter-spacing: auto;
- 	text-align: center;
- 	color: transparent;
- 	background: url("../../../imaxes/img_padron/xardin2.jpg");
+ 	background: url("../../../imaxes/Jardin-Botanico.jpg");
  	background-size: contain;
  	background-clip: text;
  	-webkit-background-clip: text;
  	text-fill-color: transparent;
  	-webkit-text-fill-color: transparent;
- 	margin: 0 auto;
  }
+
+ /*
+.img-inside_rois {
+	position: absolute;
+	top: 0%;
+	left: 5%;
+	width: 15vw;
+	text-transform: uppercase;
+	font-size: 2vw;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+	letter-spacing: auto;
+	text-align: center;
+	color: transparent;
+	background: url("../../../imaxes/img_rois/rio.jpg");
+	background-size: contain;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
+.img-inside_padron {
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	width: 25vw;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	font-size: 5vw;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+	letter-spacing: auto;
+	text-align: center;
+	color: transparent;
+	background: url("../../../imaxes/img_padron/xardin2.jpg");
+	background-size: contain;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	margin: 0 auto;
+}
+*/
 
 
  /* pestañas para info concelo e parroquias */
