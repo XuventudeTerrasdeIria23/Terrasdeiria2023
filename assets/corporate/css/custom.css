@@ -1,8 +1,35 @@
  /******************
 	Obradoiro 2023 
 ********************/
+
+
+ /******************
+colores
+
+
+ .verde {
+ 	color: #11a149;
+color: rgb(17, 161, 73)
+
+ }
+
+ .red {
+ 	color: #e6400c;
+color: rgb(230, 64, 12)
+ }
+
+ocre{ 
+color:  #e28743;
+color: rgb(226, 135, 67)
+ }
+
+********************/
  html {
  	scroll-behavior: smooth;
+ }
+
+ a {
+ 	cursor: pointer
  }
 
  #arriba {
@@ -77,7 +104,7 @@
  }
 
  .img-shadow {
- 	filter: drop-shadow(3px 3px 3px #7C858E80);
+ 	filter: drop-shadow(3px 3px 3px #7C858E);
  }
 
  .img-zoom {}
@@ -95,6 +122,7 @@
  	/* Opera */
  	padding: 1em;
  	z-index: 999999 !important;
+
  }
 
  /* LOGO */
@@ -125,9 +153,22 @@
  }
 
  /*fontes */
+ .negrita {
+ 	font-weight: bolder;
+ 	font-size: 1em;
+ }
+
  .negrita-xl {
  	font-weight: bolder;
  	font-size: 1em;
+ }
+
+ .verde {
+ 	color: #11a149;
+ }
+
+ .red {
+ 	color: #e6400c;
  }
 
  .subrayado {
@@ -546,25 +587,89 @@
  	height: auto;
  }
 
- /********  pop-up  MODAL *********/
- .modal {
+ /******** dialog, pop-up box,  MODAL *********/
+
+
+
+
+ dialog::backdrop {
+ 	background-color: rgba(226, 135, 67, 0.7);
+ 	width: 50vw;
+ 	height: auto;
+ 	outline: none;
+ 	border: none;
+ 	position: relative;
+
  	align-items: center;
- 	display: flex;
- 	justify-content: center;
+ 	font-family: 'Open Sans', sans-serif;
+
+ 	width: 50vw;
+ 	height: auto;
+ 	margin: 0 auto;
+ 	border-radius: .5em;
+ 	transition: ease-out 0.4s;
+ }
+
+ dialog {
+ 	/* 	justify-content: flex-start;*/
+ 	width: 40%;
+ 	height: 50%;
+
+ 	outline: none;
+ 	border: none;
+ 	border-radius: .5em;
+ 	transition: ease-out 0.4s;
+
+
+ }
+
+ dialog p {
+ 	font-size: 1em;
+ 	align-items: center;
+
+ 	padding: inherit;
+ 	border: 1px solid blue;
+ }
+
+
+
+ dialog button {
+ 	/* 	display: grid;*/
+ 	/* 	width: 100%;*/
+ 	float: right;
+ 	background: transparent;
+ 	outline: none;
+ 	border: none;
+ 	border: 1px solid blue;
+ }
+
+ dialog button:hover {
+ 	background: transparent;
+ 	outline: none;
+ 	border: none;
+ 	transform: scale(2);
+ 	-ms-transform: scale(2);
+ 	-moz-transform: scale(2);
+ 	-webkit-transform: scale(2);
+ 	-o-transform: scale(2);
+ }
+
+
+ .modal {
+ 	display: grid;
+ 	/* 	justify-content: flex-start;*/
+ 	align-items: center;
  	position: absolute;
  	top: 0;
  	bottom: 0;
- 	left: 0%;
- 	right: 0;
+
  	width: auto;
  	height: 50%;
- 	background: #e2874380;
-
+ 	/* 	background: #e28743;*/
+ 	background: rgba(226, 135, 67, 0.8);
  	visibility: hidden;
  	opacity: 0;
-
- 	border-radius: 2em;
- 	transition: all 0.4s;
+ 	border-radius: .5em !important;
  	transition: ease-out 0.4s;
  }
 
@@ -576,7 +681,7 @@
  	width: 90%;
  	height: auto;
  	padding: 1em 2em;
- 	border-radius: 2em;
+ 	border-radius: .5em !important;
  }
 
  .modal:target {
@@ -589,17 +694,17 @@
  	top: 0;
  	right: 0;
  	text-decoration: none;
- 	font-size: 1.5em;
+ 	font-size: 2em;
  	font-weight: bold;
  	padding: .2em;
- 	background: #fff;
- 	color: #e28743;
+ 	/* 	background: #fff;*/
+ 	color: white;
+ 	color: #e6400c;
  }
 
  .modal .box-close:hover {
-
- 	background: #e28743;
  	color: #fff;
+
  }
 
  /* mostrar/ocultar acordeon */
