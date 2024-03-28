@@ -104,25 +104,23 @@ color: rgb(226, 135, 67)
  }
 
  .img-shadow {
- 	filter: drop-shadow(3px 3px 3px #7C858E);
+ 	/* 	filter: drop-shadow(3px 3px 3px #7C858E);*/
  }
 
- .img-zoom {}
+ .img-zoom {
+ 	background: white;
+ 	padding: 1em 1em 2em 1em;
+ 	-moz-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	-webkit-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1);
+ }
 
  .img-zoom:hover {
-
- 	transform: scale(2);
- 	-ms-transform: scale(2);
- 	/* IE 9 */
- 	-moz-transform: scale(2);
- 	/* Firefox */
- 	-webkit-transform: scale(2);
- 	/* Safari and Chrome */
- 	-o-transform: scale(2);
- 	/* Opera */
- 	padding: 1em;
  	z-index: 999999 !important;
-
+ 	-moz-transform: scale(1.7);
+ 	-webkit-transform: scale(1.7);
+ 	transform: scale(1.7);
  }
 
  /* LOGO */
@@ -589,22 +587,15 @@ color: rgb(226, 135, 67)
 
  /******** dialog, pop-up box,  MODAL *********/
 
-
-
-
  dialog::backdrop {
  	background-color: rgba(226, 135, 67, 0.7);
- 	width: 50vw;
- 	height: auto;
  	outline: none;
  	border: none;
  	position: relative;
-
  	align-items: center;
  	font-family: 'Open Sans', sans-serif;
-
  	width: 50vw;
- 	height: auto;
+ 	height: calc(100vh - 50%);
  	margin: 0 auto;
  	border-radius: .5em;
  	transition: ease-out 0.4s;
@@ -612,48 +603,65 @@ color: rgb(226, 135, 67)
 
  dialog {
  	/* 	justify-content: flex-start;*/
- 	width: 40%;
- 	height: 50%;
-
+ 	width: 50%;
+ 	height: calc(auto -50%);
+ 	margin: 0 auto;
  	outline: none;
  	border: none;
  	border-radius: .5em;
+ 	box-shadow: 3px 3px 3px #7C858E80;
+
  	transition: ease-out 0.4s;
-
-
  }
 
  dialog p {
  	font-size: 1em;
+ 	display: inline-block;
+ 	width: auto;
  	align-items: center;
-
  	padding: inherit;
- 	border: 1px solid blue;
  }
 
-
-
  dialog button {
- 	/* 	display: grid;*/
- 	/* 	width: 100%;*/
  	float: right;
  	background: transparent;
  	outline: none;
  	border: none;
- 	border: 1px solid blue;
  }
 
  dialog button:hover {
  	background: transparent;
  	outline: none;
  	border: none;
- 	transform: scale(2);
- 	-ms-transform: scale(2);
- 	-moz-transform: scale(2);
- 	-webkit-transform: scale(2);
- 	-o-transform: scale(2);
+ 	color: #e6400c;
+ 	background: transparent;
+ 	text-shadow: 1px 1px 3px #7C858E;
+ 	transform: scale(1.5);
+ 	-ms-transform: scale(1.5);
+ 	-moz-transform: scale(1.5);
+ 	-webkit-transform: scale(1.5);
+ 	-o-transform: scale(1.5);
  }
 
+ @media (max-width: 767px) {
+ 	dialog::backdrop {
+ 		width: auto;
+ 		height: calc(100vh - 50%);
+ 	}
+
+ 	dialog {
+ 		/* 	justify-content: flex-start;*/
+ 		width: auto;
+ 		height: 50%;
+ 	}
+
+ 	dialog p {
+ 		font-size: 1em;
+ 		width: auto;
+ 		height: auto;
+ 	}
+
+ }
 
  .modal {
  	display: grid;
@@ -662,7 +670,6 @@ color: rgb(226, 135, 67)
  	position: absolute;
  	top: 0;
  	bottom: 0;
-
  	width: auto;
  	height: 50%;
  	/* 	background: #e28743;*/
