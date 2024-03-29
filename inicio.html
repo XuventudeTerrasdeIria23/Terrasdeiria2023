@@ -114,7 +114,7 @@
 					</li> <!-- menu drons fin -->
 					<!-- menu rutas inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 							Rutas
 						</a>
 						<ul class="dropdown-menu">
@@ -126,14 +126,22 @@
 					<!-- menu rutas fin -->
 					<!-- menu deportes inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 							Deporte
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="Dodro/inventario_inst_deportivas.html">Inventario</a></li>
-							<li><a href="Dodro/Dodro_deporte.html">Mapa</a></li>
+							<li><a class="dropdown-item" href="#">Dodro<i class="fa fa-plus"></i></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="Deporte/Dodro/inventario_inst_deportivas.html">inventario</a></li>
+									<li><a class="dropdown-item" href="#">Mapa</a></li>
+
+								</ul>
+							</li>
+							<li><a href="#">Padrón</a></li>
+							<li><a href="#">Rois</a></li>
 						</ul>
-					</li> <!-- menu deportes fin -->
+					</li>
+					<!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
 					<li class="dropdown">
 						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
@@ -173,7 +181,7 @@
 						<div class="col-md-12 col-sm-12">
 							<div class="row margin-bottom-20">
 								<div class="col-md-4 animated fadeInDown">
-									<div class="service-box-v1 animated fadeInDown">
+									<div class="service-box-v1 animated slideInLeft">
 										<div class="center">
 											<img class="fa img-responsive img-small" src="imaxes/iconos/icon_inicio_flora.png">
 											<a href="RedNatura_flora.html">

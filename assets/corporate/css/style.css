@@ -1331,11 +1331,11 @@ steps block and steps block elements
 
  /* breadcrumb */
  .breadcrumb {
- 	font: .8em "Open Sans", sans-serif;
+ 	font: .9em "Open Sans", sans-serif;
  	color: #5f6d7b;
  	background: #fff;
  	margin-bottom: 1em;
- 	padding: .2em;
+ 	padding: .3em;
  	border-radius: .2em;
  }
 
@@ -1348,13 +1348,16 @@ steps block and steps block elements
  	font-weight: normal;
  	line-height: 1;
  	color: #5f6d7b;
+
  }
 
  .breadcrumb a {
  	color: #5f6d7b;
- 	background: #cccccc80;
- 	padding: .2em;
- 	border-radius: .2em;
+ 	/* 	background: #3f586280;
+	 */
+ 	background: rgba(63, 88, 98, 0.05);
+ 	padding: .3em;
+ 	border-radius: .5em !important;
  }
 
  .breadcrumb a:hover {

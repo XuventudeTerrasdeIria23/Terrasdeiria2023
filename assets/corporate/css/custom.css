@@ -5,24 +5,29 @@
 
  /******************
 colores
-
-
  .verde {
  	color: #11a149;
-color: rgb(17, 161, 73)
-
+	color: rgb(17, 161, 73)
  }
 
  .red {
  	color: #e6400c;
-color: rgb(230, 64, 12)
+	color: rgb(230, 64, 12)
  }
 
 ocre{ 
-color:  #e28743;
-color: rgb(226, 135, 67)
+	color:  #e28743;
+	color: rgb(226, 135, 67)
  }
 
+gris{
+	 	color: #3f5862;
+	color: rgb(63, 88, 98)
+}
+gris claro {
+	color: #ccc;
+	color:rgb(204, 204, 204)
+}
 ********************/
  html {
  	scroll-behavior: smooth;
@@ -60,8 +65,7 @@ color: rgb(226, 135, 67)
  	font-size: .7em;
  	width: auto;
  	margin-left: 3%;
- 	/* 	border: 1px solid blue;
- 	*/
+
  }
 
  i.small {
@@ -82,6 +86,26 @@ color: rgb(226, 135, 67)
  	animation-play-state: paused;
  }
 
+ /* submenus */
+
+ .dropdown-menu .dropdown-submenu {
+ 	display: none;
+ 	position: absolute;
+ 	left: 50%;
+ 	top: -7px;
+
+ }
+
+ .dropdown-menu > li:hover > .dropdown-submenu {
+ 	display: block;
+ }
+
+ .dropdown-item > i {
+ 	font-size: .7em;
+ 	font-weight: normal;
+ }
+
+ Compar
  /* imaxes */
 
  .img-flota-right {
@@ -167,6 +191,11 @@ color: rgb(226, 135, 67)
 
  .red {
  	color: #e6400c;
+ }
+
+ .ocre {
+ 	color: #e28743;
+
  }
 
  .subrayado {
@@ -258,7 +287,6 @@ color: rgb(226, 135, 67)
  [data-title] {
  	position: relative;
  	font-family: 'Open Sans', sans-serif;
-
  }
 
  data-title]:after {
@@ -277,7 +305,7 @@ color: rgb(226, 135, 67)
  	background: #ccc;
  	color: #3e4d5c;
  	font-weight: 500;
- 	font-size: .5em;
+ 	font-size: .7em;
  	/* 	white-space: nowrap;*/
  	box-shadow: 1px 1px 3px #7C858E;
  	border: 1px solid #ccc;
@@ -764,4 +792,140 @@ color: rgb(226, 135, 67)
  	float: left;
  	margin-right: .5em;
 
+ }
+
+
+ /* instalacions deportivas tarxetas */
+
+ .container-cards {
+ 	width: 100%;
+ 	height: auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	align-content: stretch;
+ 	margin: 0;
+ }
+
+ .container-cards .card {
+ 	position: relative;
+ 	border-radius: 10px;
+ 	margin: 0em 0 0em 0;
+ 	padding: 0;
+
+ }
+
+ .container-cards .card .icon {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	transition: 1s;
+ 	z-index: 1;
+ 	border: 1px solid rgb(204, 204, 204);
+
+ 	/*border: 1px solid blue;
+ 	padding: 1em 1em 2em 1em;
+ 	background: #fff;
+*/
+ }
+
+
+ .container-cards .card .face {
+ 	width: 25vw;
+ 	height: 200px;
+ 	margin: 0;
+ 	padding: 0;
+ 	transition: 0.5s;
+ }
+
+ .container-cards .card .face.face1 {
+ 	position: relative;
+ 	/*
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+*/
+ 	z-index: 1;
+ 	transform: translateY(100px);
+ }
+
+ .container-cards .card:hover .face.face1 {
+ 	transform: translateY(0px);
+ 	margin: 0;
+ 	padding: 0;
+
+ }
+
+ .container-cards .card .face.face1 .content {
+ 	opacity: 1;
+ 	transition: 0.5s;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .container-cards .card:hover .face.face1 .content {
+ 	opacity: 1;
+ 	width: 100%;
+ 	margin: 0;
+ 	padding: 0;
+
+
+ }
+
+ .container-cards .card .face.face2 {
+ 	position: relative;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: flex-start;
+ 	flex-wrap: wrap;
+ 	box-sizing: border-box;
+ 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ 	transform: translateY(-100px);
+ 	padding: 0em 0 0 1em;
+ 	margin: 0;
+ 	width: 100%;
+ }
+
+ .container-cards .card:hover .face.face2 {
+ 	transform: translateY(0);
+ }
+
+ .container-cards .card .face.face2 .content h3 {
+ 	margin: .2em 0;
+ 	padding: 0;
+ 	text-align: left;
+ 	font-weight: 600;
+ 	color: #e28743;
+ }
+
+ .container-cards .card .face.face2 .content p {
+ 	width 100%;
+ 	padding: 0em;
+ 	margin: 0;
+ 	text-align: justify;
+ 	line-height: auto;
+ 	color: #414141;
+ 	display: flex;
+ 	justify-content: flex-start;
+
+ }
+
+ .container-cards .card .face.face2 .content i {
+ 	margin-right: .7em;
+
+ 	float: left;
+ 	color: #3f5862;
+ 	-webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.5));
+ 	filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.5));
+
+ }
+
+ .container-cards .card .face.face2 .content span {
+ 	width: 100%;
+ 	margin: 0px 0px .1em 0em;
+ 	padding: 0;
+ 	text-align: justify;
+ 	color: #414141;
  }
