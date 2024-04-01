@@ -1,0 +1,128 @@
+  .sitemap {
+
+  	background-image: linear-gradient(135deg, rgba(17, 161, 73, 0.6) 0%, rgba(255, 191, 0, 0.6) 100%),
+  		url("../../../imaxes/img_rois/rio2.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	box-sizing: border-box;
+  	margin: 0 auto !important;
+  	display: inline-flex;
+  	padding: 0;
+  }
+
+  h2 {
+  	font-size: 1.5em;
+  	color: #3f5862;
+  	padding: 0.5em;
+  	font-weight: bold;
+  	width: 50%;
+  	border-radius: 5px;
+  	margin-bottom: 40px;
+  }
+
+  input {
+  	position: absolute;
+  	opacity: 0;
+  	z-index: -1;
+  }
+
+  /* Accordion styles */
+  .tabs {
+  	border-radius: 8px;
+  	overflow: hidden;
+  	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  	margin: 1em auto;
+  	padding: 0;
+
+  }
+
+  .tab {
+  	width: auto;
+  	height: auto;
+  	color: white;
+  	margin: 0 !important;
+  	padding: 0;
+  	overflow: hidden;
+  }
+
+  .tab-label {
+  	display: flex;
+  	justify-content: space-between;
+  	padding: .5em;
+  	background: rgba(255, 255, 255, 0.7);
+  	color: #3f5862;
+  	font-weight: bold;
+  	cursor: pointer;
+  	border-radius: .5em !important;
+
+
+  	/* Icon */
+  }
+
+  .tab-label:hover {
+  	background: rgba(226, 135, 67, 0.8);
+  }
+
+  .tab-label::after {
+  	content: "\276F";
+  	width: 2em;
+  	height: 2em;
+  	font-size: 1.1em;
+  	padding: 0;
+  	text-align: center;
+  	transition: all 0.35s;
+
+  }
+
+  .tab-content {
+  	max-height: 0;
+  	padding: 1em;
+  	margin: 0 0 .5em 0;
+  	color: #3f5862;
+  	background: white;
+  	opacity: 0;
+  	transition: all 0.35s;
+  	background: rgba(255, 255, 255, 0.5);
+
+  }
+
+  .tab-content ul {
+  	list-style: none;
+  	color: #3f5862;
+  	font-weight: 700;
+  	width: 100%;
+  	padding: .5em;
+  	background: #3f586280;
+  }
+
+  .tab-close {
+  	display: flex;
+  	justify-content: flex-end;
+  	padding: 1em;
+  	font-size: 0.75em;
+  	background: #3f5862;
+  	cursor: pointer;
+  }
+
+  .tab-close:hover {
+  	background: #3f5862;
+
+  }
+
+  input:checked + .tab-label {
+  	background: #ffffff80;
+  	color: #3f5862;
+
+  }
+
+  input:checked + .tab-label::after {
+  	transform: rotate(90deg);
+  }
+
+  input:checked ~ .tab-content {
+  	max-height: 100vh;
+  	padding: 1em;
+  	opacity: 1;
+  }

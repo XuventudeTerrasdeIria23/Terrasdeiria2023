@@ -783,7 +783,6 @@ gris claro {
  	max-height: 0;
  	width: auto;
  	background-color: white;
-
  	overflow: hidden;
  	transition: max-height 0.2s ease-out;
  }
@@ -791,7 +790,6 @@ gris claro {
  .panel img {
  	float: left;
  	margin-right: .5em;
-
  }
 
 
@@ -812,7 +810,6 @@ gris claro {
  	border-radius: 10px;
  	margin: 0em 0 0em 0;
  	padding: 0;
-
  }
 
  .container-cards .card .icon {
@@ -825,12 +822,7 @@ gris claro {
  	z-index: 1;
  	border: 1px solid rgb(204, 204, 204);
 
- 	/*border: 1px solid blue;
- 	padding: 1em 1em 2em 1em;
- 	background: #fff;
-*/
  }
-
 
  .container-cards .card .face {
  	width: 25vw;
@@ -855,7 +847,6 @@ gris claro {
  	transform: translateY(0px);
  	margin: 0;
  	padding: 0;
-
  }
 
  .container-cards .card .face.face1 .content {
@@ -870,8 +861,6 @@ gris claro {
  	width: 100%;
  	margin: 0;
  	padding: 0;
-
-
  }
 
  .container-cards .card .face.face2 {
@@ -928,4 +917,29 @@ gris claro {
  	padding: 0;
  	text-align: justify;
  	color: #414141;
+ }
+
+ /* cookies */
+ .cookie {
+ 	width: 80%;
+ 	/* 	border: 2px dashed #ccc;*/
+ 	border-radius: 3em;
+ 	text-align: left;
+ 	margin: 0 auto;
+ 	padding: 0.8em;
+ }
+
+ .cookie * {
+ 	width: 90%;
+ 	text-align: left;
+ 	margin: 0 auto;
+ 	padding: 0.8em;
+ }
+
+ .cookie .listado {
+ 	list-style: disc;
+ }
+
+ .cookie img {
+ 	width: 20%;
  }
