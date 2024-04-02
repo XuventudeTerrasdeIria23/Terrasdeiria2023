@@ -468,6 +468,9 @@
 	background: #fff;
 	background: rgba(255, 255, 255, 0.7);
 	margin: 0;
+	width: auto;
+	height: auto;
+	display: inline;
 }
 
 .leaflet-control-attribution,
@@ -478,6 +481,8 @@
 
 .leaflet-control-attribution a {
 	text-decoration: none;
+	color: #3f5862;
+	display: inline;
 }
 
 .leaflet-control-attribution a:hover {
@@ -486,7 +491,11 @@
 
 .leaflet-container .leaflet-control-attribution,
 .leaflet-container .leaflet-control-scale {
-	font-size: 11px;
+	font-size: 10px;
+}
+
+.leaflet-container .leaflet-control-attribution:after {
+	/*	content: "Programa De emprego Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)"*/
 }
 
 .leaflet-left .leaflet-control-scale {
@@ -554,11 +563,15 @@
 	line-height: 1.4;
 }
 
+/* parrafos do popup Susi */
 .leaflet-popup-content p {
-	margin: 18px 0;
+	margin: 1em;
 }
 
+/* picos do popup Susi */
+
 .leaflet-popup-tip-container {
+	/*
 	width: 40px;
 	height: 20px;
 	position: absolute;
@@ -566,9 +579,11 @@
 	margin-left: -20px;
 	overflow: hidden;
 	pointer-events: none;
+*/
 }
 
 .leaflet-popup-tip {
+	/*
 	width: 17px;
 	height: 17px;
 	padding: 1px;
@@ -580,18 +595,65 @@
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
+*/
 }
 
 /* o popup Susi */
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
-	background: white;
+.leaflet-popup-content-wrapper {
+	background: beige;
 	color: #333;
-	width: 20em;
-	padding: .5em;
+	width: 110%;
+	padding: .1em;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
+
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: left;
+	border-radius: 12px;
+}
+
+.leaflet-popup-content {
+	margin: 13px 19px;
+	line-height: 1.4;
+}
+
+/* parrafos do popup Susi */
+.leaflet-popup-content p {
+	margin: 1em;
+}
+
+/* picos do popup Susi */
+
+.leaflet-popup-tip-container {
+	/*
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	overflow: hidden;
+	pointer-events: none;
+*/
+
+}
+
+.leaflet-popup-tip {
+	/*
+	width: 1.5em;
+	height: 1.5em;
+	padding: 1px;
+	margin: -10px auto 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+*/
+}
 
 /* span popup Susi */
 .leaflet-popup-content-wrapper span,
@@ -603,12 +665,38 @@
 }
 
 /* imagen popup Susi */
-.leaflet-popup-content-wrapper img,
+
+.leaflet-popup-content-wrapper img {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 1em 0;
+	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+	display: block;
+}
+
+.leaflet-popup-content-wrapper img:hover {
+	z-index: 9999 !important;
+	-moz-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+
+	/*	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);*/
+	background: white;
+	padding: 1em 1em 1em 1em;
+	margin: 1em;
+	-moz-box-shadow: 0px 0px 5px #ccc inset, 6px 6px 6px #ccc;
+	-webkit-box-shadow: 0px 0px 5px #ccc inset, 6px 6px 6px #ccc;
+	box-shadow: 0px 0px 5px #ccc inset, 6px 6px 6px #ccc;
+	/*	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1);*/
+}
+
 .leaflet-popup-tip img {
+	/*
 	width: 50%;
 	padding: 0;
 	margin: 0 0 1em 0;
 	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+*/
 }
 
 /* enlace popup Susi */
@@ -616,6 +704,7 @@
 .leaflet-popup-tip a {
 	color: #e28743;
 	font-weight: bold;
+	padding: .1em;
 	display: block;
 }
 
