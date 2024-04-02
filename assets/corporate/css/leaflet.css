@@ -17,6 +17,7 @@
 
 .leaflet-container {
 	overflow: hidden;
+
 }
 
 .leaflet-tile,
@@ -315,7 +316,8 @@
 
 /* general typography */
 .leaflet-container {
-	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	/*	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+
 }
 
 

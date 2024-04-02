@@ -148,13 +148,13 @@
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Dodro<i class="fa fa-plus"></i></a>
 								<ul class="dropdown-menu dropdown-submenu">
-									<li><a class="dropdown-item" href="inventario_deporte_dodro.html">Inventario</a></li>
-									<li><a class="dropdown-item" href="#">Mapa</a></li>
+									<li><a class="dropdown-item" href="../Dodro/inventario_deporte_dodro.html">Inventario</a></li>
+									<li><a class="dropdown-item" href="../Dodro/Dodro_deporte.html">Mapa</a></li>
 								</ul>
 							</li>
 							<li><a class="dropdown-item" href="#">Padrón<i class="fa fa-plus"></i></a>
 								<ul class="dropdown-menu dropdown-submenu">
-									<li><a class="dropdown-item" href="#">inventario</a></li>
+									<li><a class="dropdown-item" href="../Padron/inventario_deporte_DODROpadron.html">inventario</a></li>
 									<li><a class="dropdown-item" href="#">Mapa</a></li>
 								</ul>
 							</li>
@@ -208,13 +208,14 @@
 			<!-- BEGIN CONTENT -->
 			<section class="row margin-bottom-40">
 				<div class="col-md-12 col-sm-12">
-					<h2>Mapa das Instalacións Deportivas en Dodro</h2>
+					<h2>Mapa das Instalacións Deportivas en Padrón</h2>
 					<div class="content-page">
 						<!-- Mapa INICIO -->
 						<div id="map" class="margin-bottom-40">
 						</div>
+
 						<script>
-							var map = L.map('map').setView([42.715599339662134, -8.722380299701486], 12);
+							var map = L.map('map').setView([42.764553524954444, -8.697332608696819], 12);
 							L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 								attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a>  <a href="../../index.html">Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)</a>'
 							}).addTo(map);
@@ -229,73 +230,110 @@
 								popupAnchor: [0, -40]
 							});
 
-
-							var concelloDodro = L.marker([42.72101583932246, -8.704769329976834], {
-								title: "Concello de Dodro",
+							// Additional markers
+							var PavellonNuevoPadron = L.marker([42.736173, -8.662286], {
+								title: "Pavillón Novo Padrón",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Concello de Dodro</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/concello_dodro.jpg'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Pavillón Novo Padrón</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/pabellon_de_padron.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var pistaBexo = L.marker([42.701602, -8.728187], {
-								title: "Pista Deportiva de Bexo",
+							var CampoMunicipalDoSouto = L.marker([42.734650, -8.660882], {
+								title: "Campo Municipal Do Souto",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pista Deportiva de Bexo</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/zona_deportiva_de_bexo.jpg'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Campo Municipal Do Souto</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/campo_futbol_souto_padron.jpg'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var pavillonDodro = L.marker([42.716485, -8.697368], {
-								title: "Pavillón de Dodro",
+							var PistasPolideportivas = L.marker([42.745727, -8.660789], {
+								title: "Pistas Polideportivas Iria/Extramundi",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pavillón de Dodro</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/pavillon_de_dodro.jpg'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Pistas Polideportivas Iria/Extramundi</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/pista_deportiva_extramundi_iria.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var CampoChenlo = L.marker([42.724450096109145, -8.71147472025192], {
-								title: "Campo de fútbol de Chenlo",
+							var CampoMunicipalExtramundi = L.marker([42.754997, -8.671224], {
+								title: "Campo Municipal de Fútbol de Extramundi",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Campo de fútbol de Chenlo</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/campo_futbol_dodro.jpg'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Campo Municipal de Fútbol de Extramundi</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/campo_futbol_extramundi.jpg'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var padelLestrove = L.marker([42.727547117155694, -8.672504973639837], {
-								title: "Pista Padel de Lestrove",
+							var CampoFutbolBaiuca = L.marker([42.769944, -8.650088], {
+								title: "Campo de Fútbol A Baiuca (Pazos)",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pista Padel de Lestrove</p><img src><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/pista_padel_lestrove.webp'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Campo de Fútbol A Baiuca (Pazos)</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/campo_futbol_pazos.jpg'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var pistaLestrove = L.marker([42.72771649133643, -8.672247277963814], {
-								title: "Pista Deportiva Lestrove",
+							var CampoFutbolNovoDoce = L.marker([42.779910, -8.656731], {
+								title: "Campo de Fútbol O Novo Doce (Escravitude)",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pista Deportiva Lestrove</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/pista_lestrove.png'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Campo de Fútbol O Novo Doce (Escravitude)</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/campo_futbol_esclavitud.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
-							var pistaDevesa = L.marker([42.733376, -8.664924], {
-								title: "Pista Deportiva A Devesa",
+							var PiscinaMunicipalEscravitude = L.marker([42.794325, -8.644530], {
+								title: "Piscina Municipal da Escravitude",
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pista Deportiva A Devesa</p><img class='img-bindPopup' src='../../imaxes/img_dodro/instala_deport/pista_a_devesa_lestrove.png'><a href='inventario_deporte_dodro.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Piscina Municipal da Escravitude</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/piscina_esclavitud.jpg'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+
+							var CampoFutbolMirarrios = L.marker([42.747117255423035, -8.599205643552132], {
+								title: "Campo de Fútbol de Mirarrios (Carcacia)",
+								draggable: false,
+								opacity: 1,
+								icon: Icono
+							}).bindPopup("<p>Campo de Fútbol de Mirarrios (Carcacia)</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/campo_futbol_carcacia.jpg'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+
+							var PiscinaGimnasioPadron = L.marker([42.735313, -8.660817], {
+								title: "Piscina e Ximnasio Municipais de Padrón",
+								draggable: false,
+								opacity: 1,
+								icon: Icono
+							}).bindPopup("<p>Piscina e Ximnasio Municipais de Padrón</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/ximnasio_padron.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+
+							var PiscinaGimnasioPadron = L.marker([42.794311, -8.643741], {
+								title: "Pavillón da Escravitude",
+								draggable: false,
+								opacity: 1,
+								icon: Icono
+							}).bindPopup("<p>Pavillón da Escravitude</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/pabellon_da_escravitude.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+
+							var PiscinaGimnasioPadron = L.marker([42.764691, -8.653041], {
+								title: "Pistas Deportivas Aldea Rueiro (Pazos)",
+								draggable: false,
+								opacity: 1,
+								icon: Icono
+							}).bindPopup("<p>Pistas Deportivas Aldea Rueiro (Pazos)</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/pista_pazos.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
+
+							var PiscinaGimnasioPadron = L.marker([42.7352, -8.6602], {
+								title: "Pavillón Vello de Padrón",
+								draggable: false,
+								opacity: 1,
+								icon: Icono
+							}).bindPopup("<p>Pavillón Vello de Padrón</p><img class='img-bindPopup' src='../../imaxes/img_padron/instala_deporte/pabellon_viejo_padron.png'><a href='inventario_deporte_padron.html'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
 						</script>
+
+
 						<!-- Mapa FIN -->
 						<!-- sidebar2 INICIO -->
 						<div class="col-md-5 sidebar5">
-							<h2>Contacto - Deporte Dodro</h2>
+							<h2>Contacto - Deporte Padrón</h2>
 							<address>
-								<strong>Pavillón Polideportivo Municipal </strong><br>
-								Tallós S/N <br>
-								15981 Dodro<br>
-								<p><abbr title="Teléfono">Tel.:</abbr> (+34) 981 80 25 32</p>
+								<strong>asdasdasdasd </strong><br>
+								asdsadasdasd <br>
+								159sadasdad Padrón<br>
+								<p><abbr title="Teléfono">Tel.:</abbr> (+34) asdasdasdasdasdasd</p>
 
 								<strong>Email</strong><br>
-								<a href="mailto:deportes@dodro.gal">deportes@dodro.gal</a><br>
+								<a href="mailto:asdasdasdasdasdasd">asdasdasdasd</a><br>
 							</address>
 							<ul class="social-icons social-icons-circle margin-bottom-40">
-								<li><a href="https://www.facebook.com/dodrodeportes/?locale=es_ES" data-original-title="facebook" class="facebook" target="_blank"></a></li>
-								<li><a href="https://www.facebook.com/dodrodeportes/?locale=es_ES" data-original-title="Youtube" class="youtube" target="_blank"></a></li>
+								<li><a href="#" data-original-title="facebook" class="facebook" target="_blank"></a></li>
+								<li><a href="#" data-original-title="Youtube" class="youtube" target="_blank"></a></li>
 							</ul>
 						</div>
 						<!-- sidebar2 FIN -->

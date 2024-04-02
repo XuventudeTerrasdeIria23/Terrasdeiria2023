@@ -575,14 +575,14 @@ gris claro {
  /* MAPAS    estilo  mapas *********/
 
  #map {
- 	height: 80vh;
- 	width: 80vw;
+ 	height: 85vh;
+ 	width: 85vw;
  	margin: 0;
  	padding: 0;
  	box-sizing: border-box;
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
- 	box-shadow: 0px 2px 5px 2px #3f5862;
+ 	box-shadow: 0px 5px 8px 5px #ccc;
 
  }
 
