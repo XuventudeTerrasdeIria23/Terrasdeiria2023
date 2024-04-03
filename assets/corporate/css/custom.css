@@ -90,9 +90,10 @@ gris claro {
 
  .dropdown-menu .dropdown-submenu {
  	display: none;
- 	position: absolute;
- 	left: 50%;
- 	top: -7px;
+ 	/* 	position: absolute;
+ 	*/
+ 	left: 0%;
+ 	top: 0px;
 
  }
 
@@ -160,12 +161,16 @@ gris claro {
 
 
  .header-navigation {
- 	font: 1.1em "Open Sans", sans-serif;
+ 	/*
+ 	font: 1.1em "Open Sans",
+ 	sans-serif;
  	margin: 0 0 0 0;
  	padding: 0;
  	float: left;
  	text-transform: capitalize;
+*/
  	/* 	clear: both;*/
+ 	width: auto;
  }
 
  #header-mapa-concello {
@@ -575,11 +580,11 @@ gris claro {
  /* MAPAS    estilo  mapas *********/
 
  #map {
- 	height: 85vh;
+ 	height: 75vh;
  	width: 85vw;
  	margin: 0;
  	padding: 0;
- 	box-sizing: border-box;
+ 	/* 	box-sizing: border-box;*/
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
  	box-shadow: 0px 5px 8px 5px #ccc;
@@ -818,7 +823,7 @@ gris claro {
  /* instalacions deportivas tarxetas */
 
  .container-cards {
- 	width: 100%;
+ 	width: auto;
  	height: auto;
  	display: flex;
  	flex-wrap: wrap;
@@ -830,7 +835,7 @@ gris claro {
  .container-cards .card {
  	position: relative;
  	border-radius: 10px;
- 	margin: 0em 0 0em 0;
+ 	margin: 0em .5em 0em 0;
  	padding: 0;
  }
 
@@ -843,11 +848,12 @@ gris claro {
  	transition: 1s;
  	z-index: 1;
  	border: 1px solid rgb(204, 204, 204);
+ 	cursor: pointer;
 
  }
 
  .container-cards .card .face {
- 	width: 25vw;
+ 	/* 	width: 25vw;*/
  	height: 200px;
  	margin: 0;
  	padding: 0;

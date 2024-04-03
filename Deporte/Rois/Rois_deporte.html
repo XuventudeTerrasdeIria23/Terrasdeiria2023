@@ -213,6 +213,8 @@
 
 						<script>
 							var map = L.map('map').setView([42.78326954346315, -8.707629929234814], 12);
+							map.options.minZoom = 12;
+							map.options.maxZoom = 15;
 							L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 								attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a>  <a href="../../index.html">Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)</a>'
 							}).addTo(map);
@@ -255,7 +257,7 @@
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Campo de Fútbol de Rois(A Braña)</p><img src><img style='width:100%;' src='../../imaxes/img_rois/instala_deporte/provisional_deportes/campo_futbol_rois.jpg'><a href='#'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Campo de Fútbol de Rois(A Braña)</p><img src><img style='width:100%;' src='../../imaxes/img_rois/instala_deporte/campo_futbol_rois.jpg'><a href='#'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
 							var Rois = L.marker([42.826524, -8.736677], {
 								title: "Campo de fútbol de Urdilde (O Pino)",
@@ -284,7 +286,7 @@
 								draggable: false,
 								opacity: 1,
 								icon: Icono
-							}).bindPopup("<p>Pista de tenis descuberta de Barro (Oin)</p><img style='width:100%;' src='provisional_deportes/pista_de_oin.jpg'><a href='#'><i class='fa fa-plus'></i> info</a>").addTo(map);
+							}).bindPopup("<p>Pista de tenis descuberta de Barro (Oin)</p><img style='width:100%;' src='../../imaxes/img_rois/instala_deporte/pista_de_oin.jpg'><a href='#'><i class='fa fa-plus'></i> info</a>").addTo(map);
 
 							var Rois = L.marker([42.827087, -8.738074], {
 								title: "Concello de RoisPavillón de Urdilde",

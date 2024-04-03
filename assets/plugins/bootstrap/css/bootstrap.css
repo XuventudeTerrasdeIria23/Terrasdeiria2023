@@ -4538,6 +4538,7 @@ tbody.collapse.in {
 	line-height: 1.42857143;
 	color: #333;
 	white-space: nowrap;
+
 }
 
 .dropdown-menu > li > a:hover,
@@ -4573,6 +4574,7 @@ tbody.collapse.in {
 
 .open > .dropdown-menu {
 	display: block;
+
 }
 
 .open > a {
@@ -4596,6 +4598,7 @@ tbody.collapse.in {
 	line-height: 1.42857143;
 	color: #777;
 	white-space: nowrap;
+
 }
 
 .dropdown-backdrop {
@@ -4610,6 +4613,7 @@ tbody.collapse.in {
 .pull-right > .dropdown-menu {
 	right: 0;
 	left: auto;
+
 }
 
 .dropup .caret,
