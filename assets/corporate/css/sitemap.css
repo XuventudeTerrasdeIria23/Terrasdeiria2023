@@ -1,15 +1,21 @@
   .sitemap {
-
+  	/*
   	background-image: linear-gradient(135deg, rgba(17, 161, 73, 0.6) 0%, rgba(255, 191, 0, 0.6) 100%),
-  		url("../../../imaxes/img_rois/rio2.jpg");
+  	url("../../../imaxes/img_rois/rio2.jpg");
   	background-repeat: no-repeat;
   	background-position: center center;
   	background-attachment: fixed;
   	background-size: cover;
+*/
   	box-sizing: border-box;
   	margin: 0 auto !important;
   	display: inline-flex;
-  	padding: 0;
+  	padding: 1em;
+  }
+
+  .sitemap section {
+  	margin: 0 5vw;
+  	height: auto;
   }
 
   h2 {
@@ -31,15 +37,16 @@
   /* Accordion styles */
   .tabs {
   	border-radius: 8px;
-  	overflow: hidden;
-  	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-  	margin: 1em auto;
-  	padding: 0;
-
+  	/*  	overflow: hidden;*/
+  	/*  	box-shadow: 04px 4px -2px rgba(0, 0, 0, 0.7);*/
+  	/*  	background: rgba(0, 0, 0, 0.1);*/
+  	/*  	width: auto;*/
+  	margin: 0 auto;
+  	padding: .5em;
   }
 
   .tab {
-  	width: auto;
+  	width: 25vw;
   	height: auto;
   	color: white;
   	margin: 0 !important;
@@ -51,19 +58,22 @@
   	display: flex;
   	justify-content: space-between;
   	padding: .5em;
-  	background: rgba(255, 255, 255, 0.7);
+  	background: beige;
   	color: #3f5862;
   	font-weight: bold;
   	cursor: pointer;
   	border-radius: .5em !important;
-
-
-  	/* Icon */
+  	-moz-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+  	-webkit-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+  	box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
   }
 
   .tab-label:hover {
-  	background: rgba(226, 135, 67, 0.8);
+  	background: rgba(226, 135, 67, 0.7);
+  	color: #3f5862;
+
   }
+
 
   .tab-label::after {
   	content: "\276F";
@@ -73,13 +83,34 @@
   	padding: 0;
   	text-align: center;
   	transition: all 0.35s;
+  	/*  	background: rgba(226, 135, 67, 0.7);*/
 
   }
 
+  input:checked {}
+
+  input:checked + .tab-label {
+  	background: rgba(226, 135, 67, 0.5);
+  	color: #e6400c;
+
+  }
+
+  input:checked + .tab-label::after {
+  	transform: rotate(90deg);
+
+  }
+
+  input:checked ~ .tab-content {
+  	max-height: 100vh;
+  	padding: .1em;
+  	opacity: 1;
+  }
+
   .tab-content {
-  	max-height: 0;
-  	padding: 1em;
-  	margin: 0 0 .5em 0;
+  	width: auto;
+  	max-height: 2em;
+  	padding: 0em;
+  	margin: 0 0 0em 0;
   	color: #3f5862;
   	background: white;
   	opacity: 0;
@@ -93,36 +124,26 @@
   	color: #3f5862;
   	font-weight: 700;
   	width: 100%;
-  	padding: .5em;
-  	background: #3f586280;
-  }
-
-  .tab-close {
-  	display: flex;
-  	justify-content: flex-end;
   	padding: 1em;
-  	font-size: 0.75em;
-  	background: #3f5862;
-  	cursor: pointer;
+  	background: beige;
+  	border-radius: .1em !important;
+  	-moz-box-shadow: 0px 0px 5px #ccc inset;
+  	-webkit-box-shadow: 0px 0px 5px #ccc inset;
+  	box-shadow: 0px 0px 5px #ccc inset;
   }
 
-  .tab-close:hover {
-  	background: #3f5862;
+  .tab-content ul li {
+  	width: 100%;
+  	padding: 0 0 .3em 0;
+  	background: beige;
+  	border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  }
+
+  .tab-content a {
+  	color: rgb(226, 135, 67);
 
   }
 
-  input:checked + .tab-label {
-  	background: #ffffff80;
-  	color: #3f5862;
-
-  }
-
-  input:checked + .tab-label::after {
-  	transform: rotate(90deg);
-  }
-
-  input:checked ~ .tab-content {
-  	max-height: 100vh;
-  	padding: 1em;
-  	opacity: 1;
+  .tab-content a:hover {
+  	color: #e6400c;
   }
