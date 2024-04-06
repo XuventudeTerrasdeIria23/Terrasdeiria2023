@@ -409,6 +409,7 @@ gris claro {
  	left: 6%;
  	/* 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);*/
  	mask: linear-gradient(90deg, #0000, #ccc 5% 90%, #0000);
+ 	border: 1px solid blue;
  }
 
  .carrusel > img {
