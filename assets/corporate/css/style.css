@@ -580,7 +580,7 @@ Header and header elements
  	padding: 0;
  	float: left;
  	text-transform: uppercase;
-/* 	border:1px solid red;*/
+ 	/* 	border:1px solid red;*/
  }
 
  .header-navigation ul {
@@ -663,14 +663,17 @@ Header and header elements
  }
 
  .header-navigation > ul > li > .dropdown-menu {
- 	margin-top: -5px;
+ 	margin-top: auto;
  	border-top: solid 3px transparent;
  	z-index: 1001;
+
  }
 
  .header-navigation .dropdown100 > .dropdown-menu {
+ 	/*
  	left: 15px;
  	right: 15px;
+*/
  }
 
  .header-navigation > ul > li.dropdown:hover > a:after {
@@ -711,7 +714,7 @@ Header and header elements
  }
 
  .header-navigation .dropdown-menu li > a {
- 	padding: 10px 15px;
+ 	padding: .5em;
  	font-weight: 400;
  	color: #767f88;
  }
@@ -724,6 +727,19 @@ Header and header elements
  	color: #fff;
  }
 
+ .header-navigation .dropdown-menu li span::after {
+ 	content: "\276F";
+ 	width: 1em;
+ 	height: 1em;
+ 	padding: 0;
+ 	text-align: center;
+ 	transition: all 0.35s;
+ 	float: right;
+ }
+
+ .header-navigation .dropdown-menu li span::after {
+ 	transform: rotate(90deg);
+ }
 
  /* navigation content */
  .header-navigation-content {
@@ -2054,7 +2070,6 @@ Pre-Footer and pre-footer elements
  	padding: .5em;
  	text-align: center;
  	text-decoration: none;
- 	border: 1px solid blue;
  }
 
  .footer a:hover {
@@ -2849,20 +2864,42 @@ Demo Utils
  }
 
  /* Service Box v1 */
- .service-box-v1 {
+ .service-box-v1,
+ .service-box-v2 {
  	text-align: center;
  	padding: 15px;
  	box-shadow: 1px 1px 3px #7C858E;
  	border-radius: .7em !important;
+ }
+
+ .service-box-v2 {
+ 	text-align: center;
+ 	padding: .3em;
+ 	box-shadow: 1px 1px 3px #7C858E;
+ 	border-radius: .5em !important;
 
  }
 
  .service-box-v1 i {
- 	padding: 15px;
- 	font-size: 35px;
+ 	padding: auto;
+ 	font-size: 1em;
+ }
+
+ .service-box-v2 i {
+ 	padding: auto;
+ 	font-size: .5em;
  }
 
  .service-box-v1:hover {
+ 	/*	background: #d73d04;*/
+ 	background: #e28743;
+ 	transition: all 0.4s ease-in-out;
+ 	-o-transition: all 0.4s ease-in-out;
+ 	-moz-transition: all 0.4s ease-in-out;
+ 	-webkit-transition: all 0.4s ease-in-out;
+ }
+
+ .service-box-v2:hover {
  	/*	background: #d73d04;*/
  	background: #e28743;
  	transition: all 0.4s ease-in-out;
@@ -2876,6 +2913,13 @@ Demo Utils
  .service-box-v1:hover p,
  .service-box-v1:hover h2 {
  	color: #fff;
+ }
+
+ .service-box-v2:hover i,
+ .service-box-v2:hover h2 {
+ 	color: #fff;
+ 	font-weight: 700;
+ 	opacity: 1;
  }
 
  /* corp. search result */

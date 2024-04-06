@@ -216,7 +216,7 @@ gris claro {
  .fonte {
  	font-size: .7em;
  	color: #3f5862;
- 	text-align: right;
+ 	float: right;
  }
 
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
@@ -297,6 +297,14 @@ gris claro {
  	color: white;
  }
 
+ .block-center {
+ 	/* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
+ 	*/
+ 	padding: .5em;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-content: space-between;
+ }
 
  /* data-title */
 
@@ -378,6 +386,9 @@ gris claro {
  }
 
  /* carrusel index */
+ .carousel-inner {}
+
+
  .carrusel {
  	/*
 		justify-content: center;
@@ -389,13 +400,13 @@ gris claro {
  	/* duration */
  	display: grid;
  	overflow: hidden;
- 	width: 35vw;
+ 	width: 30vw;
  	height: auto;
  	margin: 0;
  	padding: 1em;
  	float: right;
  	position: relative;
- 	left: 7%;
+ 	left: 6%;
  	/* 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);*/
  	mask: linear-gradient(90deg, #0000, #ccc 5% 90%, #0000);
  }
@@ -514,22 +525,38 @@ gris claro {
  	border-right: 1px solid rgba(91, 91, 91, 0.2);
  }
 
+ /*
  footer.footer-light {
- 	width: 100%;
+
  	background: #fcfafb;
  	border: 1px solid rgba(91, 91, 91, 0.2);
  }
+*/
+
+ footer.footer-light {
+ 	width: 100%;
+ 	color: #3f5862;
+ 	font-size: 1em;
+ 	background: #fcfafb;
+ 	border: 1px solid rgba(91, 91, 91, 0.2);
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: flex-start;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+ 	flex-direction: row;
+ }
 
  footer.footer-light .copyright {
- 	width: 100%;
+ 	/* 	width: 100%;*/
  	margin: 0 auto;
  	color: #3f5862;
  	font-size: 1em;
- 	padding: .5em;
+ 	padding: 0.2em;
  	display: flex;
  	justify-content: center;
- 	align-content: flex-end;
- 	align-items: flex-end;
+ 	align-content: center;
+ 	align-items: center;
  	flex-wrap: wrap;
  	border-bottom: 1px solid rgba(91, 91, 91, 0.2);
  }
@@ -615,7 +642,7 @@ gris claro {
 	width: 80vw !important;
 	text-align: center;
 	margin: 5em;
-	border: 2px solid blue;
+	 
 }
 */
 
@@ -830,6 +857,7 @@ gris claro {
  	justify-content: space-around;
  	align-content: stretch;
  	margin: 0;
+ 	border: 1px solid blue;
  }
 
  .container-cards .card {
@@ -837,6 +865,7 @@ gris claro {
  	border-radius: 10px;
  	margin: 0em .5em 0em 0;
  	padding: 0;
+ 	font-size: 1em;
  }
 
  .container-cards .card .icon {
@@ -907,6 +936,7 @@ gris claro {
 
  .container-cards .card:hover .face.face2 {
  	transform: translateY(0);
+
  }
 
  .container-cards .card .face.face2 .content h3 {
@@ -914,6 +944,7 @@ gris claro {
  	padding: 0;
  	text-align: left;
  	font-weight: 600;
+ 	font-size: 1.3em;
  	color: #e28743;
  }
 
@@ -926,6 +957,7 @@ gris claro {
  	color: #414141;
  	display: flex;
  	justify-content: flex-start;
+ 	font-size: 1em;
 
  }
 
@@ -943,7 +975,7 @@ gris claro {
  	width: 100%;
  	margin: 0px 0px .1em 0em;
  	padding: 0;
- 	text-align: justify;
+ 	text-align: left;
  	color: #414141;
  }
 

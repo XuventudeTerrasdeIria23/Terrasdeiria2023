@@ -1,0 +1,80 @@
+   input {
+   	position: absolute;
+   	opacity: 0;
+   	z-index: -1;
+   }
+
+   /* Accordion styles */
+
+
+   .tab-label {
+   	display: flex;
+   	justify-content: space-between;
+   	padding: 0em;
+   	cursor: pointer;
+   }
+
+   .tab-label::after {
+   	content: "\276F";
+   	width: 1em;
+   	height: 1em;
+   	padding: 0;
+   	text-align: center;
+   	transition: all 0.35s;
+   }
+
+   input:checked {}
+
+   input:checked + .tab-label {
+   	/*   	color: #e6400c;*/
+   	font-weight: inherit;
+   }
+
+   input:checked + .tab-label::after {
+   	transform: rotate(90deg);
+   }
+
+   input:checked ~ .tab-content {
+   	/*   	max-height: 100vh;*/
+   	/*   	padding: auto;*/
+   	opacity: 1;
+   }
+
+   .tab-content {
+   	/*   	width: auto;*/
+   	padding: 0em;
+   	margin: 0 0 0em 0;
+   	color: #3f5862;
+   	/*   	background: white;*/
+   	opacity: 0;
+   	transition: all 0.35s;
+   	/*   	background: rgba(255, 255, 255, 0.5);*/
+   }
+
+   .tab-content ul {
+   	/*
+   	background: beige;
+   	border-radius: .1em !important;
+   	-moz-box-shadow: 0px 0px 5px #ccc inset;
+   	-webkit-box-shadow: 0px 0px 5px #ccc inset;
+   	box-shadow: 0px 0px 5px #ccc inset;
+*/
+   }
+
+   .tab-content ul li {
+   	/*
+   	width: 100%;
+   	padding: 0 0 .3em 0;
+   	background: beige;
+   	border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+*/
+   }
+
+   .tab-content a {
+   	/*   	color: rgb(226, 135, 67);*/
+
+   }
+
+   .tab-content a:hover {
+   	/*   	color: #e6400c;*/
+   }
