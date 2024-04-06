@@ -2866,8 +2866,19 @@ Demo Utils
  /* Service Box v1 */
  .service-box-v1,
  .service-box-v2 {
+ 	/*
  	text-align: center;
  	padding: 15px;
+ 	box-shadow: 1px 1px 3px #7C858E;
+ 	border-radius: .7em !important;
+*/
+ }
+
+ .service-box-v1 {
+ 	text-align: center;
+ 	padding: .5em;
+ 	width: auto;
+ 	height: 30vh;
  	box-shadow: 1px 1px 3px #7C858E;
  	border-radius: .7em !important;
  }
