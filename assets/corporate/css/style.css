@@ -2880,14 +2880,14 @@ Demo Utils
  	width: auto;
  	height: 30vh;
  	box-shadow: 1px 1px 3px #7C858E;
- 	border-radius: .7em !important;
+ 	border-radius: .2em !important;
  }
 
  .service-box-v2 {
  	text-align: center;
  	padding: .3em;
  	box-shadow: 1px 1px 3px #7C858E;
- 	border-radius: .5em !important;
+ 	border-radius: .2em !important;
 
  }
 
@@ -3037,7 +3037,7 @@ Demo Utils
  }
 
  .blog-posts hr.blog-post-sep {
- 	margin: 40px 0;
+ 	margin: .7em 0;
  }
 
 

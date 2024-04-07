@@ -1,6 +1,18 @@
  /******************
 	Obradoiro 2023 
 ********************/
+ @font-face {
+ 	font-family: 'FontAwesome';
+ 	src: url('../plugins/fonot-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+ 	src: url('../plugins/fonot-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+ 		url('../plugins/fonot-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+ 		url('../plugins/fonot-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+ 		url('../plugins/fonot-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+ 		url('../plugins/fonot-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
 
 
  /******************
@@ -156,10 +168,41 @@ gris claro {
  .site-logo-2 > img {
  	float: left;
  	width: 7em;
- 	margin-right: 0;
- 	padding-top: 22px;
- 	padding-bottom: 22px;
+ 	margin: 0;
+ 	padding: 1em 0 0em 0;
+ 	/* 	padding-bottom: 22px;*/
  }
+
+
+ .img-inside {
+
+ 	position: absolute;
+ 	top: auto;
+ 	left: 6%;
+
+ 	padding: 0 .2em .2em 0;
+ 	margin: 0 0em 0em 0;
+ 	/* 	transform: translate(50%, 50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 1.5em;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 550;
+ 	text-transform: lowercase;
+ 	/* 	letter-spacing: auto;*/
+ 	text-align: justify;
+ 	color: transparent;
+
+ 	background: url("../../../imaxes/img_rois/rio.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	-webkit-background-clip: text;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+
+ }
+
+
+
 
  /* header */
 
@@ -225,70 +268,6 @@ gris claro {
 
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
 
- .img-inside {
- 	position: absolute;
- 	top: 0%;
- 	left: 5%;
- 	width: 15vw;
- 	/* 	transform: translate(-50%, -50%);*/
- 	text-transform: uppercase;
- 	font-size: 2vw;
- 	font-family: 'Open Sans', sans-serif;
- 	font-weight: bolder;
- 	letter-spacing: auto;
- 	text-align: center;
- 	color: transparent;
- 	background: url("../../../imaxes/Jardin-Botanico.jpg");
- 	background-size: contain;
- 	background-clip: text;
- 	-webkit-background-clip: text;
- 	text-fill-color: transparent;
- 	-webkit-text-fill-color: transparent;
- }
-
- /*
-.img-inside_rois {
-	position: absolute;
-	top: 0%;
-	left: 5%;
-	width: 15vw;
-	text-transform: uppercase;
-	font-size: 2vw;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bolder;
-	letter-spacing: auto;
-	text-align: center;
-	color: transparent;
-	background: url("../../../imaxes/img_rois/rio.jpg");
-	background-size: contain;
-	background-clip: text;
-	-webkit-background-clip: text;
-	text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
-}
-
-.img-inside_padron {
-	position: absolute;
-	top: 10%;
-	left: 15%;
-	width: 25vw;
-	transform: translate(-50%, -50%);
-	text-transform: uppercase;
-	font-size: 5vw;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bolder;
-	letter-spacing: auto;
-	text-align: center;
-	color: transparent;
-	background: url("../../../imaxes/img_padron/xardin2.jpg");
-	background-size: contain;
-	background-clip: text;
-	-webkit-background-clip: text;
-	text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
-	margin: 0 auto;
-}
-*/
 
 
  /* pestañas para info concelo e parroquias */
@@ -413,7 +392,6 @@ gris claro {
  	left: 6%;
  	/* 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);*/
  	mask: linear-gradient(90deg, #0000, #ccc 5% 90%, #0000);
- 	border: 1px solid red;
  }
 
  .carrusel > img {
@@ -824,7 +802,7 @@ gris claro {
  	/* 	background-color: #ccc;*/
  }
 
- .accordion:after {
+ .accordion::after {
  	content: '\002B';
  	color: #e28743;
  	font-size: 1.2em;
@@ -851,6 +829,17 @@ gris claro {
  	margin-right: .5em;
  }
 
+ .acordeon ul {
+ 	list-style-type: none;
+ 	overflow: visible;
+ }
+
+
+ .acordeon ul li {
+ 	border: 1px solid blue;
+ 	margin: 0 0 .2em 0;
+ 	font-weight: 500;
+ }
 
  /* instalacions deportivas tarxetas */
 
@@ -1007,4 +996,30 @@ gris claro {
 
  .cookie img {
  	width: 20%;
+ }
+
+
+ /* SIDEBAR */
+
+
+ .blog-sidebar {
+ 	margin: 0 auto;
+ 	padding: 0;
+ 	text-align: center;
+ }
+
+ .blog-sidebar .blog-posts {
+ 	width: 100%;
+ 	text-align: center;
+ }
+
+ .blog-sidebar .sidebar-element {
+ 	width: 100%;
+ 	margin: 0 auto;
+ }
+
+ .blog-sidebar img {
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	display: block;
  }
