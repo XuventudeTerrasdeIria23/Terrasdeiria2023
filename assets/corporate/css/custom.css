@@ -628,6 +628,13 @@ gris claro {
 	 
 }
 */
+ #map [p] {}
+
+
+ #map p {
+ 	font-weight: 600;
+ 	font-size: 1.2em;
+ }
 
  /******** contenedor galeria *********/
 
