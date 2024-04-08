@@ -655,6 +655,8 @@ gris claro {
  	height: auto;
  }
 
+
+
  /******** dialog, pop-up box,  MODAL *********/
 
  dialog::backdrop {
@@ -843,7 +845,6 @@ gris claro {
 
 
  .acordeon ul li {
- 	border: 1px solid blue;
  	margin: 0 0 .2em 0;
  	font-weight: 500;
  }
@@ -858,7 +859,6 @@ gris claro {
  	justify-content: space-around;
  	align-content: stretch;
  	margin: 0;
- 	border: 1px solid blue;
  }
 
  .container-cards .card {
