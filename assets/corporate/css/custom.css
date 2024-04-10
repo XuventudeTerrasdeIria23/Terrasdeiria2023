@@ -93,6 +93,12 @@ gris claro {
  	font-style: italic;
  }
 
+ /* boton subbir */
+ .softr-back-to-top-button {
+ 	border-radius: 50%;
+ 	border: 1px solid blue;
+ }
+
  /* todas las animaciones pausadas */
  .paused * {
  	animation-play-state: paused;
@@ -100,11 +106,12 @@ gris claro {
 
  /* submenus */
 
+
  .dropdown-menu .dropdown-submenu {
  	display: none;
  	/* 	position: absolute;
  	*/
- 	left: 0%;
+ 	left: 0px;
  	top: 0px;
 
  }
@@ -112,6 +119,8 @@ gris claro {
  .dropdown-menu > li:hover > .dropdown-submenu {
  	display: block;
  }
+
+ .pull-right .dropdown-submenu {}
 
  .dropdown-item > i {
  	font-size: .7em;
@@ -162,6 +171,23 @@ gris claro {
  	-moz-transform: scale(1.7);
  	-webkit-transform: scale(1.7);
  	transform: scale(1.7);
+ }
+
+ .img-zoom-tracks {
+ 	background: white;
+ 	padding: 1em;
+ 	-moz-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	-webkit-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
+ 	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1);
+ }
+
+ .img-zoom-tracks:hover {
+
+ 	-moz-transform: scale(1.2);
+ 	-webkit-transform: scale(1.2);
+ 	transform: scale(1.2);
+
  }
 
  /* LOGO */
@@ -589,51 +615,108 @@ gris claro {
 
  /* MAPAS    estilo  mapas *********/
 
+ .mapa-noso {
+ 	border: 1px solid blue;
+ 	height: auto;
+ 	width: 90vw;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: flex-start;
+ 	flex-wrap: wrap;
+ }
+
  #map {
- 	height: 75vh;
- 	width: 85vw;
+ 	height: 80vh;
+ 	width: 80vw;
  	margin: 0;
  	padding: 0;
  	/* 	box-sizing: border-box;*/
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
  	box-shadow: 0px 5px 8px 5px #ccc;
+ }
+
+
+
+ #gmap_div {
+ 	height: 50vh;
+ 	width: 80vw;
+ 	text-align: center;
+ 	margin: 0 2em;
+ 	float: left;
+ 	border: 1px solid red;
 
  }
 
- /*
-#map bindPopup {
+ #gmap_div .gv_label {
+ 	opacity: 0.90;
+ 	filter: alpha(opacity=100);
+ 	color: white;
+ 	background: #333333;
+ 	border: 1px solid black;
+ 	padding: 1px;
+ 	font-family: Verdana !important;
+ 	font-size: 10px;
+ 	font-weight: normal !important;
+ }
 
-	background: red;
-	width: 600px;
-	height: 200px;
-	overflow-y: scroll;
-	box-shadow: 0px 2px 5px 2px #3f5862;
-}*/
- /*
-#map .img-bindPopup {
-	width: 100%;
-	padding: 0;
-	color: #000;
-	box-shadow: 0px 2px 5px 2px #3f5862;
-}*/
+ #gmap_div #legend_block {
+ 	display: inline-block;
+ 	border: solid 1px black;
+ 	width: 0px;
+ 	height: 9px;
+ 	margin: 0px 2px 0px 0px;
+ }
 
+ #gmap_div #gv_infobox {
+ 	/* leyenda altitud */
+ 	font: 1.5em 'Open Sans', sans-serif;
+ 	border: solid #ccc 1px;
+ 	background-color: #ffffff;
+ 	padding: .5em;
+ 	overflow: auto;
+ }
 
- /*
-#gmap_div {
-	height: 90vh !important;
-	width: 80vw !important;
-	text-align: center;
-	margin: 5em;
-	 
-}
-*/
+ #gv_tracklist {}
+
+ #gv_marker_list {
+ 	font: 1.2 em 'Open Sans', sans-serif;
+ 	line-height: auto;
+ 	background-color: beige;
+ 	overflow: visible;
+ 	padding: 1em;
+ 	box-shadow: 1px 1px 2px 2px #ccc;
+ 	border: 1px solid #ccc;
+ }
+
  #map [p] {}
 
 
- #map p {
+ #map p,
+ #gmap_div p {
  	font-weight: 600;
  	font-size: 1.2em;
+ }
+
+ #gv_credit.leaflet-control {
+ 	font-size: 1em;
+ 	background: beige;
+ 	margin: 2em;
+
+ 	/* 	border: 1px solid red;*/
+ }
+
+ #gv_credit.leaflet-control a {
+ 	/* 	border: 1px solid blue;*/
+ 	font-size: auto;
+ 	pointer-events: none;
+ }
+
+ .leaflet-control-attribution::after {
+ 	/* 	display: none;*/
+ 	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois) ";
+
+
  }
 
  /******** contenedor galeria *********/
@@ -1029,4 +1112,55 @@ gris claro {
  	width: 60%;
  	margin: 0 auto;
  	display: block;
+ }
+
+
+ /* listas */
+ ul.listas-anidadas {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	width: auto;
+ 	border: 1px solid blue;
+ }
+
+ .listas-anidadas li {
+ 	margin: 0 0 .2em 0;
+ }
+
+ .listas-anidadas li > ul {
+ 	/* 	list-style-type: none;*/
+ 	margin: 0 .1em 0 .1em;
+ 	padding: 0em;
+ 	height: 100%;
+ 	font-weight: normal;
+ 	/* 	border: 1px solid red;*/
+
+ }
+
+ .listas-anidadas li ul li::before {
+ 	/*
+ 	content: '*';
+ 	margin: 0 .2em 0 0;
+ 	color: rgb(226, 135, 67);
+ 	float: left;
+*/
+ }
+
+ .listas-anidadas li ul li {
+ 	/*
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: .2em;
+ 	width: 100%;
+ 	font-weight: normal;
+ 	float: left;
+*/
+ 	/* 	border: 1px solid blue;*/
+ }
+
+ .newline {
+ 	display: block;
+ 	text-indent: none;
+ 	margin: 0 0 0 1em;
  }
