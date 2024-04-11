@@ -31,7 +31,7 @@ ocre{
 	color:  #e28743;
 	color: rgb(226, 135, 67)
  }
-
+red{ color: #e6400c;}
 gris{
 	 	color: #3f5862;
 	color: rgb(63, 88, 98)
@@ -705,10 +705,7 @@ gris claro {
  }
 
  #gv_maptype_selector {
-
-
  	border: 2px solid red;
-
 
  }
 
@@ -729,30 +726,31 @@ gris claro {
  	font-size: 1.2em;
  }
 
- #gv_credit.leaflet-control {
- 	font-size: 1em;
- 	background: beige;
- 	margin: 2em;
+ .leaflet-control-attribution::after {
+ 	/* 	display: none;*/
+ 	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois) ";
+ 	color: #e6400c;
+ 	font-weight: bold;
+ }
 
+
+ .leaflet-bottom #gv_credit,
+ .leaflet-bottom #gv_credit a,
+ .leaflet-control-attribution,
+ .leaflet-control-attribution a {
+ 	font-size: 1.1em;
+ 	font-weight: normal !important;
+ 	/* 	display: none;*/
+ 	/* 	border: 2px solid red;*/
+
+
+ 	background: beige;
+ 	margin: 1em;
  	/* 	border: 1px solid red;*/
  }
 
  #gv_credit.leaflet-control a {
- 	/* 	border: 1px solid blue;*/
- 	font-size: auto;
  	pointer-events: none;
- }
-
- .leaflet-control-attribution::after {
- 	/* 	display: none;*/
- 	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois) ";
-
- }
-
- .leaflet-bottom #gv_credit,
- .leaflet-control-attribution {
- 	font-size: 1.2em;
- 	/* 	display: none;*/
  }
 
  /******** contenedor galeria *********/
