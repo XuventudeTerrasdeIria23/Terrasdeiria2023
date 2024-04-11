@@ -96,7 +96,6 @@ gris claro {
  /* boton subbir */
  .softr-back-to-top-button {
  	border-radius: 50%;
- 	border: 1px solid blue;
  }
 
  /* todas las animaciones pausadas */
@@ -615,16 +614,6 @@ gris claro {
 
  /* MAPAS    estilo  mapas *********/
 
- .mapa-noso {
- 	border: 1px solid blue;
- 	height: auto;
- 	width: 90vw;
- 	display: flex;
- 	justify-content: center;
- 	align-items: flex-start;
- 	flex-wrap: wrap;
- }
-
  #map {
  	height: 80vh;
  	width: 80vw;
@@ -636,16 +625,29 @@ gris claro {
  	box-shadow: 0px 5px 8px 5px #ccc;
  }
 
-
-
  #gmap_div {
  	height: 50vh;
- 	width: 80vw;
+ 	width: auto;
  	text-align: center;
  	margin: 0 2em;
- 	float: left;
- 	border: 1px solid red;
+ 	background: transparent;
+ 	color: #3f5862;
+ }
 
+ #mapa-noso > div {
+ 	height: auto;
+ 	width: auto;
+ 	float: left;
+ }
+
+ #mapa-noso #gmap_div {
+ 	height: auto;
+ 	width: 100%;
+ 	background: transparent !important;
+ 	color display: flex;
+ 	justify-content: flex-start;
+ 	align-items: flex-start;
+ 	flex-wrap: wrap;
  }
 
  #gmap_div .gv_label {
@@ -653,31 +655,31 @@ gris claro {
  	filter: alpha(opacity=100);
  	color: white;
  	background: #333333;
- 	border: 1px solid black;
  	padding: 1px;
- 	font-family: Verdana !important;
- 	font-size: 10px;
  	font-weight: normal !important;
  }
 
  #gmap_div #legend_block {
- 	display: inline-block;
- 	border: solid 1px black;
  	width: 0px;
  	height: 9px;
  	margin: 0px 2px 0px 0px;
+ 	font: 1.5em'Open Sans', sans-serif;
  }
+
 
  #gmap_div #gv_infobox {
- 	/* leyenda altitud */
+ 	/* cadro lenda altitud */
  	font: 1.5em 'Open Sans', sans-serif;
  	border: solid #ccc 1px;
- 	background-color: #ffffff;
+ 	background-color: beige;
  	padding: .5em;
  	overflow: auto;
+
  }
 
- #gv_tracklist {}
+ #gv_tracklist {
+ 	color: #3f5862;
+ }
 
  #gv_marker_list {
  	font: 1.2 em 'Open Sans', sans-serif;
@@ -687,6 +689,18 @@ gris claro {
  	padding: 1em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
+ 	float: right;
+ }
+
+ #gv_utilities_button {}
+
+ .leaflet-control-zoom-out,
+ .leaflet-control-zoom-in,
+ .leaflet-control-zoom {
+ 	visibility: hidden;
+ 	border: 0px solid transparent;
+ 	outline: none;
+
  }
 
  #map [p] {}
@@ -1121,7 +1135,7 @@ gris claro {
  	margin: 0;
  	padding: 0;
  	width: auto;
- 	border: 1px solid blue;
+ 	/* 	border: 1px solid blue;*/
  }
 
  .listas-anidadas li {
@@ -1156,7 +1170,6 @@ gris claro {
  	font-weight: normal;
  	float: left;
 */
- 	/* 	border: 1px solid blue;*/
  }
 
  .newline {
