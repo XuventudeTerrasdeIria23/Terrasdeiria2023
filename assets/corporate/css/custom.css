@@ -246,11 +246,14 @@ gris claro {
  	width: auto;
  }
 
+ /*
+
  #header-mapa-concello {
  	float: left;
  	width: 10em;
  	filter: grayscale(50%);
  }
+*/
 
  /*fontes */
  .negrita {
@@ -799,7 +802,6 @@ gris claro {
  	border: none;
  	border-radius: .5em;
  	box-shadow: 3px 3px 3px #7C858E80;
-
  	transition: ease-out 0.4s;
  }
 
@@ -866,8 +868,7 @@ gris claro {
  	visibility: hidden;
  	opacity: 0;
  	border-radius: .5em !important;
- 	transition: ease-out 0.4s;
- }
+ 	transition: ease-out 0.4s; }
 
  .modal p {
  	font-size: 1em;
