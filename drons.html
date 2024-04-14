@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="gl">
-
 
 <!-- Head INICIO -->
 
@@ -36,7 +34,7 @@
 	<link href="assets/pages/css/components.css" rel="stylesheet">
 	<link href="assets/corporate/css/style.css" rel="stylesheet">
 	<link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-	<link href="assets/corporate/css/themes/red.css" rel="stylesheet">
+	<link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
 	<link href="assets/corporate/css/custom.css" rel="stylesheet">
 
 	<!--  Estilos FIN -->
@@ -51,7 +49,7 @@
 <body class="corporate">
 	<!-- header INICIO -->
 	<div class="header">
-		<h1 class="img-inside" href="#" title="Terras de Iria">Terras de Iria
+		<h1 class="img-inside img-shadow" href="#" title="Terras de Iria">Terras de Iria
 		</h1>
 		<div class="container">
 			<a class="site-logo-2" href="index.html" data-title="Inicio">
@@ -73,8 +71,8 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="RedNatura_flora.html">Red Natura 2000</a></li>
-							<li><a href="Flora/Mapa_Flora_plantilla.html">Mapa</a></li>
-							<li><a href="Flora/galeria_flores.html">Flores</a></li>
+							<li><a href="Flora/Mapa_Flora_plantilla2.html">Mapa</a></li>
+							<li><a href="Flora/galeria_flores2.html">Flores</a></li>
 							<li><a href="#">Árbores</a></li>
 							<li><a href="#">Arbustos</a></li>
 							<li><a href="#">Liquens</a></li>
@@ -90,8 +88,8 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="RedNatura_fauna.html">Red Natura 2000</a></li>
-							<li><a href="Fauna/Mapa_Fauna_plantilla.html">Mapa</a></li>
-							<li><a href="Fauna/Galeria_Fauna_plantilla.html">Aves</a></li>
+							<li><a href="Fauna/Mapa_Fauna_plantilla.htm2l">Mapa</a></li>
+							<li><a href="Fauna/Galeria_Fauna_plantilla2.html">Aves</a></li>
 							<li><a href="#">Mamíferos</a></li>
 							<li><a href="#">Peixes</a></li>
 							<li><a href="#">Reptís</a></li>
@@ -106,9 +104,9 @@
 							Dróns
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Primeiros pasos</a></li>
+							<li><a href="#">Clasificación</a></li>
 							<li><a href="#">Lexislación</a></li>
-							<li><a href="#">Plans de voo</a></li>
+							<li><a href="#">Plan de voo</a></li>
 							<li><a href="#">Sitios de interese <span></span></a>
 								<ul class="dropdown-menu dropdown-submenu">
 									<li><a class="dropdown-item" href="#">Dodro</a></li>
@@ -145,7 +143,7 @@
 					<!-- menu en bici fin -->
 					<!-- menu deportes inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="deporte.html">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 							Deporte
 						</a>
 						<ul class="dropdown-menu">
@@ -157,20 +155,17 @@
 							</li>
 							<li><a class="dropdown-item" href="#">Padrón <span></span> </a>
 								<ul class="dropdown-menu dropdown-submenu">
-									<li><a class="dropdown-item" href="Deporte/Padron/inventario_deporte_DODROpadron.html">inventario</a></li>
-									<li><a class="dropdown-item" href="Deporte/Padron/Padron_deporte.html">Mapa</a></li>
+									<li><a class="dropdown-item" href="../Padron/inventario_deporte_DODROpadron.html">inventario</a></li>
+									<li><a class="dropdown-item" href="../Padron/Padron_deporte.html">Mapa</a></li>
 								</ul>
 							</li>
 							<li><a class="dropdown-item" href="#">Rois <span></span> </a>
 								<ul class="dropdown-menu dropdown-submenu">
-									<li><a class="dropdown-item" href="Deporte/Rois/mapas_pistas_deportivas_rois.html">inventario</a></li>
-									<li><a class="dropdown-item" href="Deporte/Rois/Rois_deportes.html">Mapa</a></li>
+									<li><a class="dropdown-item" href="../Rois/mapas_pistas_deportivas_rois.html">inventario</a></li>
+									<li><a class="dropdown-item" href="../Rois/Rois_deportes.html">Mapa</a></li>
 								</ul>
 							</li>
-
-
 						</ul>
-
 					</li>
 					<!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
@@ -204,99 +199,120 @@
 
 	<div class="main">
 		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="index.html">Inicio</a></li>
+				<li class="active">Dróns</li>
+			</ul>
+
+			<!-- Contido INICIO -->
 			<div class="row margin-bottom-40">
 				<!-- BEGIN CONTENT -->
-				<div class="content-page">
-					<div class="row">
-						<!-- Bloques INICIO -->
-						<div class="col-md-12 col-sm-12">
-							<div class="row margin-bottom-20">
-								<!-- flora -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1 animated slideInLeft">
-										<div class="center">
-											<img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_flora.png">
-											<a href="RedNatura_flora.html">
-												<h2>FLORA</h2>
-												<p>A nosa flora ó amparo da Rede Natura 2000</p>
+				<div class="col-md-12 col-sm-12">
+					<h2>Dróns</h2>
+					<div class="content-page">
+
+						<!-- bloques concellos INICIO -->
+						<div class="col-md-12 col-sm-12 margin-bottom-20  block-center">
+							<!-- dodro -->
+							<div class="col-md-3 col-sm-3 animated fadeInDown">
+								<div class="service-box-v2 animated slideInLeft">
+									<a href="#">
+										<h2>Dodro <i class="fa fa-leaf verde"></i> </h2>
+									</a>
+								</div>
+							</div>
+							<!-- padrón -->
+							<div class="col-md-3 col-sm-3 animated fadeInDown">
+								<div class="service-box-v2 animated  slideInLeft">
+									<a href="RedNatura_fauna.html">
+										<h2>Padrón <i class="fa fa-leaf verde"></i> </h2>
+									</a>
+								</div>
+							</div>
+							<!-- rois -->
+							<div class="col-md-3 col-sm-3 animated fadeInDown">
+								<div class="service-box-v2 animated  slideInRight">
+									<h2>Rois <i class="fa fa-leaf verde"></i> </h2>
+								</div>
+							</div>
+						</div>
+						<!-- bloques concellos FIN -->
+						<div class="row">
+							<div class="col-md-10 col-sm-10">
+								<h3>Os dróns </h3>
+								<p>Un Vehículo Aéreo Non Tripulado (VANT), UAV (do inglés Unmanned Aerial Vehicle), máis apropiadamente RPAS (do inglés Remotely Piloted Aircraft System), comunmente coñecido como dron</p>
+							</div>
+
+						</div>
+
+						<!-- pestanas INICIO -->
+						<div class="row">
+							<div class="col-md-12 col-sm-12  tab-style-1">
+								<ul class="nav nav-tabs">
+
+									<li class="active"><a data-toggle="tab" href="#tab-1">Clasificación segundo a súa misión</a></li>
+									<li class=""><a data-toggle="tab" href="#tab-2">Clasificación segundo o peso</a></li>
+								</ul>
+								<div class="tab-content">
+									<!-- ****tab-1***** -->
+									<div id="tab-1" class="tab-pane row fade active in">
+										<div class="col-md-3 col-sm-3">
+											<a data-rel="fancybox-button" title="imaxe de drón" class="fancybox-button" href="imaxes/drons/dron1.jpg">
+												<img alt="imaxe de drón" src="imaxes/drons/dron1.jpg" class="img-responsive">
 											</a>
 										</div>
+										<div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
+											<div class="listas-anidadas  margin-bottom-10">
+
+												<ul>
+													<li><span class="negrita">Blanco:</span> serven para simular avións ou ataques inimigos nos sistemas de defensa de terra ou aire.</li>
+													<li><span class="negrita">Recoñecemento aéreo:</span> enviando información militar. Entre estes destacan os MAV (Micro unmanned Aerial Vehicle) de tipo avión ou helicóptero.</li>
+													<li><span class="negrita">Combate (UCAV):</span> para combater e levar a cabo misións que adoitan ser moi perigosas.</li>
+													<li><span class="negrita">Loxística militar:</span> deseñados para levar carga.
+														Investigación e desenvolvemento: neles próbanse e investigan os sistemas en desenvolvemento.</li>
+													<li><span class="negrita">UAV comerciais e civís:</span> son deseñados para propósitos civís, realizar filmacións, tomar imaxes e purificar o aire (ZED CORP).</li>
+
+												</ul>
+
+
+											</div>
+										</div>
 									</div>
-								</div>
-								<!-- fauna -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1 animated  slideInLeft">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_fauna.png"></div>
-										<a href="RedNatura_fauna.html">
-											<h2>FAUNA</h2>
-											<p>Coñece a fauna que habita no noso territorio</p>
-										</a>
+									<!-- ****tab-2***** -->
+									<div id="tab-2" class="tab-pane row fade in">
+										<div class="col-md-3 col-sm-3">
+											<a data-rel="fancybox-button" title="imaxe de drón" class="fancybox-button" href="imaxes/drons/dron2.jpg">
+												<img alt="imaxe de drón" src="imaxes/drons/dron2.jpg" class="img-responsive">
+											</a>
+										</div>
+										<div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
+											<div class="listas-anidadas margin-bottom-10">
+												<p>En función do seu peso, os drons poden clasificarse en cinco categorías:</p>
+												<ul>
+													<li><span class="negrita">Nano (cun peso de ata 250 g)</span> </li>
+													<li><span class="negrita">Microvehículos aéreos (MAV) (250 g - 2 kg)</span> </li>
+													<li><span class="negrita">Vehículos aéreos non tripulados en miniatura ou pequenos (SUAV) (2-25 kg)</span> </li>
+													<li><span class="negrita">Medianos (25-150 kg)</span> </li>
+													<li><span class="negrita">Grandes (máis de 150 kg)</span> </li>
+												</ul>
+
+
+											</div>
+										</div>
 									</div>
-								</div>
-								<!-- dróns -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1 animated  slideInRight">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_dron.png"></div>
-										<a href="drons.html">
-											<h2>DRÓNS</h2>
-											<p>Visita terras de Iria a vista de drón. Información sobre estes UAVs</p>
-										</a>
-									</div>
-								</div>
-								<!-- deporte -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1  animated  slideInRight">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_deporte.png"></div>
-										<a href="deporte.html">
-											<h2>DEPORTE</h2>
-											<p>Atopa informacion das instalacións deportivas.</p>
-										</a>
-									</div>
+									<!-- ****tab-3***** -->
+
+									<!-- ****tab-4***** -->
+
+									<!-- ****tab-5***** -->
+
+
 								</div>
 							</div>
+							<!-- pestanas INICIO -->
+							<p class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Veh%C3%ADculo_a%C3%A9reo_no_tripulado">wikipedia</a> | <a href="https://pixabay.com/">pixabay</a>
+							</p>
 						</div>
-
-						<div class="col-md-12 col-sm-12">
-							<div class="row margin-bottom-20">
-								<!-- rutas -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1  animated  slideInLeft">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_rutas.png"></div>
-										<a href="rutas.html">
-											<h2>RUTAS</h2>
-											<p>Roteiros a pe que podemos desfrutar nos nosos concellos</p>
-										</a>
-									</div>
-								</div>
-								<!-- bicis -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1  animated  slideInLeft">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_rutas.png"></div>
-										<h2>Bicicleta</h2>
-										<p>Roteiros en bici que podemos desfrutar nos nosos concellos</p>
-									</div>
-								</div>
-
-								<!-- lecer -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1  animated  slideInRight">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_lecer.png"></div>
-										<h2>LECER</h2>
-										<p>Atopa festas, festivais, e moito máis nas terras de Iria</p>
-									</div>
-								</div>
-								<!-- actividades -->
-								<div class="col-md-3 col-sm-3 animated fadeInDown">
-									<div class="service-box-v1 animated  slideInRight">
-										<div class="center"><img class="img-responsive img-medium" src="imaxes/iconos/icon_inicio_actividad.png"></div>
-										<h2>ACTIVIDADES</h2>
-										<p>Xogos e arquivos descargables en formato pdf</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- Bloques FIN -->
 					</div>
 				</div>
 			</div>
@@ -363,6 +379,8 @@
 
 	</script>
 	<!--  JAVASCRIPTS  FIN -->
+
 </body>
+<!-- END BODY -->
 
 </html>
