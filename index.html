@@ -25,6 +25,8 @@
 	<link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
 	<link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
 	<link href="assets/corporate/css/custom.css" rel="stylesheet">
+	<link href="assets/corporate/css/cookies.css" rel="stylesheet">
+
 	<!--  Estilos FIN -->
 	<!-- Etiquetas META INICIO -->
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -41,6 +43,16 @@
 	<title>Xuventude Terra de Iria 2023</title>
 
 	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- SCRIPT CONTROL DE COOKIES -->
+	<script type="text/javascript">
+		function controlcookies() {
+			// si variable no existe se crea (al clicar en Aceptar)
+			localStorage.controlcookie = (localStorage.controlcookie || 0);
+			localStorage.controlcookie++; // incrementamos cuenta de la cookie
+			cookie1.style.display = 'none'; // Esconde la política de cookies
+		}
+	</script>
 </head>
 
 <!-- Head FIN -->
@@ -116,6 +128,23 @@
 				</div>
 			</div>
 		</div>
+		<!--Código HTML de la política de cookies -->
+
+		<!--La URL incluida es la parte que se ha de modificar -->
+
+		<div class="cookiesms" id="cookie1">
+			Esta web utiliza cookies, para ver a política de cookies, prema <a href="tu-url-donde-explicas-la-politica-de-cookies">aquí</a>
+			Si continua navegando estará aceptándoa
+			<button onclick="controlcookies()">Aceptar</button>
+			<div class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+		</div>
+		<script type="text/javascript">
+			if (localStorage.controlcookie > 0) {
+				document.getElementById('cookie1').style.bottom = '-50px';
+			}
+		</script>
+
+		<!-- Fin del código de cookies --->
 	</section>
 	<!-- INICIO footer -->
 	<footer class="footer-light paused">
