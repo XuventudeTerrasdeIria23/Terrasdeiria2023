@@ -714,7 +714,7 @@ gris claro {
  	font: 1em 'Open Sans', sans-serif;
  	line-height: auto;
  	background-color: beige;
- 	width: 20vw !important;
+ 	width: auto !important;
  	height: 100vh;
  	padding: .2em;
  	box-shadow: 1px 1px 2px 2px #ccc;
