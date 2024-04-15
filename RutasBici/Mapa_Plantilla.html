@@ -210,9 +210,11 @@
 			<!--  Contido INICIO -->
 			<div class="row margin-bottom-40">
 				<!-- BEGIN CONTENT -->
-				<div class="col-md-12 col-sm-12  col-md-12 col-sm-12">
-					<div class="content-page">
+				<div class="content-page">
+
+					<div class="col-md-12 col-sm-12">
 						<h2>Mapa de ..... </h2>
+						<!-- empeza mapa -->
 						<div id="mapa-noso" class="margin-bottom-40">
 							<script type="text/javascript">
 								API = 'leaflet'; // can be either 'leaflet' or 'google'
@@ -319,14 +321,14 @@
 								gv_options.map_type_control.excluded = []; // comma-separated list of quoted map IDs that will never show in the list ('included' also works)
 								gv_options.map_type_control.included = ['GV_MAP', 'GV_HYBRID', 'GV_OSM', 'GV_TOPO', 'G_PHYSICAL_MAP', 'GV_PHYSICAL', 'GV_TERRAIN', 'G_SATELLITE_MAP', 'GV_AERIAL', 'GV_SATELLITE']; // Susi - elexir os mapas que funcionan  
 								gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
-								gv_options.measurement_tools = false; // true|false: put a measurement ruler on the map?
+								gv_options.measurement_tools = false; //Susi true|false: put a measurement ruler on the map?
 								gv_options.measurement_options = {
 									visible: false,
 									distance_color: '',
 									area_color: ''
 								};
-								gv_options.crosshair_hidden = false; // true|false: hide the crosshair initially?
-								gv_options.mouse_coordinates = false; // true|false: show a "mouse coordinates" box?
+								gv_options.crosshair_hidden = true; // Susi true|false: hide the crosshair initially?
+								gv_options.mouse_coordinates = true; // Susi true|false: show a "mouse coordinates" box?
 								gv_options.utilities_menu = { // Susi non vemos opcions do menu
 									'maptype': true,
 									'opacity': false,
@@ -348,7 +350,7 @@
 								// track-related options:
 								gv_options.track_optimization = 1; // sets Leaflet's smoothFactor parameter
 								gv_options.track_tooltips = false; // true|false: should the name of a track appear on the map when you mouse over the track itself?
-								gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
+								gv_options.marker_list_options = {}; //Susi lista de waypoints options for a dynamically-created list of markers
 								gv_options.tracklist_options.enabled = true; // true|false: enable or disable the tracklist altogether
 								gv_options.tracklist_options.position = ['LEFT_TOP', 10, 10]; // [Google anchor name, relative x, relative y]
 								gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
@@ -415,7 +417,7 @@
 								gv_options.marker_list_options.include_trackpoints = false; // true|false: are "trackpoint" markers included in the list?
 								gv_options.marker_list_options.dividers = true; // true|false: will a thin line be drawn between each item in the list?
 								gv_options.marker_list_options.desc = false; // para non ver no panel dereito dos points o contido da descripcion true|false: will the markers' descriptions be shown below their names in the list?
-								gv_options.marker_list_options.icons = false; // true|false: should the markers' icons appear to the left of their names in the list?
+								gv_options.marker_list_options.icons = false; // Susi. quitar icoonos da lista true|false: should the markers' icons appear to the left of their names in the list?
 								gv_options.marker_list_options.icon_scale = 'x1'; // size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
 								gv_options.marker_list_options.thumbnails = false; // true|false: should markers' thumbnails be shown in the list?
 								gv_options.marker_list_options.folders_collapsed = false; // true|false: do folders in the list start out in a collapsed state?

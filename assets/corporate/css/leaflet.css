@@ -18,7 +18,7 @@
 .leaflet-container {
 	overflow: hidden;
 	width: auto;
-/*	border: 2px solid red;*/
+	/*	border: 2px solid red;*/
 }
 
 .leaflet-tile,

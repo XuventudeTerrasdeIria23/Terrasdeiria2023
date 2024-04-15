@@ -116,7 +116,7 @@ gris claro {
 
  .dropdown-menu > li:hover > .dropdown-submenu {
  	display: block;
- 	z-index: 999999999999999999999999999 !important;
+ 	/* 	z-index: 999999999999999999999999999 !important;*/
 
  }
 
@@ -175,19 +175,20 @@ gris claro {
 
  .img-zoom-tracks {
  	background: white;
- 	padding: 1em;
- 	-moz-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
- 	-webkit-box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
- 	box-shadow: 0px 0px 5px #ccc inset, 7px 12px 7px #ccc;
- 	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1);
+ 	padding: .7em .7em 2em .7em;
+ 	-moz-box-shadow: 3px 5px 2px #ccc;
+ 	-webkit-box-shadow: 3px 5px 2px #ccc;
+ 	box-shadow: 3px 5px 2px #ccc;
+ 	/* 	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1);*/
  }
 
  .img-zoom-tracks:hover {
-
  	-moz-transform: scale(1.2);
  	-webkit-transform: scale(1.2);
  	transform: scale(1.2);
-
+ 	-moz-box-shadow: 5px 7px 2px #ccc;
+ 	-webkit-box-shadow: 5px 7px 2px #ccc;
+ 	box-shadow: 5px 7px 2px #ccc;
  }
 
  /* LOGO */
@@ -615,7 +616,6 @@ gris claro {
  /* fin FOOTER index */
  /* footer sitio */
 
-
  /* MAPAS    estilo  mapas *********/
 
  #map {
@@ -630,7 +630,7 @@ gris claro {
  }
 
  #gmap_div {
- 	height: 50vh;
+ 	height: 60vh;
  	width: auto;
  	text-align: center;
  	margin: 0 3em;
@@ -639,24 +639,29 @@ gris claro {
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
  	box-shadow: 0px 5px 8px 5px #ccc;
-
  }
 
- #mapa-noso > div {
+ #map p,
+ #gmap_div p {
+ 	font-weight: 600;
+ 	font-size: 1.2em;
+ }
+
+ #mapa-noso {
  	height: auto;
- 	width: auto;
+ 	width: 100%;
  	float: left;
- 	z-index: 9 !important
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: center;
+ 	margin-bottom: 1em;
  }
+
 
  #mapa-noso #gmap_div {
  	height: auto;
- 	width: 100%;
+ 	width: 70vw !important;
  	background: transparent !important;
- 	color display: flex;
- 	justify-content: flex-start;
- 	align-items: flex-start;
- 	flex-wrap: wrap;
  }
 
  #gmap_div .gv_label {
@@ -673,9 +678,7 @@ gris claro {
  	height: 9px;
  	margin: 0px 2px 0px 0px;
  	font: 1.5em'Open Sans', sans-serif;
- 	border: 2px solid red;
  }
-
 
  #gmap_div #gv_infobox {
  	/* cadro lenda altitud */
@@ -684,58 +687,133 @@ gris claro {
  	background-color: beige;
  	padding: .5em;
  	overflow: auto;
-
  }
 
- #gv_tracklist {
- 	color: #3f5862;
+ #gmap_div #gv_tracklist {
+ 	/* cadrocheckbox nome do mapa */
+ 	color: #3f5862 !important;
+ 	background: beige;
+ 	overflow: visible;
+ 	font-size: 2em;
+ 	text-align: left;
+ }
+
+ #gv_tracklist header {
+ 	/* cabeceira do checkbox nome do mapa */
+ 	color: #3f5862 !important;
+ 	font-size: 2em;
+ }
+
+ #gv_tracklist .gv_tracklist_item_name span {
+ 	/* texto do checkbox nome do mapa */
+ 	color: #3f5862 !important;
  }
 
  #gv_marker_list {
- 	font: 1.2 em 'Open Sans', sans-serif;
+ 	/* listado dos marcadores flotado á dereita */
+ 	font: 1em 'Open Sans', sans-serif;
  	line-height: auto;
  	background-color: beige;
- 	overflow: visible;
- 	padding: 1em;
+ 	width: 20vw !important;
+ 	height: 100vh;
+ 	padding: .2em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
- 	float: right;
+ 	overflow: visible !important;
+ 	display: inline !important;
+
+ }
+
+ #gv_marker_list table {
+ 	display: inline-block;
+ 	width: 100%;
+ 	/* listado dos marcadores flotado á dereita */
+
+ 	border: 1px solid red;
+ }
+
+
+ #gv_marker_list_header::before {
+ 	content: 'Listado de puntos';
+ 	font: 1.2em 'Open Sans', sans-serif;
+ 	padding: inherit;
+ }
+
+ #mapa-noso > div {
+
+ 	/* 	float: left;*/
+ 	z-index: 9 !important
  }
 
  #gv_utilities_button {
- 	border: 2px solid blue;
-
+ 	/* botón selección opcións desplegable no mapa á dereita */
  }
 
  #gv_maptype_selector {
- 	border: 2px solid red;
-
+ 	/* botón selección mapa de fondo desplegable no mapa á dereita */
  }
+
 
  .leaflet-control-zoom-out,
  .leaflet-control-zoom-in,
  .leaflet-control-zoom {
+ 	/* ocultamos as barras de zoom */
  	visibility: hidden;
  	border: 0px solid transparent;
  	outline: none;
  }
 
- #map [p] {}
+ .leaflet-popup-content {
+ 	/*  pop-ups do  mapa */
+ 	width: 20vw;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	align-content: center;
+ 	align-items: stretch;
+ 	flex: 1;
+ 	flex-wrap: wrap;
+ 	overflow: visible !important;
+ }
 
+ .gv_marker_info_window img {
+ 	/* imaxes do pop-up */
+ 	width: 20vw;
+ 	display: block;
+ }
 
- #map p,
- #gmap_div p {
- 	font-weight: 600;
- 	font-size: 1.2em;
+ .gv_marker_info_window a {
+ 	/* imaxes do pop-up */
+ 	color: #3f5862 !important;
+ 	padding: .5em;
+ 	display: block;
+ }
+
+ display: block;
+
+ .gv_marker_info_window a:hover {
+ 	/* imaxes do pop-up */
+ 	background: #e28743;
+ 	color: white !important;
+ }
+
+ .gv_crosshair {
+ 	/* 	border: 1px solid blue;*/
+ }
+
+ /* creditos do mapa, footer do mapa */
+ #mapa-noso .leaflet-control-attribution,
+ #mapa-noso #gv_credit {
+ 	/* 	border: 1px solid blue;*/
  }
 
  .leaflet-control-attribution::after {
+ 	/* colocamos no pe do mapa o noso nome */
  	/* 	display: none;*/
  	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois) ";
  	color: #e6400c;
  	font-weight: bold;
  }
-
 
  .leaflet-bottom #gv_credit,
  .leaflet-bottom #gv_credit a,
@@ -744,16 +822,21 @@ gris claro {
  	font-size: 1.1em;
  	font-weight: normal !important;
  	/* 	display: none;*/
- 	/* 	border: 2px solid red;*/
-
-
  	background: beige;
  	margin: 1em;
- 	/* 	border: 1px solid red;*/
+
  }
 
  #gv_credit.leaflet-control a {
  	pointer-events: none;
+ }
+
+ #gv_mouse_coordinates,
+ #gv_center_coordinates,
+ #gv_scale_control {
+
+ 	/* non vemos as caixas de mouse estarían situadas bottom left */
+ 	display: none;
  }
 
  /******** contenedor galeria *********/
@@ -868,7 +951,8 @@ gris claro {
  	visibility: hidden;
  	opacity: 0;
  	border-radius: .5em !important;
- 	transition: ease-out 0.4s; }
+ 	transition: ease-out 0.4s;
+ }
 
  .modal p {
  	font-size: 1em;
@@ -1156,7 +1240,6 @@ gris claro {
  	margin: 0;
  	padding: 0;
  	width: auto;
- 	/* 	border: 1px solid blue;*/
  }
 
  .listas-anidadas li {
@@ -1169,8 +1252,6 @@ gris claro {
  	padding: 0em;
  	height: 100%;
  	font-weight: normal;
- 	/* 	border: 1px solid red;*/
-
  }
 
  .listas-anidadas li ul li::before {
