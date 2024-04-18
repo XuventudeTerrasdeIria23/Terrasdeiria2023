@@ -28,7 +28,7 @@
 	<meta itemprop="author" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
 	<meta name="title" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
 	<meta name="description" content="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
-	<meta name="keywords" content="Dodro, Rois, Padrón, Municipio, Concello, Ayuntamiento, Terras de Iria, Galicia, Xacobeo, Flora, Fauna. Deportes, Dróns, actualidade cultura, sendeirismo, cultural">
+	<meta name="keywords" content="Dodro, Rois, Padrón, Municipio, Concello, Ayuntamiento, Terras de Iria, Galicia, Xacobeo, Flora, Fauna. Deportes, Drons, actualidade cultura, sendeirismo, cultural">
 	<meta name="robots" content="index,follow">
 	<!-- Etiquetas META FIN -->
 
@@ -104,7 +104,7 @@
 					<!-- menu drons inicio -->
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-							Dróns
+							Drons
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Clasificación</a></li>
@@ -398,17 +398,17 @@
 								gv_options.marker_list_options.enabled = true; // true|false: enable or disable the marker list altogether
 								gv_options.marker_list_options.floating = false; // is the list a floating box inside the map itself?
 								gv_options.marker_list_options.position = ['RIGHT_BOTTOM', 6, 38]; // floating list only: position within map
-								gv_options.marker_list_options.min_width = 160; // minimum width, in pixels, of the floating list
-								gv_options.marker_list_options.max_width = 160; // maximum width
-								gv_options.marker_list_options.min_height = 0; // minimum height, in pixels, of the floating list
-								gv_options.marker_list_options.max_height = 296; // maximum height
+								//gv_options.marker_list_options.min_width = 160; // Susi minimum width, in pixels, of the floating list
+								//gv_options.marker_list_options.max_width = 160; // Susi maximum width
+								//gv_options.marker_list_options.min_height = 0; // Susi minimum height, in pixels, of the floating list
+								//gv_options.marker_list_options.max_height = 296; // Susi maximum height
 								gv_options.marker_list_options.draggable = true; // true|false, floating list only: can it be moved around the screen?
 								gv_options.marker_list_options.collapsible = true; // true|false, floating list only: can it be collapsed by double-clicking its top bar?
 								gv_options.marker_list_options.include_tickmarks = false; // true|false: are distance/time tickmarks included in the list?
 								gv_options.marker_list_options.include_trackpoints = false; // true|false: are "trackpoint" markers included in the list?
 								gv_options.marker_list_options.dividers = true; // true|false: will a thin line be drawn between each item in the list?
 								gv_options.marker_list_options.desc = false; // true|false: will the markers' descriptions be shown below their names in the list?
-								gv_options.marker_list_options.icons = true; // true|false: should the markers' icons appear to the left of their names in the list?
+								gv_options.marker_list_options.icons = false; // Susi true|false: should the markers' icons appear to the left of their names in the list?
 								gv_options.marker_list_options.icon_scale = 'x1'; // size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
 								gv_options.marker_list_options.thumbnails = false; // true|false: should markers' thumbnails be shown in the list?
 								gv_options.marker_list_options.folders_collapsed = false; // true|false: do folders in the list start out in a collapsed state?
@@ -452,29 +452,6 @@
 							</script>
 							<style type="text/css">
 								/* Put any custom style definitions here (e.g., .gv_marker_info_window, .gv_marker_info_window_name, .gv_marker_list_item, .gv_tooltip, .gv_label, etc.) */
-								#gmap_div .gv_marker_info_window {
-									font-size: 11px !important;
-								}
-
-								#gmap_div .gv_label {
-									opacity: 0.90;
-									filter: alpha(opacity=90);
-									color: white;
-									background: #333333;
-									border: 1px solid black;
-									padding: 1px;
-									font-family: Verdana !important;
-									font-size: 10px;
-									font-weight: normal !important;
-								}
-
-								.legend_block {
-									display: inline-block;
-									border: solid 1px black;
-									width: 9px;
-									height: 9px;
-									margin: 0px 2px 0px 0px;
-								}
 
 							</style>
 
@@ -489,7 +466,7 @@
 										info: [],
 										segments: []
 									};
-									trk[t].info.name = 'Ruta literaria de Camilo José Cela en Padrón -3ª-';
+									trk[t].info.name = 'Ruta Camilo José Cela-3'; //susi nome do mapa
 									trk[t].info.desc = '';
 									trk[t].info.clickable = true;
 									trk[t].info.color = '#e60000';
@@ -647,272 +624,272 @@
 									});
 
 
-									GV_Draw_Marker({
-										lat: 42.7486360,
-										lon: -8.6546890,
-										alt: 11.011,
-										name: '11.0m',
-										desc: '<b>trackpoint #1</b><br/> <i>Time:</i> 2024-04-15 12:34:25.639<br/> <i>Latitude:</i> 42.7486360&#176;<br/> <i>Longitude:</i> -8.6546890&#176;<br/> <i>Elevation:</i> 11.0 m',
-										color: '#e6b100',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459480,
-										lon: -8.6555770,
-										alt: 9.465,
-										name: '9.5m',
-										desc: '<b>trackpoint #2</b><br/> <i>Time:</i> 2024-04-15 12:37:05.639<br/> <i>Latitude:</i> 42.7459480&#176;<br/> <i>Longitude:</i> -8.6555770&#176;<br/> <i>Elevation:</i> 9.5 m',
-										color: '#e69500',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7493830,
-										lon: -8.6503900,
-										alt: 33.192,
-										name: '33.2m',
-										desc: '<b>trackpoint #3</b><br/> <i>Time:</i> 2024-04-15 12:44:25.639<br/> <i>Latitude:</i> 42.7493830&#176;<br/> <i>Longitude:</i> -8.6503900&#176;<br/> <i>Elevation:</i> 33.2 m',
-										color: '#00e686',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7468040,
-										lon: -8.6476540,
-										alt: 40.165,
-										name: '40.2m',
-										desc: '<b>trackpoint #4</b><br/> <i>Time:</i> 2024-04-15 12:45:45.639<br/> <i>Latitude:</i> 42.7468040&#176;<br/> <i>Longitude:</i> -8.6476540&#176;<br/> <i>Elevation:</i> 40.2 m',
-										color: '#00c2e6',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7421580,
-										lon: -8.6493570,
-										alt: 31.769,
-										name: '31.8m',
-										desc: '<b>trackpoint #5</b><br/> <i>Time:</i> 2024-04-15 12:51:05.639<br/> <i>Latitude:</i> 42.7421580&#176;<br/> <i>Longitude:</i> -8.6493570&#176;<br/> <i>Elevation:</i> 31.8 m',
-										color: '#00e66d',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7418130,
-										lon: -8.6520200,
-										alt: 16.783,
-										name: '16.8m',
-										desc: '<b>trackpoint #6</b><br/> <i>Time:</i> 2024-04-15 12:52:25.639<br/> <i>Latitude:</i> 42.7418130&#176;<br/> <i>Longitude:</i> -8.6520200&#176;<br/> <i>Elevation:</i> 16.8 m',
-										color: '#aee600',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374420,
-										lon: -8.6525680,
-										alt: 7.755,
-										name: '7.8m',
-										desc: '<b>trackpoint #7</b><br/> <i>Time:</i> 2024-04-15 12:57:45.639<br/> <i>Latitude:</i> 42.7374420&#176;<br/> <i>Longitude:</i> -8.6525680&#176;<br/> <i>Elevation:</i> 7.8 m',
-										color: '#e67500',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7354130,
-										lon: -8.6468060,
-										alt: 29.487,
-										name: '29.5m',
-										desc: '<b>trackpoint #8</b><br/> <i>Time:</i> 2024-04-15 12:59:45.639<br/> <i>Latitude:</i> 42.7354130&#176;<br/> <i>Longitude:</i> -8.6468060&#176;<br/> <i>Elevation:</i> 29.5 m',
-										color: '#00e641',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7373300,
-										lon: -8.6390730,
-										alt: 42.257,
-										name: '42.3m',
-										desc: '<b>trackpoint #9</b><br/> <i>Time:</i> 2024-04-15 13:01:05.639<br/> <i>Latitude:</i> 42.7373300&#176;<br/> <i>Longitude:</i> -8.6390730&#176;<br/> <i>Elevation:</i> 42.3 m',
-										color: '#009be6',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7309440,
-										lon: -8.6277500,
-										alt: 11.644,
-										name: '11.6m',
-										desc: '<b>trackpoint #10</b><br/> <i>Time:</i> 2024-04-15 13:11:05.639<br/> <i>Latitude:</i> 42.7309440&#176;<br/> <i>Longitude:</i> -8.6277500&#176;<br/> <i>Elevation:</i> 11.6 m',
-										color: '#e6bd00',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7289310,
-										lon: -8.6456500,
-										alt: 8.511,
-										name: '8.5m',
-										desc: '<b>trackpoint #11</b><br/> <i>Time:</i> 2024-04-15 13:19:45.639<br/> <i>Latitude:</i> 42.7289310&#176;<br/> <i>Longitude:</i> -8.6456500&#176;<br/> <i>Elevation:</i> 8.5 m',
-										color: '#e68300',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7254830,
-										lon: -8.6555800,
-										alt: 3.694,
-										name: '3.7m',
-										desc: '<b>trackpoint #12</b><br/> <i>Time:</i> 2024-04-15 13:24:25.639<br/> <i>Latitude:</i> 42.7254830&#176;<br/> <i>Longitude:</i> -8.6555800&#176;<br/> <i>Elevation:</i> 3.7 m',
-										color: '#e62900',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7207260,
-										lon: -8.6554640,
-										alt: 2.898,
-										name: '2.9m',
-										desc: '<b>trackpoint #13</b><br/> <i>Time:</i> 2024-04-15 13:27:45.639<br/> <i>Latitude:</i> 42.7207260&#176;<br/> <i>Longitude:</i> -8.6554640&#176;<br/> <i>Elevation:</i> 2.9 m',
-										color: '#e61900',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7198670,
-										lon: -8.6696290,
-										alt: 1.535,
-										name: '1.5m',
-										desc: '<b>trackpoint #14</b><br/> <i>Time:</i> 2024-04-15 13:31:05.639<br/> <i>Latitude:</i> 42.7198670&#176;<br/> <i>Longitude:</i> -8.6696290&#176;<br/> <i>Elevation:</i> 1.5 m',
-										color: '#e60000',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7251570,
-										lon: -8.6621700,
-										alt: 4.435,
-										name: '4.4m',
-										desc: '<b>trackpoint #15</b><br/> <i>Time:</i> 2024-04-15 13:35:05.639<br/> <i>Latitude:</i> 42.7251570&#176;<br/> <i>Longitude:</i> -8.6621700&#176;<br/> <i>Elevation:</i> 4.4 m',
-										color: '#e63700',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390000,
-										lon: -8.6623790,
-										alt: 3.955,
-										name: '4.0m',
-										desc: '<b>trackpoint #16</b><br/> <i>Time:</i> 2024-04-15 13:39:45.639<br/> <i>Latitude:</i> 42.7390000&#176;<br/> <i>Longitude:</i> -8.6623790&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: '#e62e00',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382550,
-										lon: -8.6672660,
-										alt: 62.732,
-										name: '62.7m',
-										desc: '<b>trackpoint #17</b><br/> <i>Time:</i> 2024-04-15 13:45:05.639<br/> <i>Latitude:</i> 42.7382550&#176;<br/> <i>Longitude:</i> -8.6672660&#176;<br/> <i>Elevation:</i> 62.7 m',
-										color: '#e600e6',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7433280,
-										lon: -8.6647310,
-										alt: 23.075,
-										name: '23.1m',
-										desc: '<b>trackpoint #18</b><br/> <i>Time:</i> 2024-04-15 13:51:45.639<br/> <i>Latitude:</i> 42.7433280&#176;<br/> <i>Longitude:</i> -8.6647310&#176;<br/> <i>Elevation:</i> 23.1 m',
-										color: '#36e600',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7372940,
-										lon: -8.6616120,
-										alt: 5,
-										name: '5.0m',
-										desc: '<b>trackpoint #19</b><br/> <i>Time:</i> 2024-04-15 13:57:45.639<br/> <i>Latitude:</i> 42.7372940&#176;<br/> <i>Longitude:</i> -8.6616120&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: '#e64000',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7387060,
-										lon: -8.6584010,
-										alt: 4,
-										name: '4.0m',
-										desc: '<b>trackpoint #20</b><br/> <i>Time:</i> 2024-04-15 14:02:25.639<br/> <i>Latitude:</i> 42.7387060&#176;<br/> <i>Longitude:</i> -8.6584010&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: '#e62e00',
-										icon: 'circle',
-										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7486360,
+									//										lon: -8.6546890,
+									//										alt: 11.011,
+									//										name: '11.0m',
+									//										desc: '<b>trackpoint #1</b><br/> <i>Time:</i> 2024-04-15 12:34:25.639<br/> <i>Latitude:</i> 42.7486360&#176;<br/> <i>Longitude:</i> -8.6546890&#176;<br/> <i>Elevation:</i> 11.0 m',
+									//										color: '#e6b100',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7459480,
+									//										lon: -8.6555770,
+									//										alt: 9.465,
+									//										name: '9.5m',
+									//										desc: '<b>trackpoint #2</b><br/> <i>Time:</i> 2024-04-15 12:37:05.639<br/> <i>Latitude:</i> 42.7459480&#176;<br/> <i>Longitude:</i> -8.6555770&#176;<br/> <i>Elevation:</i> 9.5 m',
+									//										color: '#e69500',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7493830,
+									//										lon: -8.6503900,
+									//										alt: 33.192,
+									//										name: '33.2m',
+									//										desc: '<b>trackpoint #3</b><br/> <i>Time:</i> 2024-04-15 12:44:25.639<br/> <i>Latitude:</i> 42.7493830&#176;<br/> <i>Longitude:</i> -8.6503900&#176;<br/> <i>Elevation:</i> 33.2 m',
+									//										color: '#00e686',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7468040,
+									//										lon: -8.6476540,
+									//										alt: 40.165,
+									//										name: '40.2m',
+									//										desc: '<b>trackpoint #4</b><br/> <i>Time:</i> 2024-04-15 12:45:45.639<br/> <i>Latitude:</i> 42.7468040&#176;<br/> <i>Longitude:</i> -8.6476540&#176;<br/> <i>Elevation:</i> 40.2 m',
+									//										color: '#00c2e6',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7421580,
+									//										lon: -8.6493570,
+									//										alt: 31.769,
+									//										name: '31.8m',
+									//										desc: '<b>trackpoint #5</b><br/> <i>Time:</i> 2024-04-15 12:51:05.639<br/> <i>Latitude:</i> 42.7421580&#176;<br/> <i>Longitude:</i> -8.6493570&#176;<br/> <i>Elevation:</i> 31.8 m',
+									//										color: '#00e66d',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7418130,
+									//										lon: -8.6520200,
+									//										alt: 16.783,
+									//										name: '16.8m',
+									//										desc: '<b>trackpoint #6</b><br/> <i>Time:</i> 2024-04-15 12:52:25.639<br/> <i>Latitude:</i> 42.7418130&#176;<br/> <i>Longitude:</i> -8.6520200&#176;<br/> <i>Elevation:</i> 16.8 m',
+									//										color: '#aee600',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7374420,
+									//										lon: -8.6525680,
+									//										alt: 7.755,
+									//										name: '7.8m',
+									//										desc: '<b>trackpoint #7</b><br/> <i>Time:</i> 2024-04-15 12:57:45.639<br/> <i>Latitude:</i> 42.7374420&#176;<br/> <i>Longitude:</i> -8.6525680&#176;<br/> <i>Elevation:</i> 7.8 m',
+									//										color: '#e67500',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7354130,
+									//										lon: -8.6468060,
+									//										alt: 29.487,
+									//										name: '29.5m',
+									//										desc: '<b>trackpoint #8</b><br/> <i>Time:</i> 2024-04-15 12:59:45.639<br/> <i>Latitude:</i> 42.7354130&#176;<br/> <i>Longitude:</i> -8.6468060&#176;<br/> <i>Elevation:</i> 29.5 m',
+									//										color: '#00e641',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7373300,
+									//										lon: -8.6390730,
+									//										alt: 42.257,
+									//										name: '42.3m',
+									//										desc: '<b>trackpoint #9</b><br/> <i>Time:</i> 2024-04-15 13:01:05.639<br/> <i>Latitude:</i> 42.7373300&#176;<br/> <i>Longitude:</i> -8.6390730&#176;<br/> <i>Elevation:</i> 42.3 m',
+									//										color: '#009be6',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									// lat: 42.7309440,
+									// lon: -8.6277500,
+									// alt: 11.644,
+									// name: '11.6m',
+									// desc: '<b>trackpoint #10</b><br /> <i>Time:</i> 2024-04-15 13:11:05.639<br /> <i>Latitude:</i> 42.7309440&#176;<br /> <i>Longitude:</i> -8.6277500&#176;<br /> <i>Elevation:</i> 11.6 m',
+									// color: '#e6bd00',
+									// icon: 'circle',
+									// folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									// scale: 0.6,
+									// type: 'trackpoint',
+									// track_number: 1
+									// });
+									//									GV_Draw_Marker({
+									//										lat: 42.7289310,
+									//										lon: -8.6456500,
+									//										alt: 8.511,
+									//										name: '8.5m',
+									//										desc: '<b>trackpoint #11</b><br/> <i>Time:</i> 2024-04-15 13:19:45.639<br/> <i>Latitude:</i> 42.7289310&#176;<br/> <i>Longitude:</i> -8.6456500&#176;<br/> <i>Elevation:</i> 8.5 m',
+									//										color: '#e68300',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7254830,
+									//										lon: -8.6555800,
+									//										alt: 3.694,
+									//										name: '3.7m',
+									//										desc: '<b>trackpoint #12</b><br/> <i>Time:</i> 2024-04-15 13:24:25.639<br/> <i>Latitude:</i> 42.7254830&#176;<br/> <i>Longitude:</i> -8.6555800&#176;<br/> <i>Elevation:</i> 3.7 m',
+									//										color: '#e62900',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7207260,
+									//										lon: -8.6554640,
+									//										alt: 2.898,
+									//										name: '2.9m',
+									//										desc: '<b>trackpoint #13</b><br/> <i>Time:</i> 2024-04-15 13:27:45.639<br/> <i>Latitude:</i> 42.7207260&#176;<br/> <i>Longitude:</i> -8.6554640&#176;<br/> <i>Elevation:</i> 2.9 m',
+									//										color: '#e61900',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7198670,
+									//										lon: -8.6696290,
+									//										alt: 1.535,
+									//										name: '1.5m',
+									//										desc: '<b>trackpoint #14</b><br/> <i>Time:</i> 2024-04-15 13:31:05.639<br/> <i>Latitude:</i> 42.7198670&#176;<br/> <i>Longitude:</i> -8.6696290&#176;<br/> <i>Elevation:</i> 1.5 m',
+									//										color: '#e60000',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7251570,
+									//										lon: -8.6621700,
+									//										alt: 4.435,
+									//										name: '4.4m',
+									//										desc: '<b>trackpoint #15</b><br/> <i>Time:</i> 2024-04-15 13:35:05.639<br/> <i>Latitude:</i> 42.7251570&#176;<br/> <i>Longitude:</i> -8.6621700&#176;<br/> <i>Elevation:</i> 4.4 m',
+									//										color: '#e63700',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7390000,
+									//										lon: -8.6623790,
+									//										alt: 3.955,
+									//										name: '4.0m',
+									//										desc: '<b>trackpoint #16</b><br/> <i>Time:</i> 2024-04-15 13:39:45.639<br/> <i>Latitude:</i> 42.7390000&#176;<br/> <i>Longitude:</i> -8.6623790&#176;<br/> <i>Elevation:</i> 4.0 m',
+									//										color: '#e62e00',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7382550,
+									//										lon: -8.6672660,
+									//										alt: 62.732,
+									//										name: '62.7m',
+									//										desc: '<b>trackpoint #17</b><br/> <i>Time:</i> 2024-04-15 13:45:05.639<br/> <i>Latitude:</i> 42.7382550&#176;<br/> <i>Longitude:</i> -8.6672660&#176;<br/> <i>Elevation:</i> 62.7 m',
+									//										color: '#e600e6',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									// lat: 42.7433280,
+									// lon: -8.6647310,
+									// alt: 23.075,
+									// name: '23.1m',
+									// desc: '<b>trackpoint #18</b><br /> <i>Time:</i> 2024-04-15 13:51:45.639<br /> <i>Latitude:</i> 42.7433280&#176;<br /> <i>Longitude:</i> -8.6647310&#176;<br /> <i>Elevation:</i> 23.1 m',
+									// color: '#36e600',
+									// icon: 'circle',
+									// folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									// scale: 0.6,
+									// type: 'trackpoint',
+									// track_number: 1
+									// });
+									//									GV_Draw_Marker({
+									//										lat: 42.7372940,
+									//										lon: -8.6616120,
+									//										alt: 5,
+									//										name: '5.0m',
+									//										desc: '<b>trackpoint #19</b><br/> <i>Time:</i> 2024-04-15 13:57:45.639<br/> <i>Latitude:</i> 42.7372940&#176;<br/> <i>Longitude:</i> -8.6616120&#176;<br/> <i>Elevation:</i> 5.0 m',
+									//										color: '#e64000',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
+									//									GV_Draw_Marker({
+									//										lat: 42.7387060,
+									//										lon: -8.6584010,
+									//										alt: 4,
+									//										name: '4.0m',
+									//										desc: '<b>trackpoint #20</b><br/> <i>Time:</i> 2024-04-15 14:02:25.639<br/> <i>Latitude:</i> 42.7387060&#176;<br/> <i>Longitude:</i> -8.6584010&#176;<br/> <i>Elevation:</i> 4.0 m',
+									//										color: '#e62e00',
+									//										icon: 'circle',
+									//										folder: 'Ruta literaria de Camilo José Cela en Padrón -3ª- [trackpoints]',
+									//										scale: 0.6,
+									//										type: 'trackpoint',
+									//										track_number: 1
+									//									});
 									GV_Draw_Marker({
 										lat: 42.7486310,
 										lon: -8.6547800,
 										alt: 11.015,
-										name: 'Casa natal',
-										desc: '',
+										name: 'Casa natal Cela',
+										desc: '<img class="img-zoom-tracks img-responsive" src="../../imaxes/bicis/bike-1.jpg"><p>Susi Hola Mundo</p> <a href = "https://www.obaixoulla.gal/elementos/dodro/arquitectura-da-auga/fonte-da-chan-da-vina" target = "_blank" > fonte - da - chan - da - vina </a>',
 										color: '',
 										icon: ''
 									});

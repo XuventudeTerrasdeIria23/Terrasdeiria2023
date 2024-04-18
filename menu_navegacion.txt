@@ -38,7 +38,7 @@
 					<!-- menu drons inicio -->
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-							Dróns
+							Drons
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Clasificación</a></li>
