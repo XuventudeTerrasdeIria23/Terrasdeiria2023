@@ -205,9 +205,9 @@ gris claro {
 
  	position: absolute;
  	top: auto;
- 	left: 6%;
+ 	left: auto;
 
- 	padding: 0 .2em .2em 0;
+ 	padding: 0;
  	margin: 0 0em 0em 0;
  	/* 	transform: translate(50%, 50%);*/
  	text-transform: uppercase;
@@ -225,8 +225,11 @@ gris claro {
  	-webkit-background-clip: text;
  	text-fill-color: transparent;
  	-webkit-text-fill-color: transparent;
-
  }
+
+ h1.img-inside {
+/* 	border: 1px solid blue;
+ 	*/ }
 
 
 
@@ -325,6 +328,23 @@ gris claro {
  	justify-content: space-between;
  	align-content: space-between;
  }
+
+ .block-center .service-box-v2 {
+ 	/* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
+ 	*/
+
+
+ }
+
+ 	{
+ 	/* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
+ 	*/
+ 	padding: .5em;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-content: space-between;
+ }
+
 
  /* data-title */
 

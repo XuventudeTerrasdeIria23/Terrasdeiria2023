@@ -2885,10 +2885,9 @@ Demo Utils
 
  .service-box-v2 {
  	text-align: center;
- 	padding: .3em;
+ 	padding: .1em;
  	box-shadow: 1px 1px 3px #7C858E;
  	border-radius: .2em !important;
-
  }
 
  .service-box-v1 i {
@@ -2897,8 +2896,9 @@ Demo Utils
  }
 
  .service-box-v2 i {
- 	padding: auto;
- 	font-size: .5em;
+ 	padding: 0;
+ 	margin: 0;
+ 	font-size: .7em;
  }
 
  .service-box-v1:hover {
