@@ -228,8 +228,9 @@ gris claro {
  }
 
  h1.img-inside {
-/* 	border: 1px solid blue;
- 	*/ }
+ 	/* 	border: 1px solid blue;
+ 	*/
+ }
 
 
 
@@ -719,7 +720,7 @@ gris claro {
  #gmap_div #gv_tracklist {
  	/* cadrocheckbox nome do mapa */
  	color: #3f5862 !important;
- 	background: beige;
+ 	background: rgba(226, 135, 67, 0.5);
  	overflow: visible;
  	font-size: 2em;
  	text-align: left;
@@ -738,9 +739,9 @@ gris claro {
 
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
- 	font: 1em 'Open Sans', sans-serif;
- 	line-height: auto;
- 	background-color: beige;
+ 	/* 	font: 1em 'Open Sans', sans-serif;*/
+ 	/* 	line-height: auto;*/
+ 	background-color: rgba(226, 135, 67, 0.5);
  	width: auto !important;
  	height: auto !important;
  	padding: .2em;
@@ -756,9 +757,14 @@ gris claro {
  	/* 	display: inline-block;*/
  	width: 100% !important;
  	text-align: left !important;
- 	font-size: 1em;
- 	margin: 0 0 .3em 0;
+ 	/* 	font-size: 1em;*/
+ 	margin: inherit;
  	/* listado dos marcadores flotado á dereita */
+ }
+
+ #gv_marker_list table td:hover {
+ 	transform: scale(101.5%);
+ 	color: #e6400c;
  }
 
  #gv_marker_list_header::before {
@@ -785,7 +791,6 @@ gris claro {
  	/* botón selección mapa de fondo desplegable no mapa á dereita */
  }
 
-
  .leaflet-control-zoom-out,
  .leaflet-control-zoom-in,
  .leaflet-control-zoom {
@@ -795,23 +800,45 @@ gris claro {
  	outline: none;
  }
 
+ .gv_marker_info_window {
+ 	/* contenedor do pop-up */
+ 	width: 20vw !important;
+
+ }
+
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
  	width: 20vw;
  	display: flex;
  	flex-direction: row;
- 	justify-content: space-around;
+ 	justify-content: center;
  	align-content: center;
- 	align-items: stretch;
+ 	align-items: center;
  	flex: 1;
  	flex-wrap: wrap;
  	overflow: visible !important;
+ 	z-index: 9999 !important;
+
  }
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	width: 20vw;
- 	display: block;
+ 	width: 15vw;
+ 	display: flex;
+ 	margin-bottom: 1em;
+ 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ }
+
+ .gv_marker_info_window .fonte {
+ 	/* imaxes do pop-up */
+ 	font-size: .9em;
+ 	display: inline;
+ 	float: right;
+ }
+
+ .gv_marker_info_window p,
+ .gv_marker_info_window a {
+ 	font-size: .8em;
  }
 
  .gv_marker_info_window a {
@@ -870,6 +897,53 @@ gris claro {
  	/* non vemos as caixas de mouse estarían situadas bottom left */
  	display: none;
  }
+
+
+ /* datos da ruta */
+
+ .datos-ruta-head {
+ 	padding: 0 0 0 .5em;
+ 	text-align: left;
+ 	background: #e28743;
+ }
+
+ .datos-ruta-head h3,
+ .datos-ruta-head h4 {
+ 	margin: 0;
+ 	line-height: normal;
+ }
+
+ .datos-ruta-head h3 span,
+ .datos-ruta-head h4 span {
+ 	display: block;
+ 	font-size: .7em;
+ 	font-weight: bold;
+ }
+
+ .datos-ruta-head h3 {
+ 	font-weight: 300;
+ 	color: #fff;
+ 	padding: 12px 0;
+ 	background: #e28743;
+ 	border-bottom: none;
+ }
+
+
+ .datos-ruta li {
+ 	color: #3f5862;
+ 	font-size: 1em;
+ 	padding: 7px 15px;
+ 	border-bottom: 1px solid #ccc;
+ }
+
+ .datos-ruta li i {
+ 	color: #e28743;
+ 	font-size: .8em;
+ 	margin-right: .5em;
+ 	position: relative;
+ 	color: #e28743;
+ }
+
 
  /******** contenedor galeria *********/
 
