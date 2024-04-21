@@ -808,13 +808,13 @@ gris claro {
 
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
- 	width: 20vw;
+ 	width: 25vw;
  	display: flex;
  	flex-direction: row;
  	justify-content: center;
- 	align-content: center;
- 	align-items: center;
- 	flex: 1;
+ 	align-content: center !important;
+ 	align-items: flex-start !important;
+
  	flex-wrap: wrap;
  	overflow: visible !important;
  	z-index: 9999 !important;
@@ -823,9 +823,9 @@ gris claro {
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	width: 15vw;
- 	display: flex;
- 	margin-bottom: 1em;
+ 	width: 55%;
+
+ 	margin: 0 1em 2em 0;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  }
 
