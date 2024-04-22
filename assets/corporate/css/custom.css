@@ -814,19 +814,40 @@ gris claro {
  	justify-content: center;
  	align-content: center !important;
  	align-items: flex-start !important;
+ 	flex-wrap: wrap !important;
+ 	overflow: visible !important;
+ 	z-index: 9999 !important;
+ }
 
+ .gv_marker_info_window {
+ 	/*  pop-ups do  mapa */
+ 	width: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	align-content: center !important;
+ 	align-items: center !important;
  	flex-wrap: wrap;
  	overflow: visible !important;
  	z-index: 9999 !important;
-
  }
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
  	width: 55%;
-
  	margin: 0 1em 2em 0;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ }
+
+ .gv_marker_info_window img:hover {
+ 	/* imaxes do pop-up */
+ 	width: 55%;
+ 	margin: 0 1em 2em 0;
+ 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ 	border: 1px solid blue;
+ 	transform: scale(2) !important;
+ 	transition: ease-out 0.47s;
+ 	z-index: 9999 !important;
  }
 
  .gv_marker_info_window .fonte {
@@ -848,12 +869,11 @@ gris claro {
  	display: block;
  }
 
- display: block;
 
  .gv_marker_info_window a:hover {
  	/* imaxes do pop-up */
- 	background: #e28743;
- 	color: white !important;
+
+ 	color: #e28743 !important;
  }
 
  .gv_crosshair {
