@@ -661,7 +661,7 @@ gris claro {
  	height: 60vh;
  	width: auto;
  	text-align: center;
- 	margin: 0 3em;
+ 	margin: 0 1em;
  	background: transparent;
  	color: #3f5862;
  	font-family: 'Open Sans', sans-serif;
@@ -676,19 +676,21 @@ gris claro {
  }
 
  #mapa-noso {
+ 	/*
  	height: auto;
- 	width: 90%;
- 	float: left;
+ 	width: 100%;
+*/
+ 	/* 	float: left;*/
  	display: flex;
- 	justify-content: center;
- 	align-content: center;
+ 	justify-content: center !important;
+ 	align-content: center !important;
  	margin-bottom: 1em;
  }
 
 
  #mapa-noso #gmap_div {
  	height: auto;
- 	width: 80vw !important;
+ 	width: 100% !important;
  	background: transparent !important;
  }
 
@@ -715,6 +717,7 @@ gris claro {
  	background-color: beige;
  	padding: .5em;
  	overflow: auto;
+ 	border: 2px solid red;
  }
 
  #gmap_div #gv_tracklist {
@@ -749,7 +752,7 @@ gris claro {
  	border: 1px solid #ccc;
  	overflow-y: scroll;
  	display: inline !important;
- 	/* 	border: 2px solid red;*/
+ 	border: 2px solid red;
 
  }
 
@@ -795,20 +798,14 @@ gris claro {
  .leaflet-control-zoom-in,
  .leaflet-control-zoom {
  	/* ocultamos as barras de zoom */
- 	visibility: hidden;
+ 	visibility: visible;
  	border: 0px solid transparent;
  	outline: none;
  }
 
- .gv_marker_info_window {
- 	/* contenedor do pop-up */
- 	width: 20vw !important;
-
- }
-
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
- 	width: 25vw;
+ 	width: 27vw;
  	display: flex;
  	flex-direction: row;
  	justify-content: center;
@@ -817,6 +814,13 @@ gris claro {
  	flex-wrap: wrap !important;
  	overflow: visible !important;
  	z-index: 9999 !important;
+ 	padding: 0;
+ }
+
+ .gv_marker_info_window {
+ 	/* contenedor do pop-up */
+ 	width: 100% !important;
+ 	border: 1px solid blue;
  }
 
  .gv_marker_info_window {
@@ -850,6 +854,11 @@ gris claro {
  	z-index: 9999 !important;
  }
 
+ .gv_marker_info_window_name {
+ 	color: #e28743;
+ 	font-size: 1.2em;
+ }
+
  .gv_marker_info_window .fonte {
  	/* imaxes do pop-up */
  	font-size: .9em;
@@ -868,7 +877,6 @@ gris claro {
  	padding: .5em;
  	display: block;
  }
-
 
  .gv_marker_info_window a:hover {
  	/* imaxes do pop-up */
@@ -900,10 +908,8 @@ gris claro {
  .leaflet-control-attribution a {
  	font-size: 1.1em;
  	font-weight: normal !important;
- 	/* 	display: none;*/
  	background: beige;
  	margin: 1em;
-
  }
 
  #gv_credit.leaflet-control a {
@@ -913,7 +919,6 @@ gris claro {
  #gv_mouse_coordinates,
  #gv_center_coordinates,
  #gv_scale_control {
-
  	/* non vemos as caixas de mouse estarían situadas bottom left */
  	display: none;
  }
@@ -947,7 +952,6 @@ gris claro {
  	background: #e28743;
  	border-bottom: none;
  }
-
 
  .datos-ruta li {
  	color: #3f5862;
