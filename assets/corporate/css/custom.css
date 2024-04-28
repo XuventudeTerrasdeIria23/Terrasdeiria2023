@@ -720,10 +720,32 @@ gris claro {
  	border: 2px solid red;
  }
 
+ #gv_elevation_profile {
+ 	height: auto !important;
+ 	padding: 1em;
+ 	background: #fff
+ }
+
+ .gv_profile_button {
+ 	width: 5em !important;
+ 	height: 5em !important;
+ 	padding: .5em;
+ 	box-shadow: 2px 2px 2px 2px #3f586280;
+ 	border: 2px solid rgb(226, 135, 67);
+ 	background: #fff url(../../../imaxes/iconos/icon_elevation_profile.png) center/100% !important;
+ }
+
+ /*
+ .gv_profile_button[title]::before {
+ 	content: 'Perfil de elevación';
+ 	display: inline-block;
+ }
+*/
+
  #gmap_div #gv_tracklist {
  	/* cadrocheckbox nome do mapa */
  	color: #3f5862 !important;
- 	background: rgba(226, 135, 67, 0.5);
+ 	background: #ccc;
  	overflow: visible;
  	font-size: 2em;
  	text-align: left;
@@ -742,17 +764,15 @@ gris claro {
 
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
- 	/* 	font: 1em 'Open Sans', sans-serif;*/
- 	/* 	line-height: auto;*/
+
  	background-color: rgba(226, 135, 67, 0.5);
- 	width: auto !important;
+ 	width: 17vw !important;
  	height: auto !important;
  	padding: .2em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
  	overflow-y: scroll;
  	display: inline !important;
- 	border: 2px solid red;
 
  }
 
@@ -813,14 +833,13 @@ gris claro {
  	align-items: flex-start !important;
  	flex-wrap: wrap !important;
  	overflow: visible !important;
- 	z-index: 9999 !important;
+ 	z-index: 99999999 !important;
  	padding: 0;
  }
 
  .gv_marker_info_window {
  	/* contenedor do pop-up */
  	width: 100% !important;
- 	border: 1px solid blue;
  }
 
  .gv_marker_info_window {
@@ -833,30 +852,33 @@ gris claro {
  	align-items: center !important;
  	flex-wrap: wrap;
  	overflow: visible !important;
- 	z-index: 9999 !important;
+ 	z-index: 99999999 !important;
  }
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	width: 55%;
- 	margin: 0 1em 2em 0;
+ 	width: 75%;
+ 	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ 	text-align: center !important;
+
  }
 
  .gv_marker_info_window img:hover {
  	/* imaxes do pop-up */
- 	width: 55%;
- 	margin: 0 1em 2em 0;
+ 	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
- 	border: 1px solid blue;
+ 	border: 1px solid #ccc;
  	transform: scale(2) !important;
  	transition: ease-out 0.47s;
- 	z-index: 9999 !important;
+ 	z-index: 99999999 !important;
  }
 
  .gv_marker_info_window_name {
  	color: #e28743;
- 	font-size: 1.2em;
+ 	font-size: 1.3em;
+ 	width: 100%;
+ 	text-align: center !important;
  }
 
  .gv_marker_info_window .fonte {
@@ -869,6 +891,9 @@ gris claro {
  .gv_marker_info_window p,
  .gv_marker_info_window a {
  	font-size: .8em;
+ 	color: #3f5862 !important;
+
+
  }
 
  .gv_marker_info_window a {
@@ -876,6 +901,9 @@ gris claro {
  	color: #3f5862 !important;
  	padding: .5em;
  	display: block;
+ 	font-size: .8em;
+ 	color: #3f5862 !important;
+ 	text-align: center !important;
  }
 
  .gv_marker_info_window a:hover {

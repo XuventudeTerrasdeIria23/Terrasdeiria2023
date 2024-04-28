@@ -162,7 +162,7 @@ ul.galeria {
 	border-radius: 0.2em;
 	grid-area: 1/1;
 	width: 100%;
-	aspect-ratio: 1;
+	/*	aspect-ratio: 1;*/
 	object-fit: cover;
 	background: #fff;
 	padding: 1em 1em 3em 1em;
