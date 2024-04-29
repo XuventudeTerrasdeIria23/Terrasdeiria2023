@@ -28,7 +28,6 @@ ul.galeria {
 	justify-content: flex-start;
 	align-content: space-between;
 	align-items: stretch;
-	border: 2px solid blue;
 }
 
 .galeria li {

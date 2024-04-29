@@ -227,14 +227,7 @@ gris claro {
  	-webkit-text-fill-color: transparent;
  }
 
- h1.img-inside {
- 	/* 	border: 1px solid blue;
- 	*/
- }
-
-
-
-
+  
  /* header */
 
 
@@ -717,7 +710,6 @@ gris claro {
  	background-color: beige;
  	padding: .5em;
  	overflow: auto;
- 	border: 2px solid red;
  }
 
  #gv_elevation_profile {
@@ -797,7 +789,6 @@ gris claro {
  }
 
  .gv_marker_list_item {
- 	/* 	border: 1px solid blue;*/
  	text-align: left !important;
  }
 
@@ -826,20 +817,17 @@ gris claro {
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
  	width: 27vw;
+ 	/*
  	display: flex;
  	flex-direction: row;
  	justify-content: center;
  	align-content: center !important;
  	align-items: flex-start !important;
- 	flex-wrap: wrap !important;
+ 	flex-wrap: wrap !important;*/
+
  	overflow: visible !important;
  	z-index: 99999999 !important;
  	padding: 0;
- }
-
- .gv_marker_info_window {
- 	/* contenedor do pop-up */
- 	width: 100% !important;
  }
 
  .gv_marker_info_window {
@@ -855,13 +843,16 @@ gris claro {
  	z-index: 99999999 !important;
  }
 
+ .gv_marker_info_window_desc {
+ 	width: 100%;
+ }
+
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	width: 75%;
+ 	width: 70%;
  	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  	text-align: center !important;
-
  }
 
  .gv_marker_info_window img:hover {
@@ -869,7 +860,7 @@ gris claro {
  	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  	border: 1px solid #ccc;
- 	transform: scale(2) !important;
+ 	transform: scale(1.7) !important;
  	transition: ease-out 0.47s;
  	z-index: 99999999 !important;
  }
@@ -890,10 +881,10 @@ gris claro {
 
  .gv_marker_info_window p,
  .gv_marker_info_window a {
+ 	width: 100%;
  	font-size: .8em;
  	color: #3f5862 !important;
-
-
+ 	font-weight: normal !important;
  }
 
  .gv_marker_info_window a {
@@ -919,8 +910,7 @@ gris claro {
  /* creditos do mapa, footer do mapa */
  #mapa-noso .leaflet-control-attribution,
  #mapa-noso #gv_credit {
- 	/* 	border: 1px solid blue;*/
- }
+  }
 
  .leaflet-control-attribution::after {
  	/* colocamos no pe do mapa o noso nome */
