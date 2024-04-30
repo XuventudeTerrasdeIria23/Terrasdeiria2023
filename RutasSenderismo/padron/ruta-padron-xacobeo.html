@@ -419,7 +419,6 @@
 								gv_options.synthesize_fields = {}; // for example: {label:'{name}'} would cause all markers' names to become visible labels
 
 
-
 								// Load GPS Visualizer's mapping functions (this must be loaded AFTER gv_options are set):
 								var script_file = (self.API && API.match(/^g/i)) ? 'google_maps/functions3.js' : 'leaflet/functions.js';
 								document.writeln('<script src="https://www.gpsvisualizer.com/' + script_file + '" type="text/javascript"><' + '/script>');
@@ -439,16 +438,17 @@
 										segments: []
 									};
 									trk[t].info.name = 'Padrón Xacobeo';
-									trk[t].info.desc = 'Ruta circular desde Padrón pasando por: <br />- Xardín Histórico de Padrón (0.3 km) <br />- Igrexa de Iria Flavia (1.6 km) <br />- Santiaguiño (3.2 km) <br />- Albergue de Padrón (3.6 km) <br />- Iglesia de Santiago de Padrón (3.8 km) <br />- Monumento a Cela (4.0 km)';
+									//									trk[t].info.desc = 'Ruta circular desde Padrón pasando por: <br />- Xardín Histórico de Padrón (0.3 km) <br />- Igrexa de Iria Flavia (1.6 km) <br />- Santiaguiño (3.2 km) <br />- Albergue de Padrón (3.6 km) <br />- Iglesia de Santiago de Padrón (3.8 km) <br />- Monumento a Cela (4.0 km)';
+									trk[t].info.desc = '';
 									trk[t].info.clickable = true;
-									trk[t].info.color = '#e60000';
-									trk[t].info.width = 3;
+									trk[t].info.color = '#e6400c'; //susi
+									trk[t].info.width = 5;
 									trk[t].info.opacity = 0.9;
 									trk[t].info.hidden = false;
 									trk[t].info.z_index = null;
 									trk[t].info.outline_color = 'black';
 									trk[t].info.outline_width = 0;
-									trk[t].info.fill_color = '#e60000';
+									trk[t].info.fill_color = '#e6400c'; //susi
 									trk[t].info.fill_opacity = 0;
 									trk[t].info.elevation = true;
 									trk[t].segments.push({
@@ -651,11 +651,11 @@
 
 
 									GV_Draw_Marker({
-										lat: 42.7384320,
-										lon: -8.6606200,
+										lat: 42.738542881902625,
+										lon: -8.660626139261579,
 										alt: 12.8,
 										name: 'Casa do Concello. Inicio da ruta',
-										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/rosaliana/roalia-espolon.jpg" alt="Monumento a Rosalía de Castro"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7388577,-8.661481,3a,48.9y,286.42h,90.84t/data=!3m7!1e1!3m5!1sXomX7e5v3I3zlzVPf3vCow!2e0!5s20180501T000000!7i13312!8i6656?coh=205409&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i>  42.7388760, -8.6616960</a></p> <p>Doazón dos padroneses emigrados en Uruguai. Inaugurado o 23 abril 1957.</p>',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/casa-concello.jpg" alt="Casa do Concello"> <p class="red small"><a class="small" href="https://www.google.com/maps/place/Casa+do+Concello+de+Padr%C3%B3n/@42.7383461,-8.6606222,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd%3Dw86-h114-k-no!7i3024!8i4032!4m16!1m8!3m7!1s0xd2f1b2d2e6f6405:0xbe2f51a64e79bea4!2zUsO6YSBMb25nYSwgMjcsIDE1OTAwIFBhZHLDs24sIEEgQ29ydcOxYQ!3b1!8m2!3d42.7384011!4d-8.6605725!16s%2Fg%2F11c1ydy2r7!3m6!1s0xd2f1b2d28cdc0fd:0x13b3b41b26053b43!8m2!3d42.7383491!4d-8.6605283!10e5!16s%2Fg%2F1tf_2c3r?hl=es&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.738542881902625, -8.660626139261579</a></p> <p>Pazo do século XV (reformado en 1794) en estilo neoclásico. A fachada presenta unha esfera do reloxo inglés e escudo pétreo representando o traslatio.</p>',
 										color: '',
 										icon: '../../imaxes/iconos/ubicacion.png'
 									});
@@ -664,25 +664,25 @@
 										lon: -8.6585090,
 										alt: 7.7,
 										name: 'Xardín botánico artístico de Padrón',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/xardin-botanico.jpg" alt="Xardín botánico artístico de Padrón"><p class="red small"><a class="small" href="https://www.google.com/maps/place/Xard%C3%ADn+Bot%C3%A1nico-Art%C3%ADstico+de+Padr%C3%B3n/@42.7390394,-8.6583229,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNQ-IWJMalW-yoWfGY5rYEmgokjzAeyav667-8V!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNQ-IWJMalW-yoWfGY5rYEmgokjzAeyav667-8V%3Dw152-h86-k-no!7i4128!8i2322!4m7!3m6!1s0xd2f04d2e8ce5159:0xc8f990529eab1100!8m2!3d42.738619!4d-8.6584319!10e5!16s%2Fg%2F1z44q7lys?hl=es&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.7388760, -8.6616960</a></p> <p>Doazón dos padroneses emigrados en Uruguai. Inaugurado o 23 abril 1957.</p>',
 										color: '',
 										icon: ''
 									});
 									GV_Draw_Marker({
-										lat: 42.7388890,
-										lon: -8.6598710,
+										lat: 42.738675559778045,
+										lon: -8.658439208970774,
 										alt: 12,
 										name: 'Cruceiro do camiño',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/cruceiro-do-caminho2.jpg" alt="Cruceiro do camiño"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7388239,-8.6598709,3a,75y,4.26h,86.53t/data=!3m8!1e1!3m6!1s1u0afaO7sTUUsdyyu4YUOQ!2e0!5s20180501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D1u0afaO7sTUUsdyyu4YUOQ%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D4.256382901008891%26pitch%3D3.4665996404188917%26thumbfov%3D90!7i13312!8i6656?hl=es&coh=205410&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.738675559778045, -8.658439208970774</a></p> <p>Cruceiro de finais do s. XX con imaxes da Traslatio e a tradición xacobea.</p>',
 										color: '',
 										icon: ''
 									});
 									GV_Draw_Marker({
-										lat: 42.7393520,
-										lon: -8.6590910,
+										lat: 42.739715656015726,
+										lon: -8.659020306017492,
 										alt: 9,
 										name: 'Monumento ao peregrino',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/monumento-peregrino.jpg" alt="Monumento ao peregrino"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7388239,-8.6598709,3a,75y,4.26h,86.53t/data=!3m8!1e1!3m6!1s1u0afaO7sTUUsdyyu4YUOQ!2e0!5s20180501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D1u0afaO7sTUUsdyyu4YUOQ%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D4.256382901008891%26pitch%3D3.4665996404188917%26thumbfov%3D90!7i13312!8i6656?hl=es&coh=205410&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.739715656015726, -8.659020306017492</a></p> </p> <p>Cruceiro de finais do s. XX con imaxes da Traslatio e a tradición xacobea.</p>',
 										color: '',
 										icon: ''
 									});
@@ -756,7 +756,7 @@
 										name: 'Escudo de Padrón. Fin da ruta',
 										desc: '',
 										color: '',
-										icon: '../../imaxes/iconos/ubicacion.png'
+										icon: '../../imaxes/iconos/icon_location-1_red.png'
 									});
 
 									GV_Finish_Map();

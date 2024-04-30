@@ -227,7 +227,7 @@ gris claro {
  	-webkit-text-fill-color: transparent;
  }
 
-  
+
  /* header */
 
 
@@ -783,13 +783,15 @@ gris claro {
  }
 
  #gv_marker_list_header::before {
- 	content: 'Listado de puntos';
- 	font: 1.2em 'Open Sans', sans-serif;
+ 	content: 'Punto de ruta';
+ 	font: 1.1em 'Open Sans', sans-serif;
  	padding: inherit;
  }
 
  .gv_marker_list_item {
  	text-align: left !important;
+ 	font-size: 1.2em !important;
+ 	;
  }
 
  #mapa-noso > div {
@@ -849,18 +851,18 @@ gris claro {
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	width: 70%;
+ 	display: block;
+ 	max-width: 60%;
+ 	max-height: 25%;
  	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
- 	text-align: center !important;
  }
 
  .gv_marker_info_window img:hover {
  	/* imaxes do pop-up */
- 	margin: 0 auto;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  	border: 1px solid #ccc;
- 	transform: scale(1.7) !important;
+ 	transform: scale(1.2) !important;
  	transition: ease-out 0.47s;
  	z-index: 99999999 !important;
  }
@@ -879,6 +881,7 @@ gris claro {
  	float: right;
  }
 
+
  .gv_marker_info_window p,
  .gv_marker_info_window a {
  	width: 100%;
@@ -894,12 +897,14 @@ gris claro {
  	display: block;
  	font-size: .8em;
  	color: #3f5862 !important;
- 	text-align: center !important;
+ 	/* 	text-align: center !important;
+ 	*/
+ 	z-index: 1000;
  }
 
  .gv_marker_info_window a:hover {
  	/* imaxes do pop-up */
-
+ 	font-weight: 900 !important;
  	color: #e28743 !important;
  }
 
@@ -909,8 +914,7 @@ gris claro {
 
  /* creditos do mapa, footer do mapa */
  #mapa-noso .leaflet-control-attribution,
- #mapa-noso #gv_credit {
-  }
+ #mapa-noso #gv_credit {}
 
  .leaflet-control-attribution::after {
  	/* colocamos no pe do mapa o noso nome */
