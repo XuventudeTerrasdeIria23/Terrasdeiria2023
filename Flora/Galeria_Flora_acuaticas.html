@@ -28,10 +28,13 @@
 	<meta itemprop="author" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
 	<meta name="title" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
 	<meta name="description" content="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
-	<meta name="keywords" content="Dodro, Rois, Padrón, Municipio, Concello, Ayuntamiento, Terras de Iria, Galicia, Xacobeo, Flora, Fauna. Deportes, Drons, actualidade cultura, sendeirismo, cultural">
+	<meta name="keywords" content="Dodro, Rois, Padrón, Municipio, Concello, Ayuntamiento, Terras de Iria, Galicia, Xacobeo, Flora, Fauna. Deportes, Dróns, actualidade cultura, sendeirismo, cultural">
 	<meta name="robots" content="index,follow">
 	<!-- Etiquetas META FIN -->
 
+	<title>Xuventude Terra de Iria 2023</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Estilos INICIO -->
 	<link href="../assets/pages/css/components.css" rel="stylesheet">
@@ -40,12 +43,9 @@
 	<link href="../assets/corporate/css/style-responsive.css" rel="stylesheet">
 	<link href="../assets/corporate/css/themes/red.css" rel="stylesheet">
 	<link href="../assets/corporate/css/custom.css" rel="stylesheet">
+	<link href="../assets/pages/css/estesino.css" rel="stylesheet">
+
 	<!--  Estilos FIN -->
-	<!-- script mapas -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
-	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-	<!--	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>-->
-	<link rel="stylesheet" href="../assets/corporate/css/leaflet.css">
 
 	<title>Xuventude Terra de Iria 2023</title>
 
@@ -56,10 +56,10 @@
 <body class="corporate">
 	<!-- header INICIO -->
 	<div class="header">
-		<h1 class="img-inside img-shadow" title="Terras de Iria">Terras de Iria
-		</h1>
+
 		<div class="container">
-			<a class="site-logo-2" href="../index.html" data-title="Inicio">
+			<h1 class="img-inside img-shadow" href="#" title="Terras de Iria">Terras de Iria
+			</h1><a class="site-logo-2" href="../index.html" data-title="Inicio">
 				<img class="img-responsive img-shadow" src="../imaxes/Logo_Xuve_Terras_2023.png" alt="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
 			</a>
 			<h2 class="medium img-shadow" title="Concellos">
@@ -78,12 +78,12 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="../RedNatura_flora.html">Red Natura 2000</a></li>
-							<li class="active"><a href="Mapa_Flora_plantilla-2.html">Mapa</a></li>
+							<li><a href="Mapa_Flora_plantilla-2.html">Mapa</a></li>
 							<li><a href="flores_galeria.html">Flores</a></li>
 							<li><a href="Galeria_Flora_arbores.html">Árbores</a></li>
 							<li><a href="arbustos_galeria.html">Arbustos</a></li>
 							<li><a href="Galeria_Flora_liques.html">Liquens</a></li>
-							<li><a href="Galeria_Flora_acuaticas.html">Acuáticas</a></li>
+							<li class="active"><a href="Galeria_Flora_acuaticas.html">Acuáticas</a></li>
 						</ul>
 					</li>
 					<!-- menu flora fin -->
@@ -107,7 +107,7 @@
 					<!-- menu drons inicio -->
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-							Drons
+							Dróns
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Clasificación</a></li>
@@ -183,7 +183,7 @@
 							<li><a class="dropdown-item" href="#">Rois <span></span> </a>
 								<ul class="dropdown-menu dropdown-submenu">
 									<li><a class="dropdown-item" href="../Deporte/Rois/mapas_pistas_deportivas_rois.html">Inventario</a></li>
-									<li><a class="dropdown-item" href="../	Deporte/Rois/Rois_deportes.html">Mapa</a></li>
+									<li><a class="dropdown-item" href="../Deporte/Rois/Rois_deportes.html">Mapa</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -221,161 +221,137 @@
 	<div class="main">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../RedNatura_flora.html">Flora</a></li>
-				<li class="active">Mapa</li>
+				<li><a href="../index.html">Inicio</a></li>
+				<li class="active">Flora Acuática</li>
 			</ul>
-			<!--  Contido INICIO -->
+			<!-- BEGIN SIDEBAR & CONTENT -->
+			<!-- Contido INICIO -->
+			<div class="col-md-12 col-sm-12 margin-bottom-40">
+				<h2>Galería flora acuática Red Natura 2000</h2>
+				<!-- Galeria INICIO -->
+				<section class="galeria-container">
+					<article class="row">
+						<!--aqui empeza a  galeria -->
+						<ul class="galeria">
+							<li class="imagencolor"><a href="#img1"><img src="../imaxes/flora/acuaticas/fontinalis.jpeg" alt="Fontinalis"></a></li>
+							<li class="imagencolor"><a href="#img2"><img src="../imaxes/flora/acuaticas/salicornia.webp" alt="Salicornia"></a></li>
+							<li class="imagencolor"><a href="#img3"><img src="../imaxes/flora/acuaticas/scirpus_pungens.webp" alt="Scirpus pungens"></a></li>
+							<li class="imagencolor"><a href="#img4"><img src="../imaxes/flora/acuaticas/xuncos.webp" alt="Juncus effusus"></a></li>
+							<li class="imagencolor"><a href="#img5"><img src="../imaxes/flora/acuaticas/zostera_noltii.webp" alt="Zostera noltii"></a></li>
 
-			<div class="row margin-bottom-40">
-				<div class="col-md-12 col-sm-12">
-					<div class="content-page">
-						<h2>Flora en Terras de Iria</h2>
-						<div class="row margin-bottom-40">
-							<div class="col-md-3 col-sm-4 gallery-item">
-								<!-- ********************************************** empeza mapa ******************* 
-Coordenadas de Padrón
-Latitud: 42.7387500
-Longitud: -8.6605700
-
-Coordenadas de Dodro
-Latitude:42.7168491
-Longitud: -8.7150831							
-
-Coordenadas de Rois							
- Latitud: 42.7939451
-Longitud: -8.7024655							
-***************************************************************************** -->
-
-								<div id="map"></div>
-								<script>
-									var map = L.map('map').setView([42.715599339662134, -8.722380299701486], 12);
-									L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-										attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a>  <a href="../../index.html">Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)</a>'
-									}).addTo(map);
-
-
-									var Icono = L.icon({
-										iconUrl: '../imaxes/iconos/ubicacion.png',
-										iconSize: [20, 25],
-										iconAnchor: [15, 40],
-										opacity: 1,
-										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
-										shadowSize: [35, 30],
-										shadowAnchor: [0, 55],
-										popupAnchor: [0, -40]
-									});
-									var ubicacionIcon = L.icon({
-										iconUrl: '../imaxes/iconos/icon_location-2.png',
-										iconSize: [40, 35],
-										iconAnchor: [15, 40],
-										opacity: 1,
-										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
-										shadowSize: [35, 30],
-										shadowAnchor: [0, 55],
-										popupAnchor: [0, -40]
-									});
-									var Rois = L.marker([42.76082660182614, -8.690330533382241], {
-											title: "Concello de Rois",
-											draggable: false,
-											opacity: 1,
-											icon: ubicacionIcon
-										}).bindPopup("<p>Concello de Rois</p>")
-										.addTo(map);
-
-
-									var Dodro = L.marker([42.71599854612562, -8.704289466973023], {
-										title: "Concello de Dodro",
-										draggable: false,
-										opacity: 1,
-										icon: Icono
-									}).bindPopup("<p>Concello de Dodro</p>").addTo(map);
-
-									var Padron = L.marker([42.738538161754434, -8.660592666155658], {
-											title: "Concello de Padrón",
-											draggable: false,
-											opacity: 1,
-											icon: Icono
-										}).bindPopup("<p>Concello de Padrón</p>")
-										.addTo(map);
-
-
-
-									//variables para iconos flora 
-									var florIcon = L.icon({
-										iconUrl: "../imaxes/iconos/flora/flor.gif",
-										iconSize: [30, 40],
-										iconAnchor: [15, 40],
-										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
-										shadowSize: [35, 50],
-										shadowAnchor: [0, 55],
-										popupAnchor: [0, -40]
-									});
-									var arbustoIcon = L.icon({
-										iconUrl: "../imaxes/iconos/flora/arbusto.gif",
-										iconSize: [30, 40],
-										iconAnchor: [15, 40],
-										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
-										shadowSize: [35, 50],
-										shadowAnchor: [0, 55],
-										popupAnchor: [0, -40]
-									});
-
-									//puntos en mapa con iconos de flora
-									var florUn = L.marker([42.70259520325463, -8.726755701805269], {
-											title: "enlace a desplegable abaixo",
-											draggable: false,
-											opacity: 1,
-											icon: florIcon
-										}).bindPopup("<p> <span>Variedades que imos atopar nos tres concellos </span> <br> <a href='Galeria_Flora_plantilla2.html'> ver <i class='fa fa-plus'></i> </a></p>")
-										.addTo(map);
-
-									var florDous = L.marker([42.72766230643538, -8.72159810896856], {
-											title: "Lorem Ipsum",
-											draggable: false,
-											opacity: 1,
-											icon: florIcon
-										}).bindPopup("<p>Lorem Ipsum</p>")
-										.addTo(map);
-
-									var arbustoBuxan = L.marker([42.74650011013676, -8.726878288537218], {
-											title: "Lorem Ipsum",
-											draggable: false,
-											opacity: 1,
-											icon: arbustoIcon
-										}).bindPopup("<p>Lorem Ipsum</p>")
-										.addTo(map);
-
-								</script>
-								<!-- ******************* acaba mapa ******************* -->
+						</ul>
+						<!--aqui remata a  galeria -->
+						<!-- ********************************************************** -->
+						<!--aqui empezan os modais -->
+						<!-- modal imaxe 1 INICIO -->
+						<div class="modal" id="img1">
+							<h3>Musgo de auga
+								<span class="nome-ciencia">Nome científico: <strong class="green">Fontinalis</strong></span>
+								<a class="cerrar" data-title="pechar" href=""><i class="fa fa-times-circle"></i></a>
+							</h3>
+							<div class="imagen">
+								<a href="#img6" data-title="anterior"><i class="fa fa-arrow-circle-left"></i></a>
+								<a href="#img1">
+									<img src="../imaxes/flora/acuaticas/fontinalis.jpeg" alt="Fontinalis"></a>
+								<a href=" #img2" data-title="seguinte"><i class="fa fa-arrow-circle-right"></i></a>
 							</div>
+
+							<div class="texto-imagen">
+								<span>É un xénero de musgos subacuáticos que pertence á subclase Bryidae. O xénero está moi estendido polo Hemisferio Norte, e inclúe especies que se producen en auga estancada ou en auga corrente.</span>
+
+							</div>
+							<span class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Fontinalis" target="_blank">Wikipedia</a> | <a href="https://mexico.inaturalist.org/taxa/123793-Fontinalis/browse_photos" target="_blank">iNaturalistMX</a></span>
 						</div>
-					</div>
+						<!-- modal imaxe 1 FIN -->
+						<!-- modal imaxe 2 INICIO -->
+						<div class="modal" id="img2">
+							<h3>Espárrago de mar
+								<span class="nome-ciencia">Nome científico: <strong class="green">Salicornia</strong></span>
+								<a class="cerrar" data-title="pechar" href=""><i class="fa fa-times-circle"></i></a>
+							</h3>
+							<div class="imagen">
+								<a href="#img1" data-title="anterior"><i class="fa fa-arrow-circle-left"></i></a>
+								<a href="#img2">
+									<img src="../imaxes/flora/acuaticas/salicornia.webp" alt="Salicornia"></a>
+								<a href=" #img3" data-title="seguinte"><i class="fa fa-arrow-circle-right"></i></a>
+							</div>
 
-					<!-- script para mostrar/ocultar paneles -->
-					<script>
-						var acc = document.getElementsByClassName("accordion");
-						var i;
+							<div class="texto-imagen">
+								<span>As especies de Salicornia son pequenas, usualmente menores a 3 dm de altura, herbáceas suculentas cun talo horizontal e ramas laterais erectas. Follas pequenas e escamosas, aparentando a planta non ter follas. Moitas especies son verdes, pero a súa follaxe torna a vermello no outono. As flores hermafroditas son polinizadas por vento, froito pequeno, suculento, contén unha soa semente. As especies poden tolerar xeralmente inmersión en auga salgada. Usan a vía de C4 para absorber dióxido de carbono, da atmosfera. É unha vía máis eficiente para a fotosíntesis.</span>
 
-						for (i = 0; i < acc.length; i++) {
-							acc[i].addEventListener("click", function() {
-								this.classList.toggle("active");
-								var panel = this.nextElementSibling;
-								if (panel.style.maxHeight) {
-									panel.style.maxHeight = null;
-								} else {
-									panel.style.maxHeight = panel.scrollHeight + "px";
-								}
-							});
-						}
+							</div>
+							<span class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Salicornia" target="_blank">Wikipedia</a> | <a href="https://es.wikipedia.org/wiki/Salicornia_europaea" target="_blank">Wikipedia</a></span>
+						</div>
+						<!-- modal imaxe 2 FIN -->
+						<!-- modal imaxe 3 INICIO -->
+						<div class="modal" id="img3">
+							<h3>Espadana común de tres cadrados e Xunco afiado
+								<span class="nome-ciencia">Nome científico: <strong class="green">Scirpus</strong></span>
+								<a class="cerrar" data-title="pechar" href=""><i class="fa fa-times-circle"></i></a>
+							</h3>
+							<div class="imagen">
+								<a href="#img2" data-title="anterior"><i class="fa fa-arrow-circle-left"></i></a>
+								<a href="#img3">
+									<img src="../imaxes/flora/acuaticas/scirpus_pungens.webp" alt="Scirpus"></a>
+								<a href=" #img4" data-title="seguinte"><i class="fa fa-arrow-circle-right"></i></a>
+							</div>
 
-					</script>
-				</div>
+							<div class="texto-imagen">
+								<span>Especie de planta con flores da familia das juncias coñecida como espadana común de tres cadrados e xunco afiado.</span>
+								<span>Son plantas anuais ou perennes, arrosetadas ou caulescentes, cespitosas e/o rizomatosas ou estoloníferas, culmos e escapos teretes ou triangulares, sólidos; plantas hermafroditas. Follas con ou sen lámina; lígula presente ou ausente. Inflorescencia variadamente involucrada, capitada ou difusa, basicamente paniculado-cimosa; flósculos unibracteados, numerosos, as escamas imbricadas en espiral; porcas do perianto ausentes a varias; estambres 1–6; carpelos 2 ou 3, ovario atenuado cara ao estilo pero non articulado con leste, entón o corpo do froito continuo co rostro.</span>
+							</div>
+							<span class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Scirpus" target="_blank">Wikipedia</a> | <a href="https://www.fcgov.com/vegetation/?view=1120-common-threesquare" target="_blank">City of Fort Collins</a></span>
+						</div>
+						<!-- modal imaxe 3 FIN -->
+						<!-- modal imaxe 4 INICIO -->
+						<div class="modal" id="img4">
+							<h3>Xuncos
+								<span class="nome-ciencia">Nome científico: <strong class="green">Juncus effusus</strong></span>
+								<a class="cerrar" data-title="pechar" href=""><i class="fa fa-times-circle"></i></a>
+							</h3>
+							<div class="imagen">
+								<a href="#img3" data-title="anterior"><i class="fa fa-arrow-circle-left"></i></a>
+								<a href="#img4">
+									<img src="../imaxes/flora/acuaticas/xuncos.webp" alt="Juncus effusus"></a>
+								<a href=" #img5" data-title="seguinte"><i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+
+							<div class="texto-imagen">
+								<span>O Xunco de esteiras ou “Juncus effusus” é unha planta acuática ideal para adornar zonas húmidas, estanques ou xardíns de auga. Utilízase en restauracións ambientais de zonas húmidas. Serve de acubillo ás faunas locais.</span>
+							</div>
+							<span class="fonte">Fonte de textos e imaxes: <a href="https://theoriginalgarden.com/es/p/plantas/exterior/acuaticas/juncus-effusus-junco-de-esteras" target="_blank">The Original Garden</a> | <a href="https://www.naturalmedicinalherbs.net/herbs/e/eleocharis-palustris=common-spike-rush.php" target="_blank">Natural Medicinal Herbs</a></span>
+						</div>
+						<!-- modal imaxe 4 FIN -->
+						<!-- modal imaxe 5 INICIO -->
+						<div class="modal" id="img5">
+							<h3>Broza
+								<span class="nome-ciencia">Nome científico: <strong class="green">Zostera Noltii</strong></span>
+								<a class="cerrar" data-title="pechar" href=""><i class="fa fa-times-circle"></i></a>
+							</h3>
+							<div class="imagen">
+								<a href="#img4" data-title="anterior"><i class="fa fa-arrow-circle-left"></i></a>
+								<a href="#img5">
+									<img src="../imaxes/flora/acuaticas/zostera_noltii.webp" alt="Zostera Noltii"></a>
+								<a href=" #img1" data-title="seguinte"><i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+
+							<div class="texto-imagen">
+								<span>Pranta mariña que habita augas moi salinas. Esta fanerógama acuática é unha planta de porte herbáceo, perenne, que vive permanentemente mergullada en augas mariñas. As súas follas son alongadas e estreitas e florece a finais de primavera e no verán.</span>
+								<span>Con todo a especie Zostera noltii aparece máis ben localizada nas augas pouco profundas (0,1-1,5 m), onde as presións mecánicas son fortes e os sedimentos de textura groseira e pobres en materia orgánica</span>
+							</div>
+							<span class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Zostera_noltii" target="_blank">Wikipedia</a> | <a href="https://species.wikimedia.org/wiki/Zostera_noltei" target="_blank">Wikispecies</a></span>
+						</div>
+						<!-- modal imaxe 5 FIN -->
+					</article>
+				</section>
+				<!-- Galeria FIN -->
 			</div>
 		</div>
+		<!-- Contido FIN -->
 	</div>
+
 	<!-- INICIO footer -->
-	<footer class="footer-light paused">
+	<footer class="footer-light">
 		<div class="copyright animated fadeInDown">
 			<img src="../imaxes/logos.jpg" id="logos-xunta">
 			<div class="social-icons">

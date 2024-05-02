@@ -55,11 +55,11 @@
 	<div class="header">
 
 		<div class="container">
-			<h1 class="img-inside img-shadow" href="#" title="Terras de Iria">Terras de Iria
+			<h1 class="img-inside img-shadow" title="Terras de Iria">Terras de Iria
 			</h1><a class="site-logo-2" href="../../index.html" data-title="Inicio">
 				<img class="img-responsive img-shadow" src="../../imaxes/Logo_Xuve_Terras_2023.png" alt="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
 			</a>
-			<h2 class="medium img-shadow">
+			<h2 class="medium img-shadow" title="Concellos">
 				<a href="../../dodro.html" data-title="Información de Dodro">Dodro</a> <i class="mini fa fa-leaf"></i>
 				<a href="../../padron.html" data-title="Información de Padrón">Padrón</a> <i class="mini fa fa-leaf"></i>
 				<a href="../../rois.html" data-title="Información de Rois">Rois</a> <i class="mini fa fa-leaf"></i>
@@ -76,12 +76,11 @@
 						<ul class="dropdown-menu">
 							<li><a href="../../RedNatura_flora.html">Red Natura 2000</a></li>
 							<li><a href="../../Flora/Mapa_Flora_plantilla2.html">Mapa</a></li>
-							<li><a href="../../Flora/Galeria_Flora_plantilla2.html">Flores</a></li>
-							<li><a href="#">Árbores</a></li>
-							<li><a href="#">Arbustos</a></li>
-							<li><a href="#">Liquens</a></li>
-							<li><a href="#">Gramíneas</a></li>
-							<li><a href="#">Acuáticas</a></li>
+							<li><a href="../../Flora/flores_galeria.html">Flores</a></li>
+							<li><a href="../../../../Flora/Galeria_Flora_arbores.html">Árbores</a></li>
+							<li><a href="../../Flora/Flora/arbustos_galeria.html">Arbustos</a></li>
+							<li><a href="../../Flora/Galeria_Flora_liques.html">Liquens</a></li>
+							<li><a href="../../Flora/Galeria_Flora_acuaticas.html">Acuáticas</a></li>
 						</ul>
 					</li>
 					<!-- menu flora fin -->
@@ -127,9 +126,24 @@
 							Rutas
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Dodro</a></li>
-							<li><a href="#">Padrón</a></li>
-							<li><a href="#">Rois</a></li>
+							<li><a class="dropdown-item" href="#">Dodro <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="#">XXXXXXXXXXXXXX</a></li>
+									<li><a class="dropdown-item" href="#">XXXXXXXXX</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Padrón <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li class="active"><a class="dropdown-item" href="ruta-padron-xacobeo.html">Ruta Padrón Xacobeo</a></li>
+									<li><a class="dropdown-item" href="ruta-do-pemento-de-herbon.html">Ruta Pemento de Herbón</a></li>
+									<li><a class="dropdown-item" href="ruta-rosalia-nos-caminos2.html">Ruta Rosalía nos camiños</a></li>
+								</ul>
+							<li><a class="dropdown-item" href="#">Rois <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="#">XXXXXXXXXXXXXX</a></li>
+									<li><a class="dropdown-item" href="#">XXXXXXXXX</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<!-- menu rutas fin -->
@@ -302,7 +316,7 @@
 									'geolocate': false,
 									'profile': true
 								};
-								gv_options.allow_export = true; // true|false
+								gv_options.allow_export = false; // true|false
 
 								gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
 								gv_options.infobox_options.enabled = true; // true|false: enable or disable the info box altogether
@@ -436,14 +450,14 @@
 									trk[t].info.name = 'Rosalia nos Camiños';
 									trk[t].info.desc = '';
 									trk[t].info.clickable = true;
-									trk[t].info.color = '#e6400c'; //susi
+									trk[t].info.color = '#41B06E'; //susi
 									trk[t].info.width = 5;
 									trk[t].info.opacity = 0.9;
 									trk[t].info.hidden = false;
 									trk[t].info.z_index = null;
 									trk[t].info.outline_color = 'black';
 									trk[t].info.outline_width = 0;
-									trk[t].info.fill_color = '#e6400c'; //susi
+									trk[t].info.fill_color = '#41B06E'; //susi
 									trk[t].info.fill_opacity = 0;
 									trk[t].info.elevation = true;
 									trk[t].segments.push({

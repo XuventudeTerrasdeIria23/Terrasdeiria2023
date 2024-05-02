@@ -53,13 +53,12 @@
 <body class="corporate">
 	<!-- header INICIO -->
 	<div class="header">
-
 		<div class="container">
-			<h1 class="img-inside img-shadow" href="#" title="Terras de Iria">Terras de Iria
+			<h1 class="img-inside img-shadow" title="Terras de Iria">Terras de Iria
 			</h1><a class="site-logo-2" href="../../index.html" data-title="Inicio">
 				<img class="img-responsive img-shadow" src="../../imaxes/Logo_Xuve_Terras_2023.png" alt="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
 			</a>
-			<h2 class="medium img-shadow">
+			<h2 class="medium img-shadow" title="Concellos">
 				<a href="../../dodro.html" data-title="Información de Dodro">Dodro</a> <i class="mini fa fa-leaf"></i>
 				<a href="../../padron.html" data-title="Información de Padrón">Padrón</a> <i class="mini fa fa-leaf"></i>
 				<a href="../../rois.html" data-title="Información de Rois">Rois</a> <i class="mini fa fa-leaf"></i>
@@ -76,12 +75,11 @@
 						<ul class="dropdown-menu">
 							<li><a href="../../RedNatura_flora.html">Red Natura 2000</a></li>
 							<li><a href="../../Flora/Mapa_Flora_plantilla2.html">Mapa</a></li>
-							<li><a href="../../Flora/Galeria_Flora_plantilla2.html">Flores</a></li>
-							<li><a href="#">Árbores</a></li>
-							<li><a href="#">Arbustos</a></li>
-							<li><a href="#">Liquens</a></li>
-							<li><a href="#">Gramíneas</a></li>
-							<li><a href="#">Acuáticas</a></li>
+							<li><a href="../../Flora/flores_galeria.html">Flores</a></li>
+							<li><a href="../../../../Flora/Galeria_Flora_arbores.html">Árbores</a></li>
+							<li><a href="../../Flora/Flora/arbustos_galeria.html">Arbustos</a></li>
+							<li><a href="../../Flora/Galeria_Flora_liques.html">Liquens</a></li>
+							<li><a href="../../Flora/Galeria_Flora_acuaticas.html">Acuáticas</a></li>
 						</ul>
 					</li>
 					<!-- menu flora fin -->
@@ -127,9 +125,24 @@
 							Rutas
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Dodro</a></li>
-							<li><a href="#">Padrón</a></li>
-							<li><a href="#">Rois</a></li>
+							<li><a class="dropdown-item" href="#">Dodro <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="#">XXXXXXXXXXXXXX</a></li>
+									<li><a class="dropdown-item" href="#">XXXXXXXXX</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Padrón <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li class="active"><a class="dropdown-item" href="ruta-padron-xacobeo.html">Ruta Padrón Xacobeo</a></li>
+									<li><a class="dropdown-item" href="ruta-do-pemento-de-herbon.html">Ruta Pemento de Herbón</a></li>
+									<li><a class="dropdown-item" href="ruta-rosalia-nos-caminos2.html">Ruta Rosalía nos camiños</a></li>
+								</ul>
+							<li><a class="dropdown-item" href="#">Rois <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="#">XXXXXXXXXXXXXX</a></li>
+									<li><a class="dropdown-item" href="#">XXXXXXXXX</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<!-- menu rutas fin -->
@@ -308,7 +321,7 @@
 									'geolocate': false,
 									'profile': true
 								};
-								gv_options.allow_export = true; // true|false
+								gv_options.allow_export = false; // true|false
 
 								gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
 								gv_options.infobox_options.enabled = true; // true|false: enable or disable the info box altogether
@@ -441,14 +454,14 @@
 									//									trk[t].info.desc = 'Ruta circular desde Padrón pasando por: <br />- Xardín Histórico de Padrón (0.3 km) <br />- Igrexa de Iria Flavia (1.6 km) <br />- Santiaguiño (3.2 km) <br />- Albergue de Padrón (3.6 km) <br />- Iglesia de Santiago de Padrón (3.8 km) <br />- Monumento a Cela (4.0 km)';
 									trk[t].info.desc = '';
 									trk[t].info.clickable = true;
-									trk[t].info.color = '#e6400c'; //susi
-									trk[t].info.width = 5;
-									trk[t].info.opacity = 0.9;
+									trk[t].info.color = '#41B06E'; //susi
+									trk[t].info.width = 6;
+									trk[t].info.opacity = 1;
 									trk[t].info.hidden = false;
 									trk[t].info.z_index = null;
 									trk[t].info.outline_color = 'black';
 									trk[t].info.outline_width = 0;
-									trk[t].info.fill_color = '#e6400c'; //susi
+									trk[t].info.fill_color = '#41B06E'; //susi
 									trk[t].info.fill_opacity = 0;
 									trk[t].info.elevation = true;
 									trk[t].segments.push({
@@ -645,17 +658,16 @@
 										name: trk[t].info.name,
 										desc: trk[t].info.desc,
 										color: trk[t].info.color,
-										number: t
+										number: t,
+
 									});
-
-
 
 									GV_Draw_Marker({
 										lat: 42.738542881902625,
 										lon: -8.660626139261579,
 										alt: 12.8,
 										name: 'Casa do Concello. Inicio da ruta',
-										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/casa-concello.jpg" alt="Casa do Concello"> <p class="red small"><a class="small" href="https://www.google.com/maps/place/Casa+do+Concello+de+Padr%C3%B3n/@42.7383461,-8.6606222,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd%3Dw86-h114-k-no!7i3024!8i4032!4m16!1m8!3m7!1s0xd2f1b2d2e6f6405:0xbe2f51a64e79bea4!2zUsO6YSBMb25nYSwgMjcsIDE1OTAwIFBhZHLDs24sIEEgQ29ydcOxYQ!3b1!8m2!3d42.7384011!4d-8.6605725!16s%2Fg%2F11c1ydy2r7!3m6!1s0xd2f1b2d28cdc0fd:0x13b3b41b26053b43!8m2!3d42.7383491!4d-8.6605283!10e5!16s%2Fg%2F1tf_2c3r?hl=es&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.738542881902625, -8.660626139261579</a></p> <p>Pazo do século XV (reformado en 1794) en estilo neoclásico. A fachada presenta unha esfera do reloxo inglés e escudo pétreo representando o traslatio.</p>',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/casa-concello.jpg" alt="Casa do Concello"> <p class="red small"><a class="small" href="https://www.google.com/maps/place/Casa+do+Concello+de+Padr%C3%B3n/@42.7383461,-8.6606222,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNRC7H3EhbZb8MMzNrmJjGrdYxCwqIAnqt7tiEd%3Dw86-h114-k-no!7i3024!8i4032!4m16!1m8!3m7!1s0xd2f1b2d2e6f6405:0xbe2f51a64e79bea4!2zUsO6YSBMb25nYSwgMjcsIDE1OTAwIFBhZHLDs24sIEEgQ29ydcOxYQ!3b1!8m2!3d42.7384011!4d-8.6605725!16s%2Fg%2F11c1ydy2r7!3m6!1s0xd2f1b2d28cdc0fd:0x13b3b41b26053b43!8m2!3d42.7383491!4d-8.6605283!10e5!16s%2Fg%2F1tf_2c3r?hl=es&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.738542881902625, -8.660626139261579</a></p> <p>Pazo do século XV (reformado en 1794) en estilo neoclásico. A fachada presenta unha esfera do reloxo inglés e escudo pétreo representando o traslatio.</p>',
 										color: '',
 										icon: '../../imaxes/iconos/ubicacion.png'
 									});
@@ -669,11 +681,11 @@
 										icon: ''
 									});
 									GV_Draw_Marker({
-										lat: 42.738675559778045,
-										lon: -8.658439208970774,
+										lat: 42.738978678968714,
+										lon: -8.659770105219318,
 										alt: 12,
 										name: 'Cruceiro do camiño',
-										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/cruceiro-do-caminho2.jpg" alt="Cruceiro do camiño"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7388239,-8.6598709,3a,75y,4.26h,86.53t/data=!3m8!1e1!3m6!1s1u0afaO7sTUUsdyyu4YUOQ!2e0!5s20180501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D1u0afaO7sTUUsdyyu4YUOQ%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D4.256382901008891%26pitch%3D3.4665996404188917%26thumbfov%3D90!7i13312!8i6656?hl=es&coh=205410&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 42.738675559778045, -8.658439208970774</a></p> <p>Cruceiro de finais do s. XX con imaxes da Traslatio e a tradición xacobea.</p>',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-xacobeo/cruceiro-do-caminho2.jpg" alt="Cruceiro do camiño"> <p class="red small"><a class="small" href="https://www.google.com/maps/place/O+Cruceiro+do+Cami%C3%B1o/@42.7388026,-8.6623982,17z/data=!3m1!4b1!4m6!3m5!1s0xd2f05becb14991b:0x8bbe786921178f75!8m2!3d42.7387987!4d-8.6598233!16s%2Fg%2F11f62lrlw4?hl=es&entry=ttu" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i> 4-8.659770105219318</a></p> <p>Cruceiro de finais do s. XX con imaxes da Traslatio e a tradición xacobea.</p>',
 										color: '',
 										icon: ''
 									});

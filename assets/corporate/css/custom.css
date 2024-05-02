@@ -40,6 +40,13 @@ gris claro {
 	color: #ccc;
 	color:rgb(204, 204, 204)
 }
+
+color track en rutas senderismo{
+trk[t].info.color = '#41B06E'; //susi
+trk[t].info.fill_color = '#41B06E'; //susi
+
+RGB(65, 176, 110)
+}
 ********************/
  html {
  	scroll-behavior: smooth;
@@ -712,20 +719,47 @@ gris claro {
  	overflow: auto;
  }
 
- #gv_elevation_profile {
- 	height: auto !important;
- 	padding: 1em;
- 	background: #fff
- }
 
  .gv_profile_button {
- 	width: 5em !important;
- 	height: 5em !important;
+ 	/* icono para mostrar altitude */
+ 	width: 7em !important;
+ 	height: 7em !important;
  	padding: .5em;
- 	box-shadow: 2px 2px 2px 2px #3f586280;
- 	border: 2px solid rgb(226, 135, 67);
+ 	box-shadow: 1px 1px 1px #cccccc80;
+ 	border: 2px solid rgba(226, 135, 67, 0.5);
  	background: #fff url(../../../imaxes/iconos/icon_elevation_profile.png) center/100% !important;
  }
+
+ .gv_profile {
+ 	/* cadro altitude/elevation */
+ 	height: auto !important;
+ 	width: 95% !important;
+ 	padding: 0em 0em 0em 0em !important;
+ 	text-align: left;
+ 	overflow: visible;
+ }
+
+ .gv_profile[canvas] {
+ 	border: 2px solid rg(226, 135, 67);
+ }
+
+ #gv_elevation_profile {
+ 	/* grafica altitude/elevation */
+ 	height: auto !important;
+ 	width: 95%;
+ 	padding: 0em !important;
+ 	margin: 0 !important;
+ 	background: #fff !important;
+ 	overflow: visible;
+
+ }
+
+ .profile_waypoint_label {
+ 	/* etiquetas cadro altitude */
+ 	font-size: 1.2em !important;
+ 	padding: 0em !important;
+ }
+
 
  /*
  .gv_profile_button[title]::before {
@@ -734,8 +768,13 @@ gris claro {
  }
 */
 
+
+ .profile_unfilled {
+ 	background-color: yellow;
+ }
+
  #gmap_div #gv_tracklist {
- 	/* cadrocheckbox nome do mapa */
+ 	/* cadro checkbox nome do mapa */
  	color: #3f5862 !important;
  	background: #ccc;
  	overflow: visible;
@@ -757,15 +796,15 @@ gris claro {
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
 
- 	background-color: rgba(226, 135, 67, 0.5);
+ 	background-color: #41B06E80;
+ 	background-color: rgba(65, 176, 110, 0.7);
  	width: 17vw !important;
  	height: auto !important;
- 	padding: .2em;
+ 	padding: 1em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
  	overflow-y: scroll;
  	display: inline !important;
-
  }
 
  #gv_marker_list table {
