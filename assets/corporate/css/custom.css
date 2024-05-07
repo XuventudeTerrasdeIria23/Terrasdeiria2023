@@ -307,6 +307,10 @@ RGB(65, 176, 110)
  	float: right;
  }
 
+ .notas {
+ 	font-size: .7em;
+ }
+
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
 
 

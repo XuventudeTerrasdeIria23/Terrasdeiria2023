@@ -83,9 +83,21 @@ ul.galeria {
 	text-align: center;
 }
 
+.modal-fauna:target {
+	background-color: #FFEDBA;
+}
+
+.modal-flora:target {
+	background-color: #E9F5DB;
+}
+
+.modal-drons:target {
+	background-color: red;
+}
 
 .modal h3 {
-	color: #e28743;
+	color: #3f5862;
+
 	width: 99%;
 	text-align: center;
 	font-weight: bold;
@@ -103,6 +115,10 @@ ul.galeria {
 	text-align: center;
 	font-size: 50%;
 	font-weight: bold;
+}
+
+.modal-flora .verde {
+	color: #395E08;
 }
 
 .modal .imagen {
