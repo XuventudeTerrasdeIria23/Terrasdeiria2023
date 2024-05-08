@@ -1,93 +1,109 @@
- .glossary-alpha,
- .glossary-main {
- 	margin: 0 auto;
- 	padding: 1em;
- 	width: 100%;
- }
+.glossary-alpha {
+	margin: 0 !important;
+	padding: 0;
+	font-size: 1.5em;
+	text-align: center;
+}
 
- .glossary-alpha {
- 	font-size: 1.5em;
- }
+.glossary-alpha a {
+	text-align: center;
+	margin: 0em;
+	padding: 0em .1em;
+	border-radius: 0 0 .1em 0 !important;
+}
 
- .glossary-main {}
+.glossary-alpha a:hover {
+	color: #3f5862;
+	border-bottom: 3px solid rgba(63, 88, 98, .5);
+	border-radius: 2em;
+}
 
- .alpha-title h3 {
- 	font-size: 26px;
- 	font-family: Verdana;
- 	margin-bottom: 25px;
- 	text-decoration: underline;
- }
+.glossary-alpha a::after {
+	font-family: FontAwesome;
+	content: " \f06c";
+	color: rgba(17, 161, 73, 0.24);
+	vertical-align: middle;
+	font-size: .4em;
+	display: inline-block;
+	line-height: auto;
+	padding: 0 0 0 1em;
+}
 
- .glossary-term {
- 	font-family: Verdana;
- 	margin-bottom: 35px;
- 	width: 100%;
- }
+.glossary-main {
+	margin: 0 auto;
+	width: 100%;
+}
 
- .glossary-term h4,
- .glossary-term td.term {
- 	font-size: 1em;
- 	font-weight: 700;
- 	display: inline;
- }
+.alpha-title h3 {
+	font-size: 1.7em;
+	margin: 1em 0 1em 0;
+	border-bottom: 2px solid rgba(226, 135, 67, .5)
+}
 
- .glossary-term p,
- .glossary-term td.descri {
- 	line-height: 1.5em;
- 	font-family: sans-serif;
- 	margin-top: 15px;
- 	display: inline;
- 	margin: .5em 0
- }
 
- .datagrid table {
- 	border-collapse: collapse;
- 	text-align: left;
- 	width: 100%;
- }
+.glossary-term {
+	font-family: Verdana;
+	margin-bottom: 35px;
+	width: 100%;
+}
 
- .datagrid {
- 	font: normal 1em;
- 	background: #fff;
- 	overflow: hidden;
- 	border: 1px solid #e28743;
- }
+.glossary-term h4,
+.glossary-term td.term {
+	font-size: 1em;
+	font-weight: 700;
+	display: inline;
+}
 
- .datagrid table td,
- .datagrid table th {
- 	padding: .5em 0 .5em .7em;
- }
+.glossary-term p,
+.glossary-term td.descri {
+	line-height: 1.5em;
+	/* 	margin-top: 5em;*/
+	margin: .5em 0;
+}
 
- .datagrid table thead th {
- 	background-color: rgb(226, 135, 67);
- 	color: #ffffff;
- 	font-size: 1em;
- 	font-weight: bold;
- 	border-left: 1px solid #e28743;
- }
+.datagrid table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
 
- .datagrid table thead th:first-child {
- 	border: none;
- }
+.datagrid {
+	font: normal 1em;
+	background: #fff;
+	overflow: hidden;
+	/* 	border: 1px solid #e28743;*/
+}
 
- .datagrid table tbody td {
- 	color: #3f5862;
- 	background: #ffffff;
- 	border-left: 1px solid #E1EEF4;
- 	font-size: 1em;
- }
+.datagrid table td,
+.datagrid table th {
+	padding: .5em 0 .5em .7em;
+}
 
- .datagrid table tbody .alt td {
- 	background: rgba(226, 135, 67, .2);
- 	color: #3f5862;
- }
+.datagrid table thead th {
+	/*
+	background-color: rgb(226, 135, 67);
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	border-left: 1px solid #e28743;
+*/
+}
 
- .datagrid table tbody td:first-child {
- 	border-left: none;
- 	width: 15%;
- 	font-weight: bold;
- }
+.datagrid table tbody td {
+	color: #3f5862;
+	background: #ffffff;
+	font-size: 1em;
+	border: 1px solid #cccccc80;
+}
 
- .datagrid table tbody tr:last-child td {
- 	border-bottom: none;
- }
+.datagrid table tbody .alt td {
+	background: rgba(226, 135, 67, .2);
+	color: #3f5862;
+}
+
+.datagrid table tbody td:first-child {
+	width: 15%;
+	font-weight: bold;
+}
+
+.datagrid table tbody tr:last-child td {}
