@@ -826,7 +826,7 @@ RGB(65, 176, 110)
  }
 
  #gv_marker_list_header::before {
- 	content: 'Punto de ruta';
+ 	content: ' ';
  	font: 1.1em 'Open Sans', sans-serif;
  	padding: inherit;
  }

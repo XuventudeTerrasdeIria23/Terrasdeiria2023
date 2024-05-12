@@ -91,6 +91,10 @@ ul.galeria {
 	background-color: #E9F5DB;
 }
 
+.modal-fauna:target {
+	background-color: #FFEDBA;
+}
+
 .modal-drons:target {
 	background-color: red;
 }
