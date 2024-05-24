@@ -887,7 +887,6 @@ RGB(65, 176, 110)
  	width: 100% !important;
  	padding: 1em;
  	margin: 0 auto !important;
- 	border: 1px solid red;
  }
 
  .gv_marker_info_window img {
@@ -929,7 +928,6 @@ RGB(65, 176, 110)
  	font-weight: normal !important;
  	position: relative;
  	clear: both;
- 	border: 1px solid green;
  }
 
  .gv_marker_info_window a,
