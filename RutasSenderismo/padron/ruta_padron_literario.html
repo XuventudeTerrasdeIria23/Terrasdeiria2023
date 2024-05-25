@@ -217,7 +217,7 @@
 	<div class="main">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="../../inicio.html">Home</a></li>
+				<li><a href="../../inicio.html">Inicio</a></li>
 				<li><a href="../../padron.html">Padrón</a></li>
 				<li class="active">Ruta Padrón literario</li>
 			</ul>
@@ -250,9 +250,6 @@
 							<div id="gv_infobox" class="gv_infobox"></div>
 							<div id="gv_tracklist" class="gv_tracklist"></div>
 							<div id="gv_marker_list" class="gv_marker_list"> </div>
-
-
-
 							<!-- begin GPS Visualizer setup script (must come after loading of API code) -->
 							<script type="text/javascript">
 								/* Global variables used by the GPS Visualizer functions (20240509045148): */
@@ -264,9 +261,8 @@
 								gv_options.map_type = 'GV_OSM'; // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
 								gv_options.map_opacity = 1.00; // number from 0 to 1
 								gv_options.full_screen = false; // true|false: should the map fill the entire page (or frame)?
-								gv_options.width = 700; // width of the map, in pixels
-								gv_options.height = 700; // height of the map, in pixels
-
+								//								gv_options.width = 700; // width of the map, in pixels
+								// gv_options.height = 700; // height of the map, in pixels
 								gv_options.map_div = 'gmap_div'; // the name of the HTML "div" tag containing the map itself; usually 'gmap_div'
 								gv_options.doubleclick_zoom = true; // true|false: zoom in when mouse is double-clicked?
 								gv_options.doubleclick_center = true; // true|false: re-center the map on the point that was double-clicked?
@@ -286,7 +282,7 @@
 								gv_options.animated_zoom = true; // true|false: only affects Leaflet maps
 
 								// widgets on the map:
-								gv_options.zoom_control = 'auto'; // 'auto'|'large'|'small'|'none'
+								gv_options.zoom_control = 'small'; // 'auto'|'large'|'small'|'none'
 								gv_options.recenter_button = true; // true|false: is there a 'click to recenter' button above the zoom control?
 								gv_options.geolocation_control = false; // true|false; only works on secure servers
 								gv_options.geolocation_options = {
@@ -301,6 +297,7 @@
 								gv_options.map_type_control.visible = 'auto'; // true|false|'auto': is a map type control placed on the map itself?
 								gv_options.map_type_control.filter = false; // true|false: when map loads, are irrelevant maps ignored?
 								gv_options.map_type_control.excluded = []; // comma-separated list of quoted map IDs that will never show in the list ('included' also works)
+								gv_options.map_type_control.included = ['GV_MAP', 'GV_HYBRID', 'GV_OSM', 'GV_TOPO', 'G_PHYSICAL_MAP', 'GV_PHYSICAL', 'GV_TERRAIN', 'G_SATELLITE_MAP', 'GV_AERIAL', 'GV_SATELLITE']; // Susi - elexir os mapas que funcionan  gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
 								gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
 								gv_options.measurement_tools = true; // true|false: put a measurement ruler on the map?
 								gv_options.measurement_options = {
@@ -311,10 +308,10 @@
 								gv_options.crosshair_hidden = true; // true|false: hide the crosshair initially?
 								gv_options.mouse_coordinates = false; // true|false: show a "mouse coordinates" box?
 								gv_options.utilities_menu = {
-									'maptype': true,
-									'opacity': true,
-									'measure': true,
-									'geolocate': true,
+									'maptype': false,
+									'opacity': false,
+									'measure': false,
+									'geolocate': false,
 									'profile': true
 								};
 								gv_options.allow_export = false; // true|false
@@ -330,12 +327,12 @@
 								gv_options.track_tooltips = false; // true|false: should the name of a track appear on the map when you mouse over the track itself?
 								gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
 								gv_options.tracklist_options.enabled = true; // true|false: enable or disable the tracklist altogether
-								gv_options.tracklist_options.position = ['RIGHT_TOP', 4, 32]; // [Google anchor name, relative x, relative y]
-								gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
-								gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
-								gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
-								gv_options.tracklist_options.max_height = 310; // maximum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
-								gv_options.tracklist_options.desc = true; // true|false: should tracks' descriptions be shown in the list
+								gv_options.tracklist_options.position = ['LEFT_BOTTOM', 82, 0]; // [Google anchor name, relative x, relative y]
+								//								gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
+								//								gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
+								//								gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
+								//								gv_options.tracklist_options.max_height = 310; // maximum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
+								gv_options.tracklist_options.desc = false; // true|false: should tracks' descriptions be shown in the list
 								gv_options.tracklist_options.toggle = false; // true|false: should clicking on a track's name turn it on or off?
 								gv_options.tracklist_options.checkboxes = true; // true|false: should there be a separate icon/checkbox for toggling visibility?
 								gv_options.tracklist_options.zoom_links = true; // true|false: should each item include a small icon that will zoom to that track?
@@ -352,7 +349,7 @@
 									filled: true,
 									waypoints: true,
 									height: 120,
-									width: '100%',
+									width: '80%',
 									y_min: null,
 									y_max: null,
 									gap_between_tracks: false
@@ -361,9 +358,9 @@
 
 								// marker-related options:
 								gv_options.default_marker = {
-									color: 'red',
-									icon: 'googlemini',
-									scale: 1
+									icon: '../../imaxes/iconos/icono-mapa-sendeiro.png',
+									scale: 1,
+									size: [25, 25]
 								}; // icon can be a URL, but be sure to also include size:[w,h] and optionally anchor:[x,y]
 								gv_options.vector_markers = true; // are the icons on the map in embedded SVG format?
 								gv_options.marker_tooltips = true; // do the names of the markers show up when you mouse-over them?
@@ -382,17 +379,17 @@
 								gv_options.marker_list_options.enabled = true; // true|false: enable or disable the marker list altogether
 								gv_options.marker_list_options.floating = false; // is the list a floating box inside the map itself?
 								gv_options.marker_list_options.position = ['RIGHT_BOTTOM', 6, 38]; // floating list only: position within map
-								gv_options.marker_list_options.min_width = 160; // minimum width, in pixels, of the floating list
-								gv_options.marker_list_options.max_width = 160; // maximum width
-								gv_options.marker_list_options.min_height = 0; // minimum height, in pixels, of the floating list
-								gv_options.marker_list_options.max_height = 310; // maximum height
+								//								gv_options.marker_list_options.min_width = 160; // minimum width, in pixels, of the floating list
+								// gv_options.marker_list_options.max_width = 160; // maximum width
+								// gv_options.marker_list_options.min_height = 0; // minimum height, in pixels, of the floating list
+								// gv_options.marker_list_options.max_height = 310; // maximum height
 								gv_options.marker_list_options.draggable = true; // true|false, floating list only: can it be moved around the screen?
 								gv_options.marker_list_options.collapsible = true; // true|false, floating list only: can it be collapsed by double-clicking its top bar?
 								gv_options.marker_list_options.include_tickmarks = false; // true|false: are distance/time tickmarks included in the list?
 								gv_options.marker_list_options.include_trackpoints = false; // true|false: are "trackpoint" markers included in the list?
 								gv_options.marker_list_options.dividers = true; // true|false: will a thin line be drawn between each item in the list?
 								gv_options.marker_list_options.desc = false; // true|false: will the markers' descriptions be shown below their names in the list?
-								gv_options.marker_list_options.icons = true; // true|false: should the markers' icons appear to the left of their names in the list?
+								gv_options.marker_list_options.icons = false; // true|false: should the markers' icons appear to the left of their names in the list?
 								gv_options.marker_list_options.icon_scale = 'x1'; // size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
 								gv_options.marker_list_options.thumbnails = false; // true|false: should markers' thumbnails be shown in the list?
 								gv_options.marker_list_options.folders_collapsed = false; // true|false: do folders in the list start out in a collapsed state?
@@ -409,7 +406,7 @@
 								gv_options.marker_list_options.limit = 0; // how many markers to show in the list; 0 for no limit
 								gv_options.marker_list_options.center = false; // true|false: does the map center upon a marker when you click its name in the list?
 								gv_options.marker_list_options.zoom = false; // true|false: does the map zoom to a certain level when you click on a marker's name in the list?
-								gv_options.marker_list_options.zoom_level = 17; // if 'zoom' is true, what level should the map zoom to?
+								gv_options.marker_list_options.zoom_level = 16; // if 'zoom' is true, what level should the map zoom to?
 								gv_options.marker_list_options.info_window = true; // true|false: do info windows pop up when the markers' names are clicked in the list?
 								gv_options.marker_list_options.url_links = false; // true|false: do the names in the list become instant links to the markers' URLs?
 								gv_options.marker_list_options.toggle = false; // true|false: does a marker disappear if you click on its name in the list?
@@ -427,40 +424,11 @@
 								gv_options.marker_filter_options.zoom_message = ''; // message to put in the marker list if the map is below the min_zoom threshold
 								gv_options.synthesize_fields = {}; // for example: {label:'{name}'} would cause all markers' names to become visible labels
 
-
-
 								// Load GPS Visualizer's mapping functions (this must be loaded AFTER gv_options are set):
 								var script_file = (self.API && API.match(/^g/i)) ? 'google_maps/functions3.js' : 'leaflet/functions.js';
 								document.writeln('<script src="https://www.gpsvisualizer.com/' + script_file + '" type="text/javascript"><' + '/script>');
 
 							</script>
-							<style type="text/css">
-								/* Put any custom style definitions here (e.g., .gv_marker_info_window, .gv_marker_info_window_name, .gv_marker_list_item, .gv_tooltip, .gv_label, etc.) */
-								#gmap_div .gv_marker_info_window {
-									font-size: 11px !important;
-								}
-
-								#gmap_div .gv_label {
-									opacity: 0.90;
-									filter: alpha(opacity=90);
-									color: white;
-									background: #333333;
-									border: 1px solid black;
-									padding: 1px;
-									font-family: Verdana !important;
-									font-size: 10px;
-									font-weight: normal !important;
-								}
-
-								.legend_block {
-									display: inline-block;
-									border: solid 1px black;
-									width: 9px;
-									height: 9px;
-									margin: 0px 2px 0px 0px;
-								}
-
-							</style>
 
 							<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
 							<script type="text/javascript">
@@ -474,16 +442,16 @@
 										segments: []
 									};
 									trk[t].info.name = 'Ruta Padron literario';
-									trk[t].info.desc = 'Ruta circular en Padrón percorrendo os principais recursos literarios da localidade.';
+									trk[t].info.desc = '';
 									trk[t].info.clickable = true;
-									trk[t].info.color = '#e60000';
+									trk[t].info.color = '#41B06E';
 									trk[t].info.width = 6;
 									trk[t].info.opacity = 1;
 									trk[t].info.hidden = false;
 									trk[t].info.z_index = null;
 									trk[t].info.outline_color = 'black';
 									trk[t].info.outline_width = 0;
-									trk[t].info.fill_color = '#e60000';
+									trk[t].info.fill_color = '#41B06E';
 									trk[t].info.fill_opacity = 0;
 									trk[t].info.elevation = true;
 									trk[t].segments.push({
@@ -642,1855 +610,22 @@
 										number: t
 									});
 
-
-									GV_Draw_Marker({
-										lat: 42.7369280,
-										lon: -8.6615500,
-										alt: 4.386,
-										name: '',
-										desc: '<b>trackpoint #1</b><br/> <i>Time:</i> 2024-05-09 11:48:58.2235<br/> <i>Latitude:</i> 42.7369280&#176;<br/> <i>Longitude:</i> -8.6615500&#176;<br/> <i>Elevation:</i> 4.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7388810,
-										lon: -8.6616660,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #2</b><br/> <i>Time:</i> 2024-05-09 11:49:18.2235<br/> <i>Latitude:</i> 42.7388810&#176;<br/> <i>Longitude:</i> -8.6616660&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390190,
-										lon: -8.6614860,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #3</b><br/> <i>Time:</i> 2024-05-09 11:49:38.2235<br/> <i>Latitude:</i> 42.7390190&#176;<br/> <i>Longitude:</i> -8.6614860&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390480,
-										lon: -8.6613220,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #4</b><br/> <i>Time:</i> 2024-05-09 11:49:58.2266<br/> <i>Latitude:</i> 42.7390480&#176;<br/> <i>Longitude:</i> -8.6613220&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390260,
-										lon: -8.6611450,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #5</b><br/> <i>Time:</i> 2024-05-09 11:50:18.2266<br/> <i>Latitude:</i> 42.7390260&#176;<br/> <i>Longitude:</i> -8.6611450&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390010,
-										lon: -8.6609170,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #6</b><br/> <i>Time:</i> 2024-05-09 11:50:38.2266<br/> <i>Latitude:</i> 42.7390010&#176;<br/> <i>Longitude:</i> -8.6609170&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389790,
-										lon: -8.6606680,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #7</b><br/> <i>Time:</i> 2024-05-09 11:50:58.2267<br/> <i>Latitude:</i> 42.7389790&#176;<br/> <i>Longitude:</i> -8.6606680&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390580,
-										lon: -8.6605790,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #8</b><br/> <i>Time:</i> 2024-05-09 11:51:18.2267<br/> <i>Latitude:</i> 42.7390580&#176;<br/> <i>Longitude:</i> -8.6605790&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390500,
-										lon: -8.6605310,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #9</b><br/> <i>Time:</i> 2024-05-09 11:51:38.2267<br/> <i>Latitude:</i> 42.7390500&#176;<br/> <i>Longitude:</i> -8.6605310&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390190,
-										lon: -8.6605150,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #10</b><br/> <i>Time:</i> 2024-05-09 11:51:58.2267<br/> <i>Latitude:</i> 42.7390190&#176;<br/> <i>Longitude:</i> -8.6605150&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389580,
-										lon: -8.6605230,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #11</b><br/> <i>Time:</i> 2024-05-09 11:52:18.2267<br/> <i>Latitude:</i> 42.7389580&#176;<br/> <i>Longitude:</i> -8.6605230&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389340,
-										lon: -8.6605230,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #12</b><br/> <i>Time:</i> 2024-05-09 11:52:38.2267<br/> <i>Latitude:</i> 42.7389340&#176;<br/> <i>Longitude:</i> -8.6605230&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389320,
-										lon: -8.6604800,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #13</b><br/> <i>Time:</i> 2024-05-09 11:52:58.2267<br/> <i>Latitude:</i> 42.7389320&#176;<br/> <i>Longitude:</i> -8.6604800&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389120,
-										lon: -8.6603940,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #14</b><br/> <i>Time:</i> 2024-05-09 11:53:18.2267<br/> <i>Latitude:</i> 42.7389120&#176;<br/> <i>Longitude:</i> -8.6603940&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7388980,
-										lon: -8.6602870,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #15</b><br/> <i>Time:</i> 2024-05-09 11:53:38.2267<br/> <i>Latitude:</i> 42.7388980&#176;<br/> <i>Longitude:</i> -8.6602870&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7391330,
-										lon: -8.6601980,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #16</b><br/> <i>Time:</i> 2024-05-09 11:53:58.2267<br/> <i>Latitude:</i> 42.7391330&#176;<br/> <i>Longitude:</i> -8.6601980&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7391290,
-										lon: -8.6601660,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #17</b><br/> <i>Time:</i> 2024-05-09 11:54:18.2267<br/> <i>Latitude:</i> 42.7391290&#176;<br/> <i>Longitude:</i> -8.6601660&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7391090,
-										lon: -8.6600590,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #18</b><br/> <i>Time:</i> 2024-05-09 11:54:38.2267<br/> <i>Latitude:</i> 42.7391090&#176;<br/> <i>Longitude:</i> -8.6600590&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390900,
-										lon: -8.6599730,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #19</b><br/> <i>Time:</i> 2024-05-09 11:54:58.2267<br/> <i>Latitude:</i> 42.7390900&#176;<br/> <i>Longitude:</i> -8.6599730&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390820,
-										lon: -8.6598280,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #20</b><br/> <i>Time:</i> 2024-05-09 11:55:18.2267<br/> <i>Latitude:</i> 42.7390820&#176;<br/> <i>Longitude:</i> -8.6598280&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7391920,
-										lon: -8.6597750,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #21</b><br/> <i>Time:</i> 2024-05-09 11:55:38.2267<br/> <i>Latitude:</i> 42.7391920&#176;<br/> <i>Longitude:</i> -8.6597750&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7392710,
-										lon: -8.6596830,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #22</b><br/> <i>Time:</i> 2024-05-09 11:55:58.2267<br/> <i>Latitude:</i> 42.7392710&#176;<br/> <i>Longitude:</i> -8.6596830&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7392430,
-										lon: -8.6595060,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #23</b><br/> <i>Time:</i> 2024-05-09 11:56:18.2267<br/> <i>Latitude:</i> 42.7392430&#176;<br/> <i>Longitude:</i> -8.6595060&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7392120,
-										lon: -8.6593350,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #24</b><br/> <i>Time:</i> 2024-05-09 11:56:38.2267<br/> <i>Latitude:</i> 42.7392120&#176;<br/> <i>Longitude:</i> -8.6593350&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7393690,
-										lon: -8.6592010,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #25</b><br/> <i>Time:</i> 2024-05-09 11:56:58.2267<br/> <i>Latitude:</i> 42.7393690&#176;<br/> <i>Longitude:</i> -8.6592010&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7395190,
-										lon: -8.6591470,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #26</b><br/> <i>Time:</i> 2024-05-09 11:57:18.2267<br/> <i>Latitude:</i> 42.7395190&#176;<br/> <i>Longitude:</i> -8.6591470&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7399290,
-										lon: -8.6589060,
-										alt: 4.954,
-										name: '',
-										desc: '<b>trackpoint #27</b><br/> <i>Time:</i> 2024-05-09 11:57:38.2267<br/> <i>Latitude:</i> 42.7399290&#176;<br/> <i>Longitude:</i> -8.6589060&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7403900,
-										lon: -8.6586800,
-										alt: 5.304,
-										name: '',
-										desc: '<b>trackpoint #28</b><br/> <i>Time:</i> 2024-05-09 11:57:58.2267<br/> <i>Latitude:</i> 42.7403900&#176;<br/> <i>Longitude:</i> -8.6586800&#176;<br/> <i>Elevation:</i> 5.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7408820,
-										lon: -8.6584390,
-										alt: 5.867,
-										name: '',
-										desc: '<b>trackpoint #29</b><br/> <i>Time:</i> 2024-05-09 11:58:18.2267<br/> <i>Latitude:</i> 42.7408820&#176;<br/> <i>Longitude:</i> -8.6584390&#176;<br/> <i>Elevation:</i> 5.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7411340,
-										lon: -8.6582890,
-										alt: 6.077,
-										name: '',
-										desc: '<b>trackpoint #30</b><br/> <i>Time:</i> 2024-05-09 11:58:38.2267<br/> <i>Latitude:</i> 42.7411340&#176;<br/> <i>Longitude:</i> -8.6582890&#176;<br/> <i>Elevation:</i> 6.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7415680,
-										lon: -8.6580690,
-										alt: 5.983,
-										name: '',
-										desc: '<b>trackpoint #31</b><br/> <i>Time:</i> 2024-05-09 11:58:58.2267<br/> <i>Latitude:</i> 42.7415680&#176;<br/> <i>Longitude:</i> -8.6580690&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7417960,
-										lon: -8.6579560,
-										alt: 6,
-										name: '',
-										desc: '<b>trackpoint #32</b><br/> <i>Time:</i> 2024-05-09 11:59:18.2267<br/> <i>Latitude:</i> 42.7417960&#176;<br/> <i>Longitude:</i> -8.6579560&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7421000,
-										lon: -8.6577950,
-										alt: 6,
-										name: '',
-										desc: '<b>trackpoint #33</b><br/> <i>Time:</i> 2024-05-09 11:59:38.2267<br/> <i>Latitude:</i> 42.7421000&#176;<br/> <i>Longitude:</i> -8.6577950&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7423440,
-										lon: -8.6576660,
-										alt: 6,
-										name: '',
-										desc: '<b>trackpoint #34</b><br/> <i>Time:</i> 2024-05-09 11:59:58.2267<br/> <i>Latitude:</i> 42.7423440&#176;<br/> <i>Longitude:</i> -8.6576660&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7425760,
-										lon: -8.6575590,
-										alt: 4.864,
-										name: '',
-										desc: '<b>trackpoint #35</b><br/> <i>Time:</i> 2024-05-09 12:00:18.2267<br/> <i>Latitude:</i> 42.7425760&#176;<br/> <i>Longitude:</i> -8.6575590&#176;<br/> <i>Elevation:</i> 4.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7427930,
-										lon: -8.6574200,
-										alt: 2.34,
-										name: '',
-										desc: '<b>trackpoint #36</b><br/> <i>Time:</i> 2024-05-09 12:00:38.2267<br/> <i>Latitude:</i> 42.7427930&#176;<br/> <i>Longitude:</i> -8.6574200&#176;<br/> <i>Elevation:</i> 2.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7430650,
-										lon: -8.6572860,
-										alt: 6.541,
-										name: '',
-										desc: '<b>trackpoint #37</b><br/> <i>Time:</i> 2024-05-09 12:00:58.2267<br/> <i>Latitude:</i> 42.7430650&#176;<br/> <i>Longitude:</i> -8.6572860&#176;<br/> <i>Elevation:</i> 6.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7433090,
-										lon: -8.6571570,
-										alt: 6.979,
-										name: '',
-										desc: '<b>trackpoint #38</b><br/> <i>Time:</i> 2024-05-09 12:01:18.2268<br/> <i>Latitude:</i> 42.7433090&#176;<br/> <i>Longitude:</i> -8.6571570&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7435570,
-										lon: -8.6569910,
-										alt: 6.865,
-										name: '',
-										desc: '<b>trackpoint #39</b><br/> <i>Time:</i> 2024-05-09 12:01:38.2268<br/> <i>Latitude:</i> 42.7435570&#176;<br/> <i>Longitude:</i> -8.6569910&#176;<br/> <i>Elevation:</i> 6.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7439240,
-										lon: -8.6568350,
-										alt: 6.923,
-										name: '',
-										desc: '<b>trackpoint #40</b><br/> <i>Time:</i> 2024-05-09 12:01:58.2268<br/> <i>Latitude:</i> 42.7439240&#176;<br/> <i>Longitude:</i> -8.6568350&#176;<br/> <i>Elevation:</i> 6.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7442270,
-										lon: -8.6566630,
-										alt: 6.775,
-										name: '',
-										desc: '<b>trackpoint #41</b><br/> <i>Time:</i> 2024-05-09 12:02:18.2268<br/> <i>Latitude:</i> 42.7442270&#176;<br/> <i>Longitude:</i> -8.6566630&#176;<br/> <i>Elevation:</i> 6.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7445970,
-										lon: -8.6564810,
-										alt: 7.035,
-										name: '',
-										desc: '<b>trackpoint #42</b><br/> <i>Time:</i> 2024-05-09 12:02:38.2268<br/> <i>Latitude:</i> 42.7445970&#176;<br/> <i>Longitude:</i> -8.6564810&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7449010,
-										lon: -8.6563310,
-										alt: 7.416,
-										name: '',
-										desc: '<b>trackpoint #43</b><br/> <i>Time:</i> 2024-05-09 12:02:58.2268<br/> <i>Latitude:</i> 42.7449010&#176;<br/> <i>Longitude:</i> -8.6563310&#176;<br/> <i>Elevation:</i> 7.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7451760,
-										lon: -8.6561860,
-										alt: 7.73,
-										name: '',
-										desc: '<b>trackpoint #44</b><br/> <i>Time:</i> 2024-05-09 12:03:18.2268<br/> <i>Latitude:</i> 42.7451760&#176;<br/> <i>Longitude:</i> -8.6561860&#176;<br/> <i>Elevation:</i> 7.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7455430,
-										lon: -8.6559500,
-										alt: 8,
-										name: '',
-										desc: '<b>trackpoint #45</b><br/> <i>Time:</i> 2024-05-09 12:03:38.2268<br/> <i>Latitude:</i> 42.7455430&#176;<br/> <i>Longitude:</i> -8.6559500&#176;<br/> <i>Elevation:</i> 8.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456920,
-										lon: -8.6559070,
-										alt: 8,
-										name: '',
-										desc: '<b>trackpoint #46</b><br/> <i>Time:</i> 2024-05-09 12:03:58.2268<br/> <i>Latitude:</i> 42.7456920&#176;<br/> <i>Longitude:</i> -8.6559070&#176;<br/> <i>Elevation:</i> 8.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7458190,
-										lon: -8.6558510,
-										alt: 8,
-										name: '',
-										desc: '<b>trackpoint #47</b><br/> <i>Time:</i> 2024-05-09 12:04:18.2268<br/> <i>Latitude:</i> 42.7458190&#176;<br/> <i>Longitude:</i> -8.6558510&#176;<br/> <i>Elevation:</i> 8.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7458170,
-										lon: -8.6557940,
-										alt: 8.275,
-										name: '',
-										desc: '<b>trackpoint #48</b><br/> <i>Time:</i> 2024-05-09 12:04:38.2268<br/> <i>Latitude:</i> 42.7458170&#176;<br/> <i>Longitude:</i> -8.6557940&#176;<br/> <i>Elevation:</i> 8.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7458050,
-										lon: -8.6557490,
-										alt: 8.576,
-										name: '',
-										desc: '<b>trackpoint #49</b><br/> <i>Time:</i> 2024-05-09 12:04:58.2268<br/> <i>Latitude:</i> 42.7458050&#176;<br/> <i>Longitude:</i> -8.6557490&#176;<br/> <i>Elevation:</i> 8.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7458240,
-										lon: -8.6557110,
-										alt: 8.866,
-										name: '',
-										desc: '<b>trackpoint #50</b><br/> <i>Time:</i> 2024-05-09 12:05:18.2268<br/> <i>Latitude:</i> 42.7458240&#176;<br/> <i>Longitude:</i> -8.6557110&#176;<br/> <i>Elevation:</i> 8.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459170,
-										lon: -8.6556740,
-										alt: 8.974,
-										name: '',
-										desc: '<b>trackpoint #51</b><br/> <i>Time:</i> 2024-05-09 12:05:38.2268<br/> <i>Latitude:</i> 42.7459170&#176;<br/> <i>Longitude:</i> -8.6556740&#176;<br/> <i>Elevation:</i> 9.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459540,
-										lon: -8.6556470,
-										alt: 9.05,
-										name: '',
-										desc: '<b>trackpoint #52</b><br/> <i>Time:</i> 2024-05-09 12:05:58.2268<br/> <i>Latitude:</i> 42.7459540&#176;<br/> <i>Longitude:</i> -8.6556470&#176;<br/> <i>Elevation:</i> 9.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459470,
-										lon: -8.6556010,
-										alt: 9.331,
-										name: '',
-										desc: '<b>trackpoint #53</b><br/> <i>Time:</i> 2024-05-09 12:06:18.2268<br/> <i>Latitude:</i> 42.7459470&#176;<br/> <i>Longitude:</i> -8.6556010&#176;<br/> <i>Elevation:</i> 9.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459450,
-										lon: -8.6555450,
-										alt: 9.613,
-										name: '',
-										desc: '<b>trackpoint #54</b><br/> <i>Time:</i> 2024-05-09 12:06:38.2268<br/> <i>Latitude:</i> 42.7459450&#176;<br/> <i>Longitude:</i> -8.6555450&#176;<br/> <i>Elevation:</i> 9.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459410,
-										lon: -8.6555020,
-										alt: 9.687,
-										name: '',
-										desc: '<b>trackpoint #55</b><br/> <i>Time:</i> 2024-05-09 12:06:58.2268<br/> <i>Latitude:</i> 42.7459410&#176;<br/> <i>Longitude:</i> -8.6555020&#176;<br/> <i>Elevation:</i> 9.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459330,
-										lon: -8.6553920,
-										alt: 9.852,
-										name: '',
-										desc: '<b>trackpoint #56</b><br/> <i>Time:</i> 2024-05-09 12:07:18.2268<br/> <i>Latitude:</i> 42.7459330&#176;<br/> <i>Longitude:</i> -8.6553920&#176;<br/> <i>Elevation:</i> 9.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7459410,
-										lon: -8.6553250,
-										alt: 9.934,
-										name: '',
-										desc: '<b>trackpoint #57</b><br/> <i>Time:</i> 2024-05-09 12:07:38.2268<br/> <i>Latitude:</i> 42.7459410&#176;<br/> <i>Longitude:</i> -8.6553250&#176;<br/> <i>Elevation:</i> 9.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7458320,
-										lon: -8.6553680,
-										alt: 9.995,
-										name: '',
-										desc: '<b>trackpoint #58</b><br/> <i>Time:</i> 2024-05-09 12:07:58.2268<br/> <i>Latitude:</i> 42.7458320&#176;<br/> <i>Longitude:</i> -8.6553680&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7457790,
-										lon: -8.6553790,
-										alt: 9.804,
-										name: '',
-										desc: '<b>trackpoint #59</b><br/> <i>Time:</i> 2024-05-09 12:08:18.2268<br/> <i>Latitude:</i> 42.7457790&#176;<br/> <i>Longitude:</i> -8.6553790&#176;<br/> <i>Elevation:</i> 9.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7457400,
-										lon: -8.6553920,
-										alt: 9.664,
-										name: '',
-										desc: '<b>trackpoint #60</b><br/> <i>Time:</i> 2024-05-09 12:08:38.2268<br/> <i>Latitude:</i> 42.7457400&#176;<br/> <i>Longitude:</i> -8.6553920&#176;<br/> <i>Elevation:</i> 9.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456940,
-										lon: -8.6553760,
-										alt: 9.498,
-										name: '',
-										desc: '<b>trackpoint #61</b><br/> <i>Time:</i> 2024-05-09 12:08:58.2268<br/> <i>Latitude:</i> 42.7456940&#176;<br/> <i>Longitude:</i> -8.6553760&#176;<br/> <i>Elevation:</i> 9.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456870,
-										lon: -8.6553010,
-										alt: 9.473,
-										name: '',
-										desc: '<b>trackpoint #62</b><br/> <i>Time:</i> 2024-05-09 12:09:18.2268<br/> <i>Latitude:</i> 42.7456870&#176;<br/> <i>Longitude:</i> -8.6553010&#176;<br/> <i>Elevation:</i> 9.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456750,
-										lon: -8.6552500,
-										alt: 9.487,
-										name: '',
-										desc: '<b>trackpoint #63</b><br/> <i>Time:</i> 2024-05-09 12:09:38.2268<br/> <i>Latitude:</i> 42.7456750&#176;<br/> <i>Longitude:</i> -8.6552500&#176;<br/> <i>Elevation:</i> 9.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456690,
-										lon: -8.6551960,
-										alt: 9.583,
-										name: '',
-										desc: '<b>trackpoint #64</b><br/> <i>Time:</i> 2024-05-09 12:09:58.2268<br/> <i>Latitude:</i> 42.7456690&#176;<br/> <i>Longitude:</i> -8.6551960&#176;<br/> <i>Elevation:</i> 9.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456470,
-										lon: -8.6550750,
-										alt: 9.819,
-										name: '',
-										desc: '<b>trackpoint #65</b><br/> <i>Time:</i> 2024-05-09 12:10:18.2268<br/> <i>Latitude:</i> 42.7456470&#176;<br/> <i>Longitude:</i> -8.6550750&#176;<br/> <i>Elevation:</i> 9.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456410,
-										lon: -8.6550110,
-										alt: 9.973,
-										name: '',
-										desc: '<b>trackpoint #66</b><br/> <i>Time:</i> 2024-05-09 12:10:38.2268<br/> <i>Latitude:</i> 42.7456410&#176;<br/> <i>Longitude:</i> -8.6550110&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456290,
-										lon: -8.6548900,
-										alt: 10,
-										name: '',
-										desc: '<b>trackpoint #67</b><br/> <i>Time:</i> 2024-05-09 12:10:58.2268<br/> <i>Latitude:</i> 42.7456290&#176;<br/> <i>Longitude:</i> -8.6548900&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456120,
-										lon: -8.6548370,
-										alt: 10,
-										name: '',
-										desc: '<b>trackpoint #68</b><br/> <i>Time:</i> 2024-05-09 12:11:18.2268<br/> <i>Latitude:</i> 42.7456120&#176;<br/> <i>Longitude:</i> -8.6548370&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7455740,
-										lon: -8.6548050,
-										alt: 10,
-										name: '',
-										desc: '<b>trackpoint #69</b><br/> <i>Time:</i> 2024-05-09 12:11:38.2269<br/> <i>Latitude:</i> 42.7455740&#176;<br/> <i>Longitude:</i> -8.6548050&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7455980,
-										lon: -8.6547110,
-										alt: 9.966,
-										name: '',
-										desc: '<b>trackpoint #70</b><br/> <i>Time:</i> 2024-05-09 12:11:58.2269<br/> <i>Latitude:</i> 42.7455980&#176;<br/> <i>Longitude:</i> -8.6547110&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456000,
-										lon: -8.6544910,
-										alt: 9.301,
-										name: '',
-										desc: '<b>trackpoint #71</b><br/> <i>Time:</i> 2024-05-09 12:12:18.2269<br/> <i>Latitude:</i> 42.7456000&#176;<br/> <i>Longitude:</i> -8.6544910&#176;<br/> <i>Elevation:</i> 9.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456040,
-										lon: -8.6543730,
-										alt: 9.219,
-										name: '',
-										desc: '<b>trackpoint #72</b><br/> <i>Time:</i> 2024-05-09 12:12:38.2269<br/> <i>Latitude:</i> 42.7456040&#176;<br/> <i>Longitude:</i> -8.6543730&#176;<br/> <i>Elevation:</i> 9.2 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456310,
-										lon: -8.6540880,
-										alt: 10.033,
-										name: '',
-										desc: '<b>trackpoint #73</b><br/> <i>Time:</i> 2024-05-09 12:12:58.2269<br/> <i>Latitude:</i> 42.7456310&#176;<br/> <i>Longitude:</i> -8.6540880&#176;<br/> <i>Elevation:</i> 10.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456350,
-										lon: -8.6540110,
-										alt: 10.533,
-										name: '',
-										desc: '<b>trackpoint #74</b><br/> <i>Time:</i> 2024-05-09 12:13:18.2269<br/> <i>Latitude:</i> 42.7456350&#176;<br/> <i>Longitude:</i> -8.6540110&#176;<br/> <i>Elevation:</i> 10.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7456140,
-										lon: -8.6539890,
-										alt: 10.565,
-										name: '',
-										desc: '<b>trackpoint #75</b><br/> <i>Time:</i> 2024-05-09 12:13:38.2269<br/> <i>Latitude:</i> 42.7456140&#176;<br/> <i>Longitude:</i> -8.6539890&#176;<br/> <i>Elevation:</i> 10.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7454920,
-										lon: -8.6539680,
-										alt: 10.496,
-										name: '',
-										desc: '<b>trackpoint #76</b><br/> <i>Time:</i> 2024-05-09 12:13:58.2269<br/> <i>Latitude:</i> 42.7454920&#176;<br/> <i>Longitude:</i> -8.6539680&#176;<br/> <i>Elevation:</i> 10.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7452240,
-										lon: -8.6539110,
-										alt: 10.742,
-										name: '',
-										desc: '<b>trackpoint #77</b><br/> <i>Time:</i> 2024-05-09 12:14:18.2269<br/> <i>Latitude:</i> 42.7452240&#176;<br/> <i>Longitude:</i> -8.6539110&#176;<br/> <i>Elevation:</i> 10.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7448340,
-										lon: -8.6538070,
-										alt: 9.873,
-										name: '',
-										desc: '<b>trackpoint #78</b><br/> <i>Time:</i> 2024-05-09 12:14:38.2269<br/> <i>Latitude:</i> 42.7448340&#176;<br/> <i>Longitude:</i> -8.6538070&#176;<br/> <i>Elevation:</i> 9.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7445850,
-										lon: -8.6537580,
-										alt: 9.71,
-										name: '',
-										desc: '<b>trackpoint #79</b><br/> <i>Time:</i> 2024-05-09 12:14:58.2269<br/> <i>Latitude:</i> 42.7445850&#176;<br/> <i>Longitude:</i> -8.6537580&#176;<br/> <i>Elevation:</i> 9.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7443810,
-										lon: -8.6537180,
-										alt: 9.387,
-										name: '',
-										desc: '<b>trackpoint #80</b><br/> <i>Time:</i> 2024-05-09 12:15:18.2269<br/> <i>Latitude:</i> 42.7443810&#176;<br/> <i>Longitude:</i> -8.6537180&#176;<br/> <i>Elevation:</i> 9.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7441600,
-										lon: -8.6536700,
-										alt: 8.764,
-										name: '',
-										desc: '<b>trackpoint #81</b><br/> <i>Time:</i> 2024-05-09 12:15:38.2269<br/> <i>Latitude:</i> 42.7441600&#176;<br/> <i>Longitude:</i> -8.6536700&#176;<br/> <i>Elevation:</i> 8.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7435850,
-										lon: -8.6535360,
-										alt: 7.515,
-										name: '',
-										desc: '<b>trackpoint #82</b><br/> <i>Time:</i> 2024-05-09 12:15:58.2269<br/> <i>Latitude:</i> 42.7435850&#176;<br/> <i>Longitude:</i> -8.6535360&#176;<br/> <i>Elevation:</i> 7.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7422060,
-										lon: -8.6531500,
-										alt: 7.281,
-										name: '',
-										desc: '<b>trackpoint #83</b><br/> <i>Time:</i> 2024-05-09 12:16:18.2269<br/> <i>Latitude:</i> 42.7422060&#176;<br/> <i>Longitude:</i> -8.6531500&#176;<br/> <i>Elevation:</i> 7.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7409770,
-										lon: -8.6528060,
-										alt: 7.849,
-										name: '',
-										desc: '<b>trackpoint #84</b><br/> <i>Time:</i> 2024-05-09 12:16:38.2269<br/> <i>Latitude:</i> 42.7409770&#176;<br/> <i>Longitude:</i> -8.6528060&#176;<br/> <i>Elevation:</i> 7.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7396370,
-										lon: -8.6525920,
-										alt: 6.874,
-										name: '',
-										desc: '<b>trackpoint #85</b><br/> <i>Time:</i> 2024-05-09 12:16:58.2269<br/> <i>Latitude:</i> 42.7396370&#176;<br/> <i>Longitude:</i> -8.6525920&#176;<br/> <i>Elevation:</i> 6.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7392430,
-										lon: -8.6526350,
-										alt: 7.028,
-										name: '',
-										desc: '<b>trackpoint #86</b><br/> <i>Time:</i> 2024-05-09 12:17:18.2269<br/> <i>Latitude:</i> 42.7392430&#176;<br/> <i>Longitude:</i> -8.6526350&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390860,
-										lon: -8.6527740,
-										alt: 6.314,
-										name: '',
-										desc: '<b>trackpoint #87</b><br/> <i>Time:</i> 2024-05-09 12:17:38.2269<br/> <i>Latitude:</i> 42.7390860&#176;<br/> <i>Longitude:</i> -8.6527740&#176;<br/> <i>Elevation:</i> 6.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7388260,
-										lon: -8.6527100,
-										alt: 7.244,
-										name: '',
-										desc: '<b>trackpoint #88</b><br/> <i>Time:</i> 2024-05-09 12:17:58.2269<br/> <i>Latitude:</i> 42.7388260&#176;<br/> <i>Longitude:</i> -8.6527100&#176;<br/> <i>Elevation:</i> 7.2 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7386050,
-										lon: -8.6526020,
-										alt: 7.619,
-										name: '',
-										desc: '<b>trackpoint #89</b><br/> <i>Time:</i> 2024-05-09 12:18:18.2269<br/> <i>Latitude:</i> 42.7386050&#176;<br/> <i>Longitude:</i> -8.6526020&#176;<br/> <i>Elevation:</i> 7.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7385180,
-										lon: -8.6526450,
-										alt: 7.318,
-										name: '',
-										desc: '<b>trackpoint #90</b><br/> <i>Time:</i> 2024-05-09 12:18:38.2269<br/> <i>Latitude:</i> 42.7385180&#176;<br/> <i>Longitude:</i> -8.6526450&#176;<br/> <i>Elevation:</i> 7.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382900,
-										lon: -8.6526780,
-										alt: 7,
-										name: '',
-										desc: '<b>trackpoint #91</b><br/> <i>Time:</i> 2024-05-09 12:18:58.2269<br/> <i>Latitude:</i> 42.7382900&#176;<br/> <i>Longitude:</i> -8.6526780&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7378720,
-										lon: -8.6527420,
-										alt: 7.085,
-										name: '',
-										desc: '<b>trackpoint #92</b><br/> <i>Time:</i> 2024-05-09 12:19:18.2269<br/> <i>Latitude:</i> 42.7378720&#176;<br/> <i>Longitude:</i> -8.6527420&#176;<br/> <i>Elevation:</i> 7.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7376830,
-										lon: -8.6527420,
-										alt: 7.129,
-										name: '',
-										desc: '<b>trackpoint #93</b><br/> <i>Time:</i> 2024-05-09 12:19:38.2269<br/> <i>Latitude:</i> 42.7376830&#176;<br/> <i>Longitude:</i> -8.6527420&#176;<br/> <i>Elevation:</i> 7.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374780,
-										lon: -8.6528060,
-										alt: 7,
-										name: '',
-										desc: '<b>trackpoint #94</b><br/> <i>Time:</i> 2024-05-09 12:19:58.2269<br/> <i>Latitude:</i> 42.7374780&#176;<br/> <i>Longitude:</i> -8.6528060&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374540,
-										lon: -8.6526780,
-										alt: 7.359,
-										name: '',
-										desc: '<b>trackpoint #95</b><br/> <i>Time:</i> 2024-05-09 12:20:18.2269<br/> <i>Latitude:</i> 42.7374540&#176;<br/> <i>Longitude:</i> -8.6526780&#176;<br/> <i>Elevation:</i> 7.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374310,
-										lon: -8.6526020,
-										alt: 7.633,
-										name: '',
-										desc: '<b>trackpoint #96</b><br/> <i>Time:</i> 2024-05-09 12:20:38.2269<br/> <i>Latitude:</i> 42.7374310&#176;<br/> <i>Longitude:</i> -8.6526020&#176;<br/> <i>Elevation:</i> 7.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7378010,
-										lon: -8.6524630,
-										alt: 7.805,
-										name: '',
-										desc: '<b>trackpoint #97</b><br/> <i>Time:</i> 2024-05-09 12:20:58.2269<br/> <i>Latitude:</i> 42.7378010&#176;<br/> <i>Longitude:</i> -8.6524630&#176;<br/> <i>Elevation:</i> 7.8 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7380400,
-										lon: -8.6524040,
-										alt: 7.363,
-										name: '',
-										desc: '<b>trackpoint #98</b><br/> <i>Time:</i> 2024-05-09 12:21:18.2269<br/> <i>Latitude:</i> 42.7380400&#176;<br/> <i>Longitude:</i> -8.6524040&#176;<br/> <i>Elevation:</i> 7.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381540,
-										lon: -8.6523960,
-										alt: 7.374,
-										name: '',
-										desc: '<b>trackpoint #99</b><br/> <i>Time:</i> 2024-05-09 12:21:38.2269<br/> <i>Latitude:</i> 42.7381540&#176;<br/> <i>Longitude:</i> -8.6523960&#176;<br/> <i>Elevation:</i> 7.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382250,
-										lon: -8.6523340,
-										alt: 7.598,
-										name: '',
-										desc: '<b>trackpoint #100</b><br/> <i>Time:</i> 2024-05-09 12:21:58.2269<br/> <i>Latitude:</i> 42.7382250&#176;<br/> <i>Longitude:</i> -8.6523340&#176;<br/> <i>Elevation:</i> 7.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382760,
-										lon: -8.6522590,
-										alt: 7.868,
-										name: '',
-										desc: '<b>trackpoint #101</b><br/> <i>Time:</i> 2024-05-09 12:22:18.2269<br/> <i>Latitude:</i> 42.7382760&#176;<br/> <i>Longitude:</i> -8.6522590&#176;<br/> <i>Elevation:</i> 7.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382640,
-										lon: -8.6523050,
-										alt: 7.702,
-										name: '',
-										desc: '<b>trackpoint #102</b><br/> <i>Time:</i> 2024-05-09 12:22:38.2269<br/> <i>Latitude:</i> 42.7382640&#176;<br/> <i>Longitude:</i> -8.6523050&#176;<br/> <i>Elevation:</i> 7.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381420,
-										lon: -8.6524120,
-										alt: 7.317,
-										name: '',
-										desc: '<b>trackpoint #103</b><br/> <i>Time:</i> 2024-05-09 12:22:58.2269<br/> <i>Latitude:</i> 42.7381420&#176;<br/> <i>Longitude:</i> -8.6524120&#176;<br/> <i>Elevation:</i> 7.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7379080,
-										lon: -8.6524360,
-										alt: 7.517,
-										name: '',
-										desc: '<b>trackpoint #104</b><br/> <i>Time:</i> 2024-05-09 12:23:18.2269<br/> <i>Latitude:</i> 42.7379080&#176;<br/> <i>Longitude:</i> -8.6524360&#176;<br/> <i>Elevation:</i> 7.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7378460,
-										lon: -8.6524630,
-										alt: 7.687,
-										name: '',
-										desc: '<b>trackpoint #105</b><br/> <i>Time:</i> 2024-05-09 12:23:38.2269<br/> <i>Latitude:</i> 42.7378460&#176;<br/> <i>Longitude:</i> -8.6524630&#176;<br/> <i>Elevation:</i> 7.7 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374940,
-										lon: -8.6526000,
-										alt: 7.64,
-										name: '',
-										desc: '<b>trackpoint #106</b><br/> <i>Time:</i> 2024-05-09 12:23:58.227<br/> <i>Latitude:</i> 42.7374940&#176;<br/> <i>Longitude:</i> -8.6526000&#176;<br/> <i>Elevation:</i> 7.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374430,
-										lon: -8.6526190,
-										alt: 7.572,
-										name: '',
-										desc: '<b>trackpoint #107</b><br/> <i>Time:</i> 2024-05-09 12:24:18.227<br/> <i>Latitude:</i> 42.7374430&#176;<br/> <i>Longitude:</i> -8.6526190&#176;<br/> <i>Elevation:</i> 7.6 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374520,
-										lon: -8.6528200,
-										alt: 7,
-										name: '',
-										desc: '<b>trackpoint #108</b><br/> <i>Time:</i> 2024-05-09 12:24:38.227<br/> <i>Latitude:</i> 42.7374520&#176;<br/> <i>Longitude:</i> -8.6528200&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374820,
-										lon: -8.6531980,
-										alt: 7,
-										name: '',
-										desc: '<b>trackpoint #109</b><br/> <i>Time:</i> 2024-05-09 12:24:58.227<br/> <i>Latitude:</i> 42.7374820&#176;<br/> <i>Longitude:</i> -8.6531980&#176;<br/> <i>Elevation:</i> 7.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374700,
-										lon: -8.6534770,
-										alt: 6.483,
-										name: '',
-										desc: '<b>trackpoint #110</b><br/> <i>Time:</i> 2024-05-09 12:25:18.227<br/> <i>Latitude:</i> 42.7374700&#176;<br/> <i>Longitude:</i> -8.6534770&#176;<br/> <i>Elevation:</i> 6.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7374820,
-										lon: -8.6539970,
-										alt: 6,
-										name: '',
-										desc: '<b>trackpoint #111</b><br/> <i>Time:</i> 2024-05-09 12:25:38.227<br/> <i>Latitude:</i> 42.7374820&#176;<br/> <i>Longitude:</i> -8.6539970&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7375100,
-										lon: -8.6543670,
-										alt: 5.964,
-										name: '',
-										desc: '<b>trackpoint #112</b><br/> <i>Time:</i> 2024-05-09 12:25:58.227<br/> <i>Latitude:</i> 42.7375100&#176;<br/> <i>Longitude:</i> -8.6543670&#176;<br/> <i>Elevation:</i> 6.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7375210,
-										lon: -8.6547860,
-										alt: 4.311,
-										name: '',
-										desc: '<b>trackpoint #113</b><br/> <i>Time:</i> 2024-05-09 12:26:18.227<br/> <i>Latitude:</i> 42.7375210&#176;<br/> <i>Longitude:</i> -8.6547860&#176;<br/> <i>Elevation:</i> 4.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7375770,
-										lon: -8.6549740,
-										alt: 2.281,
-										name: '',
-										desc: '<b>trackpoint #114</b><br/> <i>Time:</i> 2024-05-09 12:26:38.227<br/> <i>Latitude:</i> 42.7375770&#176;<br/> <i>Longitude:</i> -8.6549740&#176;<br/> <i>Elevation:</i> 2.3 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7377460,
-										lon: -8.6552200,
-										alt: 4.195,
-										name: '',
-										desc: '<b>trackpoint #115</b><br/> <i>Time:</i> 2024-05-09 12:26:58.227<br/> <i>Latitude:</i> 42.7377460&#176;<br/> <i>Longitude:</i> -8.6552200&#176;<br/> <i>Elevation:</i> 4.2 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381400,
-										lon: -8.6558750,
-										alt: 5.104,
-										name: '',
-										desc: '<b>trackpoint #116</b><br/> <i>Time:</i> 2024-05-09 12:27:18.227<br/> <i>Latitude:</i> 42.7381400&#176;<br/> <i>Longitude:</i> -8.6558750&#176;<br/> <i>Elevation:</i> 5.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383290,
-										lon: -8.6562130,
-										alt: 5.377,
-										name: '',
-										desc: '<b>trackpoint #117</b><br/> <i>Time:</i> 2024-05-09 12:27:38.227<br/> <i>Latitude:</i> 42.7383290&#176;<br/> <i>Longitude:</i> -8.6562130&#176;<br/> <i>Elevation:</i> 5.4 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7385220,
-										lon: -8.6565560,
-										alt: 5.128,
-										name: '',
-										desc: '<b>trackpoint #118</b><br/> <i>Time:</i> 2024-05-09 12:27:58.227<br/> <i>Latitude:</i> 42.7385220&#176;<br/> <i>Longitude:</i> -8.6565560&#176;<br/> <i>Elevation:</i> 5.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7387740,
-										lon: -8.6571140,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #119</b><br/> <i>Time:</i> 2024-05-09 12:28:18.227<br/> <i>Latitude:</i> 42.7387740&#176;<br/> <i>Longitude:</i> -8.6571140&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389280,
-										lon: -8.6574470,
-										alt: 4.973,
-										name: '',
-										desc: '<b>trackpoint #120</b><br/> <i>Time:</i> 2024-05-09 12:28:38.227<br/> <i>Latitude:</i> 42.7389280&#176;<br/> <i>Longitude:</i> -8.6574470&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7389480,
-										lon: -8.6577630,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #121</b><br/> <i>Time:</i> 2024-05-09 12:28:58.227<br/> <i>Latitude:</i> 42.7389480&#176;<br/> <i>Longitude:</i> -8.6577630&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390150,
-										lon: -8.6578600,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #122</b><br/> <i>Time:</i> 2024-05-09 12:29:18.227<br/> <i>Latitude:</i> 42.7390150&#176;<br/> <i>Longitude:</i> -8.6578600&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390420,
-										lon: -8.6581220,
-										alt: 4.893,
-										name: '',
-										desc: '<b>trackpoint #123</b><br/> <i>Time:</i> 2024-05-09 12:29:38.227<br/> <i>Latitude:</i> 42.7390420&#176;<br/> <i>Longitude:</i> -8.6581220&#176;<br/> <i>Elevation:</i> 4.9 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7390030,
-										lon: -8.6582830,
-										alt: 4.518,
-										name: '',
-										desc: '<b>trackpoint #124</b><br/> <i>Time:</i> 2024-05-09 12:29:58.227<br/> <i>Latitude:</i> 42.7390030&#176;<br/> <i>Longitude:</i> -8.6582830&#176;<br/> <i>Elevation:</i> 4.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7387700,
-										lon: -8.6583640,
-										alt: 4,
-										name: '',
-										desc: '<b>trackpoint #125</b><br/> <i>Time:</i> 2024-05-09 12:30:18.227<br/> <i>Latitude:</i> 42.7387700&#176;<br/> <i>Longitude:</i> -8.6583640&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7387070,
-										lon: -8.6583850,
-										alt: 4,
-										name: '',
-										desc: '<b>trackpoint #126</b><br/> <i>Time:</i> 2024-05-09 12:30:38.227<br/> <i>Latitude:</i> 42.7387070&#176;<br/> <i>Longitude:</i> -8.6583850&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7385660,
-										lon: -8.6585570,
-										alt: 4,
-										name: '',
-										desc: '<b>trackpoint #127</b><br/> <i>Time:</i> 2024-05-09 12:30:58.227<br/> <i>Latitude:</i> 42.7385660&#176;<br/> <i>Longitude:</i> -8.6585570&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7384200,
-										lon: -8.6588140,
-										alt: 4,
-										name: '',
-										desc: '<b>trackpoint #128</b><br/> <i>Time:</i> 2024-05-09 12:31:18.227<br/> <i>Latitude:</i> 42.7384200&#176;<br/> <i>Longitude:</i> -8.6588140&#176;<br/> <i>Elevation:</i> 4.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383650,
-										lon: -8.6590180,
-										alt: 4.465,
-										name: '',
-										desc: '<b>trackpoint #129</b><br/> <i>Time:</i> 2024-05-09 12:31:38.227<br/> <i>Latitude:</i> 42.7383650&#176;<br/> <i>Longitude:</i> -8.6590180&#176;<br/> <i>Elevation:</i> 4.5 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383130,
-										lon: -8.6591900,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #130</b><br/> <i>Time:</i> 2024-05-09 12:31:58.227<br/> <i>Latitude:</i> 42.7383130&#176;<br/> <i>Longitude:</i> -8.6591900&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383530,
-										lon: -8.6592970,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #131</b><br/> <i>Time:</i> 2024-05-09 12:32:18.227<br/> <i>Latitude:</i> 42.7383530&#176;<br/> <i>Longitude:</i> -8.6592970&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383610,
-										lon: -8.6594740,
-										alt: 5.011,
-										name: '',
-										desc: '<b>trackpoint #132</b><br/> <i>Time:</i> 2024-05-09 12:32:38.227<br/> <i>Latitude:</i> 42.7383610&#176;<br/> <i>Longitude:</i> -8.6594740&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383800,
-										lon: -8.6598710,
-										alt: 5.078,
-										name: '',
-										desc: '<b>trackpoint #133</b><br/> <i>Time:</i> 2024-05-09 12:32:58.227<br/> <i>Latitude:</i> 42.7383800&#176;<br/> <i>Longitude:</i> -8.6598710&#176;<br/> <i>Elevation:</i> 5.1 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383250,
-										lon: -8.6600320,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #134</b><br/> <i>Time:</i> 2024-05-09 12:33:18.227<br/> <i>Latitude:</i> 42.7383250&#176;<br/> <i>Longitude:</i> -8.6600320&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383090,
-										lon: -8.6602520,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #135</b><br/> <i>Time:</i> 2024-05-09 12:33:38.227<br/> <i>Latitude:</i> 42.7383090&#176;<br/> <i>Longitude:</i> -8.6602520&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383090,
-										lon: -8.6604180,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #136</b><br/> <i>Time:</i> 2024-05-09 12:33:58.227<br/> <i>Latitude:</i> 42.7383090&#176;<br/> <i>Longitude:</i> -8.6604180&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7383050,
-										lon: -8.6605900,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #137</b><br/> <i>Time:</i> 2024-05-09 12:34:18.227<br/> <i>Latitude:</i> 42.7383050&#176;<br/> <i>Longitude:</i> -8.6605900&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381440,
-										lon: -8.6607240,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #138</b><br/> <i>Time:</i> 2024-05-09 12:34:38.227<br/> <i>Latitude:</i> 42.7381440&#176;<br/> <i>Longitude:</i> -8.6607240&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381560,
-										lon: -8.6608210,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #139</b><br/> <i>Time:</i> 2024-05-09 12:34:58.2271<br/> <i>Latitude:</i> 42.7381560&#176;<br/> <i>Longitude:</i> -8.6608210&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7381830,
-										lon: -8.6611320,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #140</b><br/> <i>Time:</i> 2024-05-09 12:35:18.2271<br/> <i>Latitude:</i> 42.7381830&#176;<br/> <i>Longitude:</i> -8.6611320&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
-									GV_Draw_Marker({
-										lat: 42.7382190,
-										lon: -8.6613890,
-										alt: 5,
-										name: '',
-										desc: '<b>trackpoint #141</b><br/> <i>Time:</i> 2024-05-09 12:35:38.2271<br/> <i>Latitude:</i> 42.7382190&#176;<br/> <i>Longitude:</i> -8.6613890&#176;<br/> <i>Elevation:</i> 5.0 m',
-										color: trk[1].info.color,
-										icon: 'circle',
-										folder: 'Ruta Padron literario [trackpoints]',
-										scale: 0.6,
-										type: 'trackpoint',
-										track_number: 1
-									});
 									GV_Draw_Marker({
 										lat: 42.7369580,
 										lon: -8.6615580,
 										alt: 4.421,
-										name: 'Monumento a Cela',
-										desc: '',
+										name: 'INICIO DA RUTA: Monumento a Cela',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/estatua camilo.jpg" alt="Espolón. Monumento a Camilo José Cela"> <p class="red small"><a class="small" href="https://www.google.es/maps/@42.7368268,-8.6613789,3a,73.9y,307.97h,85.22t/data=!3m8!1e1!3m6!1s5AeShPYxoHLe3Q8V1l8DOA!2e0!5s20130901T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5AeShPYxoHLe3Q8V1l8DOA%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D307.96707801041407%26pitch%3D4.782265841000537%26thumbfov%3D90!7i13312!8i6656?hl=es&coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.737391775760216, -8.661714808283277</a></p> <p>Monumento ao escritor D. Camilo José Cela,  Marqués de Iria Flavia, Fillo Predilecto de Padrón e Premio Nobel de Literatura.<br>O monumento, obra do escultor Manuel Ferreiro Badía, está dividido en tres partes: pedestal pétreo sobre o que se asenta a figura sedente do escritor realizada en bronce e dúas esferas que simbolizan a creación e o coñecemento. </p>',
 										color: '',
-										icon: ''
+										icon: '../../imaxes/iconos/ubicacion.png',
+										icon_size: [17, 17]
 									});
 									GV_Draw_Marker({
 										lat: 42.7388710,
 										lon: -8.6616630,
 										alt: 5,
 										name: 'Monumento a Rosalía de Castro',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/monumentorosaliaa.jpg" alt="Espolón. Monumento a Rosalía de Castro"> <p class="red small"><a class="small" href="https://www.google.es/maps/@42.7387923,-8.6615089,3a,75y,306.61h,95.14t/data=!3m8!1e1!3m6!1sTV4uB2NXoQVBXlBs7jJOyQ!2e0!5s20190501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DTV4uB2NXoQVBXlBs7jJOyQ%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D306.6119839527488%26pitch%3D-5.142155065167643%26thumbfov%3D90!7i16384!8i8192?hl=es&coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.73891345144277, -8.66170767905533</a></p> <p>Monumento a Rosalía de Castro (Conxo, 1837 – Padrón, 1885). Doazón dos padroneses residentes en Uruguai. O acto foi presidido polo Cardeal de Santiago de Compostela Quiroga Palacios.<br>Despois da misa da mediodía, a comitiva inaugurou 3 placas conmemorativas na honra de outros literarios padroneses que foron colocadas nas súas casas natais: D. Manuel Barros (en A Trabanca, Rúa do Carme 47), D. Agapito Nicasio Pajares Ojeros (en A Trabanca, Rúa Santiago) e D. Camilo José Cela (en Iria Flavia). Estes actos foron presididos polo poeta Ramón Otero Pedraio.</p>',
 										color: '',
 										icon: ''
 									});
@@ -2499,7 +634,7 @@
 										lon: -8.6605900,
 										alt: 5,
 										name: 'Praza de Baltar',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/plazabaltar.jpg" alt="Praza de Baltar"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.738995,-8.660507,3a,75y,295.42h,76.58t/data=!3m7!1e1!3m5!1s8lnaYogrMV-UVg1inFQv2g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D8lnaYogrMV-UVg1inFQv2g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D295.4248382107321%26pitch%3D13.416180770386518%26thumbfov%3D90!7i13312!8i6656?coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.7390929193044, -8.660613557711853</a></p> <p>Seis son as xeracións de farmacéuticos da familia Baltar. O fundador da primitiva farmacia foi José Baltar Varela, iniciou a actividade nun pequeno espazo da súa vivenda; Angel Baltar Cortés, farmacéutico de segunda xeración foi encargado da remodelación (1873). Conservaba boa amizade co enxeñeiro de ferrocarrís John Trulock (avó de Camilo José Cela). Foi o señor Trulock quen lle agasallou o botamen que aínda hoxe se conserva na farmacia.<br>Tamén era grande amigo de Rosalía de Castro, coa cal mantiña correspondencia e intercambiaba libros.</p>',
 										color: '',
 										icon: ''
 									});
@@ -2508,7 +643,7 @@
 										lon: -8.6559340,
 										alt: 8,
 										name: 'Fundación P.G. Camilo José Cela',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/cela-3/fundacion1.jpg" alt="Fundación Pública Galega Camilo José Cela"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7461029,-8.6556882,3a,75y,253.74h,86.78t/data=!3m7!1e1!3m5!1sswnarU9YBHiJGfofoCLSCg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DswnarU9YBHiJGfofoCLSCg%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D253.7420734470048%26pitch%3D3.2208303303375345%26thumbfov%3D90!7i16384!8i8192?coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.746224499939245, -8.655933322093842</a></p> <p>"Aquí se encierra todo cuanto, desde hoy, dono a la cultura para su mejor beneficio y más adecuado y provechoso logro."<blockquote class="small italic">Discurso de inauguración da Fundación Camilo José Cela. (Iria Flavia, 11/6/1991)</blockquote>',
 										color: '',
 										icon: ''
 									});
@@ -2516,8 +651,8 @@
 										lat: 42.7459700,
 										lon: -8.6553200,
 										alt: 9.925,
-										name: 'Igrexa de Iria Flavia',
-										desc: '',
+										name: 'Igrexa Sta. María a Maior de Iria Flavia',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/iglesia-cementerio-iria.jpg" alt="Igrexa Sta. María a Maior de Iria Flavia"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.745933,-8.6555198,2a,75y,113.03h,98.17t/data=!3m7!1e1!3m5!1sBdIb5oaMuKQAAARJJegWgQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DBdIb5oaMuKQAAARJJegWgQ%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D113.02785515003659%26pitch%3D-8.174797537359098%26thumbfov%3D90!7i13312!8i6656?coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.74606634335265, -8.655303638396248</a></p> <p>Antiga Sé Episcopal. A Igrexa de Santa María a Maior de Iria Flavia é unha das igrexas máis antigas de Galicia e está considerado o primeiro templo mariano do mundo.<br>O pasado de Santa María de Iria remóntase á época romana,aínda que non se coñece con certeza o momento no que se levantou a basílica primitiva.<br>As primeiras probas documentais que sitúan a Iria Flavia como sé episcopal son do s.VI.<br>O bispado iriense xoga un papel fundamental no descubrimento do sepulcro apostólico.É o bispo Teodomiro quen dá conta do achado arredor do ano 820, vinculando para sempre a tradición xacobea a esta igrexa. </p>',
 										color: '',
 										icon: ''
 									});
@@ -2525,8 +660,8 @@
 										lat: 42.7456490,
 										lon: -8.6552550,
 										alt: 9.391,
-										name: 'Cemiterio de Adina',
-										desc: '',
+										name: 'Cemiterio de Adina de Iria Flavia',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/cementerioadina.jpg" alt="Cemiterio de Adina"> <p class="red small"><a class="small" href="https://www.google.com/maps/@42.7454061,-8.655122,3a,75y,324.56h,90.94t/data=!3m7!1e1!3m5!1sFqlf-Bd04T8269xMxyspEA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DFqlf-Bd04T8269xMxyspEA%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D324.5597768231103%26pitch%3D-0.9381785391996402%26thumbfov%3D90!7i13312!8i6656?coh=205410&entry=ttu" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> 42.74577839094574, -8.65545012428248</a></p> <p>O actual cemiterio conta entre os seus muros con dous cruceiros e catro oliveiras centenarias que forman parte do Catálogo de Árbores Senlleiras de Galicia. Baixo unha delas, está situada a sepultura de Camilo José Cela<br><blockquote class="small italic">[…] O simiterio da Adina<br>n’hai duda que é encantador,<br>cos seus olivos escuros<br>de vella recordazón […]<br><br>[…] Moito te quixen un tempo,<br>simiterio encantador,<br>cos teus olivos escuros,<br>máis vellos que os meus abós […]<br><br>Rosalía de Castro</p>',
 										color: '',
 										icon: ''
 									});
@@ -2535,7 +670,7 @@
 										lon: -8.6551240,
 										alt: 9.638,
 										name: 'Tumba de Cela',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/XXXXX" alt="XXXXXXXXXXXXXXX"> <p class="red small"><a class="small" href="XXXXXXXXXXXXXX" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> XXXXXXXXXXXX, XXXXXXXXXXX</a></p> <p>XXXXXXXXXXXX</p>',
 										color: '',
 										icon: ''
 									});
@@ -2544,7 +679,7 @@
 										lon: -8.6522430,
 										alt: 7.925,
 										name: 'Casa Museo de Rosalía de Castro',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/XXXXX" alt="XXXXXXXXXXXXXXX"> <p class="red small"><a class="small" href="XXXXXXXXXXXXXX" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> XXXXXXXXXXXX, XXXXXXXXXXX</a></p> <p>XXXXXXXXXXXX</p>',
 										color: '',
 										icon: ''
 									});
@@ -2553,7 +688,7 @@
 										lon: -8.6584390,
 										alt: 4,
 										name: 'Xardín Botánico-Artístico de Padrón',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/XXXXX" alt="XXXXXXXXXXXXXXX"> <p class="red small"><a class="small" href="XXXXXXXXXXXXXX" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> XXXXXXXXXXXX, XXXXXXXXXXX</a></p> <p>XXXXXXXXXXXX</p>',
 										color: '',
 										icon: ''
 									});
@@ -2562,7 +697,7 @@
 										lon: -8.6608850,
 										alt: 5,
 										name: 'Praza de Macías',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/XXXXX" alt="XXXXXXXXXXXXXXX"> <p class="red small"><a class="small" href="XXXXXXXXXXXXXX" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> XXXXXXXXXXXX, XXXXXXXXXXX</a></p> <p>XXXXXXXXXXXX</p>',
 										color: '',
 										icon: ''
 									});
@@ -2571,7 +706,7 @@
 										lon: -8.6613730,
 										alt: 5,
 										name: 'Praza de Camilo José Cela',
-										desc: '',
+										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_padron/sendeiros/padron-literario/XXXXX" alt="XXXXXXXXXXXXXXX"> <p class="red small"><a class="small" href="XXXXXXXXXXXXXX" target="_blank" class="small" data-title="ver localización"><i class="fa fa-globe"></i> XXXXXXXXXXXX, XXXXXXXXXXX</a></p> <p>XXXXXXXXXXXX</p>',
 										color: '',
 										icon: ''
 									});

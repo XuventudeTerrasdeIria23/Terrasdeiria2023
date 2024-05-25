@@ -80,6 +80,11 @@ RGB(65, 176, 110)
  	font-size: .8em;
  }
 
+ .italic {
+
+ 	font-style: italic;
+ }
+
  .medium a {
  	font-size: .7em;
  	width: auto;
@@ -98,6 +103,10 @@ RGB(65, 176, 110)
  	margin: 0 0 .2em 1em;
  	width: 80%;
  	font-style: italic;
+ }
+
+ q {
+ 	display: block;
  }
 
  /* boton subbir */
