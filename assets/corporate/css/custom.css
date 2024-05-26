@@ -157,6 +157,10 @@ RGB(65, 176, 110)
  	border-radius: .5em !important;
  }
 
+ .img-xxsmall {
+ 	width: 3%;
+ }
+
  .img-xsmall {
  	width: 5%;
  }
@@ -167,6 +171,14 @@ RGB(65, 176, 110)
 
  .img-medium {
  	width: 20%;
+ }
+
+ .img-mediumlarge {
+ 	width: 30%;
+ }
+
+ .img-large {
+ 	width: 35%;
  }
 
  .img-shadow {
@@ -904,7 +916,8 @@ RGB(65, 176, 110)
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
 
- 	background-color: #41B06E80;
+ 	/* 	background-color: #41B06E80;*/
+ 	/* 	background-color: #41B06E80;*/
  	background-color: rgba(65, 176, 110, 0.7);
  	width: 17vw !important;
  	height: auto !important;
@@ -978,7 +991,6 @@ RGB(65, 176, 110)
  	overflow: visible !important;
  	z-index: 99999999 !important;
  	padding: 0 !important;
-
  }
 
  .gv_marker_info_window {
@@ -1021,7 +1033,6 @@ RGB(65, 176, 110)
  	/* 	clear: both;*/
  	/* 	float: left;*/
  	width: auto !important;
-
  }
 
  .gv_marker_info_window p,
@@ -1037,7 +1048,6 @@ RGB(65, 176, 110)
  .gv_marker_info_window a,
  .gv_marker_info_window i {
  	/* imaxes do pop-up */
- 	color: #3f5862 !important;
  	padding: .5em;
  	/* 	display: block;*/
  	font-size: .8em;
@@ -1103,27 +1113,32 @@ RGB(65, 176, 110)
  .datos-ruta-head {
  	padding: 0 0 0 .5em;
  	text-align: left;
- 	background: #e28743;
+ 	/* 	background: #e28743;*/
+ 	background: rgba(65, 176, 110, 0.7);
+ 	;
  }
 
  .datos-ruta-head h3,
  .datos-ruta-head h4 {
  	margin: 0;
  	line-height: normal;
+ 	font-size: 1em;
  }
 
  .datos-ruta-head h3 span,
  .datos-ruta-head h4 span {
  	display: block;
- 	font-size: .7em;
+ 	/* 	font-size: .7em;*/
  	font-weight: bold;
  }
 
  .datos-ruta-head h3 {
  	font-weight: 300;
  	color: #fff;
- 	padding: 12px 0;
- 	background: #e28743;
+ 	padding: .5em;
+ 	/* 	background: #e28743;*/
+ 	background: #edd39f;
+ 	color: #3f5862;
  	border-bottom: none;
  }
 
@@ -1134,14 +1149,21 @@ RGB(65, 176, 110)
  	border-bottom: 1px solid #ccc;
  }
 
- .datos-ruta li i {
+ .datos-ruta i {
  	color: #e28743;
- 	font-size: .8em;
+ 	font-size: 1.1em;
  	margin-right: .5em;
  	position: relative;
- 	color: #e28743;
  }
 
+ .lendas-ruta span {
+ 	padding: .5em;
+ }
+
+ .lendas-ruta p {
+ 	text-align: center;
+ 	padding: .5em;
+ }
 
  /******** contenedor galeria *********/
 
