@@ -723,54 +723,149 @@ RGB(65, 176, 110)
  	font: 1.5em'Open Sans', sans-serif;
  }
 
- #gmap_div #gv_infobox {
+ #gmap_div .gv_infobox {
  	/* cadro lenda altitud */
- 	font: 1.5em 'Open Sans', sans-serif;
+ 	font: 5em 'Open Sans', sans-serif;
  	border: solid #ccc 1px;
  	background-color: beige;
  	padding: .5em;
  	overflow: auto;
  }
 
-
  .gv_profile_button {
  	/* icono para mostrar altitude */
  	width: 7em !important;
  	height: 7em !important;
- 	padding: .5em;
+ 	padding: 0em !important;
  	box-shadow: 1px 1px 1px #cccccc80;
  	border: 2px solid rgba(226, 135, 67, 0.5);
- 	background: #fff url(../../../imaxes/iconos/icon_elevation_profile.png) center/100% !important;
+ 	background: #ffffff80 url(../../../imaxes/iconos/icon_elevation_profile.png) center/100% !important;
  }
 
  .gv_profile {
  	/* cadro altitude/elevation */
- 	height: auto !important;
+ 	height: 40vh !important;
  	width: 95% !important;
- 	padding: 0em 0em 0em 0em !important;
- 	text-align: left;
- 	overflow: visible;
- }
+ 	padding: 0em !important;
+ 	margin: 0 !important;
+ 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5) !important;
 
- .gv_profile[canvas] {
- 	border: 2px solid rg(226, 135, 67);
  }
 
  #gv_elevation_profile {
  	/* grafica altitude/elevation */
- 	height: auto !important;
- 	width: 95%;
+ 	height: 100% !important;
+ 	width: 100% !important;
  	padding: 0em !important;
  	margin: 0 !important;
- 	background: #fff !important;
- 	overflow: visible;
+ 	background: #ffffff80 !important;
+ 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5) !important;
+
+ }
+
+ #gv_elevation_profile {
+ 	content: attr(canvas);
+ 	height: 100% !important;
+ 	width: 100% !important;
+ 	padding: 0 !important;
+ 	margin: 0 !important;
+ 	position: absolute !important;
+ 	bottom: 0% !important;
+ 	left: 0% !important;
+ 	background: #ffffff80 !important;
+ }
+
+ #gv_elevation_profile {
+ 	content: attr(data_area_clipping_path);
+ 	height: 99% !important;
+ 	width: 100% !important;
+ 	padding: 0px !important;
+ 	margin: 0px !important;
+ 	font: .7em 'Open Sans', sans-serif !important;
+ 	position: absolute !important;
+ 	bottom: 0% !important;
+ 	left: 0% !important;
+ }
+
+ /* estilo para as gráficas de elevacion susi */
+ /*    .profile_unfilled { fill:none; stroke:black; stroke-width:2; stroke-linecap:round; }*/
+ .profile_filled {
+ 	fill: black;
+ 	/* 	stroke: red !important;*/
+ 	stroke-width: 1 !important;
+ 	stroke-linejoin: round;
+
+ }
+
+ .profile_invisible {
+ 	fill: none;
+ 	stroke: none;
+ 	pointer-events: all;
+ 	opacity: 1;
+ }
+
+ .profile_gridline {
+ 	stroke: none !important;
+ 	stroke-width: 0.5;
+ }
+
+ .profile_axis_tick {
+ 	stroke: #000000;
+ 	stroke-width: 0.5;
+ }
+
+ .profile_gridline_label {
+
+ 	font: 1em 'Open Sans', sans-serif !important;
+ }
+
+ .profile_waypoint {
+ 	fill: white;
+ 	stroke: #e28743 !important;
+ 	stroke-width: 2 !important;
+ 	fill: #e28743 !important;
+ }
+
+ .profile_waypoint_label {
+ 	font: 1em 'Open Sans', sans-serif !important;
+ }
+
+ .mouseover_circle {
+ 	stroke: #e28743 !important;
+ 	stroke-width: 2 !important;
+ 	fill: none !important;
+ }
+
+ .mouseover_label {}
+
+ .draggable {
+ 	/* 	cursor: copy !important;
+ 	*/
+ }
+
+ .profile_waypoint {
+ 	width: 1em !important;
+ 	cursor: grab !important;
 
  }
 
  .profile_waypoint_label {
  	/* etiquetas cadro altitude */
- 	font-size: 1.2em !important;
+ 	font: 1em 'Open Sans', sans-serif !important;
  	padding: 0em !important;
+ 	font-weight: bolder !important;
+ 	/* 	direction: ltr !important;*/
+ 	/* 	writing-mode: vertical-rl !important;*/
+ }
+
+ .profile_waypoint_label:hover {
+ 	cursor: grab !important;
+ 	/* etiquetas cadro altitude */
+ 	font: 1.8em 'Open Sans', sans-serif !important;
+ 	padding: 0em !important;
+ 	font-weight: bolder !important;
+ 	/* 	direction: ltr !important;*/
+ 	writing-mode: vertical-rl !important;
  }
 
 
@@ -965,7 +1060,9 @@ RGB(65, 176, 110)
  	float: right;
  }
 
- .gv_crosshair {}
+ .gv_crosshair {
+ 	cursor: grab !important;
+ }
 
  /* creditos do mapa, footer do mapa */
  #mapa-noso .leaflet-control-attribution,
