@@ -136,6 +136,12 @@
 		background: none !important;
 	}
 
+	.header .header-navigation li.dropdown > a:after {
+		content: " +"
+	}
+
+	/* +++++++++++++++++ poñemos un + cando o ancho do viewport se active +++++++++++++++++ */
+
 	.ecommerce .header .header-navigation li > a,
 	.ecommerce .header .dropdown.open .dropdown-toggle,
 	.ecommerce .header .header-navigation li.open > a {
