@@ -37,7 +37,8 @@
 .mix-grid .mix .mix-inner {
 	position: relative;
 	width: 100%;
-
+	/*	border: 1px solid blue;
+	*/
 }
 
 .mix-grid .mix .mix-details {
@@ -60,26 +61,41 @@
 .mix-grid .mix .mix-details.azul {
 	background: #236c87;
 	text-align: center;
-	border-radius: 20% !important;
+	border-radius: 5% !important;
 }
 
 .mix-grid .mix .mix-details.azul h4 {
 	font-weight: bold;
 	color: white;
-	margin-top: 3em;
-	padding: 0 10px;
+	margin: .5em;
+	padding: .1em;
 }
 
 .mix-grid .mix .mix-details.azul p {
 	color: white;
+	font-size: .8em;
 	padding: 0 30px;
-	margin-top: 3em;
+	margin-top: 1em;
 }
 
-.mix-grid .mix .mix-details.azul li {
+.mix-grid .mix .mix-details.azul h5 {
+	color: white;
+	font-weight: 400;
+	font-size: 1em;
+	margin-top: .7em;
+	padding: .5em;
+}
+
+.mix-grid .mix .mix-details.azul ul {
 	list-style: none;
 	margin-right: 3em;
 	color: white;
+	text-align: left;
+}
+
+.mix-grid .mix .mix-details.azul li::before {
+	content: "* ";
+	font-size: .7em;
 }
 
 /*------------------------------------------------css clasificación de drons*/

@@ -33,12 +33,10 @@
 					<!-- menu fauna fin -->
 					<!-- menu drons inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-							Drons
-						</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Drons</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Clasificación</a></li>
-							<li><a href="#">Lexislación</a></li>
+							<li><a href="Drons/clasificacion_drones.html">Clasificación</a></li>
+							<li><a href="Drons/legislacion_drones.html">Lexislación</a></li>
 							<li><a href="#">Plan de voo</a></li>
 							<li><a href="#">Sitios de interese <span></span></a>
 								<ul class="dropdown-menu dropdown-submenu">
@@ -47,38 +45,78 @@
 									<li><a class="dropdown-item" href="#">Rois</a></li>
 								</ul>
 							</li>
-							<li><a href="page-gallery.html">Galería</a></li>
 						</ul>
 					</li> <!-- menu drons fin -->
 					<!-- menu rutas inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-							Rutas
-						</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="rutas.html">Rutas</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Dodro</a></li>
-							<li><a href="#">Padrón</a></li>
-							<li><a href="#">Rois</a></li>
+							<li><a class="dropdown-item" href="#">Dodro <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="RutasSenderismo/dodro/ruta-aldeas-de-san-xian.html">Aldeas de San Xián</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-aldeas-do-monte.html">Aldeas do Monte</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-branhas.html">As Brañas</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-caminho-real.html">Camiño Real</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-cicular-lestrobe.html">Circular Lestrobe</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-fonte-primeiral.html">Fonte Primeiral</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-inchadinha.html">Inchadiña Branca Vela</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-os-dias-olvidados.html">Os días olvidados</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-pensa-nao.html">Pensa nao</a></li>
+									<li><a href="RutasSenderismo/dodro/ruta-pozo-baston-MIRAR.html">Pozo Bastón</a></li>
+									<li><a href="RutasSenderismo/padron/ruta-rosalia-nos-caminos2.html">Rosalia nos Camiños</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Padrón <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="RutasSenderismo/padron/ruta-Cela-3.html">Cela 3</a></li>
+									<li><a href="padron/ruta-do-pemento-de-herbon.html">Do Pemento</a></li>
+									<li><a href="RutasSenderismo/padron/ruta-padron-xacobeo.html">Padrón Xacobeo</a></li>
+									<li><a href="RutasSenderismo/padron/ruta_padron_literario.html">Padrón Literario</a></li>
+									<li><a href="RutasSenderismo/padron/ruta-rosalia-nos-caminos2.html">Rosalia nos Camiños</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Rois <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="RutasSenderismo/rois/ruta-castro-lupario.html">Castro Lupario</a></li>
+									<li><a href="RutasSenderismo/rois/rutas-penicias.html">Penicias</a></li>
+									<li><a href="RutasSenderismo/padron/ruta-rosalia-nos-caminos2.html">Rosalia nos Camiños</a>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<!-- menu rutas fin -->
 					<!-- menu en bici inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-							Bicicleta
-						</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Bicicleta</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Dodro</a></li>
-							<li><a href="#">Padrón</a></li>
-							<li><a href="#">Rois</a></li>
+							<li><a class="dropdown-item" href="#">Dodro <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Padrón <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">Rois <span></span></a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+									<li><a href="XXXXXXXXXXXX">XXXX</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<!-- menu en bici fin -->
 					<!-- menu deportes inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-							Deporte
-						</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Deporte</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Dodro <span></span></a>
 								<ul class="dropdown-menu dropdown-submenu">
@@ -103,22 +141,19 @@
 					<!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
 					<li class="dropdown">
-						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
-							Lecer
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Dodro</a></li>
-							<li><a href="#">Padrón</a></li>
-							<li><a href="#">Rois</a></li>
-						</ul>
+						<a href="lecer.html" class="dropdown-toggle">Lecer</a>
 					</li> <!-- menu cultura fin-->
 					<!-- menu actividades descargables inicio -->
 					<li class="dropdown">
-						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
-							Actividades
-						</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Actividades</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Descargables</a></li>
+							<li><a class="dropdown-item" href="#">Descargables</a>
+								<!--
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="XXXXXXXXXXXXX">XXXXXXXXXXXX</a></li>
+									<li><a class="dropdown-item" href="XXXXXXXXXXX">XXXXXXX</a></li>
+								</ul>-->
+							</li>
 							<li><a href="#">Xogos</a></li>
 						</ul>
 					</li> <!-- menu actividades descargables  fin-->
