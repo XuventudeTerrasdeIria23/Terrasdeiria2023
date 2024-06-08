@@ -1,4 +1,4 @@
-	<!-- Menú navegación INICIO -->
+<!-- Menú navegación INICIO -->
 			<nav class="header-navigation pull-right font-transform-inherit">
 				<ul>
 					<!-- menu flora inicio -->
@@ -45,6 +45,7 @@
 									<li><a class="dropdown-item" href="Drons/plantilla-rois-drons.html">Rois</a></li>
 								</ul>
 							</li>
+							<li><a href="#">Mapa</a></li>
 						</ul>
 					</li> <!-- menu drons fin -->
 					<!-- menu rutas inicio -->
@@ -141,7 +142,7 @@
 					<!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
 					<li class="dropdown">
-						<a href="lecer.html" class="dropdown-toggle">Lecer</a>
+						<a href="lecer_anual.html" class="dropdown-toggle">Lecer</a>
 					</li> <!-- menu cultura fin-->
 					<!-- menu actividades descargables inicio -->
 					<li class="dropdown">
