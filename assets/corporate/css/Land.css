@@ -1,0 +1,193 @@
+.slides {
+	/*tamaño cuadro de imagen*/
+	padding: 0;
+	width: auto;
+	height: 35em;
+	display: block;
+	margin-top: 0 auto;
+	position: relative;
+	top: 1em;
+	text-align: center;
+}
+
+.slides * {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide-container {
+	display: block;
+	justify-content: center;
+	align-content: center;
+}
+
+.slide {
+	/* Las imágenes*/
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	transform: scale(0);
+	transition: all .7s ease-in-out;
+}
+
+.slide img {
+	/*tamaño de las imágenes*/
+	width: 80%;
+	height: 100%;
+	filter: drop-shadow(3px 3px 3px #7C858E80);
+	box-shadow: 0px 2px 5px 2px #ccc;
+
+}
+
+.nav label {
+	width: 15px;
+	height: 100%;
+	display: none;
+	position: absolute;
+	opacity: .7;
+	z-index: 9;
+	cursor: pointer;
+	transition: opacity .2s;
+	color: #ccc;
+	/*Cambio de tamaño de los signos <>*/
+	font-size: 50pt;
+	text-align: center;
+	line-height: 380px;
+
+	color: #7C858E80;
+	filter: drop-shadow(3px 3px 3px #7C858E);
+
+}
+
+.slide:hover + .nav label {
+	opacity: 0.5;
+}
+
+.nav label:hover {
+	opacity: 1;
+	color: #fff;
+	text-shadow: 0px 0px 5px rgb(119, 119, 119);
+}
+
+.nav .next {
+	right: 0;
+}
+
+input:checked + .slide-container .slide {
+	opacity: 1;
+
+	transform: scale(1);
+
+	transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+	display: block;
+}
+
+.nav-dots {
+	/*Lugar que ocupan los puntitos*/
+	width: 80%;
+	bottom: auto;
+	height: 10px;
+	display: block;
+	position: relative;
+	margin: 1em auto;
+	text-align: left;
+
+}
+
+.nav-dots .nav-dot {
+	/*puntitos de la galeria*/
+	top: 0px;
+	width: 1em;
+	height: 1em;
+	margin: 0 3px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #007a53
+		/*rgba(0, 0, 0, 0.6)*/
+	;
+}
+
+.nav-dots .nav-dot:hover {
+
+	cursor: pointer;
+	background-color: #ccc
+		/*rgba(0, 0, 0, 0.8)*/
+	;
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11,
+input#img-12:checked ~ .nav-dots label#img-dot-12,
+input#img-13:checked ~ .nav-dots label#img-dot-13,
+input#img-14:checked ~ .nav-dots label#img-dot-14,
+input#img-15:checked ~ .nav-dots label#img-dot-15,
+input#img-16:checked ~ .nav-dots label#img-dot-16,
+input#img-17:checked ~ .nav-dots label#img-dot-17,
+input#img-18:checked ~ .nav-dots label#img-dot-18,
+input#img-19:checked ~ .nav-dots label#img-dot-19,
+input#img-20:checked ~ .nav-dots label#img-dot-20,
+input#img-21:checked ~ .nav-dots label#img-dot-21,
+input#img-22:checked ~ .nav-dots label#img-dot-22,
+input#img-23:checked ~ .nav-dots label#img-dot-23,
+input#img-24:checked ~ .nav-dots label#img-dot-24,
+input#img-25:checked ~ .nav-dots label#img-dot-25,
+input#img-26:checked ~ .nav-dots label#img-dot-26,
+input#img-27:checked ~ .nav-dots label#img-dot-27,
+input#img-28:checked ~ .nav-dots label#img-dot-28,
+input#img-29:checked ~ .nav-dots label#img-dot-29,
+input#img-30:checked ~ .nav-dots label#img-dot-30,
+input#img-31:checked ~ .nav-dots label#img-dot-31,
+input#img-32:checked ~ .nav-dots label#img-dot-32,
+input#img-33:checked ~ .nav-dots label#img-dot-33,
+input#img-34:checked ~ .nav-dots label#img-dot-34,
+input#img-35:checked ~ .nav-dots label#img-dot-35,
+input#img-36:checked ~ .nav-dots label#img-dot-36,
+input#img-37:checked ~ .nav-dots label#img-dot-37,
+input#img-38:checked ~ .nav-dots label#img-dot-38,
+input#img-39:checked ~ .nav-dots label#img-dot-39,
+input#img-40:checked ~ .nav-dots label#img-dot-40,
+input#img-41:checked ~ .nav-dots label#img-dot-41,
+input#img-42:checked ~ .nav-dots label#img-dot-42,
+input#img-43:checked ~ .nav-dots label#img-dot-43,
+input#img-44:checked ~ .nav-dots label#img-dot-44,
+input#img-45:checked ~ .nav-dots label#img-dot-45,
+input#img-46:checked ~ .nav-dots label#img-dot-46,
+input#img-47:checked ~ .nav-dots label#img-dot-47,
+input#img-48:checked ~ .nav-dots label#img-dot-48,
+input#img-49:checked ~ .nav-dots label#img-dot-49,
+input#img-50:checked ~ .nav-dots label#img-dot-50,
+input#img-51:checked ~ .nav-dots label#img-dot-51,
+input#img-52:checked ~ .nav-dots label#img-dot-52,
+input#img-53:checked ~ .nav-dots label#img-dot-53,
+input#img-54:checked ~ .nav-dots label#img-dot-54,
+input#img-55:checked ~ .nav-dots label#img-dot-55,
+input#img-56:checked ~ .nav-dots label#img-dot-56,
+input#img-57:checked ~ .nav-dots label#img-dot-57 {
+
+	background: #007a53;
+	/*rgba(0, 0, 0, 0.8);*/
+}

@@ -305,6 +305,11 @@ RGB(65, 176, 110)
  	font-weight: 600;
  }
 
+ a.red-link:hover {
+ 	color: #3f5862;
+ 	font-weight: 800;
+ }
+
  .fonte {
  	font-size: .7em;
  	color: #3f5862;
@@ -492,7 +497,10 @@ RGB(65, 176, 110)
  }
 
  /* carrusel index */
- .carousel-inner {}
+ .carousel-inner h3 {
+ 	text-align: center;
+ 	font-size: 1.8em;
+ }
 
 
  .carrusel {
@@ -704,6 +712,36 @@ RGB(65, 176, 110)
  	color: #e28743;
  	font-weight: 700;
 
+ }
+
+ @media screen and (max-width: 600px) {
+ 	footer .copyright {
+ 		width: 100vw;
+ 		display: block;
+ 		margin-top: 10%;
+ 	}
+
+ 	footer .copyright p,
+ 	footer .copyright p img {
+ 		width: auto;
+ 		display: block;
+ 		height: auto;
+ 	}
+
+ 	.copyright p a {
+ 		width: 90vw;
+ 		font-size: 0.7rem;
+ 		display: block;
+ 	}
+ }
+
+ @media screen and (min-width: 601px) {
+ 	footer .copyright p img {
+ 		width: 50vw;
+ 		height: auto;
+ 	}
+
+ 	.copyright a {}
  }
 
  /* fin FOOTER index */
