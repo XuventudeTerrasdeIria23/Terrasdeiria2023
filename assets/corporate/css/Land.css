@@ -186,7 +186,16 @@ input#img-53:checked ~ .nav-dots label#img-dot-53,
 input#img-54:checked ~ .nav-dots label#img-dot-54,
 input#img-55:checked ~ .nav-dots label#img-dot-55,
 input#img-56:checked ~ .nav-dots label#img-dot-56,
-input#img-57:checked ~ .nav-dots label#img-dot-57 {
+input#img-57:checked ~ .nav-dots label#img-dot-57,
+input#img-58:checked ~ .nav-dots label#img-dot-58,
+input#img-59:checked ~ .nav-dots label#img-dot-59,
+input#img-60:checked ~ .nav-dots label#img-dot-60,
+input#img-61:checked ~ .nav-dots label#img-dot-61,
+input#img-62:checked ~ .nav-dots label#img-dot-62,
+input#img-63:checked ~ .nav-dots label#img-dot-63,
+input#img-64:checked ~ .nav-dots label#img-dot-64,
+input#img-65:checked ~ .nav-dots label#img-dot-65,
+input#img-66:checked ~ .nav-dots label#img-dot-66 {
 
 	background: #007a53;
 	/*rgba(0, 0, 0, 0.8);*/
