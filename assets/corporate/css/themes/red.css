@@ -53,6 +53,10 @@ a:hover {
 	color: #e28743;
 }
 
+h3.link {
+	font-size: 1.1em;
+}
+
 .page-404 .number,
 .page-500 .number {
 	color: #e28743;

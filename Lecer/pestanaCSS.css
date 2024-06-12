@@ -1,0 +1,84 @@
+
+
+.main-Mes {/* contenedor das pestañas */
+/*
+  min-width: 320px;
+  max-width: 800px;
+*/
+/*  padding: 50px;*/
+  margin: 0 auto;
+  background: #fff;
+  width: 100%;
+}
+
+
+.containter-tab1 {/* section co coontido de cada mes */
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+   
+}
+
+.input-tabMes {
+  display: none;
+}
+
+.label-tabMes { /* label con nome do mes */
+  display: inline-flex;
+  margin: 0 0 -1px;
+  padding: 35px 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #3f5862;
+  border: 1px solid transparent;
+    
+}
+
+.label-tabMes:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+ 
+.label-tabMes:hover {
+  color: #888;
+  cursor: pointer;  border-top: 2px solid #e28743;
+}
+
+.input-tabMes:checked + .label-tabMes {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #e6400c;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #xaneiro,
+#tab2:checked ~ #febreiro,
+#tab3:checked ~ #marzo,
+#tab4:checked ~ #abril,
+#tab5:checked ~ #maio,
+#tab6:checked ~ #xuno,
+#tab7:checked ~ #xullo,
+#tab8:checked ~ #agosto,
+#tab9:checked ~ #setembro,
+#tab10:checked ~ #outubro,
+#tab11:checked ~ #novembro,
+#tab12:checked ~ #decembro{
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .label-tabMes {
+    font-size: 0;
+  }
+
+  .label-tabMes:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .label-tabMes {
+    padding: 15px;
+  }
+}

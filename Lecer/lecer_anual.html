@@ -48,8 +48,8 @@
 	<!-- Etiquetas META FIN -->
 
 	<title>Xuventude Terra de Iria 2023</title>
-	<link rel="stylesheet" href="pestanaCSS.css">
-	<link rel="stylesheet" href="modal.css">
+	<link rel="stylesheet" href="../assets/pages/css/lecer_modal.css">
+	<link rel="stylesheet" href="../assets/pages/css/Lecer_pestanaCSS.css">
 
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -85,7 +85,7 @@
 							Flora
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="../RedNatura_flora.html">Red Natura 2000</a></li>
+							<li><a href="../RedNatura_flora.html">Rede Natura 2000</a></li>
 							<li><a href="Mapa_Flora_plantilla2.html">Mapa</a></li>
 							<li><a href="flores_galeria.html">Herbáceas</a></li>
 							<li><a href="Galeria_Flora_arbores.html">Árbores</a></li>
@@ -102,7 +102,7 @@
 							Fauna
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="../RedNatura_fauna.html">Red Natura 2000</a></li>
+							<li><a href="../RedNatura_fauna.html">Rede Natura 2000</a></li>
 							<li><a href="../Fauna/Mapa_Fauna_plantilla.html">Mapa</a></li>
 							<li><a href="../Fauna/Galeria_Fauna_Aves.html">Aves</a></li>
 							<li><a href="../Fauna/Galeria_Fauna_Mamiferos.html">Mamíferos</a></li>
@@ -240,7 +240,9 @@
 							Actividades
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Descargables</a></li>
+							<li class="active"><a href="fichas_flora_completas.html">Catálogo de flora</a></li>
+							<li><a href="fichas_fauna_completas.html">Catálogo de fauna</a></li>
+							<li><a href="#">Xogos</a></li>
 							<li><a href="#">Xogos</a></li>
 						</ul>
 					</li> <!-- menu actividades descargables  fin-->
@@ -255,9 +257,8 @@
 	<div class="main">
 		<div class="container">
 			<div class="row margin-bottom-40">
-
 				<ul class="breadcrumb">
-					<li><a href="../index.html">Home</a></li>
+					<li><a href="../inicio.html">Inicio</a></li>
 					<li><a href="../dodro.html">Dodro</a></li>
 					<li class="active">Ocio nos Concellos</li>
 				</ul>
@@ -301,7 +302,7 @@
 						<input class="input-tabMes" id="tab12" type="radio" name="tabs">
 						<label class="label-tabMes" for="tab12">Decembro</label>
 
-
+						<!-- section dos modais INICIO -->
 						<section class="containter-tab1" id="xaneiro">
 							<h3 class="letraspadron">Padrón</h3>
 							<ul>
@@ -312,11 +313,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('cabalgatapadron').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Cabalgata de Reis</h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/cabalgata_padron.jpg"><br><br>
+													<h2>Cabalgata de Reis</h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/cabalgata_padron.jpg" alt="Cabalgata de Reis">
 													<p>Coa chegada do Nadal no municipio de Padrón organizaranse diferentes actividades lúdicas e culturais para o disfrute de veciños e visitantes, donde se destaca a Cabalgata de Reis Magos coa póstuma recepción aos mesmos.</p>
 												</div>
 											</div>
@@ -330,11 +331,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('concertoreis').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Concerto de Reis</h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/concerto-de-reis-padron.jpg"><br>
+													<h2>Concerto de Reis</h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/concerto-de-reis-padron.jpg" alt="Concerto de Reis">
 													<p>O municipio de Padrón acollerá o día 6 de Xaneiro a celebración do Concerto de Reis que terá lugar no Auditorio Municipal en horario de tarde.</p>
 												</div>
 											</div>
@@ -351,11 +352,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('recepcionreisdodro').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Recepción de Reis</h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_dodro/recepcion-de-reis-dodro.jpg"><br><br>
+													<h2>Recepción de Reis</h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/recepcion-de-reis-dodro.jpg" alt="Recepción de Reis">
 													<p>Os reis Magos de Oriente visitarán o municipio de Dodro. Melchor,Gaspar e Baltasar, cargados de regalos chegarán a localidade coruñesa para alegría e deleite dos mais pequeno.</p>
 												</div>
 											</div>
@@ -369,11 +370,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('sanamaro').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>San Amaro e Virxe do Belén de Bexo</h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_dodro/san-amaro-e-virxe-do-belen-de-bexo-dodro.jpg"><br><br>
+													<h2>San Amaro e Virxe do Belén de Bexo</h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/san-amaro-e-virxe-do-belen-de-bexo-dodro.jpg" alt="San Amaro e Virxe do Belén de Bexo">
 													<p>Os veciños da parroquia de Bexo no municipio de Dodro, celebrarán os días 15, 20 e 25 de Xaneiro a festa relixiosa en honra a San Amaro e Virxe do Belén.</p>
 												</div>
 											</div>
@@ -387,11 +388,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('eiramalla').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Festa da Eira da Malla de Bexo</h1>
-													<img class="foto" src="fotos-festas/Imaxes_festas_dodro/festa-da-eira-da-malla-de-bexo-dodro.jpg"><br><br>
+													<h2>Festa da Eira da Malla de Bexo</h2>
+													<img class="foto img-shadow" src="../Lecer/fotos-festas/Imaxes_festas_dodro/festa-da-eira-da-malla-de-bexo-dodro.jpg" alt="Festa da Eira da Malla de Bexo">
 													<p>O evento “Festa da Eira da Malla de Bexo” terá lugar no municipio coruñés de Dodro o Luns 20 de Xaneiro</p>
 												</div>
 											</div>
@@ -405,11 +406,11 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('carreiradodro').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Carreira Solidaria </h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_dodro/carreira-solidaria-dodro.jpg"><br><br>
+													<h2>Carreira Solidaria </h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/carreira-solidaria-dodro.jpg" alt="Carreira Solidaria">
 													<p>Este evento terá lugar no municipio coruñes de Dodro. Está clasificado dentro da categoria Evento deportivo e será a segunda edición celebrada.</p>
 												</div>
 											</div>
@@ -419,26 +420,6 @@
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
-								<!--
-                                <li><a class="open2" onclick="document.getElementById('reisrois').style.display='flex'">
-                                        Festa de Reis de Castrelo de Abaixo </a></li>
-                                <div class="modal-contido">
-                                    <div id="reisrois" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('reisrois').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Festa de Reis de Castrelo de Abaixo </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_rois/festa-de-reis-de-castrelo-de-abaixo-rois.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 								<li><a class="open2" onclick="document.getElementById('trailrois').style.display='flex'">
 										Trail e Andaina Montes de Oleirón </a></li>
 								<div class="modal-contido">
@@ -446,38 +427,19 @@
 										<div class="modal-contido animations-top">
 											<div class="modal-contido2">
 												<span class="close2-click" onclick="document.getElementById('trailrois').style.display='none'">
-													<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+													<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 												</span>
 												<div class="body-center">
-													<h1>Trail e Andaina Montes de Oleirón </h1>
-													<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/trail-e-andaina-montes-de-oleiron-rois.jpg"><br><br>
+													<h2>Trail e Andaina Montes de Oleirón </h2>
+													<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/trail-e-andaina-montes-de-oleiron-rois.jpg" alt="Trail e Andaina Montes de Oleirón">
 													<p>Proba deportiva que terá lugar por sendeiros, pistas e cortalumes e nos Montes de Oleirón en Rois. Todas as personas inscritas no Trail e Andaina recibirán un regalo no momento de recoller o dorsal.</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li><a class="open2" onclick="document.getElementById('mushingrois').style.display='flex'">
-                                        VII Mushing Montes Rois</a></li>
-                                <div id="mushingrois" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('mushingrois').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>VII Mushing Montes Rois</h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_rois/mushing-montes-rois-rois.jpg"><br><br>
-                                                <p> O municipio de Rois acolle unha nova edición de Mushing Montes Rois, no lugar da Peruca, para a modalidade de Canicros, BikeJoring e Patín.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="febreiro">
 							<h3 class="letraspadron">Padrón</h3>
@@ -488,11 +450,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('padron10k').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Padrón 10K</h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/padron-10k.jpg"><br><br>
+												<h2>Padrón 10K</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/padron-10k.jpg" alt="Padrón 10K">
 												<p>Na localidade de Padrón acollerá a celebración de unha nova edición de este evento deportivo. A proba atlética estará formada por varios circuitos de diferentes distancias que deberá completar os participantes en función das suas idades, sendo a distancia mínima de 60 metros e a máxima de 10 kilómetros.</p>
 											</div>
 										</div>
@@ -504,11 +466,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('entroidoextramundi').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Entroido de Extramundi </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/entroido-de-extramundi-padron.jpg"><br><br>
+												<h2>Entroido de Extramundi </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/entroido-de-extramundi-padron.jpg" alt="Entroido de Extramundi">
 												<p>Na asociación de Mulleres Rurais A Carballeira de Padrón, organiza a tradicional festa de Entroido, que terá lugar na Casa da Cultura de Extramundi. Todos os asistentes poderán degustar productos típicos de estas festas e participar no sorteo de regalos.</p>
 											</div>
 										</div>
@@ -520,11 +482,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('entroidopadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Entroido </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/entroido-padron.jpg"><br><br>
+												<h2>Entroido </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/entroido-padron.jpg" alt="Entroido">
 												<p>Na localidade Padrón celebrará a popular festa de Entroido. Veciños e visitantes, nenos e maiores poderán desfrutar e deleitarse nesta xornada co tradicional Desfile e Concurso de Disfraces, Carrozas e Comparsas.</p>
 											</div>
 										</div>
@@ -536,11 +498,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('diarosalia').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día de Rosalía de Castro </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/dia-de-rosalia-de-castro-padron.jpg"><br><br>
+												<h2>Día de Rosalía de Castro </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/dia-de-rosalia-de-castro-padron.jpg" alt="Día de Rosalía de Castro">
 												<p>O municipio de Padrón recordará a figura de Rosalía de Castro cun intenso programa cultural. Entre as actividades cabe destacar unha visita teatralizada, a tradicional ofrenda de entrega do Premio de Poesía Rosalía de Castro.</p>
 											</div>
 										</div>
@@ -552,11 +514,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('galafoliadeira').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Gala Rosalía Foliadeira </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/gala-rosalia-foliadeira-padron.jpg"><br><br>
+												<h2>Gala Rosalía Foliadeira </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/gala-rosalia-foliadeira-padron.jpg" alt="Gala Rosalía Foliadeira">
 												<p>A asociación Cultural Rosalía de Castro na localidade de Padrón organizará unha nova edición da Gala Rosalía Foliadeira, donde os asistentes poderán disfrutar de diferentes actuacions musicais.</p>
 											</div>
 										</div>
@@ -571,11 +533,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('entroidododro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Entroido </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_dodro/entroido-dodro.jpg"><br><br>
+												<h2>Entroido </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/entroido-dodro.jpg" alt="Entroido">
 												<p>Os veciños do municipio de Dodro celebrarase a popular festa do Entroido con unha divertida xornada carnavalescas na que haberá animación musical,degustación de postres típicos e sorteos.</p>
 											</div>
 										</div>
@@ -587,11 +549,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('rosaliadodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día de Rosalía </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_dodro/dia-de-rosalia-dodro.jpg"><br><br>
+												<h2>Día de Rosalía </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/dia-de-rosalia-dodro.jpg" alt="Día de Rosalía">
 												<p>O municipio de Dodro recordará a figura de Rosalía de Castro con unha programación especial para conmemorar a sua vida e obra.</p>
 											</div>
 										</div>
@@ -606,11 +568,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('candelariarois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>A Candelaria de San Lourenzo de Seira </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/a-candelaria-de-san-lourenzo-de-seira-rois.jpg"><br><br>
+												<h2>A Candelaria de San Lourenzo de Seira </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/a-candelaria-de-san-lourenzo-de-seira-rois.jpg" alt="A Candelaria de San Lourenzo de Seira">
 												<p>A parroquia de San Lourenzo de Seira celebrará a sua festa relixosa en honra á Virxe da Candelaria. Veciños e visitantes poderán disfrutar dos actos litúrxicos programados para a ocasión e deleitarse con variadas actuacións musicais.</p>
 											</div>
 										</div>
@@ -622,11 +584,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('cocidourdilde').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Cocido de Entroido de Urdilde </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/cocido-de-entroido-de-urdilde-rois.jpg"><br><br>
+												<h2>Cocido de Entroido de Urdilde </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/cocido-de-entroido-de-urdilde-rois.jpg" alt="Cocido de Entroido de Urdilde">
 												<p>O evento terá lugar no municipio coruñes de Rois, no pavillón de Rois. Está clasificado dentro da categoría Gastronómica.</p>
 											</div>
 										</div>
@@ -638,11 +600,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('entroidorois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Entroido </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/entroido-rois.jpg"><br><br>
+												<h2>Entroido </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/entroido-rois.jpg" alt="Entroido Rois">
 												<p>O municipio de Rois festexa a popular festa de Entroido coa celebración do Concurso de Disfraces</p>
 											</div>
 										</div>
@@ -654,11 +616,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('entroidourdilde').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Entroido de Urdilde </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/entroido-de-urdilde-rois.jpg"><br><br>
+												<h2>Entroido de Urdilde </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/entroido-de-urdilde-rois.jpg" alt="Entroido de Urdilde">
 												<p>Os veciños da parroquia de Urdilde, no municipio de Rois, celebrarán a popular festa do Entroido con unha gran xornada carnavalesca que culminará con unha gran verbena.</p>
 											</div>
 										</div>
@@ -670,11 +632,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('rosaliarois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día de Rosalía </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/dia-de-rosalia-rois.jpg"><br><br>
+												<h2>Día de Rosalía </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/dia-de-rosalia-rois.jpg" alt="Día de Rosalía Rois">
 												<p> O municipio de Rois ten programadas unha serie de actividades para homenaxear a figura e obra de Rosalía de Castro</p>
 											</div>
 										</div>
@@ -686,20 +648,18 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('xantarrois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xantar de Servia </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_rois/xantar-de-servia-rois.jpg"><br><br>
+												<h2>Xantar de Servia </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/xantar-de-servia-rois.jpg" alt="Xantar de Servia">
 												<p>A comisión Serviafest organiza un xantar e baile no restaurante Casa Benjamín en Vilachán.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</ul>
-
 						</section>
-
 
 						<section class="containter-tab1" id="marzo">
 							<h3 class="letraspadron">Padrón</h3>
@@ -710,11 +670,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('lampreapadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xornadas Gastronómicas da Lamprea </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/xornadas-gastronomicas-da-lamprea-padron.jpg"><br><br>
+												<h2>Xornadas Gastronómicas da Lamprea </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/xornadas-gastronomicas-da-lamprea-padron.jpg" alt="Xornadas Gastronómicas da Lamprea">
 												<p>Nova edición de estas xornadas gastronómicas de exaltación da lamprea que terán lugar en Padrón. Os asistentes a este evento gastronómico poderá degustar os locales colaboradores menús elaborados para a ocasión.</p>
 											</div>
 										</div>
@@ -726,11 +686,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('mullerpadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xantar de Servia </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/dia-internacional-da-muller-padron.jpg"><br><br>
+												<h2>Día Internacional da Muller </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/dia-internacional-da-muller-padron.jpg" alt="Día Internacional da Muller">
 												<p>O municipio de Padrón organizará diferentes actos en conmemoración ao Día Internacional da Muller.</p>
 											</div>
 										</div>
@@ -742,11 +702,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('clasicospadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Mercadillo Recambios de Motos e Coches Clásicos </h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/mercadillo-recambios-de-motos-e-coches-clasicos-padron.jpg"><br><br>
+												<h2>Mercadillo Recambios de Motos e Coches Clásicos </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/mercadillo-recambios-de-motos-e-coches-clasicos-padron.jpg" alt="Mercadillo Recambios de Motos e Coches Clásicos">
 												<p>O pabellón Polideportivo do Souto acollerá a celebración de este mercadillo de recambios donde se poderán adquirir piezas de coches e motos clásicas.</p>
 											</div>
 										</div>
@@ -758,11 +718,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('pascua').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festas da Pascua</h1>
-												<img class="foto" src="../imaxes/lecer/fotos_festas/fotos_festas_padron/festas-da-pascua-padron.jpg"><br><br>
+												<h2>Festas da Pascua</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festas-da-pascua-padron.jpg" alt="Festas da Pascua">
 												<p> A Pascua de Padrón é a festividade mais importante do municipio. Non faltan en estas festas as grandes verbenas a cargo das orquestas do momento, os actos relixosos, actividades deportivas e a tradicional Feira Cabalar.</p>
 											</div>
 										</div>
@@ -774,11 +734,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('bonsai').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Exposición da Camelia e do Bonsai </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/exposicion-da-camelia-e-do-bonsai-padron.jpg"><br><br>
+												<h2>Exposición da Camelia e do Bonsai </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/exposicion-da-camelia-e-do-bonsai-padron.jpg" alt="Exposición da Camelia e do Bonsai">
 												<p> Esta exposición celebrarase no municipio de Padrón. Os asistentes a esta exposición que se levará a cabo no Convento do Carme, poderá disfrutar de unha gran mostra floral donde esta flor tan típica de Galicia será xunto ao bonsai, a gran protagonista.</p>
 											</div>
 										</div>
@@ -790,11 +750,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('carreirapascua').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1> Carreira Popular de Pascua </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/carreira-popular-de-pascua-padron.jpg"><br><br>
+												<h2> Carreira Popular de Pascua </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/carreira-popular-de-pascua-padron.jpg" alt="Carreira Popular de Pascua">
 												<p>Nova edición de esta carreira que se disputará na localidade de Padrón. A carreira estará formada por varios circuitos que deberán completar os participantes en función das suas idades. A salida da carreira popular da pascua estará ubicada na praza de Macías.</p>
 											</div>
 										</div>
@@ -806,11 +766,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('feiracabalar').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Feira Cabalar Campo da Barca </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/feira-cabalar-campo-da-barca-padron.jpg"><br><br>
+												<h2>Feira Cabalar Campo da Barca </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/feira-cabalar-campo-da-barca-padron.jpg" alt="Feira Cabalar Campo da Barca">
 												<p>Tradicional feira cabalar que se celebrará durante a Pascua de Padrón. O evento levarase a cabo no campo da Barca o Domingo 31 de Marzo a partir das 09.30 horas e numerosos cabalos e eguas participaran nos distintos concursos programados que darán comezo as 10.00 horas.</p>
 											</div>
 										</div>
@@ -825,11 +785,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('mullerdodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día Internacional da Muller</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/dia-internacional-da-muller-dodro.jpg"><br><br>
+												<h2>Día Internacional da Muller</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/dia-internacional-da-muller-dodro.jpg" alt="Dñia Internacional da Muller en Dodro">
 												<p>O concello de Dodro ten programados unha serie de actos con motivo do Día Internacional da Muller.</p>
 											</div>
 										</div>
@@ -844,11 +804,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('mullerrois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día Internacional da Muller </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/dia-internacional-da-muller-rois.jpg"><br><br>
+												<h2>Día Internacional da Muller </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/dia-internacional-da-muller-rois.jpg" alt="Día Internacional da Muller en Rois">
 												<p>O concello de Rois organizará unha xornada na que se conmemorará o Día Internacional da Muller</p>
 											</div>
 										</div>
@@ -856,7 +816,6 @@
 								</div>
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="abril">
 							<h3 class="letraspadron">Padrón</h3>
@@ -867,11 +826,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('clasicapadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1> Clásica de Pascua </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/clasica-de-pascua-padron.jpg"><br><br>
+												<h2> Clásica de Pascua </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/clasica-de-pascua-padron.jpg" alt="Clásica de Pascua">
 												<p>Nova edición de esta clásica ruta ciclista que se celebra durante as grandes Festas da Pascua padronesa. A clásica de Pascua discurrirá polo municipio de Padrón.</p>
 											</div>
 										</div>
@@ -883,11 +842,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festivalbandas').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festival de Bandas Capital do Sar </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/festival-de-bandas-capital-do-sar-padron.jpg"><br><br>
+												<h2>Festival de Bandas Capital do Sar </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festival-de-bandas-capital-do-sar-padron.jpg" alt="Festival de Bandas Capital do Sar">
 												<p>O municipio de Padrón acollerá, no mes de Abril a nova edición do Festival de Bandas Capital do Sar. Os asistentes a este evento poderán disfrutar e deleitarse coas actuacions musicais de diferentes bandas que se darán cita en esta nova edición do festival.</p>
 											</div>
 										</div>
@@ -899,11 +858,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('libropadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Mes do Libro </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/mes-do-libro-padron.jpg"><br><br>
+												<h2>Mes do Libro </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/mes-do-libro-padron.jpg" alt="Mes do Libro">
 												<p> Padrón celebrará o Mes do Libro con unha programación que se levará a cabo ao lago de varios día na Biblioteca Municipal, dirixida a pequenos e xóvenes de entre 1 e 15 anos.</p>
 											</div>
 										</div>
@@ -915,11 +874,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('bisbarrasar').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Andaina Bisbarra do Sar </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/andaina-bisbarra-do-sar-padron.jpg"><br><br>
+												<h2>Andaina Bisbarra do Sar </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/andaina-bisbarra-do-sar-padron.jpg" alt="Andaina Bisbarra do Sar">
 												<p>Nova edición da Andaina Bisbarra do Sar que se celebra entre os municipios de Padrón,Dodro e Rois. A proba poderá realizarse camiñando ou correndo. A competición terá o seu punto de partida na vila de Padrón.</p>
 											</div>
 										</div>
@@ -931,47 +890,20 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('memoria').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día da Memoria Democrática Padronesa</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/dia-da-memoria-democratica-padronesa-padron.jpg"><br><br>
+												<h2>Día da Memoria Democrática Padronesa</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/dia-da-memoria-democratica-padronesa-padron.jpg" alt="Día da Memoria Democrática Padronesa">
 												<p>O concello de Padrón celebrará o Día da Memoria Democrática Padronesa. O acto terá lugar no Xardín Botánico Artístico e o seu obxectivo e o reconocemento a todas aquelas personas que loitaron pola libertade durante a guerra civil e a dictadura franquista.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</ul>
-							<!--
-                            <h3>Dodro</h3>
-                            <ul>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                            </ul>
--->
-							<!--
-                            <h3>Rois</h3>
-                            <ul>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                                <li><a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
-                                        Cabalgata de Reis</a></li>
-                            </ul>
--->
 						</section>
 
 						<section class="containter-tab1" id="maio">
-							<!-- ************************************* proba modal 2  -->
 							<h3 class="letraspadron">Padrón</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('Motos').style.display='flex'">
@@ -981,19 +913,16 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('Motos').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1> Ruta Internacional de Motos Antigas </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/ruta-internacional-de-motos-antigas-padron.jpg"><br><br>
+												<h2> Ruta Internacional de Motos Antigas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/ruta-internacional-de-motos-antigas-padron.jpg" alt="Ruta Internacional de Motos Antigas">
 												<p>A nova edición da ruta Internacional de Motos Antigas Terras de Padrón. Os amantes do mundo do motor poderán disfrutar do recorrido por diferentes municipios da comarca do Salnés, con saida e regreso na vila padronesa.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
-
 								<li> <a class="open2" onclick="document.getElementById('Idade3').style.display='flex'">
 										San Xoán do Raio - Festa Institucional da 3ª Idade
 									</a></li>
@@ -1002,17 +931,16 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('Idade3').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Xoán do Raio - Festa Institucional da 3ª Idade </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/san-xoan-do-raio-festa-institucional-da-3%C2%AA-idade-padron.jpg"><br><br>
+												<h2>San Xoán do Raio - Festa Institucional da 3ª Idade </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/san-xoan-do-raio-festa-institucional-da-3%C2%AA-idade-padron.jpg" alt="San Xoan do Raio - Festa Institucional da 3ª Idade">
 												<p>Na xornada do lúns 6 de Maio, os veciños da localidade de Padrón celebrarán a sua festa relixiosa en honra a San Xoan do Raio - XXXII Festa Institucional da 3ª Idade.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								<li> <a class="open2" onclick="document.getElementById('Bicicleta').style.display='flex'">
 										Día da Bicicleta
 									</a></li>
@@ -1021,17 +949,16 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('Bicicleta').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día da Bicicleta </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/dia-da-bicicleta-padron.jpg"><br><br>
+												<h2>Día da Bicicleta </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/dia-da-bicicleta-padron.jpg" alt="Día da Bicicleta">
 												<p>A vila coruñesa de Padrón acollerá a celebración do Día da Bicicleta na que os participantes poderán disfrutar de unha amena xornada deportiva con diversos actos programados, entre eles unha marcha ciclista.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								<li> <a class="open2" onclick="document.getElementById('Arreixeira').style.display='flex'">
 										XXX Aniversario A.C. Arreixeira
 									</a></li>
@@ -1040,37 +967,33 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('Arreixeira').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>XXX Aniversario A.C. Arreixeira </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/aniversario-ac-arreixeira-padron.jpg"><br><br>
+												<h2>XXX Aniversario A.C. Arreixeira </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/aniversario-ac-arreixeira-padron.jpg" alt="XXX Aniversario A.C. Arreixeira">
 												<p>O evento "XXX Aniversario A.C. Arreixeira" terá lugar no municipio coruñés de Padrón (Pista Deportiva Arretén) o Lúns 27 de Maio.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
 								<li> <a class="open2" onclick="document.getElementById('padronliterario').style.display='flex'">
 										Padrón Literario
 									</a></li>
-
 								<div id="padronliterario" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('padronliterario').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Padrón Literario</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/padron-literario-padron.jpg"><br><br>
+												<h2>Padrón Literario</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/padron-literario-padron.jpg" alt="Padrón Literario">
 												<p>O evento terá lugar no municipio coruñés de Padrón en Maio. Está clasificado dentro da categoría Outros.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</ul>
 							<h3 class="letrasdodro">Dodro</h3>
 							<ul>
@@ -1082,11 +1005,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('galegasdodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Letras Galegas </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/letras-galegas-dodro.jpg"><br><br>
+												<h2>Letras Galegas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/letras-galegas-dodro.jpg" alt="Letras Galegas">
 												<p>O municipio de Dodro celebrarase o Día das Letras Galegas, que este ano especialmente dedicado a Luisa Villalta. Diferentes actividades lúdicas e culturais estarán presentes ao largo de este día.</p>
 											</div>
 										</div>
@@ -1103,11 +1026,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('soutollo').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Nosa Señora do Soutullo </h1>
-												<img style="width: 30%" class="foto" src="fotos_festas/fotos_festas_rois/nosa-se%C3%B1ora-do-soutullo-rois.jpg"><br><br>
+												<h2>Nosa Señora do Soutullo </h2>
+												<img style="width: 30%" class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/nosa-se%C3%B1ora-do-soutullo-rois.jpg" alt="Nosa Señora do Soutullo">
 												<p>A festa relixiosa en honra da Nosa Señora do Soutullo celebrarase na parroquia de Urdilde, no municipio de Rois. Veciños e visitantes poderán asistir en esta xornada nos actos litúrxicos programados para a ocasión e deleitarse coa celebración da tradicional comida popular.</p>
 											</div>
 										</div>
@@ -1121,11 +1044,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('isidro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Isidro Labrador</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/san-isidro-labrador-rois.jpg"><br><br>
+												<h2>San Isidro Labrador</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/san-isidro-labrador-rois.jpg" alt="San Isidro Labrador">
 												<p>Festa en honor a San Isidro Labrador que se celebrará no municipio de Rois. Veciños e visitantes poderán disfrutar cos actos programados para a ocasión.</p>
 											</div>
 										</div>
@@ -1139,56 +1062,16 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('andainarois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Andaina do Santo Isidro - Letras Galegas</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/andaina-do-santo-isidro-letras-galegas-rois.jpg"><br><br>
+												<h2>Andaina do Santo Isidro - Letras Galegas</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/andaina-do-santo-isidro-letras-galegas-rois.jpg" alt="Andaina do Santo Isidro - Letras Galegas">
 												<p>Andaina que se celebra en Rois e estará formada por un recorrido de 17 kilómetros con salida e meta no pavillón de Pumar-Urdilde.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                    <li> <a class="open2" onclick="document.getElementById('sorribas').style.display='flex'">
-                                        p
-                                    </a></li>
-
-                                <div id="sorribas" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('sorribas').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Festa de Sorribas </h1>
-                                                    <img class="foto" src="fotos-festas/imaxes_festas_rois/sorribas-1-junio.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
--->
-								<!--
-                                    <li> <a class="open2" onclick="document.getElementById('sorribas').style.display='flex'">
-                                        p
-                                    </a></li>
-
-                                <div id="sorribas" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('sorribas').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Festa de Sorribas </h1>
-                                                    <img class="foto" src="fotos-festas/imaxes_festas_rois/sorribas-1-junio.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
--->
 							</ul>
 						</section>
 
@@ -1204,11 +1087,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('folclorico').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festival Folcklórico do Pedrón </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/festival-folcklorico-do-pedron-padron.jpg"><br><br>
+												<h2>Festival Folcklórico do Pedrón </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festival-folcklorico-do-pedron-padron.jpg" alt="Festival Folcklórico do Pedrón">
 												<p>A nova edición do Festival Folclórico do Pedrón que terá lugar na Praza de Macías, en Padrón. O evento contará coa participación de varias formacions folclóricas e un obradoiro de pandeiro.</p>
 											</div>
 										</div>
@@ -1223,11 +1106,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('xoanextramundi').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Xoán de Extramundi </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/san-xoan-de-extramundi-padron.jpg"><br><br>
+												<h2>San Xoán de Extramundi </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/san-xoan-de-extramundi-padron.jpg" alt="San Xoán de Extramundi">
 												<p> Os veciños do barrio padrones de Extramundi celebrará un ano mais a festa de San Xoán coa tradicional degustación de sardiñas, en unha velada donde non faltará a tradicional fogueira de San Xoán e a queimada.</p>
 											</div>
 										</div>
@@ -1242,11 +1125,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('orgullopadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Padrón con Orgullo</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/padron-con-orgullo-padron.jpg"><br><br>
+												<h2>Padrón con Orgullo</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/padron-con-orgullo-padron.jpg" alt="Padrón con Orgullo">
 												<p>Este evento terá lugar no municipio coruñés de Padrón en Junio. Está clasificado dentro da categoría Outros.</p>
 											</div>
 										</div>
@@ -1262,11 +1145,11 @@
                                         <div class="modal-contido animations-top">
                                             <div class="modal-contido2">
                                                 <span class="close2-click" onclick="document.getElementById('bicidodro').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+                                                    <img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
                                                 </span>
                                                 <div class="body-center">
-                                                    <h1>I Día da Bicicleta </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_dodro/dia-da-bicicleta-dodro.jpg"><br>
+                                                    <h2>I Día da Bicicleta </h2>
+                                                    <img class="foto img-shadow" src="fotos_festas/fotos_festas_dodro/dia-da-bicicleta-dodro.jpg"><br>
                                                     <p>#</p>
                                                 </div>
                                             </div>
@@ -1284,11 +1167,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('bicidodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1> Día da Bicicleta </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/dia-da-bicicleta-dodro.jpg"><br><br>
+												<h2> Día da Bicicleta </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/dia-da-bicicleta-dodro.jpg" alt="Día da Bicicleta de Dodro">
 												<p>Un ano mais celebrarase no municipio de Dodro o Día da Bicicleta. Os asistentes a esta xornada deportiva poderán disfrutar de unha ruta ciclista.</p>
 											</div>
 										</div>
@@ -1302,11 +1185,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('andainadodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Andaina Nocturna </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/andaina-nocturna-dodro.jpg"><br><br>
+												<h2>Andaina Nocturna </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/andaina-nocturna-dodro.jpg" alt="Andaina Nocturna">
 												<p>A andaina celebrarase no municipio de Padrón. O evento será con plazas ilimitadas, levarase a cabo en horario nocturno e está aberto a participación de todos os públicos.</p>
 											</div>
 										</div>
@@ -1320,11 +1203,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sanxoandodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Noite de San Xoán de Bustelo </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/noite-de-san-xoan-de-bustelo-dodro.jpg"><br><br>
+												<h2>Noite de San Xoán de Bustelo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/noite-de-san-xoan-de-bustelo-dodro.jpg" alt="Noite de San Xoán de Bustelo">
 												<p>Os veciños de Bustelo, na parroquia de Laiño no municipio de Dodro, celebrarase o venres 23 de Xuño a Noite de San Xoán con gran churrascada e sardiñada. A partir das 23.00 poderase disfrutar da gran verbena La Noche e Alianza.</p>
 											</div>
 										</div>
@@ -1338,11 +1221,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('maioresdodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festa dos Maiores </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/festa-dos-maiores-dodro.jpg"><br><br>
+												<h2>Festa dos Maiores </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/festa-dos-maiores-dodro.jpg" alt="Festa dos Maiores">
 												<p>O municipio de Dodro celerarase unha nova edición das Festas dos Maiores con unha misa e unha comida popular que estará amenizada con unha actuación de un grupo musical.</p>
 											</div>
 										</div>
@@ -1359,11 +1242,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sorribas').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festa de Sorribas </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/sorribas-1-junio.jpg"><br><br>
+												<h2>Festa de Sorribas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/sorribas-1-junio.jpg" alt="Festa de Sorribas">
 												<p>Este ano 2024 Sorribas celebra as suas festas con actuacions musicais, actividades para pequenos e actos relixosos serán os actos programados.</p>
 											</div>
 										</div>
@@ -1377,11 +1260,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('remediosrois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Virxe dos Remedios de Aido y Cornes </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/virxe-dos-remedios-de-aido-y-cornes-rois.jpg"><br><br>
+												<h2>Virxe dos Remedios de Aido y Cornes </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/virxe-dos-remedios-de-aido-y-cornes-rois.jpg" alt="Virxe dos Remedios de Aido e Cornes">
 												<p> Os veciños de Aido e Cornes en Rois, honrarán a Virxe dos Remedios. Os actos litúrxicos en honra a Santa e as grandes actuacions musicais serán os actos programados.</p>
 											</div>
 										</div>
@@ -1395,11 +1278,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sanantoniorois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Antonio de Oín </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/san-antonio-de-oin-rois.jpg"><br><br>
+												<h2>San Antonio de Oín </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/san-antonio-de-oin-rois.jpg" alt="San Antonio de Oín">
 												<p>Na parroquia de Oin celebrase a festa en honor a San Antonio con un acto liturxico en honor ao Santo Antonio e variadas actuacions musicais.</p>
 											</div>
 										</div>
@@ -1413,20 +1296,18 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sanxoanbuxan').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Xoán de Buxán </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/san-xoan-de-buxan-rois.jpg"><br><br>
+												<h2>San Xoán de Buxán </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/san-xoan-de-buxan-rois.jpg" alt="San Xoán de Buxán">
 												<p>Un ano mais celebrarase no municipio de Rois a festa popular de San Xoán de Buxán. Os asistentes a estos días festivos poderán participar nos actos relixiosos e disfrutar de variadas actuacions musicais.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="xullo">
 							<h3 class="letraspadron">Padrón</h3>
@@ -1440,91 +1321,82 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sanpedrocarcacia').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Pedro de Carcacía </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_padron/san-pedro-de-carcacia-padron.jpg"><br><br>
+												<h2>San Pedro de Carcacía </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_padron/san-pedro-de-carcacia-padron.jpg" alt="San Pedro de Carcacía">
 												<p>Festa relixiosa en honra a San Pedro e ao Santísimo Sacramento que se celebrará na parroquia padronesa de Carcacía.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
 								<li> <a class="open2" onclick="document.getElementById('medieval').style.display='flex'">
 										Feira Medieval
 									</a></li>
-
 								<div id="medieval" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('medieval').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Feira Medieval </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/feira-medieval-padron.jpg"><br><br>
+												<h2>Feira Medieval </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/feira-medieval-padron.jpg" alt="Feira Medieval">
 												<p>A feira medieval terá lugar no casco histórico de Padrón. Os asistentes a estas xornadas poderán visitar a gran variedade de postos de artesanía que se instalarán para a ocasión, e disfrutar coa animación musical e ambientación que transportará a localidade a Idade Media.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								<li> <a class="open2" onclick="document.getElementById('santiaguiño').style.display='flex'">
 										Santiaguiño do Monte
 									</a></li>
-
 								<div id="santiaguiño" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('santiaguiño').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Santiaguiño do Monte </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/santiagui%C3%B1o-do-monte-padron.jpg"><br><br>
+												<h2>Santiaguiño do Monte </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/santiagui%C3%B1o-do-monte-padron.jpg" alt="Santiaguiño do Monte">
 												<p>A romería campestre celebrarse en Padrón para venerar a imaxe do Santiaguiño do Monte. Os asistentes poderán participar na celebración dos actos relixosos e disfrutar das actuacions musicais.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								<li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
 										Gran Derbi Asnal
 									</a></li>
-
 								<div id="asnal" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Gran Derbi Asnal </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br><br>
+												<h2>Gran Derbi Asnal </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg" alt="Gran Derbi Asnal">
 												<p>O municipio de Padrón acollerá unha nova edición do Gran Derbi Asnal. A carreira de asnos reúne edición tras edición a centos de seguidores polas calles da localidade.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</ul>
-
 							<h3 class="letrasdodro">Dodro</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('carmebexo').style.display='flex'">
 										O Carme de Bexo
 									</a></li>
-
 								<div id="carmebexo" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('carmebexo').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>O Carme de Bexo </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/o-carme-de-bexo-dodro.jpg"><br><br>
+												<h2>O Carme de Bexo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/o-carme-de-bexo-dodro.jpg" alt="O Carme de Bexo">
 												<p>Na parroquia de Bexo, Dodro, celebrarase durante os días 11 e 16 de Xullo as festas en honra a San Benito e a Virxen do Carmen. Os oficios relixiosos e as variadas actuacions musicais serán os actos programados.</p>
 											</div>
 										</div>
@@ -1538,72 +1410,31 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('teaio').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Antonio de Teaio </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_dodro/san-antonio-de-teaio-dodro.jpg"><br><br>
+												<h2>San Antonio de Teaio </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_dodro/san-antonio-de-teaio-dodro.jpg" alt="San Antonio de Teaio">
 												<p>En Dodro celebrase a festa na honra de San Antonio de Teaio. Os asistentes a esta festa poderán participar no oficio relixioso, disfrutar con unha gran churrascada e con actuacions musicais. Tamén haberá xogos infantis para os mais pequenos.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('herbogo').style.display='flex'">
 										San Pedro de Herbogo
 									</a></li>
-
 								<div id="herbogo" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('herbogo').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Pedro de Herbogo </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/san-pedro-de-herbogo-rois.jpg"><br><br>
+												<h2>San Pedro de Herbogo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/san-pedro-de-herbogo-rois.jpg" alt="San Pedro de Herbogo">
 												<p>Os veciños da parroquia de Herbogo celebrarán a festa en honor a San Pedro, San Antonio, San Roque e o Santísimo Sacramento. Os oficios relixiosos e as variadas actuacions musicais, serán actos programados.</p>
 											</div>
 										</div>
@@ -1612,63 +1443,23 @@
 								<li> <a class="open2" onclick="document.getElementById('ribasar').style.display='flex'">
 										Santa Mariña, San Antonio, Santísimo Sacramento e O Carme de Ribasar
 									</a></li>
-
 								<div id="ribasar" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('ribasar').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Santa Mariña, San Antonio, Santísimo Sacramento e O Carme de Ribasar </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/santa-mari%C3%B1a-san-antonio-santisimo-sacramento-e-o-carme-de-ribasar-rois.jpg"><br><br>
+												<h2>Santa Mariña, San Antonio, Santísimo Sacramento e O Carme de Ribasar </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/santa-mari%C3%B1a-san-antonio-santisimo-sacramento-e-o-carme-de-ribasar-rois.jpg" alt="Santa Mariña, San Antionio, Santísimo Sacramento e O Carme de Ribasar">
 												<p>Os veciños da parroquia de Ribasar, no municipio de Rois, fan a festa en honor a Santa Mariña, San Antonio, Santisimo Sacramento e a Virxe do Carme. Os oficios relixiosos e as variadas actuacions musicais serán actos programados. </p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 						</section>
+
 						<section class="containter-tab1" id="agosto">
 							<h3 class="letraspadron">Padrón</h3>
 							<ul>
@@ -1680,11 +1471,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('pemento').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festa do Pemento de Herbón </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_padron/festa-do-pemento-de-herbon-padron.jpg"><br><br>
+												<h2>Festa do Pemento de Herbón </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_padron/festa-do-pemento-de-herbon-padron.jpg" alt="Festa do Pemento de Herbón">
 												<p> Festa gastronómica que se celebra en Herbón, Padron o primeiro fin de semana de Agosto.</p>
 											</div>
 										</div>
@@ -1693,16 +1484,15 @@
 								<li> <a class="open2" onclick="document.getElementById('festapazos').style.display='flex'">
 										Milagroso Santo Cristo da Luz de Pazos
 									</a></li>
-
 								<div id="festapazos" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festapazos').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Milagroso Santo Cristo da Luz de Pazos </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/milagroso-santo-cristo-da-luz-de-pazos-padron.jpg"><br><br>
+												<h2>Milagroso Santo Cristo da Luz de Pazos </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/milagroso-santo-cristo-da-luz-de-pazos-padron.jpg" alt="Milagroso Santo Cristo da Luz de Pazos">
 												<p>En Pazos, na parroquia de Iria Flavia celebrarase a festa en honor a Milagroso Santo Cristo da Luz. Os asistentes a estas xornadas poderán disfrutar coas actuacions musicais a cargo das orquestas do momento e participar nos oficios relixiosos.</p>
 											</div>
 										</div>
@@ -1711,16 +1501,15 @@
 								<li> <a class="open2" onclick="document.getElementById('festairia').style.display='flex'">
 										Nosa Señora da Adina e San Roque de Iria Flavia
 									</a></li>
-
 								<div id="festairia" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festairia').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Nosa Señora da Adina e San Roque de Iria Flavia </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_padron/nosa-se%C3%B1ora-da-adina-e-san-roque-de-iria-flavia-padron.jpg"><br><br>
+												<h2>Nosa Señora da Adina e San Roque de Iria Flavia </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_padron/nosa-se%C3%B1ora-da-adina-e-san-roque-de-iria-flavia-padron.jpg" alt="Nosa Señora da Adina e San Roque de Iria Flavia">
 												<p>Os veciños da parroquia padronesa de Iria Flavia celebran este ano en honor a Nosa Señora Adina e San Roque. Os asistentes a festa poderán participar nos actos relixosos, disfrutar coas actividades lúdicas programadas para a ocasion e con variadas actuacions musicais.</p>
 											</div>
 										</div>
@@ -1729,16 +1518,15 @@
 								<li> <a class="open2" onclick="document.getElementById('festaaponte').style.display='flex'">
 										Nosa Señora e San Roque da Ponte
 									</a></li>
-
 								<div id="festaaponte" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festaaponte').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Nosa Señora e San Roque da Ponte </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_padron/nosa-se%C3%B1ora-e-san-roque-da-ponte-padron.jpg"><br><br>
+												<h2>Nosa Señora e San Roque da Ponte </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_padron/nosa-se%C3%B1ora-e-san-roque-da-ponte-padron.jpg" alt="Nosa Señora e San Roque da Ponte">
 												<p>Festa relixiosa en honra a Nosa Señora e San Roque que se celebra en A Ponte. Durante os días de festa os asistentes poderán disfrutar de distintas actividades tanto para nenos como adultos.</p>
 											</div>
 										</div>
@@ -1747,16 +1535,15 @@
 								<li> <a class="open2" onclick="document.getElementById('cochespadron').style.display='flex'">
 										Xuntanza Vehículos Clásicos e Históricos
 									</a></li>
-
 								<div id="cochespadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('cochespadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xuntanza Vehículos Clásicos e Históricos </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/xuntanza-vehiculos-clasicos-e-historicos-padron.jpg"><br><br>
+												<h2>Xuntanza Vehículos Clásicos e Históricos </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/xuntanza-vehiculos-clasicos-e-historicos-padron.jpg" alt="Xuntanza de Vehiculos Clásicos e Históricos">
 												<p>A xuntanza de vehículos clásicos e históricos terá lugar no municipio de Padrón e reunirá un ano mais os amantes dos coches, que poderán disfrutar de un agradable ruta e unha amena comida.</p>
 											</div>
 										</div>
@@ -1773,160 +1560,89 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sancampio').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Campio, Santa Lucía y San Roque </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_dodro/san-campio-santa-lucia-y-san-roque-dodro.jpg"><br><br>
+												<h2>San Campio, Santa Lucía y San Roque </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_dodro/san-campio-santa-lucia-y-san-roque-dodro.jpg" alt="San Campio, Santa Lucía e San Roque">
 												<p>Os veciños de Santa María de Dodro celebrarase o mes de Agosto as festas en honor a San Campio, Santa Lucía e San Roque, donde os asistentes poderán participar nas misas en horario matinal e deleitarse con grandes actuacions musicais.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('festaaguasantas').style.display='flex'">
 										Festas de Aguasantas
 									</a></li>
-
 								<div id="festaaguasantas" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festaaguasantas').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festas de Aguasantas </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/festas-de-aguasantas-rois.jpg"><br><br>
+												<h2>Festas de Aguasantas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/festas-de-aguasantas-rois.jpg" alt="Festas de Aguasantas">
 												<p>Os veciños de Aguasantas celebrarán un ano mais as suas festas en honor ao Santísimo Sacramento, San Antonio, San Roque e Santa Bárbara.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								<li> <a class="open2" onclick="document.getElementById('sanlourenzo').style.display='flex'">
 										San Lourenzo de Seira
 									</a></li>
-
 								<div id="sanlourenzo" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sanlourenzo').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>San Lourenzo de Seira </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/san-lourenzo-de-seira-rois.jpg"><br><br>
+												<h2>San Lourenzo de Seira </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/san-lourenzo-de-seira-rois.jpg" alt="San Lourenzo de Seira">
 												<p>O evento de San Lourenzo de Seira terá lugar en Rois. Está clasificado dentro da categoría relixiosa.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
 								<li> <a class="open2" onclick="document.getElementById('festaoin').style.display='flex'">
 										Festas de Oín
 									</a></li>
-
 								<div id="festaoin" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festaoin').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festas de Oín </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/fiestas-de-oin-rois.jpg"><br><br>
+												<h2>Festas de Oín </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/fiestas-de-oin-rois.jpg" alt="Festas de Oín">
 												<p>Os veciños de Oín celebran as suas festas relixosas en honor a Nosa Señora, San Roque e o Santísimo Sacramento. O cartel completase con actos relixosos cada día para honrar aos santos e durante a noite actuacions de grandes orquestas do momento.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
 								<li> <a class="open2" onclick="document.getElementById('festaurdilde').style.display='flex'">
 										Fiestas de Urdilde
 									</a></li>
-
 								<div id="festaurdilde" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('festaurdilde').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Fiestas de Urdilde </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/fiestas-de-urdilde-rois.jpg"><br><br>
+												<h2>Fiestas de Urdilde </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/fiestas-de-urdilde-rois.jpg" alt="Fiestas de Urdilde">
 												<p>Un ano mais a parroquia de Urdilde, no municipio de Rois, celebrarse as suas festas relixosas en honra a Nosa Señora, San Roque, San Antonio e o Santisimo Sacramento. Durante estes días, os asistentes poderán disfrutar cos actos relixosos e deleitarse con variadas actuacions musicales a cargo das orquestas do momento.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="setembro">
 							<h3 class="letraspadron">Padrón</h3>
@@ -1934,16 +1650,15 @@
 								<li> <a class="open2" onclick="document.getElementById('trailpadron').style.display='flex'">
 										Trail Vila de Padrón - Desafío Vértice
 									</a></li>
-
 								<div id="trailpadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('trailpadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Trail Vila de Padrón - Desafío Vértice</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/trail-vila-de-padron-desafio-vertice-padron.jpg"><br><br>
+												<h2>Trail Vila de Padrón - Desafío Vértice</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/trail-vila-de-padron-desafio-vertice-padron.jpg" alt="Trail Vila de Padrón - Desafío Vértice">
 												<p>Nova edición de esta carreira de atletismo que se celebrará entre os municipios de Teo e Padrón. A proba dará inicio en A Agrela (Teo) e o seu fin estará ubicado na vila padronesa.</p>
 											</div>
 										</div>
@@ -1952,158 +1667,55 @@
 								<li> <a class="open2" onclick="document.getElementById('mercedpadron').style.display='flex'">
 										Nuestra Señora de la Merced de Bandín
 									</a></li>
-
 								<div id="mercedpadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('mercedpadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Nuestra Señora de la Merced de Bandín </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_padron/nuestra-se%C3%B1ora-de-la-merced-de-bandin-padron.jpg"><br><br>
+												<h2>Nuestra Señora de la Merced de Bandín </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_padron/nuestra-se%C3%B1ora-de-la-merced-de-bandin-padron.jpg" alt="Nuestra Señora de la Merced de Bandín">
 												<p>Os veciños de Bandín festexan as festas en honor a Nuestra Señora de la Merced, xunto cos seus veciños de Barcala. Fieis e devotos poderán asistir a os oficios relixiosos en honor a Santa que terá lugar en horario de mañan e tarde.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasdodro">Dodro</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('laiño').style.display='flex'">
 										Festas da Virxe do Leite de Laiño
 									</a></li>
-
 								<div id="laiño" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('laiño').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festas da Virxe do Leite de Laiño </h1>
-												<img class="foto" src="fotos-festas/imaxes_festas_dodro/festas-da-virxe-do-leite-de-lai%C3%B1o-dodro.jpg"><br><br>
+												<h2>Festas da Virxe do Leite de Laiño </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes_festas_dodro/festas-da-virxe-do-leite-de-lai%C3%B1o-dodro.jpg" alt="Festas da Virxe do Leite de Laiño">
 												<p>Festa en honor a Virxe do Bo Parto e do Leite que terá lugar na parroquia de Laiño, no municipio de Dodro. Os oficios relixiosos e as variadas actuacions musicais serán os actos programados.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('natividadeurdilde').style.display='flex'">
 										A Natividade de Urdilde
 									</a></li>
-
 								<div id="natividadeurdilde" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('natividadeurdilde').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>A Natividade de Urdilde </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/a-natividade-de-urdilde-rois.jpg"><br><br>
+												<h2>A Natividade de Urdilde </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/a-natividade-de-urdilde-rois.jpg" alt="A Natividade de Urdilde">
 												<p>A parroquia de Urdilde celebrase a festividade da Natividade da Nosa Señora con unha misa no seu honor na iglesia parroquial e pola noite grandes verbenas con espectaculares orquestas do momento.</p>
 											</div>
 										</div>
@@ -2112,16 +1724,15 @@
 								<li> <a class="open2" onclick="document.getElementById('sacramentobuxan').style.display='flex'">
 										Virxe das Dores, San Outelo e o Santísimo Sacramento de Buxán
 									</a></li>
-
 								<div id="sacramentobuxan" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('sacramentobuxan').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Virxe das Dores, San Outelo e o Santísimo Sacramento de Buxán </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/virxe-das-dores-san-outelo-e-o-santisimo-sacramento-de-buxan-rois.jpg"><br><br>
+												<h2>Virxe das Dores, San Outelo e o Santísimo Sacramento de Buxán </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/virxe-das-dores-san-outelo-e-o-santisimo-sacramento-de-buxan-rois.jpg" alt="Virxe das Dores, San Outelo e o Santísimo Sacramento de Buxán">
 												<p>A parroquia de Buxán, celebraran a sua festa na honra da Virxe das Dores, San Outelo e Santísimo Sacramento. Os asistentes a estas xornadas festivas poderán disfrutar cos actos relixiosos e de variadas actuacions musicais a cargo das orquestas do momento.</p>
 											</div>
 										</div>
@@ -2130,44 +1741,22 @@
 								<li> <a class="open2" onclick="document.getElementById('doressorribas').style.display='flex'">
 										As Dores de Sorribas
 									</a></li>
-
 								<div id="doressorribas" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('doressorribas').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>As Dores de Sorribas </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/as-dores-de-sorribas-rois.jpg"><br><br>
+												<h2>As Dores de Sorribas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/as-dores-de-sorribas-rois.jpg" alt="As Dores de Sorribas">
 												<p>A parroquia de Sorribas celebra as festas en honor a Virxe do Dolores.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="outubro">
 							<h3 class="letraspadron">Padrón</h3>
@@ -2180,231 +1769,58 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('samainpadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Samaín </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/samain-padron.jpg"><br><br>
+												<h2>Samaín </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/samain-padron.jpg" alt="Samaín">
 												<p>A localidade de Padrón acollerá un ano mais a festa de orixen celta de Samaín, con unha programación destinada ao disfrute dos mais pequenos da casa.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasdodro">Dodro</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('carreiralestrove').style.display='flex'">
 										Carreira Pedestre Lestrove
 									</a></li>
-
 								<div id="carreiralestrove" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('carreiralestrove').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Carreira Pedestre Lestrove </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/carreira-pedestre-lestrove-dodro.jpg"><br><br>
+												<h2>Carreira Pedestre Lestrove </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/carreira-pedestre-lestrove-dodro.jpg" alt="Carreira Pedestre Lestrove">
 												<p>O municipio de Dodro acollerá a celebración de unha nova edición da Carreira Pedestre Lestrove que dará comezo dende a calle Fortunato Cruces de Lestrove.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-
-
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('samainrois').style.display='flex'">
 										Samaín de Liñares
 									</a></li>
-
 								<div id="samainrois" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('samainrois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Samaín de Liñares </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/samain-de-li%C3%B1ares-rois.jpg"><br><br>
+												<h2>Samaín de Liñares </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/samain-de-li%C3%B1ares-rois.jpg" alt="Samaín de Liñares">
 												<p> O evento de Samaín terá lugar no municipio coruñés de Rois, no local Social de Costa. Está clasificado dentro de la categoría Samaín.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 						</section>
-
 
 						<section class="containter-tab1" id="novembro">
 							<h3 class="letraspadron">Padrón</h3>
@@ -2412,16 +1828,15 @@
 								<li> <a class="open2" onclick="document.getElementById('saboreapadron').style.display='flex'">
 										Xornadas gastronómicas - Saborea Padrón
 									</a></li>
-
 								<div id="saboreapadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('saboreapadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xornadas gastronómicas - Saborea Padrón</h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/xornadas-gastronomicas-saborea-padron-padron.jpg"><br><br>
+												<h2>Xornadas gastronómicas - Saborea Padrón</h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/xornadas-gastronomicas-saborea-padron-padron.jpg" alt="Xornadas Gastronómicas - Saborea Padrón">
 												<p>O municipio de Padrón celebrará a nova edición das Xornadas gastronómicas-Saborea Padrón.Evento culinario que permitirá a veciños e visitantes degustar en varios establecementos hosteleiros deliciosas tapas polo módico precio de 2,50€.</p>
 											</div>
 										</div>
@@ -2435,11 +1850,11 @@
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('artesaniapadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Mercadillo de Artesanía, Antigüidades e Coleccionismo </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/mercadillo-de-artesania-antig%C3%BCidades-e-coleccionismo-padron.jpg"><br><br>
+												<h2>Mercadillo de Artesanía, Antigüidades e Coleccionismo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/mercadillo-de-artesania-antig%C3%BCidades-e-coleccionismo-padron.jpg" alt="Mercadillo de Artesanía, Antigüidades e Coleccionismo">
 												<p>O mercadillo dedicado a artesanía, as antigüedades e coleccionismo que celebrá en Padrón.</p>
 											</div>
 										</div>
@@ -2448,16 +1863,15 @@
 								<li> <a class="open2" onclick="document.getElementById('femininopadron').style.display='flex'">
 										Encontro Tradición en Feminino
 									</a></li>
-
 								<div id="femininopadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('femininopadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Encontro Tradición en Feminino </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/encontro-tradicion-en-feminino-padron.jpg"><br><br>
+												<h2>Encontro Tradición en Feminino </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/encontro-tradicion-en-feminino-padron.jpg" alt="Encontro Tradición en Feminino">
 												<p>O evento terá lugar no municipio coruñés de Padróhn, na casa Rosalía. Está clasificado dentro da categoría Otros.</p>
 											</div>
 										</div>
@@ -2466,16 +1880,15 @@
 								<li> <a class="open2" onclick="document.getElementById('xeneropadron').style.display='flex'">
 										Día Internacional para a Eliminación da Violencia Contra a Muller
 									</a></li>
-
 								<div id="xeneropadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('xeneropadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día Internacional para a Eliminación da Violencia Contra a Muller </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/dia-internacional-para-a-eliminacion-da-violencia-contra-a-muller-padron.jpg"><br><br>
+												<h2>Día Internacional para a Eliminación da Violencia Contra a Muller </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/dia-internacional-para-a-eliminacion-da-violencia-contra-a-muller-padron.jpg" alt="Día Internacional para a Eliminación da Violencia Contra a Muller">
 												<p>O evento terá lugar no municipio coruñés de Padron, está clasificado dentro da categoría Otros.</p>
 											</div>
 										</div>
@@ -2487,16 +1900,15 @@
 								<li> <a class="open2" onclick="document.getElementById('magostododro').style.display='flex'">
 										Magosto e Samaín de Imo
 									</a></li>
-
 								<div id="magostododro" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('magostododro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Magosto e Samaín de Imo </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/magosto-e-samain-de-imo-dodro.jpg"><br><br>
+												<h2>Magosto e Samaín de Imo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/magosto-e-samain-de-imo-dodro.jpg" alt="Magosto e Samaín de Imo">
 												<p>Este evento terá lugar no municipio coruñés de Dodro o Luns 4 de Novembro. Está clasificado dentro das categorías Magosto e Samaín.</p>
 											</div>
 										</div>
@@ -2505,16 +1917,15 @@
 								<li> <a class="open2" onclick="document.getElementById('xantardodro').style.display='flex'">
 										Xantar da Asociación de Veciños de Laiño
 									</a></li>
-
 								<div id="xantardodro" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('xantardodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Xantar da Asociación de Veciños de Laiño </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/xantar-da-asociacion-de-veci%C3%B1os-de-lai%C3%B1o-dodro.jpg"><br><br>
+												<h2>Xantar da Asociación de Veciños de Laiño </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/xantar-da-asociacion-de-veci%C3%B1os-de-lai%C3%B1o-dodro.jpg" alt="Xantar da Asociación de Veciños de Laiño">
 												<p>O evento está clasificado dentro da categoía Outros.</p>
 											</div>
 										</div>
@@ -2523,41 +1934,20 @@
 								<li> <a class="open2" onclick="document.getElementById('xenerododro').style.display='flex'">
 										Día Internacional Contra a Violencia de Xénero
 									</a></li>
-
 								<div id="xenerododro" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('xenerododro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Día Internacional Contra a Violencia de Xénero </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/dia-internacional-contra-a-violencia-de-xenero-dodro.jpg"><br><br>
+												<h2>Día Internacional Contra a Violencia de Xénero </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/dia-internacional-contra-a-violencia-de-xenero-dodro.jpg" alt="Día Internacional Contra a Violencia de Xénero">
 												<p>O evento terá lugar no municipio coruñés de Dodro. Está clasificado dentro da categoría Outros.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 
 							<h3 class="letrasrois">Rois</h3>
@@ -2565,83 +1955,23 @@
 								<li> <a class="open2" onclick="document.getElementById('vimushing').style.display='flex'">
 										Mushing Rois
 									</a></li>
-
 								<div id="vimushing" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('vimushing').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Mushing Rois </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_rois/mushing-montes-rois-rois.jpg"><br><br>
+												<h2>Mushing Rois </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_rois/mushing-montes-rois-rois.jpg" alt="Mushing Rois">
 												<p>O municipio de Rois acolle unha nova edición de Mushing Montes Rois, no lugar da Peruca, para a modalidade de Canicros, BikeJoring e Patín.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                        #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                    <div class="modal-contido animations-top">
-                                        <div class="modal-contido2">
-                                            <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                            </span>
-                                            <div class="body-center">
-                                                <h1>Gran Derbi Asnal </h1>
-                                                <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                <p>#</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
--->
 							</ul>
 
 						</section>
-
 
 						<section class="containter-tab1" id="decembro">
 							<h3 class="letraspadron">Padrón</h3>
@@ -2649,16 +1979,15 @@
 								<li> <a class="open2" onclick="document.getElementById('santiña').style.display='flex'">
 										Festas da Santiña de Extramundi
 									</a></li>
-
 								<div id="santiña" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('santiña').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festas da Santiña de Extramundi </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/festas-da-santi%C3%B1a-de-extramundi-padron.jpg"><br><br>
+												<h2>Festas da Santiña de Extramundi </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festas-da-santi%C3%B1a-de-extramundi-padron.jpg" alt="Festas da Santiña de Extramundi">
 												<p>#</p>
 											</div>
 										</div>
@@ -2667,16 +1996,15 @@
 								<li> <a class="open2" onclick="document.getElementById('concertonadalpadron').style.display='flex'">
 										Concerto de Nadal
 									</a></li>
-
 								<div id="concertonadalpadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('concertonadalpadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Concerto de Nadal </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/concerto-de-nadal-padron.jpg"><br>
+												<h2>Concerto de Nadal </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/concerto-de-nadal-padron.jpg" alt="Concerto de Nadal">
 												<p>Coa chegada do Nadal no municipio de Padrón organizarán diferentes actividades lúdicas e culturais para o disfrute de veciños e visitantes.</p>
 											</div>
 										</div>
@@ -2685,16 +2013,15 @@
 								<li> <a class="open2" onclick="document.getElementById('panxoliñaspadron').style.display='flex'">
 										Festival de Panxoliñas
 									</a></li>
-
 								<div id="panxoliñaspadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('panxoliñaspadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festival de Panxoliñas </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/festival-de-panxoli%C3%B1as-padron.jpg"><br><br>
+												<h2>Festival de Panxoliñas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festival-de-panxoli%C3%B1as-padron.jpg" alt="Festival de Panxoliñas">
 												<p>O festival de Panxoliñas celebrarase no Auditorio Municipal de Padrón. </p>
 											</div>
 										</div>
@@ -2703,16 +2030,15 @@
 								<li> <a class="open2" onclick="document.getElementById('fdapadron').style.display='flex'">
 										Festa de Fin de Ano
 									</a></li>
-
 								<div id="fdapadron" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('fdapadron').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festa de Fin de Ano </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_padron/festa-de-fin-de-ano-padron.jpg"><br><br>
+												<h2>Festa de Fin de Ano </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_padron/festa-de-fin-de-ano-padron.jpg" alt="Festa de Fin de Ano">
 												<p> O evento terá lugar no municipio coruñés de Padrón, no aparcamento Feira Maquinaria. Está clasificado dentro da categoría Festas populares.</p>
 											</div>
 										</div>
@@ -2724,93 +2050,35 @@
 								<li> <a class="open2" onclick="document.getElementById('folkdodro').style.display='flex'">
 										Festival Folklórico de Imo
 									</a></li>
-
 								<div id="folkdodro" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('folkdodro').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Festival Folklórico de Imo </h1>
-												<img class="foto" src="fotos_festas/fotos_festas_dodro/festival-folklorico-de-imo-dodro.jpg"><br><br>
+												<h2>Festival Folklórico de Imo </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos_festas/fotos_festas_dodro/festival-folklorico-de-imo-dodro.jpg" alt="Festival Folcklórico de Imo">
 												<p>O local social do Montiño na parroquía de Imo,pertenecente ao municipio de Dodro acollera, no mes de Diciembre, unha nova edición do Festival Folklórico donde os asistentes poderán disfrutar de unha gran variedade de actuacions.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                       #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Gran Derbi Asnal </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                       #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Gran Derbi Asnal </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                       #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Gran Derbi Asnal </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
--->
 							</ul>
 							<h3 class="letrasrois">Rois</h3>
 							<ul>
 								<li> <a class="open2" onclick="document.getElementById('luciaseira').style.display='flex'">
 										Santa Lucía de San Lourenzo de Seira
 									</a></li>
-
 								<div id="luciaseira" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('luciaseira').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Santa Lucía de San Lourenzo de Seira </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/santa-lucia-de-san-lourenzo-de-seira-rois.jpg"><br><br>
+												<h2>Santa Lucía de San Lourenzo de Seira </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/santa-lucia-de-san-lourenzo-de-seira-rois.jpg" alt="Santa Lucía de San Lourenzo de Seira">
 												<p>O evento de San Lourenzo de Seira terá lugar en Rois. Está clasificado dentro da categoría relixiosa.</p>
 											</div>
 										</div>
@@ -2819,69 +2087,30 @@
 								<li> <a class="open2" onclick="document.getElementById('tomasrois').style.display='flex'">
 										Santo Tomás de Sorribas
 									</a></li>
-
 								<div id="tomasrois" class="modal2">
 									<div class="modal-contido animations-top">
 										<div class="modal-contido2">
 											<span class="close2-click" onclick="document.getElementById('tomasrois').style.display='none'">
-												<img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
+												<img class="close" title="pechar" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
 											</span>
 											<div class="body-center">
-												<h1>Santo Tomás de Sorribas </h1>
-												<img class="foto" src="fotos-festas/imaxes-festas-rois/santo-tomas-de-sorribas-rois.jpg"><br><br>
+												<h2>Santo Tomás de Sorribas </h2>
+												<img class="foto img-shadow" src="../Lecer/fotos-festas/imaxes-festas-rois/santo-tomas-de-sorribas-rois.jpg" alt="Santo Tomás de Sorribas">
 												<p>Celebrase a festa en honor Santo Tomás en Sorribas. Durante varias xornadas os asistentes poderán nos actos relixiosos e disfrutar con varias actuacions musicais.</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                       #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Gran Derbi Asnal </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <li> <a class="open2" onclick="document.getElementById('asnal').style.display='flex'">
-                                       #
-                                    </a></li>
-
-                                <div id="asnal" class="modal2">
-                                        <div class="modal-contido animations-top">
-                                            <div class="modal-contido2">
-                                                <span class="close2-click" onclick="document.getElementById('asnal').style.display='none'">
-                                                    <img class="close" src="https://cdn-icons-png.flaticon.com/512/15/15287.png">
-                                                </span>
-                                                <div class="body-center">
-                                                    <h1>Gran Derbi Asnal </h1>
-                                                    <img class="foto" src="fotos_festas/fotos_festas_padron/gran-derbi-asnal-padron.jpg"><br>
-                                                    <p>#</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
--->
 							</ul>
 						</section>
-
+						<!-- section dos modais FIN -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- INICIO footer -->
-	<footer class="footer-light" paused>
+	<footer class="footer-light paused">
 		<div class="copyright animated fadeInDown">
 			<img src="../imaxes/logos.jpg" id="logos-xunta">
 			<div class="social-icons">

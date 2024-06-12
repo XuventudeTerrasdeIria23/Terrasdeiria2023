@@ -109,7 +109,8 @@ RGB(65, 176, 110)
  	display: block;
  }
 
- /* boton subbir */
+
+ /* boton subir */
  .softr-back-to-top-button {
  	border-radius: 50%;
  }
@@ -608,12 +609,6 @@ RGB(65, 176, 110)
  	color: #3f5862;
  	padding: inherit;
  	text-decoration: none;
- }
-
- #obradoiros-anteriores a:hover {
- 	/* 	text-decoration: none;*/
- 	/* 	background: #3f5862;*/
-
  }
 
  #obradoiros-anteriores span {
@@ -1193,7 +1188,6 @@ RGB(65, 176, 110)
  	text-align: left;
  	/* 	background: #e28743;*/
  	background: rgba(65, 176, 110, 0.7);
- 	;
  }
 
  .datos-ruta-head h3,
