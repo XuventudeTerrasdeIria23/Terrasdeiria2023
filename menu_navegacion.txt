@@ -151,9 +151,9 @@
 							<li><a class="dropdown-item" href="#">Descargables</a>
 								<!--
 								<ul class="dropdown-menu dropdown-submenu">
-									<li><a class="dropdown-item" href="XXXXXXXXXXXXX">XXXXXXXXXXXX</a></li>
-									<li><a class="dropdown-item" href="XXXXXXXXXXX">XXXXXXX</a></li>
-								</ul>-->
+										<li><a href="fichas_flora_completas.html">Catálogo de flora</a></li>
+							<li class="active"><a href="fichas_fauna_completas.html">Catálogo de fauna</a></li>
+ 								</ul>-->
 							</li>
 							<li><a href="#">Xogos</a></li>
 						</ul>

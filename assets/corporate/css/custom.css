@@ -365,17 +365,19 @@ RGB(65, 176, 110)
  	border: 1px solid #cccccc;
  	padding: .5em;
  	margin: auto;
+ 	background: #fff;
  }
 
  figcaption {
- 	background-color: black;
- 	background: rgba(63, 88, 98, .2);
+ 	/* 	background-color: #fff;*/
+ 	/* 	background: rgba(63, 88, 98, .2);*/
  	/* 	color: rgb(63, 88, 98);*/
- 	font-weight: normal;
+ 	font-weight: 600;
  	/* 	font-style: italic;*/
- 	padding: .2em;
+ 	padding: 1em .2em 0em .5em;
  	/* 	text-align: center;*/
  }
+
 
  /* longdesc */
  [longdesc] {
