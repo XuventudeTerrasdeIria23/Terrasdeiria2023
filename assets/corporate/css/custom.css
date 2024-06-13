@@ -345,15 +345,7 @@ RGB(65, 176, 110)
  }
 
  .block-center .service-box-v2 {
- 	/* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
- 	*/
 
-
- }
-
- 	{
- 	/* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
- 	*/
  	padding: .5em;
  	display: flex;
  	justify-content: space-between;
