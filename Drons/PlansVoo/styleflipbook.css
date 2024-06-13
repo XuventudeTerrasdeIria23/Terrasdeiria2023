@@ -48,7 +48,6 @@ img {
 	left: 0;
 	right: 0;
 	padding: 0%;
-	/* border: 1px solid red; */
 }
 
 .content-inner {
@@ -56,7 +55,6 @@ img {
 	display: table-cell;
 	vertical-align: middle;
 }
-
 
 .book-wrapper {
 	user-select: none;

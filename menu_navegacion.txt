@@ -37,7 +37,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="Drons/clasificacion_drones.html">Clasificación</a></li>
 							<li><a href="Drons/legislacion_drones.html">Lexislación</a></li>
-							<li><a href="#">Plan de voo</a></li>
+							<li><a href="Drons/PlansVoo/plans_voo.html">Plan de voo</a></li>
 							<li><a href="#">Sitios de interese <span></span></a>
 								<ul class="dropdown-menu dropdown-submenu">
 									<li><a class="dropdown-item" href="Drons/plantilla-dodro-drons.html">Dodro</a></li>
@@ -142,18 +142,14 @@
 					<!-- menu deportes fin -->
 					<!-- menu cultura inicio -->
 					<li class="dropdown">
-						<a href="lecer_anual.html" class="dropdown-toggle">Lecer</a>
+						<a href="lecer/lecer_anual.html" class="dropdown-toggle">Lecer</a>
 					</li> <!-- menu cultura fin-->
 					<!-- menu actividades descargables inicio -->
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Actividades</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Descargables</a>
-								<!--
-								<ul class="dropdown-menu dropdown-submenu">
-										<li><a href="fichas_flora_completas.html">Catálogo de flora</a></li>
-							<li class="active"><a href="fichas_fauna_completas.html">Catálogo de fauna</a></li>
- 								</ul>-->
+							<li><a href="fichas_flora_completas.html">Catálogo de flora</a></li>
+							<li class="active"><a href="fichas_fauna_completas.html">Catálogo de fauna</a>
 							</li>
 							<li><a href="#">Xogos</a></li>
 						</ul>
