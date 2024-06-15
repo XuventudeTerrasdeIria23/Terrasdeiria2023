@@ -426,7 +426,6 @@ RGB(65, 176, 110)
  	position: relative;
  	font-family: 'Open Sans', sans-serif;
  	width: 5em;
-
  }
 
  [data-title]:after {
@@ -776,17 +775,12 @@ RGB(65, 176, 110)
  }
 
  #mapa-noso {
- 	/*
- 	height: auto;
- 	width: 100%;
-*/
- 	/* 	float: left;*/
  	display: flex;
  	justify-content: center !important;
  	align-content: center !important;
  	margin-bottom: 1em;
+ 	background: transparent !important;
  }
-
 
  #mapa-noso #gmap_div {
  	height: auto;
@@ -881,7 +875,6 @@ RGB(65, 176, 110)
  	/* 	stroke: red !important;*/
  	stroke-width: 1 !important;
  	stroke-linejoin: round;
-
  }
 
  .profile_invisible {
@@ -902,7 +895,6 @@ RGB(65, 176, 110)
  }
 
  .profile_gridline_label {
-
  	font: 1em 'Open Sans', sans-serif !important;
  }
 
@@ -955,15 +947,6 @@ RGB(65, 176, 110)
  	writing-mode: vertical-rl !important;
  }
 
-
- /*
- .gv_profile_button[title]::before {
- 	content: 'Perfil de elevación';
- 	display: inline-block;
- }
-*/
-
-
  .profile_unfilled {
  	background-color: yellow;
  }
@@ -991,8 +974,6 @@ RGB(65, 176, 110)
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
 
- 	/* 	background-color: #41B06E80;*/
- 	/* 	background-color: #41B06E80;*/
  	background-color: rgba(65, 176, 110, 0.7);
  	width: 17vw !important;
  	height: auto !important;
@@ -1002,6 +983,7 @@ RGB(65, 176, 110)
  	overflow-y: scroll;
  	display: inline !important;
  }
+
 
  #gv_marker_list table {
  	/* 	display: inline-block;*/
@@ -1182,14 +1164,51 @@ RGB(65, 176, 110)
  	display: none;
  }
 
+ /* @media mapa-noso */
+ @media (max-width: 1080px) {
+ 	#mapa-noso {
+ 		display: block !important;
+ 		justify-content: center !important;
+ 		align-content: center !important;
+ 		margin-bottom: 1em;
+ 		background: transparent !important;
+ 	}
+
+ 	#gv_marker_list {
+ 		/* listado dos marcadores flotado á dereita */
+
+ 		background-color: rgba(65, 176, 110, 0.7);
+ 		width: auto !important;
+ 		height: auto !important;
+ 		display: block !important;
+ 	}
+
+
+ 	.datos-ruta {
+ 		display: inline-block;
+ 	}
+
+ 	.datos-ruta-head,
+ 	.datos-ruta h3 {
+ 		width: 100%;
+ 		display: block;
+ 	}
+
+ 	,
+ 	.datos-ruta div > img {
+ 		width: 20%;
+ 	}
+ }
 
  /* datos da ruta */
+ .datos-ruta {}
 
  .datos-ruta-head {
  	padding: 0 0 0 .5em;
  	text-align: left;
  	/* 	background: #e28743;*/
  	background: rgba(65, 176, 110, 0.7);
+
  }
 
  .datos-ruta-head h3,
@@ -1218,6 +1237,7 @@ RGB(65, 176, 110)
 
  .datos-ruta li {
  	color: #3f5862;
+ 	background: #fff;
  	font-size: 1em;
  	padding: 7px 15px;
  	border-bottom: 1px solid #ccc;
