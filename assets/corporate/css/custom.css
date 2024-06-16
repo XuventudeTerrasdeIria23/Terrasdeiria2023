@@ -113,6 +113,13 @@ RGB(65, 176, 110)
  	font-style: italic;
  }
 
+ span.medium {
+ 	font-size: .9em;
+ 	display: block;
+ 	margin: 0 0 .2em 1em;
+ 	width: auto;
+ }
+
  q {
  	display: block;
  }
@@ -746,12 +753,14 @@ RGB(65, 176, 110)
  /* MAPAS    estilo  mapas *********/
  details {
  	background-color: #fff;
+ 	background-color: #e2874380;
+ 	background: rgba(65, 176, 110, 0.7);
  	width: 100%;
  	text-align: center;
  	/* 	margin-bottom: 1em;*/
  	border-radius: .5em;
  	border: 1px solid #ccc;
- 	color: #3f5862;
+
  	position: relative;
  	display: inline-flex;
  }
@@ -1125,7 +1134,7 @@ RGB(65, 176, 110)
  }
 
  .leaflet-popup-content-wrapper {
- 	width: 50vw !important;
+ 	width: 45vw !important;
  	height: auto !important;
  }
 
@@ -1137,9 +1146,10 @@ RGB(65, 176, 110)
  	/*  pop-ups do  mapa */
  	width: 100% !important;
  	height: auto !important;
- 	overflow: scroll !important;
+
  	z-index: 99999999 !important;
  	padding: 0 !important;
+ 	overflow: auto !important;
  }
 
  .gv_marker_info_window {
@@ -1157,7 +1167,7 @@ RGB(65, 176, 110)
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	float: right !important;
+ 	float: left !important;
  	margin: 0 auto;
  	width: 60% !important;
  	/* 	position: relative;*/
@@ -1169,15 +1179,21 @@ RGB(65, 176, 110)
  	/* imaxes do pop-up */
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  	border: 1px solid #ccc;
- 	transform: scale(1.5) !important;
+ 	transform: scale(1.2) !important;
  	transition: ease-out 0.47s;
  	z-index: 999999999999 !important;
  }
 
  .gv_marker_info_window_name {
  	color: #e28743;
- 	font-size: 1.3em;
- 	float: left;
+ 	float: right;
+ 	text-align: right;
+ 	transform: scale(1.1) !important;
+ 	text-transform: uppercase;
+ 	width: 80%;
+ 	padding: 0.5em;
+ 	margin: 0 auto;
+ 	border: 1px solid blue;
  }
 
  .gv_marker_info_window p {
@@ -1186,7 +1202,6 @@ RGB(65, 176, 110)
  	width: auto !important;
  	height: auto;
  	float: left;
- 	border: 1px solid blue;
  }
 
  .gv_marker_info_window p,
