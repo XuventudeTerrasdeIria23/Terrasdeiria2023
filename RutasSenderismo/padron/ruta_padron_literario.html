@@ -253,7 +253,7 @@
 									language_code = '';
 									document.writeln('<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=geometry&amp;language=' + (self.language_code ? self.language_code : '') + '&amp;key=' + (self.google_api_key ? self.google_api_key : '') + '" type="text/javascript"><' + '/script>');
 								} else {
-									document.writeln('<link href="https://www.gpsvisualizer.com/leaflet/leaflet.css" rel="stylesheet" />');
+									document.writeln('<link href="https://www.gpsvisualizer.com/leaflet/leaflet.css" rel="stylesheet">');
 									document.writeln('<script src="https://www.gpsvisualizer.com/leaflet/leaflet.js" type="text/javascript"><' + '/script>');
 								}
 								thunderforest_api_key = ''; // To display OpenStreetMap tiles from ThunderForest, you need a key (https://www.thunderforest.com/docs/apikeys/)
@@ -316,7 +316,7 @@
 								gv_options.map_type_control.excluded = []; // comma-separated list of quoted map IDs that will never show in the list ('included' also works)
 								gv_options.map_type_control.included = ['GV_MAP', 'GV_HYBRID', 'GV_OSM', 'GV_TOPO', 'G_PHYSICAL_MAP', 'GV_PHYSICAL', 'GV_TERRAIN', 'G_SATELLITE_MAP', 'GV_AERIAL', 'GV_SATELLITE']; // Susi - elexir os mapas que funcionan  gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
 								gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
-								gv_options.measurement_tools = true; // true|false: put a measurement ruler on the map?
+								gv_options.measurement_tools = false; // true|false: put a measurement ruler on the map?
 								gv_options.measurement_options = {
 									visible: false,
 									distance_color: '',

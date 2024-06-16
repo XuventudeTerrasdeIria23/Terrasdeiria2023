@@ -186,8 +186,8 @@ RGB(65, 176, 110)
  	width: 35%;
  }
 
- .img-shadow {
- 	/* 	filter: drop-shadow(3px 3px 3px #7C858E);*/
+ .img-shadow-new {
+ 	filter: drop-shadow(3px 3px 3px #7C858E);
  }
 
  .img-zoom {
@@ -744,6 +744,81 @@ RGB(65, 176, 110)
  /* footer sitio */
 
  /* MAPAS    estilo  mapas *********/
+ details {
+ 	background-color: #fff;
+ 	width: 100%;
+ 	text-align: center;
+ 	/* 	margin-bottom: 1em;*/
+ 	border-radius: .5em;
+ 	border: 1px solid #ccc;
+ 	color: #3f5862;
+ 	position: relative;
+ 	display: inline-flex;
+ }
+
+ details summary {
+ 	font-weight: 600;
+ 	font-size: 1em;
+ 	padding: .7em;
+ 	cursor: pointer;
+ 	list-style: none;
+ }
+
+ details img {
+ 	padding: .5em;
+ 	margin: 0 1em 1em 1em;
+ 	background: #fff;
+ 	width: 90%;
+ 	/* 	border-left: 2px solid #364f6b;*/
+ }
+
+ details:hover,
+ details[open] {
+ 	box-shadow: 5px 5px 15px #ccc;
+ }
+
+ details[open] {
+ 	background: #ffffff;
+ }
+
+ details[open] summary {
+ 	font-weight: 600;
+ }
+
+ details summary::before {
+ 	position: absolute;
+ 	/* 	content: "👇";*/
+ 	content: "\002b";
+ 	content: " \02C5";
+ 	font-size: 1.2em;
+ 	font-weight: 800;
+ 	top: .5em;
+ 	right: 1em;
+ }
+
+ details[open] summary::before {
+ 	-webkit-animation: rotate 0.6s ease-in-out both;
+ 	animation: rotate-emoji 0.6s ease-in-out both;
+ }
+
+ @-webkit-keyframes rotate-emoji {
+ 	0% {
+ 		-webkit-transform: rotate(0);
+ 		transform: rotate(0);
+ 	}
+
+ 	100% {
+ 		-webkit-transform: rotate(180deg);
+ 		transform: rotate(180deg);
+ 	}
+ }
+
+ .center-block-col-12 > img {
+ 	display: inline-block !improtant;
+ 	position: relative;
+ 	width: auto;
+ }
+ }
 
  #map {
  	height: 80vh;
@@ -772,6 +847,7 @@ RGB(65, 176, 110)
  #gmap_div p {
  	font-weight: 600;
  	font-size: 1.2em;
+ 	padding: 1em;
  }
 
  #mapa-noso {
@@ -815,12 +891,15 @@ RGB(65, 176, 110)
 
  .gv_profile_button {
  	/* icono para mostrar altitude */
+ 	/*
  	width: 7em !important;
  	height: 7em !important;
  	padding: 0em !important;
  	box-shadow: 1px 1px 1px #cccccc80;
  	border: 2px solid rgba(226, 135, 67, 0.5);
  	background: #ffffff80 url(../../../imaxes/iconos/icon_elevation_profile.png) center/100% !important;
+*/
+ 	display: none !important;
  }
 
  .gv_profile {
@@ -854,6 +933,7 @@ RGB(65, 176, 110)
  	bottom: 0% !important;
  	left: 0% !important;
  	background: #ffffff80 !important;
+
  }
 
  #gv_elevation_profile {
@@ -866,10 +946,9 @@ RGB(65, 176, 110)
  	position: absolute !important;
  	bottom: 0% !important;
  	left: 0% !important;
+
  }
 
- /* estilo para as gráficas de elevacion susi */
- /*    .profile_unfilled { fill:none; stroke:black; stroke-width:2; stroke-linecap:round; }*/
  .profile_filled {
  	fill: black;
  	/* 	stroke: red !important;*/
@@ -958,6 +1037,7 @@ RGB(65, 176, 110)
  	overflow: visible;
  	font-size: 2em;
  	text-align: left;
+
  }
 
  #gv_tracklist header {
@@ -974,7 +1054,7 @@ RGB(65, 176, 110)
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
 
- 	background-color: rgba(65, 176, 110, 0.7);
+ 	background-color: rgba(65, 176, 110, 0.5);
  	width: 17vw !important;
  	height: auto !important;
  	padding: 1em;
@@ -989,14 +1069,25 @@ RGB(65, 176, 110)
  	/* 	display: inline-block;*/
  	width: 100% !important;
  	text-align: left !important;
- 	/* 	font-size: 1em;*/
  	margin: inherit;
  	/* listado dos marcadores flotado á dereita */
  }
 
+ #gv_marker_list table td {
+ 	color: #3f5862;
+ 	padding: .1em;
+ 	font-size: 1.05em !important;
+ 	background-color: transparent;
+ }
+
  #gv_marker_list table td:hover {
- 	transform: scale(101.5%);
- 	color: #e6400c;
+ 	transform: scale(110%) !important;
+ 	color: #3f5862;
+ 	text-shadow: 0px 1px 1px #fff;
+ 	padding: .1em;
+ 	background-color: #ffffff80;
+ 	box-shadow: 3px 3px 3px rgba(65, 176, 110, 0.7);
+ 	/* 	font-size: 1.1em !important;*/
  }
 
  #gv_marker_list_header::before {
@@ -1008,6 +1099,7 @@ RGB(65, 176, 110)
  .gv_marker_list_item {
  	text-align: left !important;
  	font-size: 1.2em !important;
+
  }
 
  #mapa-noso > div {
@@ -1033,27 +1125,28 @@ RGB(65, 176, 110)
  }
 
  .leaflet-popup-content-wrapper {
- 	width: 45vw !important;
+ 	width: 50vw !important;
  	height: auto !important;
  }
 
  .leaflet-popup {
-
  	padding: 0 !important;
  }
 
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
- 	width: 90% !important;
- 	overflow: visible !important;
+ 	width: 100% !important;
+ 	height: auto !important;
+ 	overflow: scroll !important;
  	z-index: 99999999 !important;
  	padding: 0 !important;
  }
 
  .gv_marker_info_window {
- 	display: inline-flex;
  	display: flex;
- 	flex-direction: row;
+ 	flex-direction: column;
+ 	width: 90% !important;
+ 	height: auto !important;
  }
 
  .gv_marker_info_window_desc {
@@ -1064,10 +1157,11 @@ RGB(65, 176, 110)
 
  .gv_marker_info_window img {
  	/* imaxes do pop-up */
- 	float: left;
+ 	float: right !important;
  	margin: 0 auto;
- 	width: 40% !important;
- 	position: relative;
+ 	width: 60% !important;
+ 	/* 	position: relative;*/
+ 	display: block !important;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
  }
 
@@ -1088,18 +1182,23 @@ RGB(65, 176, 110)
 
  .gv_marker_info_window p {
  	/* 	clear: both;*/
- 	/* 	float: left;*/
+ 	display: block !important;
  	width: auto !important;
+ 	height: auto;
+ 	float: left;
+ 	border: 1px solid blue;
  }
 
  .gv_marker_info_window p,
  .gv_marker_info_window a {
- 	width: 50%;
+ 	/* 	width: 50%;*/
  	font-size: .8em;
  	color: #3f5862 !important;
  	font-weight: normal !important;
+
  	position: relative;
  	clear: both;
+
  }
 
  .gv_marker_info_window a,
@@ -1114,9 +1213,19 @@ RGB(65, 176, 110)
  	z-index: 1000;
  }
 
+ .gv_marker_info_window .red-link {
+ 	color: #e28743 !important;
+ 	font-weight: 700 !important;
+ }
+
+ .gv_marker_info_window .red-link:hover {
+ 	color: #3f5862 !important;
+ 	font-weight: 700 !important;
+ }
+
  .gv_marker_info_window a:hover {
  	/* imaxes do pop-up */
- 	font-weight: 900 !important;
+ 	font-weight: 700 !important;
  	color: #e28743 !important;
  }
 
@@ -1138,7 +1247,7 @@ RGB(65, 176, 110)
  .leaflet-control-attribution::after {
  	/* colocamos no pe do mapa o noso nome */
  	/* 	display: none;*/
- 	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois) ";
+ 	content: " ** Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois). Óptima visualización  en modo ordenador. ";
  	color: #e6400c;
  	font-weight: bold;
  }
