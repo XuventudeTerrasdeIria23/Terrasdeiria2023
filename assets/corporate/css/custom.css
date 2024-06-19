@@ -105,6 +105,12 @@ RGB(65, 176, 110)
  	margin-right: .2em;
  }
 
+ .icon-small {
+ 	color: #e28743;
+ 	margin-right: .2em;
+ 	font-size: .9em;
+ }
+
  span.medium-italic {
  	font-size: .9em;
  	display: block;
@@ -124,6 +130,14 @@ RGB(65, 176, 110)
  	display: block;
  }
 
+ .margin-top-1x {
+ 	margin: 1em 0 0 0;
+ }
+
+
+ .margin-top-2x {
+ 	margin: 4em 0 0 0;
+ }
 
  /* boton subir */
  .softr-back-to-top-button {
@@ -751,6 +765,11 @@ RGB(65, 176, 110)
  /* footer sitio */
 
  /* MAPAS    estilo  mapas *********/
+ .video-mapa {
+ 	width: 50vw;
+
+ }
+
  details {
  	background-color: #fff;
  	background-color: #e2874380;
@@ -774,11 +793,17 @@ RGB(65, 176, 110)
  }
 
  details img {
+ 	/*
  	padding: .5em;
  	margin: 0 1em 1em 1em;
  	background: #fff;
- 	width: 90%;
- 	/* 	border-left: 2px solid #364f6b;*/
+*/
+ }
+
+ .img-thumbnail img {
+ 	display: flex;
+ 	width: 100% !important;
+ 	height: auto;
  }
 
  details:hover,
@@ -809,6 +834,7 @@ RGB(65, 176, 110)
  	-webkit-animation: rotate 0.6s ease-in-out both;
  	animation: rotate-emoji 0.6s ease-in-out both;
  }
+
 
  @-webkit-keyframes rotate-emoji {
  	0% {
@@ -1053,12 +1079,23 @@ RGB(65, 176, 110)
  	/* cabeceira do checkbox nome do mapa */
  	color: #3f5862 !important;
  	font-size: 2em;
+ 	content: "***"
+ }
+
+ #gv_tracklist header::before {
+
+ 	content: "***"
  }
 
  #gv_tracklist .gv_tracklist_item_name span {
  	/* texto do checkbox nome do mapa */
  	color: #3f5862 !important;
+
+ 	display: none;
+ 	visibility: hidden;
+
  }
+
 
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
