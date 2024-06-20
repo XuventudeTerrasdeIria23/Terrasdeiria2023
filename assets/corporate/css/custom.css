@@ -284,7 +284,6 @@ RGB(65, 176, 110)
 
  /* header */
 
-
  .header-navigation {
  	width: auto;
  }
@@ -1164,8 +1163,9 @@ RGB(65, 176, 110)
  }
 
  .leaflet-popup-content-wrapper {
- 	width: 45vw !important;
+ 	width: 35vw !important;
  	height: auto !important;
+ 	border: 2px solid blue !important;
  }
 
  .leaflet-popup {
@@ -1174,19 +1174,23 @@ RGB(65, 176, 110)
 
  .leaflet-popup-content {
  	/*  pop-ups do  mapa */
- 	width: 100% !important;
+ 	width: auto !important;
  	height: auto !important;
 
  	z-index: 99999999 !important;
  	padding: 0 !important;
  	overflow: auto !important;
+ 	border: 2px solid blue !important;
+
  }
 
  .gv_marker_info_window {
  	display: flex;
  	flex-direction: column;
- 	width: 90% !important;
+ 	width: auto !important;
  	height: auto !important;
+ 	border: 2px solid blue !important;
+
  }
 
  .gv_marker_info_window_desc {
@@ -1199,7 +1203,7 @@ RGB(65, 176, 110)
  	/* imaxes do pop-up */
  	float: left !important;
  	margin: 0 auto;
- 	width: 60% !important;
+ 	width: 90% !important;
  	/* 	position: relative;*/
  	display: block !important;
  	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
@@ -1239,10 +1243,8 @@ RGB(65, 176, 110)
  	font-size: .8em;
  	color: #3f5862 !important;
  	font-weight: normal !important;
-
  	position: relative;
  	clear: both;
-
  }
 
  .gv_marker_info_window a,
@@ -1328,7 +1330,92 @@ RGB(65, 176, 110)
  }
 
  /* @media mapa-noso */
- @media (max-width: 1080px) {
+ @media (max-width: 800px) {
+ 	#mapa-noso {
+ 		display: block !important;
+ 		justify-content: center !important;
+ 		align-content: center !important;
+ 		margin-bottom: 1em;
+ 		background: transparent !important;
+ 	}
+
+ 	.leaflet-popup-content-wrapper {
+ 		width: 90vw !important;
+ 		height: auto !important;
+ 		border: 2px solid red !important;
+ 	}
+
+ 	#gv_marker_list {
+ 		/* listado dos marcadores flotado á dereita */
+
+ 		background-color: rgba(65, 176, 110, 0.7);
+ 		width: 90vw !important;
+ 		height: auto !important;
+ 		display: block !important;
+ 	}
+
+ 	.datos-ruta {
+ 		display: inline-block;
+ 	}
+
+ 	.datos-ruta-head,
+ 	.datos-ruta h3 {
+ 		width: 100%;
+ 		display: block;
+ 	}
+
+ 	.datos-ruta div > img {
+ 		width: 20%;
+ 	}
+
+ 	.leaflet-popup-content {
+ 		/*  pop-ups do  mapa */
+ 		width: auto !important;
+ 		height: auto !important;
+ 		z-index: 99999999 !important;
+ 		padding: 0 !important;
+ 		overflow: auto !important;
+ 		border: 2px solid red !important;
+ 	}
+
+ 	.gv_marker_info_window {
+ 		display: flex;
+ 		flex-direction: column;
+ 		width: 90vw !important;
+ 		height: auto !important;
+ 		border: 2px solid blue !important;
+
+ 	}
+
+ 	.gv_marker_info_window_desc {
+ 		width: 100% !important;
+ 		padding: 1em;
+ 		margin: 0 auto !important;
+ 	}
+
+ 	.gv_marker_info_window img {
+ 		width: 90% !important;
+ 	}
+
+ 	.gv_marker_info_window img:hover {
+ 		/* imaxes do pop-up */
+ 		box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+ 		border: 1px solid #ccc;
+ 		transform: scale(3) !important;
+ 		transition: ease-out 0.47s;
+ 		z-index: 999999999999 !important;
+ 	}
+
+ 	#gmap_div #gv_tracklist * {
+ 		/* cadro checkbox nome do mapa */
+ 		display: none;
+ 		visibility: hidden;
+ 	}
+
+
+ }
+
+ @media (max-width: 1920px) {
  	#mapa-noso {
  		display: block !important;
  		justify-content: center !important;
@@ -1360,6 +1447,10 @@ RGB(65, 176, 110)
  	,
  	.datos-ruta div > img {
  		width: 20%;
+ 	}
+
+ 	.gv_marker_info_window img {
+ 		width: 90% !important;
  	}
  }
 
