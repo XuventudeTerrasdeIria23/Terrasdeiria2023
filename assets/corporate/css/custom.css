@@ -1072,28 +1072,21 @@ RGB(65, 176, 110)
  	overflow: visible;
  	font-size: 2em;
  	text-align: left;
-
  }
 
  #gv_tracklist header {
  	/* cabeceira do checkbox nome do mapa */
  	color: #3f5862 !important;
  	font-size: 2em;
- 	content: "***"
  }
 
- #gv_tracklist header::before {
 
- 	content: "***"
- }
 
  #gv_tracklist .gv_tracklist_item_name span {
  	/* texto do checkbox nome do mapa */
- 	color: #3f5862 !important;
-
- 	display: none;
+ 	color: #fff !important;
  	visibility: hidden;
-
+ 	cursor: none;
  }
 
 
@@ -1270,6 +1263,16 @@ RGB(65, 176, 110)
  }
 
  .gv_marker_info_window .red-link:hover {
+ 	color: #3f5862 !important;
+ 	font-weight: 700 !important;
+ }
+
+ .gv_marker_info_window .green-link {
+ 	color: #41B06E !important;
+ 	font-weight: 700 !important;
+ }
+
+ .gv_marker_info_window .green-link:hover {
  	color: #3f5862 !important;
  	font-weight: 700 !important;
  }

@@ -355,7 +355,7 @@
 								gv_options.tracklist_options.tooltips = false; // true|false: should the name of the track appear on the map when you mouse over the name in the list?
 								gv_options.tracklist_options.draggable = true; // true|false: can it be moved around the screen?
 								gv_options.tracklist_options.collapsible = true; // true|false: can it be collapsed by double-clicking its top bar?
-								gv_options.tracklist_options.header = 'Tracks:'; // HTML code; be sure to put backslashes in front of any single quotes, and don't include any line breaks
+								gv_options.tracklist_options.header = 'Mostrar/Ocultar o Track'; // HTML code; be sure to put backslashes in front of any single quotes, and don't include any line breaks
 								gv_options.tracklist_options.footer = ''; // HTML code
 								gv_options.profile_options = {
 									visible: false,
@@ -471,7 +471,7 @@
 									trk[t].info.outline_width = 0;
 									trk[t].info.fill_color = '#e60000';
 									trk[t].info.fill_opacity = 0;
-									trk[t].info.elevation = true;
+									trk[t].info.elevation = false;
 									trk[t].segments.push({
 										points: [
 											[42.69489, -8.724591, 1.076],
@@ -639,12 +639,38 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-7 col-sm-7 margin-bottom-40">
-					<details>
-						<summary>Ver a gráfica do perfil de elevación</summary>
-						<img class="img-responsive img-shadow-new" src="../../imaxes/rutas/grfcs_elevacion_senderismo/DODRO/as-branhas.jpg" alt="Ruta das Brañas de Laíño. Gráfica de elevación">
-					</details>
+				<!-- gráfica, imaxe do mapa e video da ruta INICIO -->
+				<div class="col-md-12 margin-bottom-40">
+					<div class="col-md-4 col-sm-4">
+						<details class="img-thumbnail">
+							<summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a gráfica do perfil de elevación</summary>
+							<a target="_blank" data-title="Ver nunha ventana nova" href="../../imaxes/rutas/grfcs_elevacion_senderismo/DODRO/as-branhas.jpg"> <img class="-shadow-new" src="../../imaxes/rutas/grfcs_elevacion_senderismo/DODRO/aldeas-monte.jpg" alt="Gráfica do perfil de elevación">
+							</a>
+						</details>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<details class="img-thumbnail">
+							<summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a imaxe da ruta</summary>
+							<a target="_blank" data-title="Ver nunha ventana nova" href="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/aldeas-monte.jpg">
+								<img class="-shadow-new" src="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/branas_laino.jpg" alt="Imaxe da ruta Brañas de Laíño">
+							</a>
+						</details>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<details class="img-thumbnail">
+							<summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver vídeo da ruta</summary>
+							<a target="_blank" data-title="Ver nunha ventana nova" href=" ">
+								<img class="-shadow-new" src=" " alt="Vídeo da ruta Brañas de Laíño">
+							</a>
+<!--
+							<p style="display: none;">
+								descripción dos puntos da ruta
+							</p>
+-->
+						</details>
+					</div>
 				</div>
+				<!-- gráfica, imaxe do mapa e video da ruta FIN -->
 			</div>
 			<!-- ++++++++ lendas do mapa INICIO ++++++++  -->
 			<div class="col-md-12 margin-bottom-40">
@@ -698,10 +724,6 @@
 							</li>
 							<li>
 								<img src="../../imaxes/iconos/icono-mapa-sendeiro.png" class="img-shadow img-xsmall"> <span>Puntos de interese</span>
-							</li>
-
-							<li>
-								<i class="fa fa-link"></i> <a target="_blank" title="Formato da imaxe .jpg " href="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/branas_laino.jpg" alt="Ruta das Brañas de Laíño">Descargar a imaxe do mapa</a>
 							</li>
 						</ul>
 					</div>
