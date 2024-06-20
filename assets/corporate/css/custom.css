@@ -1093,9 +1093,9 @@ RGB(65, 176, 110)
  	/* listado dos marcadores flotado á dereita */
 
  	background-color: rgba(65, 176, 110, 0.5);
- 	width: 17vw !important;
+ 	width: auto !important;
  	height: auto !important;
- 	padding: 1em;
+ 	padding: 0em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
  	overflow-y: scroll;
@@ -1107,26 +1107,46 @@ RGB(65, 176, 110)
  	/* 	display: inline-block;*/
  	width: 100% !important;
  	text-align: left !important;
- 	margin: inherit;
+ 	margin: 0 auto !important;
+ 	float: left !important;
+ 	/* listado dos marcadores flotado á dereita */
+ }
+
+ #gv_marker_list table tr {
+ 	/* 	display: inline-block;*/
+ 	width: 100% !important;
+ 	text-align: left !important;
+ 	margin: .2em !important;
+ 	padding: 2em !important;
  	/* listado dos marcadores flotado á dereita */
  }
 
  #gv_marker_list table td {
+ 	width: 100% !important;
  	color: #3f5862;
- 	padding: .1em;
+ 	padding: .2em !important;
+ 	text-align: right !important;
+ 	display: inline !important;
  	font-size: 1.05em !important;
- 	background-color: transparent;
+ }
+
+ div.gv_marker_list_item_name {
+ 	width: 70% !important;
+ 	color: #3f5862;
+ 	padding: auto;
+ 	text-align: left !important;
+ 	display: inline-flex !important;
+ 	font-size: 1.05em !important;
  }
 
  #gv_marker_list table td:hover {
- 	transform: scale(110%) !important;
  	color: #3f5862;
  	text-shadow: 0px 1px 1px #fff;
- 	padding: .1em;
  	background-color: #ffffff80;
  	box-shadow: 3px 3px 3px rgba(65, 176, 110, 0.7);
  	/* 	font-size: 1.1em !important;*/
  }
+
 
  #gv_marker_list_header::before {
  	content: ' ';
@@ -1153,6 +1173,16 @@ RGB(65, 176, 110)
  	/* botón selección mapa de fondo desplegable no mapa á dereita */
  }
 
+ #gv_marker_list name {
+ 	/* listado dos marcadores flotado á dereita */
+
+ 	background-color: rgba(65, 176, 110, 0.7);
+ 	width: auto !important;
+ 	height: auto !important;
+ 	display: block !important;
+ 	text-align: left !important;
+ }
+
  .leaflet-control-zoom-out,
  .leaflet-control-zoom-in,
  .leaflet-control-zoom {
@@ -1165,7 +1195,6 @@ RGB(65, 176, 110)
  .leaflet-popup-content-wrapper {
  	width: 35vw !important;
  	height: auto !important;
- 	border: 2px solid blue !important;
  }
 
  .leaflet-popup {
@@ -1176,12 +1205,9 @@ RGB(65, 176, 110)
  	/*  pop-ups do  mapa */
  	width: auto !important;
  	height: auto !important;
-
  	z-index: 99999999 !important;
  	padding: 0 !important;
  	overflow: auto !important;
- 	border: 2px solid blue !important;
-
  }
 
  .gv_marker_info_window {
@@ -1189,8 +1215,6 @@ RGB(65, 176, 110)
  	flex-direction: column;
  	width: auto !important;
  	height: auto !important;
- 	border: 2px solid blue !important;
-
  }
 
  .gv_marker_info_window_desc {
@@ -1220,14 +1244,14 @@ RGB(65, 176, 110)
 
  .gv_marker_info_window_name {
  	color: #e28743;
- 	float: right;
- 	text-align: right;
+ 	float: left;
+ 	text-align: left;
  	transform: scale(1.1) !important;
- 	text-transform: uppercase;
  	width: 80%;
  	padding: 0.5em;
  	margin: 0 auto;
  }
+
 
  .gv_marker_info_window p {
  	/* 	clear: both;*/
@@ -1342,16 +1366,19 @@ RGB(65, 176, 110)
  	.leaflet-popup-content-wrapper {
  		width: 90vw !important;
  		height: auto !important;
- 		border: 2px solid red !important;
  	}
 
  	#gv_marker_list {
  		/* listado dos marcadores flotado á dereita */
-
  		background-color: rgba(65, 176, 110, 0.7);
  		width: 90vw !important;
  		height: auto !important;
  		display: block !important;
+ 		text-align: left;
+ 	}
+
+ 	#gv_marker_list_icon {
+ 		border: 1px solid blue;
  	}
 
  	.datos-ruta {
@@ -1375,7 +1402,6 @@ RGB(65, 176, 110)
  		z-index: 99999999 !important;
  		padding: 0 !important;
  		overflow: auto !important;
- 		border: 2px solid red !important;
  	}
 
  	.gv_marker_info_window {
@@ -1383,8 +1409,6 @@ RGB(65, 176, 110)
  		flex-direction: column;
  		width: 90vw !important;
  		height: auto !important;
- 		border: 2px solid blue !important;
-
  	}
 
  	.gv_marker_info_window_desc {
@@ -1415,7 +1439,7 @@ RGB(65, 176, 110)
 
  }
 
- @media (max-width: 1920px) {
+ @media (max-width: 1280px) {
  	#mapa-noso {
  		display: block !important;
  		justify-content: center !important;
@@ -1431,6 +1455,7 @@ RGB(65, 176, 110)
  		width: auto !important;
  		height: auto !important;
  		display: block !important;
+ 		text-align: left;
  	}
 
 

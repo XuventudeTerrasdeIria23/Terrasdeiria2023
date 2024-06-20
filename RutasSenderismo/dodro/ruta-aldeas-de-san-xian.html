@@ -267,7 +267,7 @@
 							<div id="gv_infobox" class="gv_infobox"></div>
 							<div id="gv_tracklist" class="gv_tracklist"></div>
 							<div id="gv_marker_list" class="gv_marker_list"></div>
-							<!--							<div id="gv_profile" class="gv_marker_list"></div> SUSI este div non -->
+							<!--		<div id="gv_profile" class="gv_marker_list"></div> SUSI este div non -->
 							<!-- begin GPS Visualizer setup script (must come after loading of API code) -->
 							<script type="text/javascript">
 								/* Global variables used by the GPS Visualizer functions (20240424060950): */
@@ -414,12 +414,14 @@
 								//                                gv_options.marker_list_options.max_height = 310; // maximum height
 								gv_options.marker_list_options.draggable = true; // true|false, floating list only: can it be moved around the screen?
 								gv_options.marker_list_options.collapsible = true; // true|false, floating list only: can it be collapsed by double-clicking its top bar?
-								gv_options.marker_list_options.include_tickmarks = false; // true|false: are distance/time tickmarks included in the list?
+								gv_options.marker_list_options.include_tickmarks = true; // true|false: are distance/time tickmarks included in the list?
 								gv_options.marker_list_options.include_trackpoints = false; // true|false: are "trackpoint" markers included in the list?
 								gv_options.marker_list_options.dividers = true; // true|false: will a thin line be drawn between each item in the list?
 								gv_options.marker_list_options.desc = false; // true|false: will the markers' descriptions be shown below their names in the list?
-								gv_options.marker_list_options.icons = false; // true|false: should the markers' icons appear to the left of their names in the list?
-								gv_options.marker_list_options.icon_scale = 'x1'; // size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
+								gv_options.marker_list_options.icons = true; //  SUSI true|false: should the markers' icons appear to the left of their names in the list?
+
+								gv_options.marker_list_options.icon_scale = '11px'; // SUSI size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
+
 								gv_options.marker_list_options.thumbnails = false; // true|false: should markers' thumbnails be shown in the list?
 								gv_options.marker_list_options.folders_collapsed = false; // true|false: do folders in the list start out in a collapsed state?
 								gv_options.marker_list_options.folders_hidden = false; // true|false: do folders in the list start out in a hidden state?
@@ -531,7 +533,7 @@
 										lat: 42.7327640,
 										lon: -8.7051590,
 										alt: 174.4,
-										name: 'INICIO DA RUTA<br>Fonte Primeiral',
+										name: 'Fonte Primeiral',
 										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_dodro/sendeiros/aldea-sa-xian/fonteprimeiral.jpg" alt="Fonte Primeiral"> <p class="red small"><a class="small" href="https://earth.google.com/web/search/42.732864343684+,+-8.7054977383609/@42.73290279,-8.7055775,123.60880838a,124.17615568d,55.30601683y,154.47794997h,16.34129204t,-0r/data=CmYaPBI2GfVzVH_OXUVAIXPOmf42aSHAKiI0Mi43MzI4NjQzNDM2ODQgLCAtOC43MDU0OTc3MzgzNjA5GAEgASImCiQJxtx0ppNeRUARBb-Ls1JeRUAZMg8Oh7BjIcAhp4pcVaJmIcA6AwoBMA" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i>  42.732864343684 , -8.7054977383609</a></p><p>Fonte Primeiral e área recreativa, situada na estrada que vai de Laíño a Rois, onde antano se celebraba a Festa do Carneiro.</p>',
 										color: '',
 										icon: '../../imaxes/iconos/ubicacion.png'
@@ -658,7 +660,7 @@
 										lat: 42.7378820,
 										lon: -8.6975480,
 										alt: 78,
-										name: 'FIN DA RUTA<br>Muíño da Fonte da Vella',
+										name: 'Muíño da Fonte da Vella',
 										desc: '<img class="img-responsive img-zoom" src="../../imaxes/img_dodro/sendeiros/aldea-sa-xian/muinhofontevella.jpg" alt="Muíño da Fonte da Vella"> <p class="red small"><a class="small" href="https://earth.google.com/web/search/42.737896487334+,+-8.6977175935919/@42.73786308,-8.69727943,73.57020235a,604.28766845d,35y,0h,0t,0r/data=CmYaPBI2GZuqe2RzXkVAIe2vwz07ZSHAKiI0Mi43Mzc4OTY0ODczMzQgLCAtOC42OTc3MTc1OTM1OTE5GAEgASImCiQJtjwJVOpeRUARBJYrempeRUAZ1tJ-wqBhIcAhXuBWaqtnIcA6AwoBMA" target="_blank" class="small" title="ver localización"><i class="fa fa-globe"></i>   42.737896487334 , -8.6977175935919</a></p><p>Muíño de planta cadrada, con estrutura de muros de cachotaría e cuberta a unha soa auga, con rematado de tella curva sobre armazón de madeira.</p>',
 										color: '',
 										icon: '../../imaxes/iconos/icon_location-1_red.png'
@@ -761,7 +763,7 @@
 									<img src="../../imaxes/iconos/icon_location-1_red.png" class="img-shadow img-xsmall"> <span>Fin da ruta</span>
 								</li>
 								<li>
-									<img src="../../imaxes/iconos/icono-mapa-sendeiro.png" class="img-shadow img-xsmall"> <span>Puntos de interese</span>
+									<img src="../../imaxes/iconos/icono-mapa-sendeiro.png" class="img-shadow img-xsmall"> <span>Punto de interese</span>
 								</li>
 							</ul>
 						</div>
