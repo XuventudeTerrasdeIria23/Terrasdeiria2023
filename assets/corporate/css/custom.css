@@ -1060,10 +1060,6 @@ RGB(65, 176, 110)
  	writing-mode: vertical-rl !important;
  }
 
- .profile_unfilled {
- 	background-color: yellow;
- }
-
  #gmap_div #gv_tracklist {
  	/* cadro checkbox nome do mapa */
  	color: #3f5862 !important;
@@ -1079,8 +1075,6 @@ RGB(65, 176, 110)
  	font-size: 2em;
  }
 
-
-
  #gv_tracklist .gv_tracklist_item_name span {
  	/* texto do checkbox nome do mapa */
  	color: #fff !important;
@@ -1091,11 +1085,10 @@ RGB(65, 176, 110)
 
  #gv_marker_list {
  	/* listado dos marcadores flotado á dereita */
-
  	background-color: rgba(65, 176, 110, 0.5);
- 	width: auto !important;
+ 	width: 20vw !important;
  	height: auto !important;
- 	padding: 0em;
+ 	padding: .7em;
  	box-shadow: 1px 1px 2px 2px #ccc;
  	border: 1px solid #ccc;
  	overflow-y: scroll;
