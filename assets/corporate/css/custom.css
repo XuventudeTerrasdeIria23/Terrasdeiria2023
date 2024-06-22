@@ -821,7 +821,7 @@ RGB(65, 176, 110)
  details summary::before {
  	position: absolute;
  	/* 	content: "👇";*/
- 	content: "\002b";
+ 	/* 	content: "\002b";*/
  	content: " \02C5";
  	font-size: 1.2em;
  	font-weight: 800;

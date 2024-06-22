@@ -203,12 +203,12 @@ h3.link {
 
 ::-moz-selection {
 	color: #fff;
-	background: #e28743;
+	background: #ccc;
 }
 
 ::selection {
 	color: #fff;
-	background: #e28743;
+	background: #ccc;
 }
 
 .steps-block ::-moz-selection {

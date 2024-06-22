@@ -1,55 +1,60 @@
+.main-Mes {
+	/* contenedor das pestañas */
+	margin: 1em;
+	padding: 0;
+	background: #fff;
+	width: 100%;
 
-
-.main-Mes {/* contenedor das pestañas */
-/*
-  min-width: 320px;
-  max-width: 800px;
-*/
-/*  padding: 50px;*/
-  margin: 0 auto;
-  background: #fff;
-  width: 100%;
 }
 
-
-.containter-tab1 {/* section co coontido de cada mes */
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #ddd;
-   
+.containter-tab1 {
+	/* section co coontido de cada mes */
+	display: none;
+	padding: 20px 0 0;
+	border-top: 1px solid #ddd;
 }
 
 .input-tabMes {
-  display: none;
+	display: none;
 }
 
-.label-tabMes { /* label con nome do mes */
-  display: inline-flex;
-  margin: 0 0 -1px;
-  padding: 35px 15px;
-  font-weight: 600;
-  text-align: center;
-  color: #3f5862;
-  border: 1px solid transparent;
-    
+.label-tabMes {
+	/* label con nome do mes */
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: calc(100%/13);
+	margin: 0 0 -1px;
+	padding: 1em;
+	font-weight: 600;
+	text-align: center;
+	color: #3f5862;
+	border: 1px solid transparent;
+
 }
 
 .label-tabMes:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 10px;
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
 }
- 
+
 .label-tabMes:hover {
-  color: #888;
-  cursor: pointer;  border-top: 2px solid #e28743;
+	color: #e6400c;
+	cursor: pointer;
+	border-top: 2px solid #e6400c;
+	border-bottom: 1px solid #e6400c;
+	box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 .input-tabMes:checked + .label-tabMes {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid #e6400c;
-  border-bottom: 1px solid #fff;
+	color: #e6400c;
+	font-weight: 700;
+	border: 1px solid #ddd;
+	border-top: 2px solid #e6400c;
+	border-bottom: 1px solid #e6400c;
+	box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 #tab1:checked ~ #xaneiro,
@@ -63,22 +68,74 @@
 #tab9:checked ~ #setembro,
 #tab10:checked ~ #outubro,
 #tab11:checked ~ #novembro,
-#tab12:checked ~ #decembro{
-  display: block;
+#tab12:checked ~ #decembro {
+	display: block;
+}
+
+@media screen and (max-width: 1020px) {
+	.label-tabMes {
+		/* label con nome do mes */
+		display: inline-flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: calc(90%/3);
+		margin: auto;
+		padding: .5em;
+		font-weight: 600;
+		text-align: center;
+		color: #3f5862;
+		border: 1px solid transparent;
+	}
+
+	.label-tabMes:before {
+		margin: 0;
+		font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 650px) {
-  .label-tabMes {
-    font-size: 0;
-  }
+	.label-tabMes {
+		/* label con nome do mes */
+		display: inline-flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: calc(90%/3);
+		margin: auto;
+		padding: .5em;
+		font-weight: 600;
+		text-align: center;
+		color: #3f5862;
+		border: 1px solid transparent;
+	}
 
-  .label-tabMes:before {
-    margin: 0;
-    font-size: 18px;
-  }
+	.label-tabMes:before {
+		margin: 0;
+		font-size: 1em;
+	}
 }
+
 @media screen and (max-width: 400px) {
-  .label-tabMes {
-    padding: 15px;
-  }
+	.label-tabMes {
+		padding: 0;
+		display: inline-block;
+		font-size: 1em;
+		color:
+	}
+
+	.label-tabMes {
+		/* label con nome do mes */
+		display: inline-flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: calc(90%/3);
+		margin: auto;
+		padding: .5em;
+		font-weight: 600;
+		text-align: center;
+		color: #3f5862;
+		border: 1px solid transparent;
+	}
 }
