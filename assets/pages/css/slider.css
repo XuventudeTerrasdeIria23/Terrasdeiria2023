@@ -275,6 +275,7 @@
 .carousel-slider .carousel-btn-red:hover {
 	text-decoration: none;
 	background: #3f5862;
+    color:#fff;
 	box-shadow: 0px 2px 5px 2px #3f5862;
 }
 
