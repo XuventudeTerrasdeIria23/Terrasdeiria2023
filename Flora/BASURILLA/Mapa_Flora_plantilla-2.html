@@ -73,14 +73,16 @@
 				<ul>
 					<!-- menu flora inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Flora</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="Flora/flora_dodro.html">
+							Flora
+						</a>
 						<ul class="dropdown-menu">
 							<li><a href="../RedNatura_flora.html">Red Natura 2000</a></li>
-							<li><a href="Mapa_Flora_plantilla-2.html">Mapa</a></li>
+							<li class="active"><a href="Mapa_Flora_plantilla-2.html">Mapa</a></li>
 							<li><a href="flores_galeria.html">Flores</a></li>
 							<li><a href="Galeria_Flora_arbores.html">Árbores</a></li>
-							<li class="active"><a href="arbustos_galeria.html">Arbustos</a></li>
-							<li><a href="Galeria_Flora_liques.html">Liquens</a></li>
+							<li><a href="arbustos_galeria.html">Arbustos</a></li>
+							<li><a href="Galeria_Flora_liques.html">Liques</a></li>
 							<li><a href="Galeria_Flora_acuaticas.html">Acuáticas</a></li>
 							<li><a href="glosario_botanica.html">Glosario</a></li>
 						</ul>
@@ -88,7 +90,9 @@
 					<!-- menu flora fin -->
 					<!-- menu fauna inicio -->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#">Fauna</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							Fauna
+						</a>
 						<ul class="dropdown-menu">
 							<li><a href="../RedNatura_fauna.html">Red Natura 2000</a></li>
 							<li><a href="../Fauna/Mapa_Fauna_plantilla.html">Mapa</a></li>
@@ -259,16 +263,128 @@ Longitud: -8.7024655
 ***************************************************************************** -->
 
 								<div id="map"></div>
+								<script>
+									var map = L.map('map').setView([42.715599339662134, -8.722380299701486], 12);
+									L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+										attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a>  <a href="../../index.html">Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)</a>'
+									}).addTo(map);
+
+
+									var Icono = L.icon({
+										iconUrl: '../imaxes/iconos/ubicacion.png',
+										iconSize: [20, 25],
+										iconAnchor: [15, 40],
+										opacity: 1,
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 30],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var ubicacionIcon = L.icon({
+										iconUrl: '../imaxes/iconos/icon_location-2.png',
+										iconSize: [40, 35],
+										iconAnchor: [15, 40],
+										opacity: 1,
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 30],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var Rois = L.marker([42.76082660182614, -8.690330533382241], {
+											title: "Concello de Rois",
+											draggable: false,
+											opacity: 1,
+											icon: ubicacionIcon
+										}).bindPopup("<p>Concello de Rois</p>")
+										.addTo(map);
+
+
+									var Dodro = L.marker([42.71599854612562, -8.704289466973023], {
+										title: "Concello de Dodro",
+										draggable: false,
+										opacity: 1,
+										icon: Icono
+									}).bindPopup("<p>Concello de Dodro</p>").addTo(map);
+
+									var Padron = L.marker([42.738538161754434, -8.660592666155658], {
+											title: "Concello de Padrón",
+											draggable: false,
+											opacity: 1,
+											icon: Icono
+										}).bindPopup("<p>Concello de Padrón</p>")
+										.addTo(map);
 
 
 
+									//variables para iconos flora 
+									var florIcon = L.icon({
+										iconUrl: "../imaxes/iconos/flora/flor.gif",
+										iconSize: [30, 40],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
+									var arbustoIcon = L.icon({
+										iconUrl: "../imaxes/iconos/flora/arbusto.gif",
+										iconSize: [30, 40],
+										iconAnchor: [15, 40],
+										shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
+										shadowSize: [35, 50],
+										shadowAnchor: [0, 55],
+										popupAnchor: [0, -40]
+									});
 
+									//puntos en mapa con iconos de flora
+									var florUn = L.marker([42.70259520325463, -8.726755701805269], {
+											title: "enlace a desplegable abaixo",
+											draggable: false,
+											opacity: 1,
+											icon: florIcon
+										}).bindPopup("<p> <span>Variedades que imos atopar nos tres concellos </span> <br> <a href='Galeria_Flora_plantilla2.html'> ver <i class='fa fa-plus'></i> </a></p>")
+										.addTo(map);
 
+									var florDous = L.marker([42.72766230643538, -8.72159810896856], {
+											title: "Lorem Ipsum",
+											draggable: false,
+											opacity: 1,
+											icon: florIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
+										.addTo(map);
 
+									var arbustoBuxan = L.marker([42.74650011013676, -8.726878288537218], {
+											title: "Lorem Ipsum",
+											draggable: false,
+											opacity: 1,
+											icon: arbustoIcon
+										}).bindPopup("<p>Lorem Ipsum</p>")
+										.addTo(map);
+
+								</script>
 								<!-- ******************* acaba mapa ******************* -->
 							</div>
 						</div>
 					</div>
+
+					<!-- script para mostrar/ocultar paneles -->
+					<script>
+						var acc = document.getElementsByClassName("accordion");
+						var i;
+
+						for (i = 0; i < acc.length; i++) {
+							acc[i].addEventListener("click", function() {
+								this.classList.toggle("active");
+								var panel = this.nextElementSibling;
+								if (panel.style.maxHeight) {
+									panel.style.maxHeight = null;
+								} else {
+									panel.style.maxHeight = panel.scrollHeight + "px";
+								}
+							});
+						}
+
+					</script>
 				</div>
 			</div>
 		</div>

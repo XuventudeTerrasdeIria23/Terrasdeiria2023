@@ -1,0 +1,334 @@
+.container-mapa {
+    position: relative;
+    display: block !important;
+    overflow: hidden;
+    width: 50vw;
+    height: 70vw;
+    background: url(../../../imaxes/terras.png) no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #666;
+}
+
+input {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    display: none;
+}
+
+.button-mapa {
+    display: absolute;
+    font-weight: bold;
+    /*background-color: #ccc;*/
+    display: block;
+    padding: 0.4em;
+    border-radius: 100% !important;
+    cursor: pointer;
+    /*animation:  fadein .5s;*/
+    animation: pulse 1.5s infinite;
+    background: transparent;
+
+    transition: transform 1s;
+}
+
+/*
+.button i {
+	font-size: 1.5em;
+	color: #8f6549;
+}
+*/
+
+.button-mapa img {
+    /*    width: 9em;*/
+    width: 4em;
+}
+
+.button-mapa:hover {
+    transform: scale(1.5);
+}
+
+.contido_mapa {
+    background: white;
+    padding: 1em;
+    text-align: ;
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    top: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+}
+
+.contido_mapa i {
+    width: 100%;
+    color: #8f6549;
+
+}
+
+.contido_mapa p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.contido_mapa iframe {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #666;
+    border-radius: 0.5em;
+}
+
+/*.contido_mapa img {
+			width: 40%;
+			display: inline;
+			text-align: center;
+			box-shadow: 5px 5px 10px #666;
+			border-radius: 0.5em;
+		}
+		
+*/
+.contido_mapa img:hover {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #666;
+    z-index: 99999999999;
+}
+
+.contido_mapa-header {
+    font-family: "Roboto Slab", serif;
+    margin-top: auto;
+    font-size: 1.5em;
+}
+
+.contido_mapa embed {
+    /*29072021 para solucionar error validación embed Susi+Nuria*/
+    width: 100%;
+    height: 600px;
+}
+
+/* cerrar contido-mapa */
+
+.closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #a2582c;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*
+#b1 {
+	position: absolute;
+	right: -18vw;
+	top: 43vw;
+	background: #fff;
+    border: 1px solid red;
+}
+*/
+
+#b2 {
+    position: absolute;
+    right: 29vw;
+    top: 20vw;
+}
+
+#b3 {
+    position: absolute;
+    left: 32vw;
+    top: 21.5vw;
+}
+
+#b4 {
+    position: absolute;
+    left: 8vw;
+    top: 31.5vw;
+}
+
+#b5 {
+    position: absolute;
+    left: 30vw;
+    top: 40vw;
+}
+
+#b6 {
+    position: absolute;
+    left: 30vw;
+    top: 42.2vw;
+}
+
+#b7 {
+    position: absolute;
+    left: 26vw;
+    top: 42vw;
+}
+
+#b8 {
+    position: absolute;
+    left: 11vw;
+    top: 48vw;
+}
+
+#input1:checked ~ #content1,
+#input2:checked ~ #content2,
+#input3:checked ~ #content3,
+#input4:checked ~ #content4,
+#input5:checked ~ #content5,
+#input6:checked ~ #content6,
+#input7:checked ~ #content7,
+#input8:checked ~ #content8,
+#input9:checked ~ #content9,
+#input10:checked ~ #content10,
+#input11:checked ~ #content11,
+#input12:checked ~ #content12,
+#input13:checked ~ #content13,
+#input14:checked ~ #content14,
+#input15:checked ~ #content15,
+#input16:checked ~ #content16,
+#input17:checked ~ #content17,
+#input18:checked ~ #content18,
+#input19:checked ~ #content19,
+#input20:checked ~ #content20,
+#input21:checked ~ #content21,
+#input22:checked ~ #content22,
+#input23:checked ~ #content23,
+#input24:checked,
+/* monumentos*/
+#input25:checked,
+#input26:checked,
+#input27:checked,
+#input28:checked {
+    display: block;
+    animation: pulse .5s;
+
+}
+
+input:checked ~ label .button-mapa {
+    display: none !important;
+    animation: pulse .5s;
+    background: transparent;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*********** borde iconos *************/
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 3px #E28844;
+        background: transparent;
+        /*rgb(211, 47, 47)*/
+        ;
+    }
+
+    to {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        background: transparent;
+    }
+}
+
+
+[data-title]:after {
+    content: attr(data-title);
+    background: #ccc;
+    color: #3e4d5c;
+    /*	font-family: "Roboto Slab", serif;*/
+    /*	position: absolute;*/
+    padding: .2em;
+    /*
+	top: 6em;
+	right: 50%;
+*/
+    width: auto;
+    box-shadow: 1px 1px 3px #7C858E;
+    opacity: 0;
+    border: none;
+    z-index: 999999999999999;
+    visibility: hidden;
+    border-radius: 6px;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+    overflow: visible;
+
+}
+
+[data-title] {}
+
+
+
+
+
+
+/* Susi data-title para sidebar descarga pdf */
+#sidebar [data-title]:hover:after {
+    opacity: 0.8;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+#sidebar [data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: auto;
+    right: 1%;
+    padding: .5em;
+    color: #fff;
+    background: rgba(162, 88, 44, 0.8);
+    white-space: nowrap;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 0px 0px 4px #ccc;
+    -moz-box-shadow: 0px 0px 4px #ccc;
+    -webkit-box-shadow: 0px 0px 4px #ccc;
+
+    opacity: ;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+#sidebar [data-title] {
+    position: relative;
+}
+
+#sidebar i {
+    color: rgba(162, 88, 44, 0.5);
+}
