@@ -226,7 +226,8 @@ hr {
 [data-title] {
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    width: 20em;
+    width: auto;
+    font-size: .7em;
 }
 
 [data-title]:after {
@@ -245,7 +246,7 @@ hr {
     background: #cccccc;
     color: #3e4d5c;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: inherit;
     /* 	white-space: nowrap;*/
     box-shadow: 1px 1px 3px #7C858E;
     border: 1px solid #ccc;
@@ -290,10 +291,54 @@ img.img-sitio-dron {
     display: block;
 }
 
-.sitio-dron span {
-    display: block;
+.sitio-dron {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     border: 2px solid blue;
 }
+
+.nav-tabs {
+    padding: 1em;
+}
+
+.nav-tabs li {
+    min-width: 15%;
+}
+
+.nav-tabs li a:hover {
+    background: white;
+    color: #e28743;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.nav .nav-tabs.active {
+    background: white;
+    color: #e28743;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.tab-content img {
+    border-radius: 4% !important;
+    border: 2px solid blue;
+}
+
+.nav-tabs a {
+    border: 1px solid blue;
+    padding: 0 auto;
+    font-weight: 700;
+}
+
+
+
+
 
 /* Tooltip container */
 .tooltip2 {
@@ -305,7 +350,6 @@ img.img-sitio-dron {
     font-weight: 700;
     cursor: pointer;
     /*    width: 50%;*/
-
 }
 
 .tooltip2 .tooltiptext {
@@ -317,14 +361,13 @@ img.img-sitio-dron {
     text-align: left;
     font-weight: 500;
     padding: 1em;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: auto;
     border-radius: .5em !important;
     transition: ease 0.4s;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
     z-index: 9999999999;
-    border: 2px solid red;
 }
 
 .tooltip2:hover .tooltiptext {
@@ -350,5 +393,9 @@ img.img-sitio-dron {
     .mix-grid .mix a.mix-link,
     .mix-grid .mix a.mix-preview {
         margin-top: 5px;
+    }
+
+    .tab-content > .active {
+        display: flex;
     }
 }
