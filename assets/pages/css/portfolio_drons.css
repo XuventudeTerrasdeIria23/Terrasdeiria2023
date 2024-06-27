@@ -275,6 +275,9 @@ hr {
 img.img-sitio-dron {
     width: auto;
     border-radius: 4% !important;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
+    border-radius: 4% !important;
 }
 
 .video-earth-studio {
@@ -283,38 +286,45 @@ img.img-sitio-dron {
     height: auto
 }
 
+.sitio-dron.fonte {
+    display: block;
+}
 
-
+.sitio-dron span {
+    display: block;
+    border: 2px solid blue;
+}
 
 /* Tooltip container */
 .tooltip2 {
     position: relative;
     top: 2em;
-    display: inline;
+    display: block;
     border-bottom: 1px dotted black;
     color: #e28743;
     font-weight: 700;
     cursor: pointer;
-    width: 20vw;
-    z-index: 99999999;
+    /*    width: 50%;*/
 
 }
 
 .tooltip2 .tooltiptext {
     visibility: hidden;
-    width: 50vw;
+    width: auto;
+    overflow-y: scroll;
     background-color: #fff;
     color: #3f5862;
     text-align: left;
     font-weight: 500;
     padding: 1em;
-    position: absolute;
+    position: relative;
     top: 0px;
     left: auto;
     border-radius: .5em !important;
     transition: ease 0.4s;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-
+    z-index: 9999999999;
+    border: 2px solid red;
 }
 
 .tooltip2:hover .tooltiptext {
