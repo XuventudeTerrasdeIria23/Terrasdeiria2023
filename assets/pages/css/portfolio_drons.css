@@ -273,7 +273,7 @@ hr {
 }
 
 img.img-sitio-dron {
-    width: 40vw;
+    width: auto;
     border-radius: 4% !important;
 }
 
@@ -294,19 +294,21 @@ img.img-sitio-dron {
     border-bottom: 1px dotted black;
     color: #e28743;
     font-weight: 700;
-    cursor: pointer
+    cursor: pointer;
+    width: 20vw;
+    z-index: 99999999;
+
 }
 
 .tooltip2 .tooltiptext {
     visibility: hidden;
-    width: 20em;
+    width: 50vw;
     background-color: #fff;
     color: #3f5862;
     text-align: left;
     font-weight: 500;
     padding: 1em;
     position: absolute;
-    z-index: 1;
     top: 0px;
     left: auto;
     border-radius: .5em !important;
