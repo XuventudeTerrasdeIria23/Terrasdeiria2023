@@ -1,8 +1,5 @@
 /* Portfolio drons */
-hr {
 
-    border-top: 1px solid red;
-}
 
 /* Portfolio Filter */
 .mix-filter {
@@ -42,8 +39,6 @@ hr {
 .mix-grid .mix .mix-inner {
     position: relative;
     width: 100%;
-    /*	border: 1px solid blue;
-	*/
 }
 
 .mix-grid .mix .mix-details {
@@ -129,9 +124,7 @@ hr {
 
 .mix-grid .mix .clasifica-drone {
     filter: drop-shadow(0 0 0.5rem #236c87);
-
     border-radius: 5% !important;
-    /*    border: 5px solid red;*/
     margin: 0 0 .05em 0;
 }
 
@@ -152,10 +145,6 @@ hr {
     align-self: center;
 }
 
-#esquemas figure {
-
-    border: 2px solid blue;
-}
 
 #esquemas img {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
@@ -296,7 +285,6 @@ img.img-sitio-dron {
     justify-content: center;
     align-content: center;
     align-items: center;
-    border: 2px solid blue;
 }
 
 .nav-tabs {
@@ -327,17 +315,12 @@ img.img-sitio-dron {
 
 .tab-content img {
     border-radius: 4% !important;
-    border: 2px solid blue;
 }
 
 .nav-tabs a {
-    border: 1px solid blue;
     padding: 0 auto;
     font-weight: 700;
 }
-
-
-
 
 
 /* Tooltip container */
