@@ -209,48 +209,38 @@
 }
 
 /* data-tittle para drons */
+/* data-title para pestanas video */
 
-/* data-title */
-
-[data-title] {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    width: auto;
-    font-size: .7em;
-}
-
-[data-title]:after {
+.tab-pane[data-title]:after {
     text-transform: none;
     font-size: .7em;
 }
 
-[data-title]:hover:after {
+.tab-pane[data-title]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
 }
 
-[data-title]:after {
+.sitio-dron:hover:after {
     content: attr(data-title);
-    background: #cccccc;
-    color: #3e4d5c;
+    background: #7C858E;
+    color: #fff;
     font-weight: 500;
-    font-size: inherit;
+    font-size: .7em;
     /* 	white-space: nowrap;*/
-    box-shadow: 1px 1px 3px #7C858E;
+    box-shadow: 1px 1px 3px #ccc;
     border: 1px solid #ccc;
     z-index: 99999;
     visibility: hidden;
-    border-radius: .5em;
-    position: absolute;
-    top: 0;
-    right: auto;
-    padding: .2em;
+    border-radius: 6px;
+    position: relative;
+    top: auto;
+    left: 10%;
+    padding: .1em;
     text-align: center;
-    width: auto;
     /*	text-transform: lowercase;*/
 }
-
 
 /* paxina videos google earth drons */
 
@@ -262,8 +252,16 @@
     overflow: scroll;
 }
 
+.sitio-dron {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
 img.img-sitio-dron {
-    width: auto;
+    width: 90%;
     border-radius: 4% !important;
     -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
@@ -272,20 +270,19 @@ img.img-sitio-dron {
 
 .video-earth-studio {
     /*    width: 400px;*/
-    width: 40vw;
-    height: auto
+    width: 50vw;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid blue;
 }
 
 .sitio-dron.fonte {
     display: block;
 }
 
-.sitio-dron {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 
 .nav-tabs {
     padding: 1em;

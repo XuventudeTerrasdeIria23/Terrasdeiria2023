@@ -1022,9 +1022,6 @@ RGB(65, 176, 110)
      fill: #e28743 !important;
  }
 
- .profile_waypoint_label {
-     font: 1em 'Open Sans', sans-serif !important;
- }
 
  .mouseover_circle {
      stroke: #e28743 !important;
@@ -1032,18 +1029,12 @@ RGB(65, 176, 110)
      fill: none !important;
  }
 
- .mouseover_label {}
-
- .draggable {
-     /* 	cursor: copy !important;
- 	*/
- }
 
  .profile_waypoint {
      width: 1em !important;
      cursor: grab !important;
-
  }
+
 
  .profile_waypoint_label {
      /* etiquetas cadro altitude */
@@ -1064,18 +1055,24 @@ RGB(65, 176, 110)
      writing-mode: vertical-rl !important;
  }
 
- #gmap_div #gv_tracklist {
+ #gmap_div .gv_tracklist {
      /* cadro checkbox nome do mapa */
      color: #3f5862 !important;
-     background: #ccc;
+     background: #cccccc80;
      overflow: visible;
-     font-size: 2em;
+     font-size: 1.7em;
      text-align: left;
+     width: auto;
+     height: auto;
+ }
+
+ .gv_windowshade_handle {
+     display: none;
  }
 
  #gv_tracklist header {
      /* cabeceira do checkbox nome do mapa */
-     color: #3f5862 !important;
+     color: #fff !important;
      font-size: 2em;
  }
 
@@ -1083,9 +1080,29 @@ RGB(65, 176, 110)
      /* texto do checkbox nome do mapa */
      color: #fff !important;
      visibility: hidden;
+     display: none;
      cursor: none;
  }
 
+ #gv_tracklist .gv_tracklist_item_name input {
+     /* texto do checkbox nome do mapa */
+     cursor: pointer;
+     background-color: #fff;
+     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+     width: 48px;
+     height: 48px;
+     appearance: none;
+     border: 2px solid #888;
+ }
+
+ #gv_tracklist .gv_tracklist_item_name input:checked {
+     background-color: rgb(65, 176, 110);
+ }
+
+
+ .gv_tracklist_item_name img {
+     display: none;
+ }
 
  #gv_marker_list {
      /* listado dos marcadores flotado á dereita */
@@ -1190,7 +1207,7 @@ RGB(65, 176, 110)
  }
 
  .leaflet-popup-content-wrapper {
-     width: 35vw !important;
+     width: 25vw !important;
      height: auto !important;
  }
 
@@ -1200,8 +1217,8 @@ RGB(65, 176, 110)
 
  .leaflet-popup-content {
      /*  pop-ups do  mapa */
-     width: auto !important;
-     height: auto !important;
+     width: 90% !important;
+     height: 90% !important;
      z-index: 99999999 !important;
      padding: 0 !important;
      overflow: auto !important;
@@ -1210,8 +1227,13 @@ RGB(65, 176, 110)
  .gv_marker_info_window {
      display: flex;
      flex-direction: column;
+     /*
      width: auto !important;
      height: auto !important;
+*/
+     width: auto !important;
+     height: auto !important;
+
  }
 
  .gv_marker_info_window_desc {
@@ -1224,18 +1246,21 @@ RGB(65, 176, 110)
      /* imaxes do pop-up */
      float: left !important;
      margin: 0 auto;
-     width: 90% !important;
+     padding: 0px;
+     width: 95% !important;
      /* 	position: relative;*/
-     display: block !important;
-     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+     /*     display: block !important;*/
+     box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+     border: 2px solid #3f5862 !important;
  }
 
  .gv_marker_info_window img:hover {
      /* imaxes do pop-up */
-     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-     border: 1px solid #ccc;
+     box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+     border: 2px solid #3f5862 !important;
      transform: scale(1.2) !important;
      transition: ease-out 0.47s;
+     overflow: visible;
      z-index: 999999999999 !important;
  }
 
