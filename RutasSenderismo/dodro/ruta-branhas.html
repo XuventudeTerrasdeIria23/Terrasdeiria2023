@@ -301,12 +301,12 @@
                                 // widgets on the map:
                                 gv_options.zoom_control = 'small'; // 'auto'|'large'|'small'|'none'
                                 gv_options.recenter_button = true; // SUSI true|false: is there a 'click to recenter' button above the zoom control?
-                                gv_options.geolocation_control = true; // SUSI true|false; only works on secure servers
+                                gv_options.geolocation_control = false; // SUSI true|false; only works on secure servers
                                 gv_options.geolocation_options = {
-                                    center: true,
+                                    center: false,
                                     zoom: null, //SUSI
-                                    marker: true,
-                                    info_window: true
+                                    marker: false,
+                                    info_window: false
                                 };
                                 gv_options.scale_control = true; // SUSI true|false
                                 gv_options.map_opacity_control = true; // true|false
@@ -743,7 +743,7 @@
                             <h3> <span> <i class="fa fa-asterisk"></i> Meteoroloxía na Ruta</span> </h3>
                         </div>
                         <ul class="lendas-ruta list-unstyled">
-                            <li> <i class="fa fa-link"></i> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
+                            <li> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
                         </ul>
                     </div>
                 </div>

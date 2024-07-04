@@ -308,12 +308,12 @@
                                 // widgets on the map:
                                 gv_options.zoom_control = 'small'; // 'auto'|'large'|'small'|'none'
                                 gv_options.recenter_button = true; // SUSI true|false: is there a 'click to recenter' button above the zoom control?
-                                gv_options.geolocation_control = true; // SUSI true|false; only works on secure servers
+                                gv_options.geolocation_control = false; // SUSI true|false; only works on secure servers
                                 gv_options.geolocation_options = {
-                                    center: true,
+                                    center: false,
                                     zoom: null, //SUSI
-                                    marker: true,
-                                    info_window: true
+                                    marker: false,
+                                    info_window: false
                                 };
                                 gv_options.scale_control = true; // SUSI true|false
                                 gv_options.map_opacity_control = true; // true|false
@@ -692,8 +692,7 @@
                         <details class="img-thumbnail">
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a imaxe da ruta</summary>
                             <a target="_blank" data-title="Ver nunha ventana nova" href="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/aldeas-de-riba-de-san-xian-de-laino.jpg">
-                                <img class="-shadow-new" src="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/in" alt="Imaxe da ruta Aldeas de riba de San Xián de Laíño">
-
+                                <img class="-shadow-new" src="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/aldeas-de-riba-de-san-xian-de-laino.jpg" alt="Imaxe da ruta Aldeas de riba de San Xián de Laíño">
                             </a>
                         </details>
                     </div>
@@ -718,7 +717,7 @@
                         <div class="datos-ruta animated bounceInLeft">
                             <div class="datos-ruta-head">
                                 <h3> <span> <i class="fa fa-asterisk"></i> Datos da Ruta</span>
-                                    Aldeas de riba de San Xián de Laíño
+                                    Dos Días Olvidados
                                 </h3>
                             </div>
                             <ul class="datos-ruta list-unstyled">
@@ -728,19 +727,19 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-route"> </i> Distancia:
-                                    <span>8,41 km</span>
+                                    <span>9,52 km</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-mountain "></i> Desnivel:
-                                    <span>219 m</span>
+                                    <span>120 m</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-ruler"></i> Altitude máxima:
-                                    <span>155 m</span>
+                                    <span>70 m</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-ruler fa-rotate-90"></i> Altitude mínima:
-                                    <span>40 m</span>
+                                    <span>-6 m</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-map"></i> Tipo de roteiro:
@@ -775,7 +774,7 @@
                                 <h3> <span> <i class="fa fa-asterisk"></i> Meteoroloxía na Ruta</span> </h3>
                             </div>
                             <ul class="lendas-ruta list-unstyled">
-                                <li> <i class="fa fa-link"></i> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
+                                <li> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
                             </ul>
                         </div>
                     </div>
