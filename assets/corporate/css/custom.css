@@ -1311,10 +1311,8 @@ RGB(65, 176, 110)
 
  .gv_marker_info_window a:hover i {
      /* enlaces do pop-up */
-
      color: #e28743 !important;
      border: 1px solid blue;
-
  }
 
  .gv_marker_info_window .red-link {
