@@ -1276,28 +1276,45 @@ RGB(65, 176, 110)
      width: auto !important;
      height: auto;
      float: left;
- }
 
- .gv_marker_info_window p,
- .gv_marker_info_window a {
-     /* 	width: 50%;*/
-     font-size: .8em;
      color: #3f5862 !important;
      font-weight: normal !important;
      position: relative;
      clear: both;
  }
 
- .gv_marker_info_window a,
  .gv_marker_info_window i {
      /* imaxes do pop-up */
-     padding: .5em;
-     /* 	display: block;*/
-     font-size: .8em;
+     padding: .1em;
+     font-size: 1.2em;
      color: #3f5862 !important;
-     /* 	text-align: center !important;
- 	*/
      z-index: 1000;
+ }
+
+ .gv_marker_info_window a {
+     /* enlaces do pop-up */
+     padding: 0;
+     font-size: .2em;
+     color: #3f5862 !important;
+     z-index: 1000;
+     font-weight: 500 !important;
+
+ }
+
+ .gv_marker_info_window a:hover {
+     /* enlaces do pop-up */
+     padding: 0;
+     font-size: inherit;
+     color: #e28743 !important;
+     border: 1px solid blue;
+ }
+
+ .gv_marker_info_window a:hover i {
+     /* enlaces do pop-up */
+
+     color: #e28743 !important;
+     border: 1px solid blue;
+
  }
 
  .gv_marker_info_window .red-link {
@@ -1320,11 +1337,6 @@ RGB(65, 176, 110)
      font-weight: 700 !important;
  }
 
- .gv_marker_info_window a:hover {
-     /* imaxes do pop-up */
-     font-weight: 700 !important;
-     color: #e28743 !important;
- }
 
  .gv_marker_info_window .fonte {
      /* imaxes do pop-up */
@@ -1335,6 +1347,7 @@ RGB(65, 176, 110)
 
  .gv_crosshair {
      cursor: grab !important;
+     display: none;
  }
 
  /* creditos do mapa, footer do mapa */
@@ -1531,6 +1544,11 @@ RGB(65, 176, 110)
      font-size: 1em;
      padding: 7px 15px;
      border-bottom: 1px solid #ccc;
+ }
+
+ .datos-ruta span {
+     padding: .5em;
+     font-weight: 600;
  }
 
  .datos-ruta i {
