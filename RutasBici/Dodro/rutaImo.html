@@ -80,7 +80,7 @@
                             <li><a href="../../Flora/Galeria_Flora_plantilla.html">Flores</a></li>
                             <li><a href="#">Árbores</a></li>
                             <li><a href="#">Arbustos</a></li>
-                            <li><a href="#">Liques</a></li>
+                            <li><a href="#">Liquens</a></li>
                             <li><a href="#">Gramíneas</a></li>
                             <li><a href="#">Acuáticas</a></li>
                         </ul>
@@ -259,9 +259,9 @@
 			gv_options.map_type = 'GV_OSM', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD';  // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
 			gv_options.map_opacity = 1.00;  // number from 0 to 1
 			gv_options.full_screen = false;  // true|false: should the map fill the entire page (or frame)?
-			gv_options.width = 700;  // width of the map, in pixels
-			gv_options.height = 599;  // height of the map, in pixels
-			
+//			gv_options.width = 700;  // width of the map, in pixels
+//			gv_options.height = 599;  // height of the map, in pixels
+//			
 			gv_options.map_div = 'gmap_div';  // the name of the HTML "div" tag containing the map itself; usually 'gmap_div'
 			gv_options.doubleclick_zoom = true;  // true|false: zoom in when mouse is double-clicked?
 			gv_options.doubleclick_center = true;  // true|false: re-center the map on the point that was double-clicked?
@@ -291,8 +291,8 @@
 			gv_options.measurement_options = { visible:false, distance_color:'', area_color:'' };
 			gv_options.crosshair_hidden = true;  // true|false: hide the crosshair initially?
 			gv_options.mouse_coordinates = false;  // true|false: show a "mouse coordinates" box?
-			gv_options.utilities_menu = { 'maptype':true, 'opacity':false, 'measure':false, 'geolocate':true, 'profile':true };
-            gv_options.utilities_menu.collapsible = true;
+			gv_options.utilities_menu = { 'maptype':false, 'opacity':false, 'measure':false, 'geolocate':false, 'profile':false };
+            gv_options.utilities_menu = false;
 			gv_options.allow_export = false;  // true|false
 			
 			gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
@@ -306,7 +306,7 @@
 			gv_options.track_tooltips = false; // true|false: should the name of a track appear on the map when you mouse over the track itself?
 			gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
 			  gv_options.tracklist_options.enabled = true;  // true|false: enable or disable the tracklist altogether
-			  gv_options.tracklist_options.position = ['RIGHT_TOP',4,32];  // [Google anchor name, relative x, relative y]
+			  gv_options.tracklist_options.position = ['LEFT_BOTTOM',0,0];  // [Google anchor name, relative x, relative y]
 			 // gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
 			  //gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
 			  //gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
@@ -330,7 +330,7 @@
 			gv_options.marker_tooltips = true; // do the names of the markers show up when you mouse-over them?
 			gv_options.marker_shadows = true; // true|false: do the standard markers have "shadows" behind them?
 			gv_options.marker_link_target = '_blank'; // the name of the window or frame into which markers' URLs will load
-			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
+//			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
 			gv_options.thumbnail_width = 0;  // in pixels, the width of the markers' thumbnails (can be overridden by 'thumbnail_width' in individual markers)
 			gv_options.photo_size = [0,0];  // in pixels, the size of the photos in info windows (can be overridden by 'photo_width' or 'photo_size' in individual markers)
 			gv_options.hide_labels = false;  // true|false: hide labels when map first loads?
@@ -404,7 +404,7 @@
 				// Track #1
 				t = 1; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'Ruta por IMO - Dodro (brañas de Laiño, montes, Molino, Petro...'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#e60000'; trk[t].info.width = 3; trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#e60000'; trk[t].info.width = 6; trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#e60000'; trk[t].info.fill_opacity = 0;
 				trk[t].info.elevation = true;
 				trk[t].segments.push({ color:'#e62900', points:[ [42.711997,-8.723744,12.478], [42.711635,-8.723746,13.486] ] });
@@ -634,12 +634,12 @@
 				t = 1; GV_Add_Track_to_Tracklist({bullet:'- ',name:trk[t].info.name,desc:trk[t].info.desc,color:trk[t].info.color,number:t});
 				
 				
-				GV_Draw_Marker({lat:42.7074780,lon:-8.7195060,alt:3.046,name:'Brañas de Laiño',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas1.jpg" alt="Brañas de Laiño"><p>Localizadas no márgen do río Ulla, as Brañas de Laíño (Dodro) representan unha das maiores zonas húmidas de Galicia. Historicamente o seu uso foi comunal, aínda que na actualidade non son recoñecidas oficialmente como espazo comunal, nin teñen actualmente manexo por parte dos veciños.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7074780,lon:-8.7195060,alt:3.046,name:'INICIO DA RUTA, Brañas de Laiño',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas1.jpg" alt="Brañas de Laiño"><p>Localizadas no márgen do río Ulla, as Brañas de Laíño (Dodro) representan unha das maiores zonas húmidas de Galicia. Historicamente o seu uso foi comunal, aínda que na actualidade non son recoñecidas oficialmente como espazo comunal, nin teñen actualmente manexo por parte dos veciños.</p>',color:'',icon:'../../imaxes/iconos/icon_inicio_rutas.png'});
 				//GV_Draw_Marker({lat:42.7084920,lon:-8.7166630,alt:2.859,name:'Brañas de Laiño 2',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas2.jpg"><p>É un cruceiro de capela datado en 1672 o que o fai un dos máis antigos de Galicia. Consta dunha columna ancha coroada coa imaxe de Jesús. Á beira atópase unha zona recreativa con mesas, bancos e área infantil.<p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7103760,lon:-8.7152030,alt:3,name:'Brañas de Laiño 3',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas3.jpg"><p>É un cruceiro de capela datado en 1672 o que o fai un dos máis antigos de Galicia. Consta dunha columna ancha coroada coa imaxe de Jesús. Á beira atópase unha zona recreativa con mesas, bancos e área infantil.<p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7118420,lon:-8.7130230,alt:3.443,name:'Brañas de Laiño 4',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas4.jpg"><p>É un cruceiro de capela datado en 1672 o que o fai un dos máis antigos de Galicia. Consta dunha columna ancha coroada coa imaxe de Jesús. Á beira atópase unha zona recreativa con mesas, bancos e área infantil.<p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7098440,lon:-8.7064700,alt:2.602,name:'Brañas de Laiño 5',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/branhas5.jpg"><p>É un cruceiro de capela datado en 1672 o que o fai un dos máis antigos de Galicia. Consta dunha columna ancha coroada coa imaxe de Jesús. Á beira atópase unha zona recreativa con mesas, bancos e área infantil.<p>',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7175050,lon:-8.6940260,alt:36.032,name:'Granxa-Fonte Primeiral',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/granxa.jpg" alt="Granxa"><p><a href="https://www.google.es/maps/place/@42.7173566,-8.6946304,295m/data=!3m1!1e3!4m4!3m3!8m2!3d42.717505!4d-8.694026?hl=en&entry=ttu">42.7175050,-8.6940260</a></p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7175050,lon:-8.6940260,alt:36.032,name:'Granxa-Fonte Primeiral',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/granxa.jpg" alt="Granxa"><p><a href="https://www.google.es/maps/place/@42.7173566,-8.6946304,295m/data=!3m1!1e3!4m4!3m3!8m2!3d42.717505!4d-8.694026?hl=en&entry=ttu" target="_blank"><i class="fa fa-globe"></i> 42.7175050,-8.6940260</a></p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7321090,lon:-8.7044570,alt:120.547,name:'Aparcamiento area Lecer',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/areaLecer.jpg"><p>...<p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7328160,lon:-8.7055120,alt:122.413,name:'Área recreativa da Fonte Primeiral',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/lecer2.jpg" <alt="Área recreativa da Fonte Primeiral"><p>Situada na estrada que vai de Laíño a Rois, onde antano se celebraba a Festa do Carneiro</p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7335090,lon:-8.7092050,alt:156.644,name:'Tramo 40m sin sendero',desc:'',color:'',icon:''});
@@ -648,7 +648,7 @@
 				GV_Draw_Marker({lat:42.7152740,lon:-8.7536060,alt:160.982,name:'Horreos y Lavadero en Teaio',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/teaio.jpg" alt="Horreos y Lavadero en Teaio"><p>Localizado no interior da finca privada e pechada pertencente á familia do Macanudo. Neste mesma propiedade levántase outro hórreo e un pombal.Segundo a ficha do Inventario de Patrimonio, é de 1878, segundo reza no seu frontispicio sur, ano que coincide coa extensión do cultivo do millo na parroquia.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7194350,lon:-8.7405470,alt:181.067,name:'Area lecer e Cruz de Avelán',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/cruz.jpg" alt="Area lecer e Cruz de Avelán"><p>A Cruz de Avelán é un cruceiro de capela datado en 1672, un dos máis antigos de toda Galicia. Consta dunha columna ancha coroada coa imaxe de Jesús. Á beira atópase unha zona recreativa con mesas, bancos e área infantil, o coñecido como Parque de Avelán.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7106530,lon:-8.7338310,alt:135.375,name:'Petroglifos',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/petroglifos.jpg" alt="Petroglifos"><p>Grupo de varios gravados rupestres en seis penedos nas faldras do monte Padronelo e a 200 m. do núcleo da aldea de Imo. Estes gravados son zoomorfos, circulos concéntricos, cruces e coviñas.Recentemente levouse a cabo unha intervención de limpeza na que se descubriron tres novos gravados.</p>',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7129960,lon:-8.7235800,alt:14,name:'Horreos de Imo',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/horreo.jpg" alt="Horreos de Imo"><p>Tamén coñecidos como Hórreos da Lavandeira, os hórreos de Imo datan do siglo XVIII. En total son once os hórreos que encontramos enesta zona axardiñada. Son construccións de planta rectangular e de pedra levantadas en vanos, estreitos e con cuberta de taja do país a duas aguas adornada con pináculos e cruces. Os pechees laterales dos hórreos son de listons de madeira separados por columnas de pedra. A este tipo de hórreos coñeceselles como tipo Mahía.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7129960,lon:-8.7235800,alt:14,name:'FIN DA RUTA, Horreos de Imo',desc:'<img src="../../imaxes/img_dodro/bicis/branhas/horreo.jpg" alt="Horreos de Imo"><p>Tamén coñecidos como Hórreos da Lavandeira, os hórreos de Imo datan do siglo XVIII. En total son once os hórreos que encontramos enesta zona axardiñada. Son construccións de planta rectangular e de pedra levantadas en vanos, estreitos e con cuberta de taja do país a duas aguas adornada con pináculos e cruces. Os pechees laterales dos hórreos son de listons de madeira separados por columnas de pedra. A este tipo de hórreos coñeceselles como tipo Mahía.</p>',color:'',icon:'../../imaxes/iconos/ubicacion.png'});
 				
 				GV_Finish_Map();
 					
@@ -717,6 +717,33 @@
 								</li>
 
 							</ul>
+                            
+                            <!-- Susi. Engadimos os datos de altitude-colores aquí -->
+				<div id="gv_infobox" class="gv_infobox">
+					<div id="gv_legend_header"><b>Elevation (m)</b></div>
+					<div class="gv_legend_item"><span style="color:#e600e6;">
+							<div class="legend_block" style="background:#e600e6">
+							</div> 62.7 m
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#003ae6;">
+							<div class="legend_block" style="background:#003ae6">
+							</div> 47.4 m
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#00e674;">
+							<div class="legend_block" style="background:#00e674">
+							</div> 32.1
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#ace600;">
+							<div class="legend_block" style="background:#ace600">
+							</div> 16.8
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#e60000;">
+							<div class="legend_block" style="background:#e60000">
+							</div> 1.5
+						</span></div>
+				</div>
+
+
 						</div>
 					</div>
 					<div class="col-md-4">
