@@ -1906,7 +1906,7 @@ RGB(65, 176, 110)
 
  .container-cards .card:hover .face.face2 {
      transform: translateY(0);
-
+     background: #f5f5dc80;
  }
 
  .container-cards .card .face.face2 .content h3 {
