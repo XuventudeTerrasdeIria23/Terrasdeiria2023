@@ -3,7 +3,7 @@
     display: block !important;
     overflow: hidden;
     width: 50vw;
-    height: 100vh;
+    height: 70vw;
     background: url(../../../imaxes/terras.png) no-repeat center;
     background-size: 100%;
     text-align: center;
@@ -32,6 +32,7 @@ input[type=checkbox] + label {
     background: transparent;
 
     transition: transform 1s;
+
 }
 
 /*
