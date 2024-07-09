@@ -79,7 +79,7 @@
                             <li><a href="../../Flora/Galeria_Flora_plantilla.html">Flores</a></li>
                             <li><a href="#">Árbores</a></li>
                             <li><a href="#">Arbustos</a></li>
-                            <li><a href="#">Liques</a></li>
+                            <li><a href="#">Liquens</a></li>
                             <li><a href="#">Gramíneas</a></li>
                             <li><a href="#">Acuáticas</a></li>
                         </ul>
@@ -256,9 +256,9 @@
 			gv_options.map_type = 'GV_OSM', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD'; // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
 			gv_options.map_opacity = 1.00;  // number from 0 to 1
 			gv_options.full_screen = false;  // true|false: should the map fill the entire page (or frame)?
-			gv_options.width = 700;  // width of the map, in pixels
-			gv_options.height = 700;  // height of the map, in pixels
-			
+//			gv_options.width = 700;  // width of the map, in pixels
+//			gv_options.height = 700;  // height of the map, in pixels
+//			
 			gv_options.map_div = 'gmap_div';  // the name of the HTML "div" tag containing the map itself; usually 'gmap_div'
 			gv_options.doubleclick_zoom = true;  // true|false: zoom in when mouse is double-clicked?
 			gv_options.doubleclick_center = true;  // true|false: re-center the map on the point that was double-clicked?
@@ -288,13 +288,13 @@
 			gv_options.measurement_options = { visible:false, distance_color:'', area_color:'' };
 			gv_options.crosshair_hidden = true;  // true|false: hide the crosshair initially?
 			gv_options.mouse_coordinates = false;  // true|false: show a "mouse coordinates" box?
-			gv_options.utilities_menu = { 'maptype':true, 'opacity':false, 'measure':false, 'geolocate':true, 'profile':true };
-            gv_options.utilities_menu.collapsible = true;
+			gv_options.utilities_menu = { 'maptype':false, 'opacity':false, 'measure':false, 'geolocate':false, 'profile':false };
+            gv_options.utilities_menu = false;
 			gv_options.allow_export = false;  // true|false
 			
 			gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
 			  gv_options.infobox_options.enabled = true;  // true|false: enable or disable the info box altogether
-			  gv_options.infobox_options.position = ['LEFT_BOTTOM',3,50];  // [Google anchor name, relative x, relative y]
+			  gv_options.infobox_options.position = ['LEFT_BOTTOM',0,50];  // [Google anchor name, relative x, relative y]
 			  gv_options.infobox_options.draggable = true;  // true|false: can it be moved around the screen?
 			  gv_options.infobox_options.collapsible = true;  // true|false: can it be collapsed by double-clicking its top bar?
 			
@@ -303,7 +303,7 @@
 			gv_options.track_tooltips = false; // true|false: should the name of a track appear on the map when you mouse over the track itself?
 			gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
 			  gv_options.tracklist_options.enabled = true;  // true|false: enable or disable the tracklist altogether
-			  gv_options.tracklist_options.position = ['RIGHT_TOP',4,32];  // [Google anchor name, relative x, relative y]
+			  gv_options.tracklist_options.position = ['LEFT_BOTTOM',0,0];  // [Google anchor name, relative x, relative y]
 			 // gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
 			  //gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
 			 // gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
@@ -327,7 +327,7 @@
 			gv_options.marker_tooltips = true; // do the names of the markers show up when you mouse-over them?
 			gv_options.marker_shadows = true; // true|false: do the standard markers have "shadows" behind them?
 			gv_options.marker_link_target = '_blank'; // the name of the window or frame into which markers' URLs will load
-			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
+//			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
 			gv_options.thumbnail_width = 0;  // in pixels, the width of the markers' thumbnails (can be overridden by 'thumbnail_width' in individual markers)
 			gv_options.photo_size = [0,0];  // in pixels, the size of the photos in info windows (can be overridden by 'photo_width' or 'photo_size' in individual markers)
 			gv_options.hide_labels = false;  // true|false: hide labels when map first loads?
@@ -341,9 +341,9 @@
 			  gv_options.marker_list_options.floating = false;  // is the list a floating box inside the map itself?
 			  gv_options.marker_list_options.position = ['RIGHT_BOTTOM',6,38];  // floating list only: position within map
 			 // gv_options.marker_list_options.min_width = 160; // minimum width, in pixels, of the floating list
-			  gv_options.marker_list_options.max_width = 160;  // maximum width
-			  gv_options.marker_list_options.min_height = 0;  // minimum height, in pixels, of the floating list
-			  gv_options.marker_list_options.max_height = 310;  // maximum height
+//			  gv_options.marker_list_options.max_width = 160;  // maximum width
+//			  gv_options.marker_list_options.min_height = 0;  // minimum height, in pixels, of the floating list
+//			  gv_options.marker_list_options.max_height = 310;  // maximum height
 			  gv_options.marker_list_options.draggable = true;  // true|false, floating list only: can it be moved around the screen?
 			  gv_options.marker_list_options.collapsible = true;  // true|false, floating list only: can it be collapsed by double-clicking its top bar?
 			  gv_options.marker_list_options.include_tickmarks = false;  // true|false: are distance/time tickmarks included in the list?
@@ -415,7 +415,9 @@
 				// Track #1
 				t = 1; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'Ruta da Granxa a Fonte Primeiral'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#e60000'; trk[t].info.width = 3; trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#e60000'; 
+                trk[t].info.width = 6; //susi cambiar ancho da liña do track
+                trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#e60000'; trk[t].info.fill_opacity = 0;
 				trk[t].info.elevation = true;
 				trk[t].segments.push({ color:'#e62500', points:[ [42.717082,-8.694329,31.654], [42.717476,-8.693998,35.406] ] });
@@ -502,7 +504,7 @@
 				t = 1; GV_Add_Track_to_Tracklist({bullet:'- ',name:trk[t].info.name,desc:trk[t].info.desc,color:trk[t].info.color,number:t});
 			
 				//GV_Draw_Marker({lat:42.7170820,lon:-8.6943290,alt:31.654,name:'Escola infantil Galiña Azul',desc:'',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7177740,lon:-8.6940130,alt:38.202,name:'Granxa Cinerxética',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta1.jpg" alt="Granxa Cinerxética"> <p>Comezamos a ruta nos arredores da Paxareira, entre Reboiras e Vigo, onde no 1963 inaugurouse unha granxa cinexética que criaba perdiz vermella, colín de Virxinia, colín de California, faisán común e faisán inglés.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7177740,lon:-8.6940130,alt:38.202,name:'INICIO DA RUTA<br> Granxa Cinerxética',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta1.jpg" alt="Granxa Cinerxética"> <p>Comezamos a ruta nos arredores da Paxareira, entre Reboiras e Vigo, onde no 1963 inaugurouse unha granxa cinexética que criaba perdiz vermella, colín de Virxinia, colín de California, faisán común e faisán inglés.</p>',color:'',icon:'../../imaxes/iconos/icon_inicio_rutas.png'});
 				GV_Draw_Marker({lat:42.7180000,lon:-8.6940058,alt:37.872,name:'Vigo',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta2.jpg" alt="Vigo"> <p>Imos ascendendo polos terreos da Comunidade de Montes Veciñais en man común Balouta e Fontecova.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7191820,lon:-8.6945630,alt:39.506,name:'Traída de auga para o Pazo de Bendaña',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta3.jpg" alt="Traída de auga para o Pazo de Bendaña"> <p>En paralelo ao camiño observamos unha canle labradaen pedra para que a subministración de auga do desaparecido Pazo de Bendaña. Este atopábase na aldea de Vigo e pertencía aos Marqueses de Bendaña</p>',color:'',icon:''});
                 GV_Draw_Marker({lat:42.7209710,lon:-8.6948280,alt:48.789,name:'Fonte do pazo de Bendaña',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta4.jpg" alt="Fonte do pazo de Bendaña"> <p>Preto encontramos a fonte e inicio da citada canle do Pazo de Bendaña.</p>',color:'',icon:''});
@@ -512,7 +514,7 @@
 				GV_Draw_Marker({lat:42.7273420,lon:-8.6987440,alt:130.775,name:'Mámoa da Mina Balouta 2',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta8.jpg" alt="Mámoa da Mina Balouta 2"><p>Nas proximidades localizamos unha segunda mámoa do neolítico. Non está tan alterada como a anterior pero a súa contorna foi repoboada con piñeiros, feito que lle resta visibilidade.</p>',color:'',icon:''});
 			     //GV_Draw_Marker({lat:42.7254910,lon:-8.6980640,alt:139.294,name:'Foto',desc:'',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7251720,lon:-8.6969540,alt:134.265,name:'Foto',desc:'',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7231770,lon:-8.6972390,alt:134.966,name:'Panorámica do Val do Ulla',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta9.jpg" alt="Panorámica do Val do Ulla"><p>Antes de descender ata o punto de orixe divisamos a beleza do Val do río Ulla desde o alto.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7231770,lon:-8.6972390,alt:134.966,name:'FIN DA RUTA <br>Panorámica do Val do Ulla',desc:'<img src="../../imaxes/img_dodro/bicis/granxa-FontePrimeiral/ruta9.jpg" alt="Panorámica do Val do Ulla"><p>Antes de descender ata o punto de orixe divisamos a beleza do Val do río Ulla desde o alto.</p>',color:'',icon:'../../imaxes/iconos/ubicacion.png'});
 				
 				GV_Finish_Map();
 					
@@ -582,6 +584,30 @@
 								</li>
 
 							</ul>
+                            <div id="gv_infobox" class="gv_infobox">
+                        <div id="gv_legend_header"><b>Elevation (m)</b></div>
+					   <div class="gv_legend_item"><span style="color:#e600e6;">
+				            <div class="legend_block" style="background:#e600e6">
+							</div> 62.7 m
+						      </span></div>
+					<div class="gv_legend_item"><span style="color:#003ae6;">
+							<div class="legend_block" style="background:#003ae6">
+							</div> 47.4 m
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#00e674;">
+							<div class="legend_block" style="background:#00e674">
+							</div> 32.1
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#ace600;">
+							<div class="legend_block" style="background:#ace600">
+							</div> 16.8
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#e60000;">
+							<div class="legend_block" style="background:#e60000">
+							</div> 1.5
+						</span></div>
+				</div>
+
 						</div>
 					</div>
 					<div class="col-md-4">

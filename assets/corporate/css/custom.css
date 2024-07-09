@@ -966,9 +966,9 @@ RGB(65, 176, 110)
 
  #gmap_div .gv_infobox {
      /* cadro lenda altitud */
-     font: 5em 'Open Sans', sans-serif;
+     font: 2em 'Open Sans', sans-serif;
      border: solid #ccc 1px;
-     background-color: beige;
+     background-color: #fff;
      padding: .5em;
      overflow: auto;
  }
@@ -1352,13 +1352,11 @@ RGB(65, 176, 110)
      padding: 0;
      font-size: inherit;
      color: #e28743 !important;
-     border: 1px solid blue;
  }
 
  .gv_marker_info_window a:hover i {
      /* enlaces do pop-up */
      color: #e28743 !important;
-     border: 1px solid blue;
  }
 
  .gv_marker_info_window .red-link {

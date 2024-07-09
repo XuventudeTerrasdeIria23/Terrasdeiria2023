@@ -79,7 +79,7 @@
                             <li><a href="../../Flora/Galeria_Flora_plantilla.html">Flores</a></li>
                             <li><a href="#">Árbores</a></li>
                             <li><a href="#">Arbustos</a></li>
-                            <li><a href="#">Liques</a></li>
+                            <li><a href="#">Liquens</a></li>
                             <li><a href="#">Gramíneas</a></li>
                             <li><a href="#">Acuáticas</a></li>
                         </ul>
@@ -287,8 +287,8 @@
 			gv_options.measurement_options = { visible:false, distance_color:'', area_color:'' };
 			gv_options.crosshair_hidden = true;  // true|false: hide the crosshair initially?
 			gv_options.mouse_coordinates = false;  // true|false: show a "mouse coordinates" box?
-			gv_options.utilities_menu = { 'maptype':true, 'opacity':false, 'measure':false, 'geolocate':true, 'profile':true };
-            gv_options.utilities_menu.collapsible = true;
+			gv_options.utilities_menu = { 'maptype':false, 'opacity':false, 'measure':false, 'geolocate':false, 'profile':false };
+            gv_options.utilities_menu = false;
 			gv_options.allow_export = false;  // true|false
 			
 			gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
@@ -302,7 +302,7 @@
 			gv_options.track_tooltips = false; // true|false: should the name of a track appear on the map when you mouse over the track itself?
 			gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
 			  gv_options.tracklist_options.enabled = true;  // true|false: enable or disable the tracklist altogether
-			  gv_options.tracklist_options.position = ['RIGHT_TOP',4,32];  // [Google anchor name, relative x, relative y]
+			  gv_options.tracklist_options.position = ['LEFT_BOTTOM',0,0];  // [Google anchor name, relative x, relative y]
 			 // gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
 			 // gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
 			 // gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
@@ -326,7 +326,7 @@
 			gv_options.marker_tooltips = true; // do the names of the markers show up when you mouse-over them?
 			gv_options.marker_shadows = true; // true|false: do the standard markers have "shadows" behind them?
 			gv_options.marker_link_target = '_blank'; // the name of the window or frame into which markers' URLs will load
-			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
+//			gv_options.info_window_width = '150';  // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
 			gv_options.thumbnail_width = 0;  // in pixels, the width of the markers' thumbnails (can be overridden by 'thumbnail_width' in individual markers)
 			gv_options.photo_size = [0,0];  // in pixels, the size of the photos in info windows (can be overridden by 'photo_width' or 'photo_size' in individual markers)
 			gv_options.hide_labels = false;  // true|false: hide labels when map first loads?
@@ -399,7 +399,7 @@
 				// Track #1
 				t = 1; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'Ruta \'Inchadiña Branca Vela\' polas Veigas de Lestrobe'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#e60000'; trk[t].info.width = 3; trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#e60000'; trk[t].info.width =6; trk[t].info.opacity = 1; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#e60000'; trk[t].info.fill_opacity = 0;
 				trk[t].info.elevation = true;
 				trk[t].segments.push({ color:'#00e65f', points:[ [42.717146,-8.683028,7.802], [42.716012,-8.682186,2.31] ] });
@@ -470,7 +470,7 @@
 				t = 1; GV_Add_Track_to_Tracklist({bullet:'- ',name:trk[t].info.name,desc:trk[t].info.desc,color:trk[t].info.color,number:t});
 				
 				
-				GV_Draw_Marker({lat:42.7171330,lon:-8.6830300,alt:7.816,name:'Inicio da ruta',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe1.jpg" alt="Inicio da ruta"><p>Iniciamos o percorrido nunha pista forestal, próxima ao Campo do Bosque, que nos facilitará o acceso á zona das Brañas.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7171330,lon:-8.6830300,alt:7.816,name:'INICIO DA RUTA',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe1.jpg" alt="Inicio da ruta"><p>Iniciamos o percorrido nunha pista forestal, próxima ao Campo do Bosque, que nos facilitará o acceso á zona das Brañas.</p>',color:'',icon:'../../imaxes/iconos/icon_inicio_rutas.png'});
 				GV_Draw_Marker({lat:42.7148000,lon:-8.6793380,alt:2.28,name:'Camiño en forma de túnel',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe2.jpg" alt="Camiño en forma de túnel"><p>A medida que nos achegamos á ribeira a vexetación é cada vez máis frondosa e adopta unha forma de bóveda. Nas Brañas podemos atopar bosques aluviais de ameneiros, salgueiros, freixos, sabugueiros, espadanas, xuncos, tamén herba salgueira, mentraste, narciso ou xaras.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7148360,lon:-8.6772470,alt:2.462,name:'Saída ó mar',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe3.jpg" alt="Saída ao mar"><p>Pronto albitamos as augas do río. Esta zona húmida do esteiro do Ulla, forma parte do Sistema fluvial Ulla-Deza, declarado ZEC (Zona de Especial Conservación) e tamén Lugar de Interese Comunitario (LIC), recollido na Rede Natura 2000 da Consellería de Medio Ambiente.</p>',color:'',icon:''});
 				//GV_Draw_Marker({lat:42.7155020,lon:-8.6788620,alt:2.019,name:'Camiño entre salgueiros',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe4.jpg"><p>...<p>',color:'',icon:''});
@@ -478,14 +478,14 @@
 				//GV_Draw_Marker({lat:42.7190970,lon:-8.6767300,alt:2.636,name:'Camiño sin salida',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe6.jpg"><p>...<p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7189700,lon:-8.6738430,alt:1.223,name:'Punto de Recepción do Concello de Dodro',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe7.jpg" alt="Punto de Recepción do Concello de Dodro"><p>A Asociación Cultural DORNA na homenaxe a Rosalía de Castro suben polo noso Ulla ata Padrón e paran no Agro das Silvas para que Dodro os reciba.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7201760,lon:-8.6730980,alt:3,name:'Foto de Eduardo Rivo',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe8.jpg" alt="Foto de Eduardo Rivo"<p>Neste lugar Eduardo fixo esta foto xa mítica. ¡Qué hinchadiña branca vela antre os millos corre soa, misteriosa pura estrela! Dille o vento en torno dela: "Palomiña, ¡voa!, ¡voa!"</p>',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7221940,lon:-8.6653580,alt:2.158,name:'Río Sar',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe9.jpg" alt="Rio Sar"><p>Este é o tramo do Sar que se modificou nos anos sesenta e que trancorre polo Concello de Padrón.</p>',color:'',icon:''});
+//				GV_Draw_Marker({lat:42.7221940,lon:-8.6653580,alt:2.158,name:'Río Sar',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe9.jpg" alt="Rio Sar"><p>Este é o tramo do Sar que se modificou nos anos sesenta e que trancorre polo Concello de Padrón.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7218830,lon:-8.6661770,alt:3.105,name:'Río Sar Vello',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe10.jpg" alt="Rio Sar vello"><p>O curso do río Sar modificouse nos anos sesenta para poñelo recto. Aquí atopamos o antigo leito ao que facía referencia o dito: "é máis retorcido que o río de Padrón" debido aos seus meandros. Aínda, hoxe, pode distinguirse grazas á vexetación de ribeira que o cobre. O vello curso do río Sar é o límite natural que separa os Concellos de Padrón e Dodro.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7197850,lon:-8.6711460,alt:1.129,name:'Desembocadura do Sar Vello',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe11.jpg" alt="Desembocadura do Sar Vello"><p>Preto resultará doado localizar o punto da desembocadura do Sar vello. Este tramo da ruta transcorre polas terras do veciño municipio de Padrón.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7197850,lon:-8.6711460,alt:1.129,name:'O Ulla',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe12.jpg" alt="O Ulla"><p>A desembocadura do Ulla deíxanos o soño do mar da Arousa gravado na retina.</p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7198470,lon:-8.6710470,alt:1.529,name:'A Foz',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe13.jpg" alt="A Foz"><p>O Concello de Padrón dispuxo, hai uns anos, unha área recreativa para o desfrute da paisaxe e natureza que brinda o espazo no que as augas do Ulla e do seu afluente, o Sar, converxen. Aquí é habitual atoparnos con profesionais ou persoas afeccionadas ao mundo da ornitoloxía, observando as múltiples especies de aves que aniñan na ribeira.</p>',color:'',icon:''});
-				//GV_Draw_Marker({lat:42.7210620,lon:-8.6682850,alt:4.442,name:'O novo Sar',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe14.jpg"><p>...<p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7210620,lon:-8.6682850,alt:4.442,name:'O novo Sar',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe9.jpg" alt="Rio Sar"><p>Este é o tramo do Sar que se modificou nos anos sesenta e que trancorre polo Concello de Padrón.<p>',color:'',icon:''});
 				GV_Draw_Marker({lat:42.7236640,lon:-8.6685350,alt:2.81,name:'A banda de Lestrobe',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe15.jpg"> alt="A banda de Lestrobe"><p>Xa decía Rosalía de Castro en Cantares Gallegos: “Como chove miudiño, como miudiño chove; como chove miudiño pola banda de Laíño, pola banda de Lestrobe.” Logo de camiñar estes prados fértiles remataremos a nosa andaina preto do Campo do Bosque.</p>',color:'',icon:''});
-				GV_Draw_Marker({lat:42.7176880,lon:-8.6833240,alt:10.61,name:'Final',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe16.jpg" alt="Final"><p>Se continuamos 100 metros máis podemos rematar na Área Recreativa do Bosque.</p>',color:'',icon:''});
+				GV_Draw_Marker({lat:42.7176880,lon:-8.6833240,alt:10.61,name:'FIN DA RUTA',desc:'<img src="../../imaxes/img_dodro/bicis/branca_vela/imaxe16.jpg" alt="Final"><p>Se continuamos 100 metros máis podemos rematar na Área Recreativa do Bosque.</p>',color:'',icon:'../../imaxes/iconos/ubicacion.png'});
 				
 				GV_Finish_Map();
 					
@@ -535,6 +535,8 @@
 									<span>Circular</span>
 								</li>
 							</ul>
+                          
+			
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -553,6 +555,29 @@
 								</li>
 
 							</ul>
+                            <div id="gv_infobox" class="gv_infobox">
+                        <div id="gv_legend_header"><b>Elevation (m)</b></div>
+					   <div class="gv_legend_item"><span style="color:#e600e6;">
+				            <div class="legend_block" style="background:#e600e6">
+							</div> 62.7 m
+						      </span></div>
+					<div class="gv_legend_item"><span style="color:#003ae6;">
+							<div class="legend_block" style="background:#003ae6">
+							</div> 47.4 m
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#00e674;">
+							<div class="legend_block" style="background:#00e674">
+							</div> 32.1
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#ace600;">
+							<div class="legend_block" style="background:#ace600">
+							</div> 16.8
+						</span></div>
+					<div class="gv_legend_item"><span style="color:#e60000;">
+							<div class="legend_block" style="background:#e60000">
+							</div> 1.5
+						</span></div>
+				</div>
 						</div>
 					</div>
 					<div class="col-md-4">
