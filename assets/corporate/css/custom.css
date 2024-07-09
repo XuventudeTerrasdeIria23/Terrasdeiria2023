@@ -84,6 +84,10 @@ RGB(65, 176, 110)
      transform: translateY(-50%);
  }
 
+ .xsmall {
+     font-size: .6em;
+ }
+
  .small {
      font-size: .8em;
  }
@@ -168,7 +172,6 @@ RGB(65, 176, 110)
      font-size: .7em;
      font-weight: normal;
  }
-
 
  /* imaxes */
 
@@ -353,7 +356,8 @@ RGB(65, 176, 110)
 
 
 
- /* pestañas para info concelo e parroquias */
+ /* pestañas para info concello e parroquias */
+
  .nav-tabs li {
      min-width: 15%;
  }
@@ -366,18 +370,31 @@ RGB(65, 176, 110)
  .block-center {
      /* 	border-bottom: 1px solid rgba(63, 88, 98, 0.2);
  	*/
-     padding: .5em;
+     padding: .2em;
      display: flex;
      justify-content: space-between;
      align-content: space-between;
+     align-items: center;
+
  }
 
  .block-center .service-box-v2 {
+     padding: .2em 0em 0em 0em;
 
-     padding: .5em;
-     display: flex;
-     justify-content: space-between;
-     align-content: space-between;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+ }
+
+ .block-center .service-box-v2 h2 {
+     padding: 0em;
+     text-align: center;
+     line-height: normal;
+ }
+
+ .block-center .service-box-v2:hover h2 {
+     font-weight: 100;
+     border-radius: .2em !important;
  }
 
  /* figure */
@@ -595,14 +612,24 @@ RGB(65, 176, 110)
      animation-delay: calc(-0.8*var(--d));
  }
 
+ .carousel-inner a.carousel-btn-red {
+     font-weight: normal;
+     padding: .3em;
+     border-radius: .2em !important;
+     box-shadow: 0px 2px 3px 2px rgba(226, 135, 67, 0.5);
 
+ }
 
- /* Obradoiros ANnteriores INDEX */
+ /* Obradoiros Anteriores INDEX */
  .btn-23 h2 {
      background: #e28743;
      color: #fff;
      margin: .2em 0em;
      padding: .1em .5em;
+ }
+
+ .anteiores h2 {
+     background: #e2874380;
  }
 
  #obradoiros-anteriores {
@@ -655,13 +682,6 @@ RGB(65, 176, 110)
      border-right: 1px solid rgba(91, 91, 91, 0.2);
  }
 
- /*
- footer.footer-light {
-
- 	background: #fcfafb;
- 	border: 1px solid rgba(91, 91, 91, 0.2);
- }
-*/
 
  footer.footer-light {
      width: 100%;

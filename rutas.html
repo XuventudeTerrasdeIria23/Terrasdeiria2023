@@ -41,6 +41,19 @@
     <title>Xuventude Terra de Iria 2023</title>
 
     <link rel="shortcut icon" href="favicon.ico">
+
+
+    <script languaje="Javascript">
+        document.write('<style type="text/css">div.oculta{display: none;}</style>');
+
+        function MostrarOcultar(div, enlace) {
+            if (document.getElementById) {
+                var aux = document.getElementById(div).style;
+                aux.display = aux.display ? "" : "block";
+            }
+        }
+
+    </script>
 </head>
 <!-- Head FIN -->
 
@@ -244,9 +257,21 @@
                             <!-- dodro -->
                             <div class="col-md-3 col-sm-3 animated fadeInDown">
                                 <div class="service-box-v2 animated slideInLeft">
-                                    <a href="#">
+                                    <a href="javascript:MostrarOcultar('texto2');">
                                         <h2>Dodro <sup><i class="fa fa-leaf verde"></i></sup></h2>
                                     </a>
+                                </div>
+                                <div class="oculta animated fadeInDown" id="texto2">
+                                    <a hre="RutasSenderismo/dodro/ruta-aldeas-de-san-xian.html">Aldeas de San Xián</a> <i class="fa fa-leaf xsmall verde "></i>
+                                    <a href="RutasSenderismo/dodro/ruta-aldeas-do-monte.html">Aldeas do Monte</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-branhas.html">As Brañas</a>
+                                    <i class="fa fa-leaf xsmall verde"></i> <a href="RutasSenderismo/dodro/ruta-caminho-real.html">Camiño Real</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-cicular-lestrobe.html">Circular Lestrobe</a> <i class="fa fa-leaf xsmall verde"></i><a href="RutasSenderismo/dodro/ruta-fonte-primeiral.html">Fonte Primeiral</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-inchadinha.html">Inchadiña Branca Vela</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-os-dias-olvidados.html">Os días olvidados</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-pensa-nao.html">Pensa nao</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/dodro/ruta-pozo-baston-MIRAR.html">Pozo Bastón</a> <i class="fa fa-leaf xsmall verde"></i>
+                                    <a href="RutasSenderismo/padron/ruta-rosalia-nos-caminos2.html">Rosalia nos Camiños</a>
                                 </div>
                             </div>
                             <!-- padrón -->
@@ -281,15 +306,15 @@
                                     <li><a data-toggle="tab" href="#tab-2">Boas prácticas</a></li>
                                     <li><a data-toggle="tab" href="#tab-3">Equipamento</a></li>
                                     <li><a data-toggle="tab" href="#tab-4">Accesorios básicos</a></li>
+                                    <li><a data-toggle="tab" href="#tab-5">Sinalización</a></li>
+
                                 </ul>
 
                                 <div class="tab-content">
                                     <!-- ****tab-1***** -->
                                     <div id="tab-1" class="tab-pane row fade active in">
                                         <div class="col-md-3 col-sm-3">
-                                            <a data-rel="fancybox-button" title="imaxe de sendeirismo" class="fancybox-button" href="imaxes/rutas/fotoruta-1.png">
-                                                <img alt="imaxe de sendeirismo" src="imaxes/rutas/fotoruta-1.png" class="img-responsive">
-                                            </a>
+                                            <img alt="imaxe de sendeirismo" src="imaxes/rutas/fotoruta-1.png" class="img-responsive">
                                         </div>
                                         <div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
                                             <div class="listas-anidadas  margin-bottom-10">
@@ -307,9 +332,7 @@
                                     <!-- ****tab-2***** -->
                                     <div id="tab-2" class="tab-pane row fade  in">
                                         <div class="col-md-3 col-sm-3">
-                                            <a data-rel="fancybox-button" title="imaxe de sendeirismo" class="fancybox-button" href="imaxes/rutas/senderismo-1.jpg">
-                                                <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-1.jpg" class="img-responsive">
-                                            </a>
+                                            <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-1.jpg" class="img-responsive">
                                         </div>
                                         <div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
                                             <div class="listas-anidadas  margin-bottom-10">
@@ -333,9 +356,7 @@
                                     <!-- ****tab-3***** -->
                                     <div id="tab-3" class="tab-pane row fade  in">
                                         <div class="col-md-3 col-sm-3">
-                                            <a data-rel="fancybox-button" title="imaxe de sendeirismo" class="fancybox-button" href="imaxes/rutas/senderismo-2.jpg">
-                                                <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-2.jpg" class="img-responsive">
-                                            </a>
+                                            <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-2.jpg" class="img-responsive">
                                         </div>
                                         <div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
                                             <div class="listas-anidadas  margin-bottom-10">
@@ -353,9 +374,7 @@
                                     <!-- ****tab-4***** -->
                                     <div id="tab-4" class="tab-pane row fade  in">
                                         <div class="col-md-3 col-sm-3">
-                                            <a data-rel="fancybox-button" title="imaxe de sendeirismo" class="fancybox-button" href="imaxes/rutas/senderismo-4.jpg">
-                                                <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-4.jpg" class="img-responsive">
-                                            </a>
+                                            <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-4.jpg" class="img-responsive">
                                         </div>
                                         <div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
                                             <div class="listas-anidadas  margin-bottom-10">
@@ -373,16 +392,25 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- ****tab-5***** -->
+                                    <div id="tab-5" class="tab-pane row fade  in">
+                                        <div class="col-md-9 col-sm-9 tab-content animated slideInLeft">
+                                            <a data-rel="fancybox-button" title="imaxe de sendeirismo" class="fancybox-button" href="imaxes/rutas/senderismo-4.jpg">
+                                                <img alt="imaxe de sendeirismo" src="imaxes/rutas/senderismo-4.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- pestanas INICIO -->
-                            <p class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Senderismo">wikipedia</a> | <a href="https://pixabay.com/es/photos/search/senderismo/">pixabay.com</a> | <a href="https://xn--outletmontaa-khb.com/blog/senalizacion-de-senderos-todo-lo-que-debes-saber/">outletmontaña.com
-                                </a> </p>
                         </div>
+                        <!-- pestanas INICIO -->
+                        <p class="fonte">Fonte de textos e imaxes: <a href="https://es.wikipedia.org/wiki/Senderismo">wikipedia</a> | <a href="https://pixabay.com/es/photos/search/senderismo/">pixabay.com</a> | <a href="https://xn--outletmontaa-khb.com/blog/senalizacion-de-senderos-todo-lo-que-debes-saber/">outletmontaña.com
+                            </a> </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- INICIO footer -->
     <footer class="footer-light paused">
