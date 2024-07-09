@@ -737,10 +737,36 @@ RGB(65, 176, 110)
          margin-top: 10%;
      }
 
-     footer .copyright p,
-     footer .copyright p img {
-         width: auto;
+     footer .copyright img#logos-xunta {
+         width: 90vw;
          display: block;
+         height: auto;
+     }
+
+     footer .social-icons {
+         width: 30vw;
+         display: block;
+         height: auto;
+         margin: 0;
+         padding: 0;
+         display: inline-flex;
+         justify-content: center;
+         align-content: center;
+         align-items: left;
+     }
+
+     footer .social-icons ul {
+         width: 95%;
+         margin: 0;
+         padding: 0;
+         height: auto;
+     }
+
+     footer .social-icons-circle li {
+         /*         width: auto;*/
+         margin: 0 auto;
+         padding: 0em;
+         width: auto;
          height: auto;
      }
 
