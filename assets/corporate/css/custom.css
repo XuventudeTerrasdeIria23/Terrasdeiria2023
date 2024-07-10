@@ -191,7 +191,7 @@ RGB(65, 176, 110)
  }
 
  .img-xsmall {
-     width: 5%;
+     width: 6%;
  }
 
  .img-small {
@@ -973,6 +973,11 @@ RGB(65, 176, 110)
      overflow: auto;
  }
 
+ li #gv_infobox {
+     display: inline-flex;
+     font-size: 1em;
+ }
+
  .gv_profile_button {
      /* icono para mostrar altitude */
      /*
@@ -1195,7 +1200,7 @@ RGB(65, 176, 110)
      padding: auto;
      text-align: left !important;
      display: inline-flex !important;
-     font-size: .9em !important;
+     font-size: 1em !important;
  }
 
  .gv_marker_list table td:hover {
@@ -1205,7 +1210,6 @@ RGB(65, 176, 110)
      background-color: #ffffff80;
      box-shadow: 3px 3px 3px rgba(65, 176, 110, 0.7);
  }
-
 
  #gv_marker_list_header::before {
      content: ' ';
@@ -1270,6 +1274,11 @@ RGB(65, 176, 110)
      z-index: 99999999 !important;
      padding: 0 !important;
      overflow: auto !important;
+ }
+
+
+ .gv_marker_info_window_profile {
+     display: none !important;
  }
 
  .gv_marker_info_window {

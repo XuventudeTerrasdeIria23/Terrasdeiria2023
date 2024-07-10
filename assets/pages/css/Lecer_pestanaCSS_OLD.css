@@ -7,12 +7,11 @@
 
 }
 
-.container-tab1 {
+.containter-tab1 {
 	/* section co coontido de cada mes */
 	display: none;
 	padding: 20px 0 0;
 	border-top: 1px solid #ddd;
-	/* border-bottom: 1px solid #E5B700; */
 }
 
 .input-tabMes {

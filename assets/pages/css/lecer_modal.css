@@ -23,7 +23,7 @@
  	z-index: 999999999 !important;
  	display: none;
  	position: relative;
- 	left: 0;
+ 	left: 10%;
  	top: 0;
  	padding: 1em;
  	width: 100%;
@@ -33,7 +33,7 @@
  }
 
  .modal-contido {
- 	margin: auto;
+ 	margin: 0 auto;
  	background-color: #ffffff;
  	position: relative;
  	padding: 1em;
@@ -43,7 +43,7 @@
  	justify-content: center;
  	align-content: center;
  	align-items: center;
- 	/* 	border: 2px solid red;*/
+ 		/* border: 2px solid red; */
  }
 
  .letraspadron {
@@ -68,6 +68,10 @@
 
  li {
  	padding: 0.3em;
+ }
+
+ .containter-tab1 li {
+	border-bottom: 1px solid #E5B700;
  }
 
  .modal-contido2 {
