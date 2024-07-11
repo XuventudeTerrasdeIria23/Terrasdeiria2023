@@ -1,7 +1,0 @@
-Migas_de_pan
-
-<ul class="breadcrumb">
-				<li><a href="../../inicio.html">Inicio</a></li>
-				<li><a href="">Padrón</a></li>
-				<li class="active">Padrón Xacobeo</li>
-</ul>
