@@ -117,10 +117,10 @@
                         </ul>
                     </li> <!-- menu drons fin -->
                     <!-- menu rutas inicio -->
-                    <li class="dropdown">
+                    <li class="active dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="rutas.html">Rutas</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Dodro <span></span></a>
+                            <li class="active2"><a class="dropdown-item" href="#">Dodro <span></span></a>
                                 <ul class="dropdown-menu dropdown-submenu">
                                     <li><a href="ruta-aldeas-de-san-xian.html">Aldeas de San Xián</a></li>
                                     <li><a href="ruta-aldeas-do-monte.html">Aldeas do Monte</a></li>
@@ -277,6 +277,7 @@
                                 gv_options.zoom = 14; // higher number means closer view; can also be 'auto' for automatic zoom/center based on map elements
 
 
+
                                 gv_options.map_type = 'GV_OSM_RELIEF'; // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
                                 gv_options.map_opacity = 1.00; // number from 0 to 1
                                 gv_options.full_screen = false; // true|false: should the map fill the entire page (or frame)?
@@ -284,12 +285,12 @@
                                 //			gv_options.height = 700;  // height of the map, in pixels
 
                                 gv_options.map_div = 'gmap_div'; // the name of the HTML "div" tag containing the map itself; usually 'gmap_div'
-                                gv_options.doubleclick_zoom = false; // SUSI true|false: zoom in when mouse is double-clicked?
+                                gv_options.doubleclick_zoom = true; // SUSI true|false: zoom in when mouse is double-clicked?
                                 gv_options.doubleclick_center = false; // SUSI true|false: re-center the map on the point that was double-clicked?
 
-                                gv_options.scroll_zoom = false; // SUSI true|false; or 'reverse' for down=in and up=out
-                                gv_options.page_scrolling = false; // SUSI true|false; does the map relenquish control of the scroll wheel when embedded in scrollable pages?
-                                gv_options.mousewheel_zoom = false; // SUSI true|false; or ‘reverse’ for down=in and up=out
+                                gv_options.scroll_zoom = true; // SUSI true|false; or 'reverse' for down=in and up=out
+                                gv_options.page_scrolling = true; // SUSI true|false; does the map relenquish control of the scroll wheel when embedded in scrollable pages?
+                                gv_options.mousewheel_zoom = true; // SUSI true|false; or ‘reverse’ for down=in and up=out
                                 gv_options.autozoom_adjustment = 0.5 //SUSI
 
                                 gv_options.autozoom_default = 11;
@@ -299,17 +300,17 @@
                                     'center_key': 'center',
                                     'default_zoom': null
                                 } // URL-based centering (e.g., ?center=name_of_marker&zoom=14)
-                                gv_options.street_view = false; // true|false: allow Google Street View on the map (Google Maps only)
+                                gv_options.street_view = true; // true|false: allow Google Street View on the map (Google Maps only)
                                 gv_options.tilt = false; // true|false: allow Google Maps to show 45-degree tilted aerial imagery?
                                 gv_options.disable_google_pois = false; // true|false: if you disable clickable POIs on Google Maps, you also lose the labels on parks, airports, etc.
                                 gv_options.animated_zoom = true; // SUSI true|false: only affects Leaflet maps
 
                                 // widgets on the map:
-                                gv_options.zoom_control = 'small'; // 'auto'|'large'|'small'|'none'
+                                gv_options.zoom_control = 'none'; // 'auto'|'large'|'small'|'none' SUSI eliminamos zoom
                                 gv_options.recenter_button = true; // SUSI true|false: is there a 'click to recenter' button above the zoom control?
                                 gv_options.geolocation_control = false; // SUSI true|false; only works on secure servers
                                 gv_options.geolocation_options = {
-                                    center: false,
+                                    center: true,
                                     zoom: null, //SUSI
                                     marker: false,
                                     info_window: false
@@ -328,7 +329,7 @@
                                     distance_color: '',
                                     area_color: ''
                                 };
-                                gv_options.crosshair_hidden = false; // true|false: hide the crosshair initially?
+                                gv_options.crosshair_hidden = true; // Susi true|false: hide the crosshair initially?
                                 gv_options.mouse_coordinates = false; // true|false: show a "mouse coordinates" box?
                                 gv_options.utilities_menu = {
                                     'maptype': false,
@@ -400,7 +401,7 @@
                                 gv_options.hide_labels = false; // true|false: hide labels when map first loads?
                                 gv_options.labels_behind_markers = false; // true|false: are the labels behind other markers (true) or in front of them (false)?
                                 gv_options.label_offset = [0, 0]; // [x,y]: shift all markers' labels (positive numbers are right and down)
-                                gv_options.label_centered = false; // true|false: center labels with respect to their markers?  (label_left is also a valid option.)
+                                gv_options.label_centered = true; // SUSI true|false: center labels with respect to their markers?  (label_left is also a valid option.)
                                 gv_options.driving_directions = false; // put a small "driving directions" form in each marker's pop-up window? (override with dd:true or dd:false in a marker's options)
                                 gv_options.garmin_icon_set = 'gpsmap'; // 'gpsmap' are the small 16x16 icons; change it to '24x24' for larger icons
                                 gv_options.marker_list_options = {}; // options for a dynamically-created list of markers
@@ -435,8 +436,8 @@
                                 gv_options.marker_list_options.default_color = ''; // default HTML color code for the names/descs in the list
                                 gv_options.marker_list_options.limit = 0; // how many markers to show in the list; 0 for no limit
                                 gv_options.marker_list_options.center = false; // true|false: does the map center upon a marker when you click its name in the list?
-                                gv_options.marker_list_options.zoom = false; // true|false: does the map zoom to a certain level when you click on a marker's name in the list?
-                                gv_options.marker_list_options.zoom_level = 16; // if 'zoom' is true, what level should the map zoom to?
+                                gv_options.marker_list_options.zoom = true; // SUSI true|false: does the map zoom to a certain level when you click on a marker's name in the list?
+                                gv_options.marker_list_options.zoom_level = 16; // SUSI if 'zoom' is true, what level should the map zoom to?
                                 gv_options.marker_list_options.info_window = true; // true|false: do info windows pop up when the markers' names are clicked in the list?
                                 gv_options.marker_list_options.url_links = false; // true|false: do the names in the list become instant links to the markers' URLs?
                                 gv_options.marker_list_options.toggle = false; // true|false: does a marker disappear if you click on its name in the list?
@@ -645,7 +646,7 @@
 
                 <!-- gráfica, imaxe do mapa e video da ruta INICIO -->
                 <div class="col-md-12 margin-bottom-40">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 animated fadeInDown">
                         <details class="img-thumbnail">
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a gráfica do perfil de elevación</summary>
                             <a target="_blank" data-title="Ver nunha ventana nova" href="../../imaxes/rutas/grfcs_elevacion_senderismo/DODRO/inchadinha.jpg"> <img class="-shadow-new" src="../../imaxes/rutas/grfcs_elevacion_senderismo/DODRO/inchadinha.jpg" alt="Gráfica do perfil de elevación">
@@ -653,7 +654,7 @@
                             </a>
                         </details>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4  animated fadeInDown">
                         <details class="img-thumbnail">
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a imaxe da ruta</summary>
                             <a target="_blank" data-title="Ver nunha ventana nova" href="../../imaxes/rutas/mapas-rutas-imaxes/Dodro/inchadinha.jpg">
@@ -662,7 +663,7 @@
                             </a>
                         </details>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 animated fadeInDown">
                         <details class="img-thumbnail">
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver vídeo da ruta</summary>
                             <a target="_blank" data-title="Ver nunha ventana nova" href="../videos/dodro/ruta-san-xian_opt.mp4">
@@ -680,7 +681,7 @@
                 <!-- ++++++++ lendas do mapa INICIO ++++++++  -->
                 <div class="col-md-12 margin-bottom-40">
                     <div class="col-md-4">
-                        <div class="datos-ruta animated bounceInLeft">
+                        <div class="datos-ruta animated fadeInLeft">
                             <div class="datos-ruta-head">
                                 <h3> <span> <i class="fa fa-asterisk"></i> Datos da Ruta</span>
                                     Inchadiña Branca Vela
@@ -715,7 +716,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="datos-ruta animated bounceInLeft">
+                        <div class="datos-ruta animated fadeInLeft">
                             <div class="datos-ruta-head">
                                 <h3> <span> <i class="fa fa-asterisk"></i> Símbolos no mapa</span>
                                 </h3>
@@ -735,7 +736,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="datos-ruta lendas-ruta animated bounceInLeft">
+                        <div class="datos-ruta lendas-ruta animated fadeInLeft">
                             <div class="datos-ruta-head">
                                 <h3> <span> <i class="fa fa-asterisk"></i> Meteoroloxía na Ruta</span> </h3>
                             </div>

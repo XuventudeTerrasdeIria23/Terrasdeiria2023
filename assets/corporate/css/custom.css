@@ -173,11 +173,15 @@ RGB(65, 176, 110)
      font-weight: normal;
  }
 
+ .active2 a.dropdown-item {
+     background: #e28743 !important;
+     color: #fff !important;
+ }
+
  /* imaxes */
 
  .img-flota-right {
      float: right;
-
      border-radius: .5em !important;
  }
 
@@ -1845,6 +1849,8 @@ RGB(65, 176, 110)
  .active:after {
      /* 	content: "\2212";*/
  }
+
+
 
  .panel {
      padding: 0 18px;
