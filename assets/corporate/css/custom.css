@@ -157,16 +157,15 @@ RGB(65, 176, 110)
 
  .dropdown-menu .dropdown-submenu {
      display: none;
-     right: 0em;
+     right: 0px;
      top: 0px;
      width: auto;
+
  }
 
  .dropdown-menu > li:hover > .dropdown-submenu {
      display: block;
  }
-
- .pull-right .dropdown-submenu {}
 
  .dropdown-item > i {
      font-size: .7em;
@@ -807,105 +806,102 @@ RGB(65, 176, 110)
          height: auto;
      }
 
-     .copyright a {}
- }
-
- /* fin FOOTER index */
- /* footer sitio */
+     /* fin FOOTER index */
+     /* footer sitio */
 
 
 
 
 
- /* MAPAS    estilo  mapas *********/
- .video-mapa {
-     width: 50vw;
+     /* MAPAS    estilo  mapas *********/
+     .video-mapa {
+         width: 50vw;
 
- }
+     }
 
- details {
-     background-color: #fff;
-     background-color: #e2874380;
-     background: rgba(65, 176, 110, 0.7);
-     width: 100%;
-     text-align: center;
-     /* 	margin-bottom: 1em;*/
-     border-radius: .5em;
-     border: 1px solid #ccc;
+     details {
+         background-color: #fff;
+         background-color: #e2874380;
+         background: rgba(65, 176, 110, 0.7);
+         width: 100%;
+         text-align: center;
+         /* 	margin-bottom: 1em;*/
+         border-radius: .5em;
+         border: 1px solid #ccc;
 
-     position: relative;
-     display: inline-flex;
- }
+         position: relative;
+         display: inline-flex;
+     }
 
- details summary {
-     font-weight: 600;
-     font-size: 1em;
-     padding: .7em;
-     cursor: pointer;
-     list-style: none;
- }
+     details summary {
+         font-weight: 600;
+         font-size: 1em;
+         padding: .7em;
+         cursor: pointer;
+         list-style: none;
+     }
 
- details img {
-     /*
+     details img {
+         /*
  	padding: .5em;
  	margin: 0 1em 1em 1em;
  	background: #fff;
 */
- }
-
- .img-thumbnail img {
-     display: flex;
-     width: 100% !important;
-     height: auto;
- }
-
- details:hover,
- details[open] {
-     box-shadow: 5px 5px 15px #ccc;
- }
-
- details[open] {
-     background: #ffffff;
- }
-
- details[open] summary {
-     font-weight: 600;
- }
-
- details summary::before {
-     position: absolute;
-     /* 	content: "👇";*/
-     /* 	content: "\002b";*/
-     content: " \02C5";
-     font-size: 1.2em;
-     font-weight: 800;
-     top: .5em;
-     right: 1em;
- }
-
- details[open] summary::before {
-     -webkit-animation: rotate 0.6s ease-in-out both;
-     animation: rotate-emoji 0.6s ease-in-out both;
- }
-
-
- @-webkit-keyframes rotate-emoji {
-     0% {
-         -webkit-transform: rotate(0);
-         transform: rotate(0);
      }
 
-     100% {
-         -webkit-transform: rotate(180deg);
-         transform: rotate(180deg);
+     .img-thumbnail img {
+         display: flex;
+         width: 100% !important;
+         height: auto;
      }
- }
 
- .center-block-col-12 > img {
-     display: inline-block !improtant;
-     position: relative;
-     width: auto;
- }
+     details:hover,
+     details[open] {
+         box-shadow: 5px 5px 15px #ccc;
+     }
+
+     details[open] {
+         background: #ffffff;
+     }
+
+     details[open] summary {
+         font-weight: 600;
+     }
+
+     details summary::before {
+         position: absolute;
+         /* 	content: "👇";*/
+         /* 	content: "\002b";*/
+         content: " \02C5";
+         font-size: 1.2em;
+         font-weight: 800;
+         top: .5em;
+         right: 1em;
+     }
+
+     details[open] summary::before {
+         -webkit-animation: rotate 0.6s ease-in-out both;
+         animation: rotate-emoji 0.6s ease-in-out both;
+     }
+
+
+     @-webkit-keyframes rotate-emoji {
+         0% {
+             -webkit-transform: rotate(0);
+             transform: rotate(0);
+         }
+
+         100% {
+             -webkit-transform: rotate(180deg);
+             transform: rotate(180deg);
+         }
+     }
+
+     .center-block-col-12 > img {
+         display: inline-block !improtant;
+         position: relative;
+         width: auto;
+     }
  }
 
  #map {
@@ -1406,8 +1402,6 @@ RGB(65, 176, 110)
  }
 
  /* creditos do mapa, footer do mapa */
- #mapa-noso .leaflet-control-attribution,
- #mapa-noso #gv_credit {}
 
  .leaflet-control-attribution::after {
      /* colocamos no pe do mapa o noso nome */
@@ -1559,7 +1553,6 @@ RGB(65, 176, 110)
  }
 
  /* datos da ruta */
- .datos-ruta {}
 
  .datos-ruta-head {
      padding: 0 0 0 .5em;
