@@ -108,6 +108,14 @@
  	/* 	filter: drop-shadow(1px 1px 1px #ccc);*/
  }
 
+ .fonte-carteis {
+	width: calc(50%);
+	margin: 1em 1.5em;
+	font-size: .7em;
+	color: #3f5862;
+	float: left;
+}
+
  .close2-click {
  	height: auto;
  	width: 2em;

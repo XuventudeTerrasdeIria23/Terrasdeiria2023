@@ -1150,6 +1150,13 @@ RGB(65, 176, 110)
      background-color: rgb(65, 176, 110);
  }
 
+ #gv_tracklist_item[2] .gv_tracklist_item_name input,
+ gv_tracklist_item[3] .gv_tracklist_item_name input,
+ gv_tracklist_item[4] .gv_tracklist_item_name input,
+ gv_tracklist_item[5] .gv_tracklist_item_name input,
+ gv_tracklist_item[6] .gv_tracklist_item_name input {
+     display: none;
+ }
 
  .gv_tracklist_item_name img {
      display: none;
