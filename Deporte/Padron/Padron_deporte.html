@@ -258,9 +258,9 @@
     <div class="main">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="../../inicio.html">Home</a></li>
+                <li><a href="../../inicio.html">Inicio</a></li>
                 <li><a href="../../padron.html">Padrón</a></li>
-                <li class="active">Mapa instalación deportivas</li>
+                <li class="active">Mapa instalacións deportivas</li>
             </ul>
 
             <!-- BEGIN CONTENT -->
@@ -275,7 +275,7 @@
                         </div>
 
                         <script>
-                            var map = L.map('map').setView([42.764553524954444, -8.697332608696819], 12);
+                            var map = L.map('map').setView([42.743821, -8.656706], 12);
                             map.options.minZoom = 12;
                             map.options.maxZoom = 15;
                             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -283,8 +283,8 @@
                             }).addTo(map);
 
                             var Icono = L.icon({
-                                iconUrl: "../../imaxes/iconos/deporte/sports-mode-svgrepo-com.svg",
-                                iconSize: [40, 50],
+                                iconUrl: "../../imaxes/iconos/deporte/triatlon1.png",
+                                iconSize: [50, 60],
                                 iconAnchor: [15, 40],
                                 shadowUrl: "https://vivaelsoftwarelibre.com/wp-content/uploads/2020/05/icono_sombra.png",
                                 shadowSize: [35, 50],
