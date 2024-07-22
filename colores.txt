@@ -11,7 +11,7 @@ colores
  }
 
 ocre{ 
-	color:  #e28743;
+	color:  #B05C1C;
 	color: rgb(226, 135, 67)
  }
 red{ color: #e6400c;}

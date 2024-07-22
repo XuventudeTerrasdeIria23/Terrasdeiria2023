@@ -101,7 +101,7 @@ img {
 	height: 2em;
 	line-height: auto;
 	width: 2em;
-	border: 3px solid #e28743;
+	border: 3px solid #B05C1C;
 	background-color: rgb(63, 88, 98);
 
 	text-align: center;
@@ -115,7 +115,7 @@ img {
 
 .js-ag-active .ag-timeline-card_point {
 	color: #fff;
-	background-color: #e28743;
+	background-color: #B05C1C;
 }
 
 .ag-timeline-card_meta-box {
@@ -128,7 +128,7 @@ img {
 	font-family: 'ESL Legend', sans-serif;
 	font-weight: bold;
 	font-size: 28px;
-	color: #e28743;
+	color: #B05C1C;
 }
 
 .ag-timeline-card_item {

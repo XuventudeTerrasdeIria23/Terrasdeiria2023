@@ -294,14 +294,14 @@ img.img-sitio-dron {
 
 .nav-tabs li a:hover {
     background: white;
-    color: #e28743;
+    color: #B05C1C;
     -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 .nav .nav-tabs.active {
     background: white;
-    color: #e28743;
+    color: #B05C1C;
     -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
 }
@@ -326,7 +326,7 @@ img.img-sitio-dron {
     top: 2em;
     display: block;
     border-bottom: 1px dotted black;
-    color: #e28743;
+    color: #B05C1C;
     font-weight: 700;
     cursor: pointer;
     /*    width: 50%;*/

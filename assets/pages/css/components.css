@@ -52,7 +52,7 @@ input::-moz-focus-inner {
 
 .open .btn-primary.dropdown-toggle {
 	color: #fff;
-	background-color: #e28743;
+	background-color: #B05C1C;
 	border-color: #2a6496;
 }
 
@@ -112,14 +112,14 @@ fieldset[disabled] .btn-primary.active {
 
 .open .btn-success.dropdown-toggle {
 	color: #fff;
-	background-color: #e28743;
+	background-color: #B05C1C;
 	border-color: #307f7a;
 }
 
 .btn-success:active,
 .btn-success.active {
 	background-image: none;
-	background-color: #e28743;
+	background-color: #B05C1C;
 }
 
 .btn-success:active:hover,

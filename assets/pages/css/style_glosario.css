@@ -71,7 +71,7 @@
 	font: normal 1em;
 	background: #fff;
 	overflow: hidden;
-	/* 	border: 1px solid #e28743;*/
+	/* 	border: 1px solid #B05C1C;*/
 }
 
 .datagrid table td,
@@ -85,7 +85,7 @@
 	color: #ffffff;
 	font-size: 1em;
 	font-weight: bold;
-	border-left: 1px solid #e28743;
+	border-left: 1px solid #B05C1C;
 */
 }
 

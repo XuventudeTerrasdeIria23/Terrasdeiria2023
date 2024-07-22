@@ -27,10 +27,17 @@ colores
 	color: rgb(230, 64, 12)
  }
 
-ocre{ 
-	color:  #e28743;
+ocre{ NO AA
+	color:  #E28743;
 	color: rgb(226, 135, 67)
  }
+
+
+ocre{ 
+	color:  #B05C1C;
+	color: rgb(172,92,28);
+ }
+
 red{ color: #e6400c;}
 gris{
 	 	color: #3f5862;
@@ -57,11 +64,11 @@ RGB(65, 176, 110)
  }
 
  .col-md-12 a {
-     color: #e28743 !inmportant;
+     color: #B05C1C !inmportant;
  }
 
  .col-md-12 a:hover {
-     color: #e28743;
+     color: #B05C1C;
  }
 
  #arriba {
@@ -105,12 +112,12 @@ RGB(65, 176, 110)
  }
 
  i.small {
-     color: #e28743;
+     color: #B05C1C;
      margin-right: .2em;
  }
 
  .icon-small {
-     color: #e28743;
+     color: #B05C1C;
      margin-right: .2em;
      font-size: .9em;
  }
@@ -173,7 +180,7 @@ RGB(65, 176, 110)
  }
 
  .active2 a.dropdown-item {
-     background: #e28743 !important;
+     background: #B05C1C !important;
      color: #fff !important;
  }
 
@@ -314,7 +321,7 @@ RGB(65, 176, 110)
  span.subraiado {
      text-decoration-line: underline;
      text-decoration-thickness: .1em;
-     text-decoration-color: #e28743;
+     text-decoration-color: #B05C1C;
  }
 
  .verde {
@@ -326,16 +333,16 @@ RGB(65, 176, 110)
  }
 
  .ocre {
-     color: #e28743;
+     color: #B05C1C;
  }
 
  .subrayado {
      padding: .1em;
-     border-bottom: 1px dashed #e28743;
+     border-bottom: 1px dashed #B05C1C;
  }
 
  a.red-link {
-     color: #e28743;
+     color: #B05C1C;
      font-weight: 500;
  }
 
@@ -366,7 +373,7 @@ RGB(65, 176, 110)
  }
 
  .nav-tabs li a:hover {
-     background: #e28743;
+     background: #B05C1C;
      color: white;
  }
 
@@ -625,14 +632,14 @@ RGB(65, 176, 110)
 
  /* Obradoiros Anteriores INDEX */
  .btn-23 h2 {
-     background: #e28743;
+     background: #B05C1C;
      color: #fff;
      margin: .2em 0em;
      padding: .1em .5em;
  }
 
  .anteiores h2 {
-     background: #e2874380;
+     background: #B05C1C80;
  }
 
  #obradoiros-anteriores {
@@ -748,7 +755,7 @@ RGB(65, 176, 110)
  }
 
  footer.footer-light .copyright > .social-icons p {
-     color: #e28743;
+     color: #B05C1C;
      font-weight: 700;
 
  }
@@ -821,7 +828,7 @@ RGB(65, 176, 110)
 
      details {
          background-color: #fff;
-         background-color: #e2874380;
+         background-color: #B05C1C80;
          background: rgba(65, 176, 110, 0.7);
          width: 100%;
          text-align: center;
@@ -1068,14 +1075,14 @@ RGB(65, 176, 110)
 
  .profile_waypoint {
      fill: white;
-     stroke: #e28743 !important;
+     stroke: #B05C1C !important;
      stroke-width: 2 !important;
-     fill: #e28743 !important;
+     fill: #B05C1C !important;
  }
 
 
  .mouseover_circle {
-     stroke: #e28743 !important;
+     stroke: #B05C1C !important;
      stroke-width: 2 !important;
      fill: none !important;
  }
@@ -1323,7 +1330,7 @@ RGB(65, 176, 110)
  }
 
  .gv_marker_info_window_name {
-     color: #e28743;
+     color: #B05C1C;
      float: left;
      text-align: left;
      transform: scale(1.1) !important;
@@ -1367,16 +1374,16 @@ RGB(65, 176, 110)
      /* enlaces do pop-up */
      padding: 0;
      font-size: inherit;
-     color: #e28743 !important;
+     color: #B05C1C !important;
  }
 
  .gv_marker_info_window a:hover i {
      /* enlaces do pop-up */
-     color: #e28743 !important;
+     color: #B05C1C !important;
  }
 
  .gv_marker_info_window .red-link {
-     color: #e28743 !important;
+     color: #B05C1C !important;
      font-weight: 700 !important;
  }
 
@@ -1564,7 +1571,7 @@ RGB(65, 176, 110)
  .datos-ruta-head {
      padding: 0 0 0 .5em;
      text-align: left;
-     /* 	background: #e28743;*/
+     /* 	background: #B05C1C;*/
      background: rgba(65, 176, 110, 0.7);
 
  }
@@ -1587,7 +1594,7 @@ RGB(65, 176, 110)
      font-weight: 300;
      color: #fff;
      padding: .5em;
-     /* 	background: #e28743;*/
+     /* 	background: #B05C1C;*/
      background: #edd39f;
      color: #3f5862;
      border-bottom: none;
@@ -1607,7 +1614,7 @@ RGB(65, 176, 110)
  }
 
  .datos-ruta i {
-     color: #e28743;
+     color: #B05C1C;
      font-size: 1.1em;
      margin-right: .5em;
      position: relative;
@@ -1730,7 +1737,7 @@ RGB(65, 176, 110)
      left: auto;
      width: auto;
      height: 50%;
-     /* 	background: #e28743;*/
+     /* 	background: #B05C1C;*/
      background: rgba(226, 135, 67, 0.8);
      visibility: hidden;
      opacity: 0;
@@ -1780,7 +1787,7 @@ RGB(65, 176, 110)
      position: relative;
      display: inline;
      border-bottom: 1px dotted black;
-     color: #e28743;
+     color: #B05C1C;
      font-weight: 700;
      cursor: pointer
  }
@@ -1839,7 +1846,7 @@ RGB(65, 176, 110)
 
  .accordion::after {
      content: '\002B';
-     color: #e28743;
+     color: #B05C1C;
      font-size: 1.2em;
      font-weight: bolder;
      float: right;
@@ -1974,7 +1981,7 @@ RGB(65, 176, 110)
      text-align: left;
      font-weight: 600;
      font-size: 1.3em;
-     color: #e28743;
+     color: #B05C1C;
  }
 
  .container-cards .card .face.face2 .content p {

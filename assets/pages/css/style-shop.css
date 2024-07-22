@@ -88,7 +88,7 @@ Header and header elements
 .ecommerce .header-navigation ul > li.open > a,
 .ecommerce .header-navigation ul > li.open > a:hover,
 .ecommerce .header-navigation ul > li.open > a:focus {
-	color: #e28743;
+	color: #B05C1C;
 }
 
 .ecommerce .header-navigation .dropdown-menu > li > a:hover,
@@ -199,7 +199,7 @@ Header and header elements
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #e28743;
+	background: #B05C1C;
 	color: #fff;
 	padding: 8px 8px 7px;
 	border-radius: 16px !important;
@@ -459,7 +459,7 @@ Header and header elements
 }
 
 .product-item .btn:hover {
-	background: #e28743;
+	background: #B05C1C;
 	border-color: #c8c8c8;
 }
 
@@ -474,11 +474,11 @@ Header and header elements
 }
 
 .product-item h3 a:hover {
-	color: #e28743;
+	color: #B05C1C;
 }
 
 .pi-price {
-	color: #e28743;
+	color: #B05C1C;
 	font: 18px 'PT Sans Narrow', sans-serif;
 	float: left;
 	padding-top: 1px;
@@ -493,8 +493,8 @@ Header and header elements
 
 .product-item .add2cart:hover {
 	color: #fff !important;
-	background: #e28743 !important;
-	border-color: #e28743;
+	background: #B05C1C !important;
+	border-color: #B05C1C;
 }
 
 .shop-index-carousel {
@@ -552,7 +552,7 @@ Header and header elements
 .goods-page-total strong,
 .checkout-price strong,
 .checkout-total strong {
-	color: #e28743;
+	color: #B05C1C;
 	font-size: 21px;
 	font-weight: normal;
 }
@@ -653,7 +653,7 @@ Header and header elements
 
 .shopping-total strong,
 .checkout-total-block strong {
-	color: #e28743;
+	color: #B05C1C;
 	font: 21px 'PT Sans Narrow', sans-serif;
 	font-weight: normal;
 	float: right;
@@ -707,7 +707,7 @@ Header and header elements
 }
 
 .checkout-page a:hover {
-	color: #e28743;
+	color: #B05C1C;
 }
 
 .checkout-page h3 {
@@ -883,7 +883,7 @@ div.radio.disabled.active span.checked {
 }
 
 .compare-item strong {
-	color: #e28743;
+	color: #B05C1C;
 	font-size: 21px;
 	font-weight: normal;
 }
@@ -1030,7 +1030,7 @@ div.radio.disabled.active span.checked {
 
 .sidebar-products .price {
 	margin-left: 80px;
-	color: #e28743;
+	color: #B05C1C;
 	font: 16px 'PT Sans Narrow', sans-serif;
 }
 
@@ -1082,7 +1082,7 @@ div.radio.disabled.active span.checked {
 }
 
 .price-availability-block .price strong {
-	color: #e28743;
+	color: #B05C1C;
 	font-size: 35px;
 	font-weight: normal;
 }

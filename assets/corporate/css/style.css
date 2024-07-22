@@ -35,7 +35,7 @@ General tipografia
 links
 ***/
  a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  a,
@@ -47,7 +47,7 @@ links
  }
 
  a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  	text-decoration: none;
  }
 
@@ -226,7 +226,7 @@ Misc tools
  .btn-primary:focus,
  .btn-primary:active {
  	color: #fff;
- 	background: #e28743;
+ 	background: #B05C1C;
  	border: none;
  }
 
@@ -241,7 +241,7 @@ Misc tools
  	font-size: 1em;
  	font-weight: 700;
  	color: #fff;
- 	background: #e28743;
+ 	background: #B05C1C;
  	padding: .5em;
  }
 
@@ -335,7 +335,7 @@ Misc tools
  }
 
  .color-red {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  /***
@@ -409,7 +409,7 @@ Pre-Header and pre-header elements
  }
 
  .pre-header a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .pre-header a:focus {
@@ -447,7 +447,7 @@ Pre-Header and pre-header elements
  }
 
  .shop-currencies a.current {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  /* langs block */
@@ -568,8 +568,8 @@ Header and header elements
  }
 
  .header .mobi-toggler:hover {
- 	background: #e28743 url(../img/icons/toggler.png) no-repeat 6px -28px;
- 	border-color: #e28743;
+ 	background: #B05C1C url(../img/icons/toggler.png) no-repeat 6px -28px;
+ 	border-color: #B05C1C;
  	color: #fff;
  }
 
@@ -606,7 +606,7 @@ Header and header elements
  .header-navigation ul > li.open > a,
  .header-navigation ul > li.open > a:hover,
  .header-navigation ul > li.open > a:focus {
- 	color: #e28743;
+ 	color: #B05C1C;
  	background: #fcfcfc;
  	text-decoration: none;
  }
@@ -807,7 +807,7 @@ Header and header elements
  .header-navigation .dropdown-menu .header-navigation-content-ext li > a:hover,
  .header-navigation .dropdown-menu .header-navigation-content-ext li.active > a {
  	background: #fff;
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  /* n-level submenu */
@@ -856,7 +856,7 @@ Header and header elements
  }
 
  .header-navigation li.menu-search i:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  	background-position: 0 -15px;
  }
 
@@ -870,7 +870,7 @@ Header and header elements
  	display: none;
  	background: #fcfafb;
  	position: absolute;
- 	border-top: solid 2px #e28743;
+ 	border-top: solid 2px #B05C1C;
  	box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
  	width: 274px;
  	margin-top: 0;
@@ -886,7 +886,7 @@ Header and header elements
  	content: " ";
  	display: block;
  	position: absolute;
- 	border-bottom: 8px solid #e28743;
+ 	border-bottom: 8px solid #B05C1C;
  	border-right: 8px solid transparent;
  	border-left: 8px solid transparent;
  }
@@ -973,11 +973,11 @@ Header and header elements
  }
 
  .owl-buttons .owl-prev:hover {
- 	background: #e28743 url(../../pages/img/fa-angles.png) no-repeat 8px -31px;
+ 	background: #B05C1C url(../../pages/img/fa-angles.png) no-repeat 8px -31px;
  }
 
  .owl-buttons .owl-next:hover {
- 	background: #e28743 url(../../pages/img/fa-angles.png) no-repeat -33px -31px;
+ 	background: #B05C1C url(../../pages/img/fa-angles.png) no-repeat -33px -31px;
  }
 
  /*  */
@@ -1035,7 +1035,7 @@ Sidebar
  }
 
  .sidebar a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .sidebar-menu a {
@@ -1059,7 +1059,7 @@ Sidebar
  }
 
  .sidebar .dropdown.open .dropdown-toggle:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .sidebar .dropup.open > .dropdown-toggle,
@@ -1127,7 +1127,7 @@ Sidebar
  .sidebar-menu li.active > a,
  .sidebar-menu li.active > a:hover {
  	background: none !important;
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .sidebar .dropdown-menu > li > a .fa-angle-down {
@@ -1233,7 +1233,7 @@ steps block and steps block elements
  }
 
  .steps-block-red {
- 	background: #e28743;
+ 	background: #B05C1C;
  }
 
  .steps-block-col {
@@ -1442,13 +1442,13 @@ steps block and steps block elements
 
  .content-page a:hover,
  .sidebar2 a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .content-page .link,
  .content-page .link:hover,
  .content-page .link:active {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .content-page h2,
@@ -1513,7 +1513,7 @@ steps block and steps block elements
  	line-height: 128px;
  	font-size: 128px;
  	font-weight: 300;
- 	color: #e28743;
+ 	color: #B05C1C;
  	text-align: right;
  }
 
@@ -1539,7 +1539,7 @@ steps block and steps block elements
  	line-height: 128px;
  	font-size: 128px;
  	font-weight: 300;
- 	color: #e28743;
+ 	color: #B05C1C;
  	text-align: right;
  }
 
@@ -1561,7 +1561,7 @@ steps block and steps block elements
  }
 
  .content-form-page a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .form-without-legend {
@@ -1646,7 +1646,7 @@ steps block and steps block elements
 
 
  .nav-tabs {
- 	border-color: #e28743;
+ 	border-color: #B05C1C;
  	padding-bottom: 1px;
  	font-size: 14px;
  	margin-bottom: 0;
@@ -1665,7 +1665,7 @@ steps block and steps block elements
  .nav-tabs > li.active > a,
  .nav-tabs > li.active > a:hover,
  .nav-tabs > li.active > a:focus {
- 	background: #e28743;
+ 	background: #B05C1C;
  	color: #fff;
  	padding: 5px 15px 4px;
  }
@@ -1880,7 +1880,7 @@ Pre-Footer and pre-footer elements
  }
 
  .pre-footer .photo-stream img:hover {
- 	border-color: #e28743;
+ 	border-color: #B05C1C;
  	transition: all 0.3s ease-in-out;
  	-o-transition: all 0.3s ease-in-out;
  	-moz-transition: all 0.3s ease-in-out;
@@ -1917,11 +1917,11 @@ Pre-Footer and pre-footer elements
  }
 
  .pre-footer-light dl.f-twitter dd a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .pre-footer-light address a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .pre-footer-light hr {
@@ -2506,7 +2506,7 @@ Demo Utils
  }
 
  .quote-v1 a.btn-transparent:hover {
- 	background: #e28743;
+ 	background: #B05C1C;
  	color: #fff;
  	transition: all 0.5s ease;
  	-o-transition: all 0.5s ease;
@@ -2537,7 +2537,7 @@ Demo Utils
  }
 
  .recent-work h2 a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .recent-work-item {
@@ -2605,7 +2605,7 @@ Demo Utils
  }
 
  .recent-work .recent-work-item .fa:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .recent-work .recent-work-item .fa-link {
@@ -2715,11 +2715,11 @@ Demo Utils
  }
 
  .testimonials-v1 .left-btn:hover {
- 	background: #e28743 url(../../pages/img/fa-angles.png) no-repeat 8px -31px;
+ 	background: #B05C1C url(../../pages/img/fa-angles.png) no-repeat 8px -31px;
  }
 
  .testimonials-v1 .right-btn:hover {
- 	background: #e28743 url(../../pages/img/fa-angles.png) no-repeat -33px -31px;
+ 	background: #B05C1C url(../../pages/img/fa-angles.png) no-repeat -33px -31px;
  }
 
  /* our clients */
@@ -2737,7 +2737,7 @@ Demo Utils
  }
 
  .our-clients h2 a:hover {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .our-clients .client-item {
@@ -2845,7 +2845,7 @@ Demo Utils
  }
 
  .front-team h3 strong {
- 	color: #e28743;
+ 	color: #B05C1C;
  	font-size: 20px;
  	font-weight: 400;
  }
@@ -2903,7 +2903,7 @@ Demo Utils
 
  .service-box-v1:hover {
  	/*	background: #d73d04;*/
- 	background: #e28743;
+ 	background: #B05C1C;
  	transition: all 0.4s ease-in-out;
  	-o-transition: all 0.4s ease-in-out;
  	-moz-transition: all 0.4s ease-in-out;
@@ -2912,7 +2912,7 @@ Demo Utils
 
  .service-box-v2:hover {
  	/*	background: #d73d04;*/
- 	background: #e28743;
+ 	background: #B05C1C;
  	transition: all 0.4s ease-in-out;
  	-o-transition: all 0.4s ease-in-out;
  	-moz-transition: all 0.4s ease-in-out;
@@ -3057,7 +3057,7 @@ Demo Utils
  }
 
  .blog-info li i {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .blog-posts .pagination li {
@@ -3072,7 +3072,7 @@ Demo Utils
 
  .blog-posts .more,
  .blog-sidebar .more {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  /* Blog Sidebar */
@@ -3089,7 +3089,7 @@ Demo Utils
  }
 
  .recent-news h3 a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .recent-news h3 a:hover {
@@ -3118,7 +3118,7 @@ Demo Utils
  }
 
  .blog-photo-stream li img:hover {
- 	border-color: #e28743;
+ 	border-color: #B05C1C;
  	box-shadow: 0 0 1px #fff;
  	transition: all 0.4s ease-in-out;
  	-o-transition: all 0.4s ease-in-out;
@@ -3148,7 +3148,7 @@ Demo Utils
 
  .blog-tags li a:hover {
  	color: #fff;
- 	background: #e28743;
+ 	background: #B05C1C;
  	text-decoration: none;
  }
 
@@ -3157,7 +3157,7 @@ Demo Utils
  }
 
  .blog-tags li i {
- 	color: #e28743;
+ 	color: #B05C1C;
  	margin-right: 5px;
  	display: inline-block;
  }
@@ -3178,7 +3178,7 @@ Demo Utils
  }
 
  .blog-tags li a:hover:after {
- 	border-left-color: #e28743;
+ 	border-left-color: #B05C1C;
  }
 
  .blog-talks .tab-content {
@@ -3208,7 +3208,7 @@ Demo Utils
  .sidebar-categories li > a:hover,
  .sidebar-categories li.active > a,
  .sidebar-categories li.active:hover > a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .sidebar-categories li a:before {
@@ -3233,7 +3233,7 @@ Demo Utils
 
  .blog-item blockquote {
  	margin: 20px 40px 18px;
- 	border-color: #e28743;
+ 	border-color: #B05C1C;
  }
 
  .blog-item .blog-info {
@@ -3289,7 +3289,7 @@ Demo Utils
  }
 
  .blog-item h4.media-heading span a {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .mix-block .tab-content .col-md-3 {
@@ -3341,7 +3341,7 @@ Demo Utils
  }
 
  .front-steps-wrapper .front-step1 {
- 	background: #e28743;
+ 	background: #B05C1C;
  }
 
  .front-steps-wrapper .front-step2 {
@@ -3454,17 +3454,17 @@ Demo Utils
  }
 
  .pricing-active {
- 	border: 3px solid #e28743;
+ 	border: 3px solid #B05C1C;
  	margin-top: -10px;
  	box-shadow: 7px 7px rgba(232, 77, 22, 0.2);
  }
 
  .pricing:hover {
- 	border: 3px solid #e28743;
+ 	border: 3px solid #B05C1C;
  }
 
  .pricing:hover h4 {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .pricing-head {
@@ -3490,7 +3490,7 @@ Demo Utils
  	color: #fafafa;
  	padding: 12px 0;
  	font-size: 27px;
- 	background: #e28743;
+ 	background: #B05C1C;
  	border-bottom: none;
  }
 
@@ -3504,7 +3504,7 @@ Demo Utils
  }
 
  .pricing-head-active h4 {
- 	color: #e28743;
+ 	color: #B05C1C;
  }
 
  .pricing-head h4 i {
@@ -3531,7 +3531,7 @@ Demo Utils
 
  .pricing-content li i {
  	top: 2px;
- 	color: #e28743;
+ 	color: #B05C1C;
  	font-size: 16px;
  	margin-right: 5px;
  	position: relative;
@@ -3661,7 +3661,7 @@ Styler Panel
  }
 
  .color-mode li.color-red {
- 	background: #e28743;
+ 	background: #B05C1C;
  }
 
  .color-mode li.color-green {

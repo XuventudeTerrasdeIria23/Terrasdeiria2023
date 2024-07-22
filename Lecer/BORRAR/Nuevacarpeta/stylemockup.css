@@ -1,18 +1,18 @@
  main {
  	background-color: #fff;
- 	box-shadow: 0px 0px 0px 2px #e28743, 10px 10px 20px 10px rgba(78, 79, 74, 0.5);
+ 	box-shadow: 0px 0px 0px 2px #B05C1C, 10px 10px 20px 10px rgba(78, 79, 74, 0.5);
  	flex-basis: 980px;
  }
 
  .calendar {
  	table-display: fixed;
- 	border: 2px solid #e28743;
+ 	border: 2px solid #B05C1C;
  	width: 100%;
  }
 
  .calendar__day__header,
  .calendar__day__cell {
- 	border: 2px solid #e28743;
+ 	border: 2px solid #B05C1C;
  	text-align: center;
  	width: 100%/7;
  	vertical-align: middle;
@@ -34,7 +34,7 @@
  }
 
  .calendar__banner--month {
- 	border: 2px solid #e28743;
+ 	border: 2px solid #B05C1C;
  	border-bottom: none;
  	text-align: center;
  	padding: 0.75rem;
