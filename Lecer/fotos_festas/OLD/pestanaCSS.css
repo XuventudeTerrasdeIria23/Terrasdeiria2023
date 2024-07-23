@@ -37,7 +37,7 @@
 
 .label-tabMes:hover {
 	color: #888;
-	color: #e6400c;
+	color: #B05C1C;
 	cursor: pointer;
 	border-top: 2px solid #B05C1C;
 
@@ -46,7 +46,7 @@
 .input-tabMes:checked + .label-tabMes {
 	color: #3f5862;
 	border: 1px solid #ddd;
-	border-top: 2px solid #e6400c;
+	border-top: 2px solid #B05C1C;
 	border-bottom: 1px solid #fff;
 }
 

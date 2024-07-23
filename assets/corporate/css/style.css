@@ -490,7 +490,7 @@ Pre-Header and pre-header elements
  	content: " ";
  	display: block;
  	position: absolute;
- 	border-bottom: 8px solid #e6400c;
+ 	border-bottom: 8px solid #B05C1C;
  	border-right: 8px solid transparent;
  	border-left: 8px solid transparent;
  }
@@ -1336,7 +1336,7 @@ steps block and steps block elements
  }
 
  .title-wrapper h1 span {
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  .title-wrapper em {
@@ -1378,12 +1378,12 @@ steps block and steps block elements
  }
 
  .breadcrumb a:hover {
- 	color: #e6400c;
+ 	color: #B05C1C;
  	background: #fff;
  }
 
  .breadcrumb .active {
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  /* paginations */
@@ -1637,7 +1637,7 @@ steps block and steps block elements
 
  .form-info h2 em {
  	font-style: normal;
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  .form-info p {
@@ -1688,7 +1688,7 @@ steps block and steps block elements
 
  .content-search h1 em {
  	font-style: normal;
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  .content-search form {
@@ -2028,7 +2028,7 @@ Pre-Footer and pre-footer elements
  }
 
  .footer .powered > a {
- 	color: #e6400c;
+ 	color: #B05C1C;
  	text-decoration: none;
  }
 
@@ -2557,7 +2557,7 @@ Demo Utils
  }
 
  .recent-work .recent-work-item:hover a.recent-work-description {
- 	background: #E6400C;
+ 	background: #B05C1C;
  	transition: all 0.9s ease;
  	-o-transition: all 0.9s ease;
  	-moz-transition: all 0.9s ease;
@@ -2659,7 +2659,7 @@ Demo Utils
  	position: absolute;
  	right: 0;
  	bottom: 0;
- 	background: #E6400C url(../img/blockquote-corner.png) no-repeat;
+ 	background: #B05C1C url(../img/blockquote-corner.png) no-repeat;
  }
 
  .testimonials-v1 .carousel-info img {
@@ -2683,7 +2683,7 @@ Demo Utils
  }
 
  .testimonials-v1 span.testimonials-name {
- 	color: #E6400C;
+ 	color: #B05C1C;
  	font-size: 16px;
  	font-weight: 300;
  	margin: 23px 0 7px;
@@ -2953,7 +2953,7 @@ Demo Utils
  }
 
  .search-result-item h4 a {
- 	color: #E6400C;
+ 	color: #B05C1C;
  }
 
  .search-result-item p {

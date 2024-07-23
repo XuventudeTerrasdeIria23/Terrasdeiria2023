@@ -237,7 +237,7 @@ Header and header elements
 	content: " ";
 	display: block;
 	position: absolute;
-	border-bottom: 8px solid #e6400c;
+	border-bottom: 8px solid #B05C1C;
 	border-right: 8px solid transparent;
 	border-left: 8px solid transparent;
 }
@@ -579,7 +579,7 @@ Header and header elements
 
 .goods-data a,
 .checkout-page .checkout-description a {
-	color: #e6400c;
+	color: #B05C1C;
 }
 
 .goods-page-description em,
@@ -1240,7 +1240,7 @@ table .product-quantity .input-group {
 }
 
 .product-page .review a {
-	color: #e6400c;
+	color: #B05C1C;
 }
 
 .product-page .social-icons li a {
@@ -1294,7 +1294,7 @@ table .product-quantity .input-group {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-	background: #E6400C;
+	background: #B05C1C;
 	color: #fff;
 }
 
@@ -1406,7 +1406,7 @@ table .product-quantity .input-group {
 
 .list-view-sorting a {
 	background: #fff;
-	color: #E6400C;
+	color: #B05C1C;
 	display: inline-block;
 	padding: 4px 6px;
 	line-height: 1;

@@ -42,19 +42,19 @@
 }
 
 .label-tabMes:hover {
-	color: #e6400c;
+	color: #B05C1C;
 	cursor: pointer;
-	border-top: 2px solid #e6400c;
-	border-bottom: 1px solid #e6400c;
+	border-top: 2px solid #B05C1C;
+	border-bottom: 1px solid #B05C1C;
 	box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 .input-tabMes:checked + .label-tabMes {
-	color: #e6400c;
+	color: #B05C1C;
 	font-weight: 700;
 	border: 1px solid #ddd;
-	border-top: 2px solid #e6400c;
-	border-bottom: 1px solid #e6400c;
+	border-top: 2px solid #B05C1C;
+	border-bottom: 1px solid #B05C1C;
 	box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.5);
 }
 

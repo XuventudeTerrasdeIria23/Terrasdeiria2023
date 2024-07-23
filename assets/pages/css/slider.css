@@ -31,7 +31,7 @@
 }
 
 .color-red-v2 {
-	color: #e6400c;
+	color: #B05C1C;
 }
 
 /* Carousel */
@@ -243,8 +243,8 @@
 }
 
 .carousel-slider .carousel-btn:hover {
-	border-color: #e6400c;
-	background: #e6400c;
+	border-color: #B05C1C;
+	background: #B05C1C;
 	text-decoration: none;
 }
 

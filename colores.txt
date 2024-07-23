@@ -6,7 +6,7 @@ colores
  }
 
  .red {
- 	color: #e6400c;
+ 	color: #B05C1C;
 	color: rgb(230, 64, 12)
  }
 
@@ -14,7 +14,7 @@ ocre{
 	color:  #B05C1C;
 	color: rgb(226, 135, 67)
  }
-red{ color: #e6400c;}
+red{ color: #B05C1C;}
 gris{
 	 	color: #3f5862;
 	color: rgb(63, 88, 98)

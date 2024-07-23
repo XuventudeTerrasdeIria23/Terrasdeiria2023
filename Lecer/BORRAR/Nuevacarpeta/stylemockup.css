@@ -63,11 +63,11 @@
  }
 
  tr:nth-child(odd) > .calendar__day__cell:nth-child(odd) {
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
- 	color: #e6400c;
+ 	color: #B05C1C;
  }
 
  .calendar__day__cell[data-moon-phase] {

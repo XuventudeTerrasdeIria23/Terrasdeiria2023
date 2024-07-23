@@ -105,11 +105,11 @@ h3.link {
 
 
 .langs-block-others:after {
-	border-bottom: 8px solid #e6400c;
+	border-bottom: 8px solid #B05C1C;
 }
 
 .header-navigation > ul > li.dropdown:hover > a:after {
-	border-bottom: 8px solid #e6400c;
+	border-bottom: 8px solid #B05C1C;
 }
 
 .header-navigation .dropdown-menu > li > a:hover,
@@ -139,11 +139,11 @@ h3.link {
 }
 
 .breadcrumb > .active {
-	color: #e6400c;
+	color: #B05C1C;
 }
 
 .form-info h2 em {
-	color: #e6400c;
+	color: #B05C1C;
 }
 
 .nav-tabs {
@@ -198,7 +198,7 @@ h3.link {
 
 .list-view-sorting a {
 	background: #fff;
-	color: #E6400C;
+	color: #B05C1C;
 }
 
 ::-moz-selection {
