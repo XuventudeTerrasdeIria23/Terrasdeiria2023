@@ -78,7 +78,7 @@ Header and header elements
 }
 
 .ecommerce .header-navigation > ul > li > a {
-	color: #767f88;
+	color: #5C666A;
 	padding: 34px 12px 32px;
 }
 
@@ -703,7 +703,7 @@ Header and header elements
 }
 
 .checkout-page a {
-	color: #767F88;
+	color: #5C666A;
 }
 
 .checkout-page a:hover {
@@ -961,7 +961,7 @@ div.radio.disabled.active span.checked {
 
 .sidebar-filter #amount {
 	font-weight: normal !important;
-	color: #767F88 !important;
+	color: #5C666A !important;
 }
 
 .sidebar-filter .ui-widget-content {
