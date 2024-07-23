@@ -716,7 +716,7 @@ Header and header elements
  .header-navigation .dropdown-menu li > a {
  	padding: .5em;
  	font-weight: 400;
- 	color: #767f88;
+ 	color: #5C666A;
  }
 
  .header-navigation .dropdown-menu > li > a:hover,
@@ -800,7 +800,7 @@ Header and header elements
 
  .header-navigation .dropdown-menu .header-navigation-content-ext li > a {
  	padding: 0 0 10px;
- 	color: #767f88;
+ 	color: #5C666A;
  	display: inline-block;
  }
 
@@ -1437,7 +1437,7 @@ steps block and steps block elements
 
  .content-page a,
  .sidebar2 a {
- 	color: #767F88;
+ 	color: #5C666A;
  }
 
  .content-page a:hover,
@@ -1557,7 +1557,7 @@ steps block and steps block elements
  }
 
  .content-form-page a {
- 	color: #767F88;
+ 	color: #5C666A;
  }
 
  .content-form-page a:hover {
