@@ -284,7 +284,7 @@ RGB(65, 176, 110)
      text-transform: lowercase;
      /* 	letter-spacing: auto;*/
      text-align: justify;
-/*     color: transparent;*/
+     /*     color: transparent;*/
 
      background: url("../../../imaxes/img_rois/rio.jpg");
      background-size: contain;
@@ -334,6 +334,13 @@ RGB(65, 176, 110)
 
  .ocre {
      color: #B05C1C;
+ }
+
+ .capitular::first-letter {
+     font-size: 12em;
+     font-family: serif;
+     margin: auto;
+     float: left;
  }
 
  .subrayado {
