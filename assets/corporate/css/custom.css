@@ -284,7 +284,7 @@ RGB(65, 176, 110)
      text-transform: lowercase;
      /* 	letter-spacing: auto;*/
      text-align: justify;
-     color: transparent;
+/*     color: transparent;*/
 
      background: url("../../../imaxes/img_rois/rio.jpg");
      background-size: contain;
