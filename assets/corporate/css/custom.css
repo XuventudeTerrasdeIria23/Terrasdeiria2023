@@ -432,6 +432,18 @@ RGB(65, 176, 110)
      /* 	text-align: center;*/
  }
 
+ .mapas-enaire {
+     float: left;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ /*
+.mapas-enaire img {
+    border: 1px solid blue;
+    float: left;
+    width: 100%;
+}*/
 
  /* longdesc */
  [longdesc] {
