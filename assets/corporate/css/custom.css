@@ -835,38 +835,7 @@ RGB(65, 176, 110)
      /* footer sitio */
 
 
-     /***************** guía uso *************/
-     .nubetag {
 
-         width: auto;
-         display: flex;
-
-         border: 1px solid blue;
-     }
-
-     .nubetag > div {
-
-         width: auto !important;
-         margin: 2em;
-
-         border: 1px solid red;
-     }
-
-     .nubetag .service-box-v2 a:hover {
-         color: white;
-         font-weight: bolder;
-         text-shadow: 0 0 0.75rem #B05C1C;
-
-     }
-
-     .nubetag img {
-         display: inline-block !important;
-         width: 25%;
-     }
-
-     .nubetag:hover img {
-         filter: saturate(100%);
-     }
 
      /* MAPAS    estilo  mapas *********/
      .video-mapa {
@@ -2159,4 +2128,86 @@ RGB(65, 176, 110)
      display: block;
      text-indent: none;
      margin: 0 0 0 1em;
+ }
+
+
+
+ /***************** guía uso *************/
+ .nubetag {
+     width: 70vw;
+     display: flex;
+
+
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     margin: 2em;
+ }
+
+ .nubetag article {
+     width: 40%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+ }
+
+ .nubetag a {
+     width: 100%;
+     display: block !important;
+ }
+
+ .nubetag a:hover {}
+
+ .nubetag img {
+     width: 50%
+ }
+
+ .nubetag a:hover > img {
+     filter: drop-shadow(15px 7px 7px #B05C1C80);
+     /*     background-color: #B05C1C80;*/
+ }
+
+ @media screen and (max-width: 600px) {
+     .nubetag {
+         width: 90vw;
+         display: block;
+         margin-top: 10%;
+     }
+
+     .nubetag article {
+         width: 30%;
+         margin: 2em auto;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         align-items: center;
+     }
+
+     .nubetag img {
+         width: 20vw;
+         display: block;
+         height: auto;
+     }
+ }
+
+ @media (min-width:600px and min-width: 1024px) {
+     .nubetag {
+         width: 100vw;
+
+         border: 1px solid blue:
+     }
+
+     .nubetag article {
+         width: 30%;
+
+         border: 1px solid red:
+     }
+
+     .nubetag img {
+
+         display: block;
+         height: auto;
+     }
  }
