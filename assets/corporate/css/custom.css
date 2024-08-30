@@ -316,7 +316,7 @@ RGB(65, 176, 110)
      font-weight: bolder;
      font-size: 1em;
  }
- 
+
  .subraiado,
  span.subraiado {
      text-decoration-line: underline;
@@ -392,7 +392,6 @@ RGB(65, 176, 110)
      justify-content: space-between;
      align-content: space-between;
      align-items: center;
-
  }
 
  .block-center .service-box-v2 {
@@ -836,8 +835,38 @@ RGB(65, 176, 110)
      /* footer sitio */
 
 
+     /***************** guía uso *************/
+     .nubetag {
 
+         width: auto;
+         display: flex;
 
+         border: 1px solid blue;
+     }
+
+     .nubetag > div {
+
+         width: auto !important;
+         margin: 2em;
+
+         border: 1px solid red;
+     }
+
+     .nubetag .service-box-v2 a:hover {
+         color: white;
+         font-weight: bolder;
+         text-shadow: 0 0 0.75rem #B05C1C;
+
+     }
+
+     .nubetag img {
+         display: inline-block !important;
+         width: 25%;
+     }
+
+     .nubetag:hover img {
+         filter: saturate(100%);
+     }
 
      /* MAPAS    estilo  mapas *********/
      .video-mapa {
