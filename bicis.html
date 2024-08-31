@@ -41,6 +41,18 @@
     <title>Xuventude Terra de Iria 2023</title>
 
     <link rel="shortcut icon" href="favicon.ico">
+
+    <script languaje="Javascript">
+        document.write('<style type="text/css">div.oculta{display: none;}</style>');
+
+        function MostrarOcultar(div, enlace) {
+            if (document.getElementById) {
+                var aux = document.getElementById(div).style;
+                aux.display = aux.display ? "" : "block";
+            }
+        }
+
+    </script>
 </head>
 <!-- Head FIN -->
 
@@ -232,7 +244,7 @@
         <div class="container">
             <ul class="breadcrumb">
                 <li><a href="inicio.html" data-title="Voltar a inicio">Inicio</a></li>
-                <li class="active">Ciclismo</li>
+                <li class="active">Rutas en bicicleta</li>
             </ul>
             <!-- Contido INICIO -->
             <div class="row margin-bottom-40">
@@ -246,25 +258,38 @@
                             <!-- dodro -->
                             <div class="col-md-3 col-sm-3 animated fadeInDown">
                                 <div class="service-box-v2 animated slideInLeft">
-                                    <a href="#" data-title="Ver rutas en bicileta por Dodro">
+                                    <a href="javascript:MostrarOcultar('texto2');">
                                         <h2>Dodro <sup><i class="fa fa-leaf verde"></i></sup></h2>
                                     </a>
+                                </div>
+                                <div class="oculta animated fadeInDown" id="texto2">
+                                    <a href="RutasBici/Dodro/ruta-aldeas_de-riba.html">Aldeas de Riba</a> <i class="fa fa-leaf xsmall verde "></i>
+
+                                    <a href="RutasBici/Dodro/ruta-as-branhas.html.html">As Brañas</a>
+                                    <i class="fa fa-leaf xsmall verde"></i>
                                 </div>
                             </div>
                             <!-- padrón -->
                             <div class="col-md-3 col-sm-3 animated fadeInDown">
-                                <div class="service-box-v2 animated  slideInLeft">
-                                    <a href="#" data-title="Ver rutas en bicileta por Padrón">
+                                <div class="service-box-v2 animated slideInLeft">
+                                    <a href="javascript:MostrarOcultar('texto3');">
                                         <h2>Padrón <sup><i class="fa fa-leaf verde"></i></sup></h2>
                                     </a>
+                                </div>
+                                <div class="oculta animated fadeInDown" id="texto3">
+                                    XXXXXXXXXXXXXXXXXXXXXXXXX
                                 </div>
                             </div>
                             <!-- rois -->
                             <div class="col-md-3 col-sm-3 animated fadeInDown">
-                                <div class="service-box-v2 animated  slideInRight">
-                                    <a href="#" data-title="Ver rutas en bicileta por Rois">
+                                <div class="service-box-v2 animated slideInLeft">
+                                    <a href="javascript:MostrarOcultar('texto4');">
                                         <h2>Rois <sup><i class="fa fa-leaf verde"></i></sup></h2>
                                     </a>
+                                </div>
+                                <div class="oculta animated fadeInDown" id="texto4">
+                                    XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
                                 </div>
                             </div>
                         </div>
