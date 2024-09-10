@@ -16687,9 +16687,11 @@
                                             [42.729821, -8.717728, 70.778]
                                         ]
                                     });
+
                                     GV_Draw_Track(t);
 
                                     t = 1;
+
                                     GV_Add_Track_to_Tracklist({
                                         bullet: '- ',
                                         name: trk[t].info.name,
@@ -16697,6 +16699,7 @@
                                         color: trk[t].info.color,
                                         number: t
                                     });
+
                                     GV_Draw_Marker({
                                         lat: 42.73002945716957,
                                         lon: -8.717772068808937,
@@ -16707,6 +16710,7 @@
                                         icon: '../../imaxes/iconos/icon_inicio_bici.png',
                                         scale: .8
                                     });
+
                                     GV_Draw_Marker({
                                         lat: 42.729979743726666,
                                         lon: -8.717619526999737,
@@ -16717,7 +16721,6 @@
                                         icon: '',
                                         scale: .8
                                     });
-
 
                                     GV_Draw_Marker({
                                         lat: 42.73128535742766,
@@ -16751,9 +16754,6 @@
                                         icon: '',
                                         scale: .8
                                     });
-
-
-
 
                                     GV_Draw_Marker({
                                         lat: 42.70082154184645,
@@ -16808,14 +16808,7 @@
                                         color: '',
                                         icon: '',
                                         scale: .8
-
                                     });
-
-
-
-
-
-
 
                                     GV_Draw_Marker({
                                         lat: 42.729514027405976,
@@ -16828,211 +16821,205 @@
                                         scale: .8
                                     });
                                     GV_Finish_Map();
-
                                 }
                                 GV_Map(); // execute the above code
                                 // https://www.gpsvisualizer.com/map_input?add_elevation=auto&bg_map=ARCGIS_TOPO_WORLD&form=leaflet&trk_as_wpt=blank&trk_colorize=altitude&trk_list=name&trk_opacity=100&units=metric&wpt_list=name_border
 
                             </script>
-
-                            <!-- gráfica, imaxe do mapa e video da ruta INICIO -->
-                            <div class="col-md-12 margin-bottom-40 paused">
-                                <div class="col-md-4 col-sm-4 animated fadeInDown">
-                                    <details class="img-thumbnail">
-                                        <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a gráfica do perfil de elevación</summary>
-                                        <a target="_blank" data-title="Ver nunha ventana nova" href="../imaxes_graf_elevacion/Dodro/pensa_nao.jpg"> <img class="-shadow-new" src="../imaxes_graf_elevacion/Dodro/pensa_nao.jpg" alt="Gráfica do perfil de elevación">
-
-                                        </a>
-                                    </details>
-                                </div>
-                                <div class="col-md-4 col-sm-4 animated fadeInDown">
-                                    <details class="img-thumbnail">
-                                        <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a imaxe da ruta</summary>
-                                        <a target="_blank" data-title="Ver nunha ventana nova" href="../imaxes_rutas_bici/Dodro/dodro-pensa_nao.png">
-                                            <img class="-shadow-new" src="../imaxes_rutas_bici/Dodro/dodro-pensa_nao.png" alt="Imaxe da ruta">
-                                        </a>
-                                    </details>
-                                </div>
-                                <div class="col-md-4 col-sm-4 animated fadeInDown">
-                                    <details class="img-thumbnail">
-                                        <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver vídeo da ruta</summary>
-                                        <a target="_blank" data-title="Ver nunha ventana nova" href="XXXXXXXX">
-                                            <img class="-shadow-new" src="XXXXXXXX" alt="Vídeo da ruta">
-                                        </a>
-
-                                    </details>
-                                </div>
-                            </div>
-                            <!-- gráfica, imaxe do mapa e video da ruta FIN -->
-
-                            <!-- ++++++++ lendas do mapa INICIO ++++++++  -->
-                            <div class="col-md-12 margin-bottom-40 paused">
-                                <div class="col-md-4">
-                                    <div class="datos-ruta animated fadeInLeft">
-                                        <div class="datos-ruta-head">
-                                            <h3> <span> <i class="fa fa-asterisk"></i> Datos da Ruta</span>
-                                                Pensa Nao
-                                            </h3>
-                                        </div>
-                                        <ul class="datos-ruta list-unstyled">
-                                            <li>
-                                                <i class="fa fa-bolt"></i> Dificultade técnica:
-                                                <span>Fácil</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-route"> </i> Distancia:
-                                                <span>17 km</span>
-                                            </li>
-
-                                            <li>
-                                                <i class="fa fa-ruler"></i> Altitude máxima:
-                                                <span> 263.9</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-ruler fa-rotate-90"></i> Altitude mínima:
-                                                <span> 13.0m</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-map"></i> Tipo de roteiro:
-                                                <span>Circular</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="datos-ruta animated fadeInLeft">
-                                        <div class="datos-ruta-head">
-                                            <h3> <span> <i class="fa fa-asterisk"></i> Símbolos no mapa</span>
-                                            </h3>
-                                        </div>
-                                        <ul class="lendas-ruta list-unstyled">
-                                            <li>
-                                                <img src="../../imaxes/iconos/icon_inicio_bici.png" class="img-shadow img-xsmall"> <span>Inicio da ruta</span>
-                                            </li>
-                                            <li>
-                                                <img src="../../imaxes/iconos/icon_fin_bici.png" class="img-shadow img-xsmall"> <span>Fin da ruta</span>
-                                            </li>
-                                            <li>
-                                                <img src="../../imaxes/iconos/Bici_marker.png" class="img-shadow img-xsmall"> <span>Punto de interese</span>
-                                            </li>
-                                            <li>
-                                                <div id="gv_infobox" class="gv_infobox">
-                                                    <div id="gv_legend_header" style="padding-bottom:2px;"><b>Elevación (m)</b></div>
-                                                    <div class="gv_legend_item"><span style="color:#e600e6;">
-                                                            <div class="legend_block" style="background:#e600e6">
-                                                                <!-- -->
-                                                            </div> 263.9
-                                                        </span></div>
-                                                    <div class="gv_legend_item"><span style="color:#003ae6;">
-                                                            <div class="legend_block" style="background:#003ae6">
-                                                                <!-- -->
-                                                            </div> 201.2
-                                                        </span></div>
-                                                    <div class="gv_legend_item"><span style="color:#00e674;">
-                                                            <div class="legend_block" style="background:#00e674">
-                                                                <!-- -->
-                                                            </div> 138.4
-                                                        </span></div>
-                                                    <div class="gv_legend_item"><span style="color:#ace600;">
-                                                            <div class="legend_block" style="background:#ace600">
-                                                                <!-- -->
-                                                            </div> 75.7
-                                                        </span></div>
-                                                    <div class="gv_legend_item"><span style="color:#e60000;">
-                                                            <div class="legend_block" style="background:#e60000">
-                                                                <!-- -->
-                                                            </div> 13.0
-                                                        </span></div>
-
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="datos-ruta lendas-ruta animated fadeInLeft">
-                                        <div class="datos-ruta-head">
-                                            <h3> <span> <i class="fa fa-asterisk"></i> Meteoroloxía na Ruta</span> </h3>
-                                        </div>
-                                        <ul class="lendas-ruta list-unstyled">
-                                            <li> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ++++++++ lendas do mapa FIN ++++++++ -->
-
                         </div>
                     </div>
-
                 </div>
+                <!-- gráfica, imaxe do mapa e video da ruta INICIO -->
+                <div class="col-md-12 margin-bottom-40 paused">
+                    <div class="col-md-4 col-sm-4 animated fadeInDown">
+                        <details class="img-thumbnail">
+                            <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a gráfica do perfil de elevación</summary>
+                            <a target="_blank" data-title="Ver nunha ventana nova" href="../imaxes_graf_elevacion/Dodro/pensa_nao.jpg"> <img class="-shadow-new" src="../imaxes_graf_elevacion/Dodro/pensa_nao.jpg" alt="Gráfica do perfil de elevación">
+
+                            </a>
+                        </details>
+                    </div>
+                    <div class="col-md-4 col-sm-4 animated fadeInDown">
+                        <details class="img-thumbnail">
+                            <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a imaxe da ruta</summary>
+                            <a target="_blank" data-title="Ver nunha ventana nova" href="../imaxes_rutas_bici/Dodro/dodro-pensa_nao.png">
+                                <img class="-shadow-new" src="../imaxes_rutas_bici/Dodro/dodro-pensa_nao.png" alt="Imaxe da ruta">
+                            </a>
+                        </details>
+                    </div>
+                    <div class="col-md-4 col-sm-4 animated fadeInDown">
+                        <details class="img-thumbnail">
+                            <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver vídeo da ruta</summary>
+                            <a target="_blank" data-title="Ver nunha ventana nova" href="XXXXXXXX">
+                                <img class="-shadow-new" src="XXXXXXXX" alt="Vídeo da ruta">
+                            </a>
+
+                        </details>
+                    </div>
+                </div>
+                <!-- gráfica, imaxe do mapa e video da ruta FIN -->
+
+                <!-- ++++++++ lendas do mapa INICIO ++++++++  -->
+                <div class="col-md-12 margin-bottom-40 paused">
+                    <div class="col-md-4">
+                        <div class="datos-ruta animated fadeInLeft">
+                            <div class="datos-ruta-head">
+                                <h3> <span> <i class="fa fa-asterisk"></i> Datos da Ruta</span>
+                                    Pensa Nao
+                                </h3>
+                            </div>
+                            <ul class="datos-ruta list-unstyled">
+                                <li>
+                                    <i class="fa fa-bolt"></i> Dificultade técnica:
+                                    <span>Fácil</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-route"> </i> Distancia:
+                                    <span>17 km</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-ruler"></i> Altitude máxima:
+                                    <span> 263.9</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-ruler fa-rotate-90"></i> Altitude mínima:
+                                    <span> 13.0m</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map"></i> Tipo de roteiro:
+                                    <span>Circular</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="datos-ruta animated fadeInLeft">
+                            <div class="datos-ruta-head">
+                                <h3> <span> <i class="fa fa-asterisk"></i> Símbolos no mapa</span>
+                                </h3>
+                            </div>
+                            <ul class="lendas-ruta list-unstyled">
+                                <li>
+                                    <img src="../../imaxes/iconos/icon_inicio_bici.png" class="img-shadow img-xsmall"> <span>Inicio da ruta</span>
+                                </li>
+                                <li>
+                                    <img src="../../imaxes/iconos/icon_fin_bici.png" class="img-shadow img-xsmall"> <span>Fin da ruta</span>
+                                </li>
+                                <li>
+                                    <img src="../../imaxes/iconos/Bici_marker.png" class="img-shadow img-xsmall"> <span>Punto de interese</span>
+                                </li>
+                                <li>
+                                    <div id="gv_infobox" class="gv_infobox">
+                                        <div id="gv_legend_header" style="padding-bottom:2px;"><b>Elevación (m)</b></div>
+                                        <div class="gv_legend_item"><span style="color:#e600e6;">
+                                                <div class="legend_block" style="background:#e600e6">
+                                                    <!-- -->
+                                                </div> 263.9
+                                            </span></div>
+                                        <div class="gv_legend_item"><span style="color:#003ae6;">
+                                                <div class="legend_block" style="background:#003ae6">
+                                                    <!-- -->
+                                                </div> 201.2
+                                            </span></div>
+                                        <div class="gv_legend_item"><span style="color:#00e674;">
+                                                <div class="legend_block" style="background:#00e674">
+                                                    <!-- -->
+                                                </div> 138.4
+                                            </span></div>
+                                        <div class="gv_legend_item"><span style="color:#ace600;">
+                                                <div class="legend_block" style="background:#ace600">
+                                                    <!-- -->
+                                                </div> 75.7
+                                            </span></div>
+                                        <div class="gv_legend_item"><span style="color:#e60000;">
+                                                <div class="legend_block" style="background:#e60000">
+                                                    <!-- -->
+                                                </div> 13.0
+                                            </span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="datos-ruta lendas-ruta animated fadeInLeft">
+                            <div class="datos-ruta-head">
+                                <h3> <span> <i class="fa fa-asterisk"></i> Meteoroloxía na Ruta</span> </h3>
+                            </div>
+                            <ul class="lendas-ruta list-unstyled">
+                                <li> <img class="img-shadow img-large" src="../../imaxes/QR_meteogalicia.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ++++++++ lendas do mapa FIN ++++++++ -->
             </div>
+        </div>
+    </div>
+    <!-- INICIO footer -->
+    <footer class="footer-light paused">
+        <div class="copyright animated fadeInDown">
+            <img src="../../imaxes/logos.jpg" id="logos-xunta" alt="Logotipos Xunta">
+            <div class="social-icons">
+                <p>Concello de Dodro</p>
+                <ul class="social-icons social-icons-circle">
+                    <li><a href="https://www.dodro.gal/" title="Web Concello de Dodro" class="web" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/concellodedodro/?locale=es_ES" title="facebook Concello de Dodro" class="facebook" target="_blank"></a></li>
+                    <li><a href="https://www.youtube.com/@concellodedodro1920" title="Youtube Concello de Dodro" class="youtube" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/concello_de_dodro/?hl=es" title="Instagram Concello de Dodro" class="instagram" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <p>Concello de Padrón</p>
+                <ul class="social-icons social-icons-circle">
+                    <li><a href="https://padron.gal/" title="Web Concello de Padrón" class="web" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/concellodepadron/?locale=es_LA" title="facebook Concello de Padrón" class="facebook" target="_blank"></a></li>
+                    <li><a href="https://www.youtube.com/@concellodepadronoficial" title="Youtube Concello de Padrón" class="youtube" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/concellodepadron/" title="Instagram Concello de Padrón" class="instagram" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <p>Concello de Rois</p>
+                <ul class="social-icons social-icons-circle">
+                    <li><a href="https://www.rois.gal/" title="Web Concello de Rois" class="web" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/ConcelloDeRois/?locale=es_LA" title="facebook Concello de Rois" class="facebook" target="_blank"></a></li>
+                    <li><a href="https://www.youtube.com/c/ConcellodeRois1" title="Youtube Concello de Rois" class="youtube" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/concellorois/" title="Instagram Concello de Rois" class="instagram" target="_blank"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a class="foot-link" href="../../proxecto/Proxecto.html" title="O Proxecto">O proxecto</a>
+            <a class="foot-link" href="../../sitemap.html" title="Sitemap">Mapa Web</a>
+            <a class="foot-link" href="../../cookies.html" title="Cookies">Política de Cookies</a>
+            <a class="foot-link" href="../../termos_uso.html" title="Aviso legal">Termos de uso / Aviso Legal</a>
+            <a class="foot-link" href="../../guia_uso2.html" title="Guía de uso">Guía de uso</a>
+        </div>
+    </footer>
+    <!-- FIN footer -->
 
+    <!--  JAVASCRIPTS  INICIO -->
+    <script src="../../assets/pages/scripts/anima-con-scroll.js" type="text/javascript"></script>
 
-            <!-- INICIO footer -->
-            <footer class="footer-light paused">
-                <div class="copyright animated fadeInDown">
-                    <img src="../../imaxes/logos.jpg" id="logos-xunta" alt="Logotipos Xunta">
-                    <div class="social-icons">
-                        <p>Concello de Dodro</p>
-                        <ul class="social-icons social-icons-circle">
-                            <li><a href="https://www.dodro.gal/" title="Web Concello de Dodro" class="web" target="_blank"></a></li>
-                            <li><a href="https://www.facebook.com/concellodedodro/?locale=es_ES" title="facebook Concello de Dodro" class="facebook" target="_blank"></a></li>
-                            <li><a href="https://www.youtube.com/@concellodedodro1920" title="Youtube Concello de Dodro" class="youtube" target="_blank"></a></li>
-                            <li><a href="https://www.instagram.com/concello_de_dodro/?hl=es" title="Instagram Concello de Dodro" class="instagram" target="_blank"></a></li>
-                        </ul>
-                    </div>
-                    <div class="social-icons">
-                        <p>Concello de Padrón</p>
-                        <ul class="social-icons social-icons-circle">
-                            <li><a href="https://padron.gal/" title="Web Concello de Padrón" class="web" target="_blank"></a></li>
-                            <li><a href="https://www.facebook.com/concellodepadron/?locale=es_LA" title="facebook Concello de Padrón" class="facebook" target="_blank"></a></li>
-                            <li><a href="https://www.youtube.com/@concellodepadronoficial" title="Youtube Concello de Padrón" class="youtube" target="_blank"></a></li>
-                            <li><a href="https://www.instagram.com/concellodepadron/" title="Instagram Concello de Padrón" class="instagram" target="_blank"></a></li>
-                        </ul>
-                    </div>
-                    <div class="social-icons">
-                        <p>Concello de Rois</p>
-                        <ul class="social-icons social-icons-circle">
-                            <li><a href="https://www.rois.gal/" title="Web Concello de Rois" class="web" target="_blank"></a></li>
-                            <li><a href="https://www.facebook.com/ConcelloDeRois/?locale=es_LA" title="facebook Concello de Rois" class="facebook" target="_blank"></a></li>
-                            <li><a href="https://www.youtube.com/c/ConcellodeRois1" title="Youtube Concello de Rois" class="youtube" target="_blank"></a></li>
-                            <li><a href="https://www.instagram.com/concellorois/" title="Instagram Concello de Rois" class="instagram" target="_blank"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <a class="foot-link" href="../../proxecto/Proxecto.html" title="O Proxecto">O proxecto</a>
-                    <a class="foot-link" href="../../sitemap.html" title="Sitemap">Mapa Web</a>
-                    <a class="foot-link" href="../../cookies.html" title="Cookies">Política de Cookies</a>
-                    <a class="foot-link" href="../../termos_uso.html" title="Aviso legal">Termos de uso / Aviso Legal</a>
-                    <a class="foot-link" href="../../guia_uso2.html" title="Guía de uso">Guía de uso</a>
-                </div>
-            </footer>
-            <!-- FIN footer -->
+    <script src="../../assets/plugins/jquery.min.js" type="text/javascript"></script>
 
-            <!--  JAVASCRIPTS  INICIO -->
-            <script src="../../assets/pages/scripts/anima-con-scroll.js" type="text/javascript"></script>
+    <script src="../../assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
-            <script src="../../assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../../to_top.js" type="text/javascript"></script>
 
-            <script src="../../assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-            <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
 
-            <script src="../../to_top.js" type="text/javascript"></script>
+    <script src="../../assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();
+            Layout.initTwitter();
+        });
 
-            <script src="../../assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-
-            <script src="../../assets/corporate/scripts/layout.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                jQuery(document).ready(function() {
-                    Layout.init();
-                    Layout.initTwitter();
-                });
-
-            </script>
-            <!--  JAVASCRIPTS  FIN -->
+    </script>
+    <!--  JAVASCRIPTS  FIN -->
 </body>
 
 </html>
