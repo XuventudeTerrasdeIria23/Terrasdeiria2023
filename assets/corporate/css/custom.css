@@ -1033,7 +1033,6 @@ RGB(65, 176, 110)
      margin: 0 !important;
      background: #ffffff80 !important;
      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5) !important;
-
  }
 
  #gv_elevation_profile {
@@ -1046,7 +1045,6 @@ RGB(65, 176, 110)
      bottom: 0% !important;
      left: 0% !important;
      background: #ffffff80 !important;
-
  }
 
  #gv_elevation_profile {
@@ -1059,7 +1057,6 @@ RGB(65, 176, 110)
      position: absolute !important;
      bottom: 0% !important;
      left: 0% !important;
-
  }
 
  .profile_filled {
@@ -1097,19 +1094,16 @@ RGB(65, 176, 110)
      fill: #B05C1C !important;
  }
 
-
  .mouseover_circle {
      stroke: #B05C1C !important;
      stroke-width: 2 !important;
      fill: none !important;
  }
 
-
  .profile_waypoint {
      width: 1em !important;
      cursor: grab !important;
  }
-
 
  .profile_waypoint_label {
      /* etiquetas cadro altitude */
@@ -1292,21 +1286,25 @@ RGB(65, 176, 110)
  .leaflet-popup-content-wrapper {
      width: 25vw !important;
      height: auto !important;
+
  }
 
  .leaflet-popup {
      padding: 0 !important;
+
  }
 
  .leaflet-popup-content {
      /*  pop-ups do  mapa */
-     width: 90% !important;
-     height: 90% !important;
+     width: auto !important;
+     height: auto !important;
      z-index: 99999999 !important;
+/*
      padding: 0 !important;
+     margin: 0 !important;
+*/
      overflow: auto !important;
  }
-
 
  .gv_marker_info_window_profile {
      display: none !important;
@@ -1317,12 +1315,11 @@ RGB(65, 176, 110)
      flex-direction: column;
      width: auto !important;
      height: auto !important;
-
  }
 
  .gv_marker_info_window_desc {
      width: 100% !important;
-     padding: 1em;
+     padding: 0em;
      margin: 0 auto !important;
  }
 
@@ -1359,7 +1356,7 @@ RGB(65, 176, 110)
  .gv_marker_info_window p {
      /* 	clear: both;*/
      display: block !important;
-     width: auto !important;
+     width: 90% !important;
      height: auto;
      float: left;
 
@@ -1367,6 +1364,7 @@ RGB(65, 176, 110)
      font-weight: normal !important;
      position: relative;
      clear: both;
+
  }
 
  .gv_marker_info_window i {
@@ -1375,6 +1373,7 @@ RGB(65, 176, 110)
      font-size: 1.2em;
      color: #3f5862 !important;
      z-index: 1000;
+
  }
 
  .gv_marker_info_window a {
@@ -1402,6 +1401,7 @@ RGB(65, 176, 110)
  .gv_marker_info_window .red-link {
      color: #B05C1C !important;
      font-weight: 700 !important;
+
  }
 
  .gv_marker_info_window .red-link:hover {
@@ -2196,13 +2196,11 @@ RGB(65, 176, 110)
      .nubetag {
          width: 100vw;
 
-         border: 1px solid blue:
      }
 
      .nubetag article {
          width: 30%;
 
-         border: 1px solid red:
      }
 
      .nubetag img {
