@@ -265,16 +265,6 @@
                             </script>
 
 
-                            <!--
-			If you want to transplant this map into another Web page, by far the best method is to
-			simply include it in a IFRAME tag (see https://www.gpsvisualizer.com/faq.html#google_html).
-			But, if you must paste the code into another page, be sure to include all of these parts:
-			   1. The "div" tags that contain the map and its widgets, below
-			   2. Three sections of JavaScript code:
-			      a. The API code (from googleapis.com or /leaflet), above
-			      b. "gv_options" and the code that calls a .js file on gpsvisualizer.com
-			      c. The "GV_Map" function, which contains all the geographic info for the map
-		-->
 
                             <div id="gmap_div">
                                 <p>Mapa creado usando <a target="_blank" href="https://www.gpsvisualizer.com/">GPS Visualizer</a> Programa de emprego Xuventude Terras de Iria 2023<br><br>Por favor, espera mentras se carga o mapa...</p>
@@ -294,8 +284,7 @@
 
                                 // basic map parameters:
                                 gv_options.center = [42.752999, -8.712978]; // [latitude,longitude] - be sure to keep the square brackets
-                                gv_options.zoom = 14.5; // higher number means closer view; can also be 'auto' for automatic zoom/center based on map elements
-
+                                gv_options.zoom = 15; // higher number means closer view; can also be 'auto' for automatic zoom/center based on map elements
 
 
                                 gv_options.map_type = 'GV_OSM_RELIEF'; // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
@@ -475,7 +464,6 @@
                                 gv_options.marker_filter_options.min_zoom = 0; // below this zoom level, don't show any markers at all
                                 gv_options.marker_filter_options.zoom_message = ''; // message to put in the marker list if the map is below the min_zoom threshold
                                 gv_options.synthesize_fields = {}; // for example: {label:'{name}'} would cause all markers' names to become visible labels
-
 
 
 
@@ -2337,7 +2325,7 @@
                     </div>
                 </div>
                 <!-- gráfica, imaxe do mapa e video da ruta INICIO -->
-                <div class="col-md-12 margin-bottom-40 paused">
+                <div class="col-md-12 margin-bottom-40 datos-ruta">
                     <div class="col-md-4 col-sm-4 animated fadeInDown">
                         <details class="img-thumbnail">
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver a gráfica do perfil de elevación</summary>
@@ -2359,7 +2347,7 @@
                             <summary><span class="icon-small"><i class="fa fa-link"></i></span> Ver vídeo da ruta</summary>
                             <a target="_blank" data-title="Ver nunha ventana nova" href="../../videos/rutas-senderismo/videos_rutas_rois/ruta_as_penicias.mp4">
                                 <img class="-shadow-new" src="../../videos/rutas-senderismo/capturas_rois/captura_penicias.png" alt="Vídeo da ruta Penicias"> </a>
-                        </details>
+                        </details><span><a title="video da ruta do Concello de Rois" href="https://www.youtube.com/watch?v=Hv0kbRgl-ew">Video do concello de Rois</a></span>
                     </div>
                     <!-- gráfica, imaxe do mapa e video da ruta FIN -->
                 </div>

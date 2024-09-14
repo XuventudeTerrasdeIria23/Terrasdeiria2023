@@ -1299,7 +1299,7 @@ RGB(65, 176, 110)
      width: auto !important;
      height: auto !important;
      z-index: 99999999 !important;
-/*
+     /*
      padding: 0 !important;
      margin: 0 !important;
 */
@@ -1464,8 +1464,9 @@ RGB(65, 176, 110)
  }
 
  /* @media mapa-noso */
- @media (max-width: 800px) {
+ @media (max-width: 780px) {
      #mapa-noso {
+         width: 90vw !important;
          display: block !important;
          justify-content: center !important;
          align-content: center !important;
@@ -1473,8 +1474,10 @@ RGB(65, 176, 110)
          background: transparent !important;
      }
 
+     #mapa-noso details {}
+
      .leaflet-popup-content-wrapper {
-         width: 90vw !important;
+         width: 70vw !important;
          height: auto !important;
      }
 
@@ -1499,6 +1502,7 @@ RGB(65, 176, 110)
 
      .datos-ruta div > img {
          width: 20%;
+
      }
 
      .leaflet-popup-content {
@@ -1833,7 +1837,9 @@ RGB(65, 176, 110)
 
  /* fin popup tooltipsusi*/
 
-
+ .oculta {
+     margin: .5em 0;
+ }
 
 
  /* mostrar/ocultar acordeon */
