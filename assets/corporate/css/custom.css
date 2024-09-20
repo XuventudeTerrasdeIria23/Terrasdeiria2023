@@ -337,7 +337,7 @@ RGB(65, 176, 110)
  }
 
  .capitular::first-letter {
-     font-size: 12em;
+     font-size: 7em;
      font-family: serif;
      margin: auto;
      float: left;
